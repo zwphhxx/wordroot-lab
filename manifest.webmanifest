@@ -1,15 +1,15 @@
 {
-  "name": "词根实验室｜查一个词，读一段来历",
+  "name": "词根实验室 · 极简查词与阅读",
   "short_name": "词根实验室",
-  "description": "免费查词、中文词源短文、四词探索路线与智能复习；完整词典资料按需加载",
+  "description": "查询词义，阅读词源，收藏与复习。极简界面，完整词典按需展开。",
   "lang": "zh-CN",
   "dir": "ltr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#fff8f0",
-  "theme_color": "#fff8f0",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "./icon-192.png",

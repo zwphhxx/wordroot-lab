@@ -23,7 +23,7 @@ checks=[
  ('license included',(ROOT/'THIRD_PARTY_NOTICES.md').exists() and 'MIT License' in (ROOT/'THIRD_PARTY_NOTICES.md').read_text()),
  ('script references','lexicon-core-v24.js' in html and 'roots-v21.js' in html),
  ('offline cache contents','lexicon-core-v24.js' in (ROOT/'sw.js').read_text() and 'roots-v21.js' in (ROOT/'sw.js').read_text()),
- ('cache bumped','rootlab-offline-20261025-v240-reader' in (ROOT/'sw.js').read_text()),
+ ('cache bumped','rootlab-offline-20261025-v250-minimal' in (ROOT/'sw.js').read_text()),
  ('curated labels source-marked',all('levels' in w and w.get('labelSource') in ('ECDICT','未核实') for r in core for g in r['groups'] for w in g['entries'])),
  ('unrestricted',not any(t in html for t in ['开通会员','会员精讲','data-action="open-member"'])),
  ('old storage compatibility','rootlab_standalone_demo_v3' in html),

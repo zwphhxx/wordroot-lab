@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#fff8f0" />
-  <meta name="application-version" content="2.4.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="application-version" content="2.5.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" type="image/svg+xml" href="./icon.svg" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
   <meta name="description" content="词根实验室：丰富的离线英汉词典、英语例句、词根拆解和词族拓展，支持智能记忆复习。无需注册，免费查询。" />
-  <title>词根实验室 · 查一个词，读一段来历</title>
+  <title>词根实验室 · 查词与词源</title>
   <style>
 :root{--paper:#fcfaf7;--white:#fff;--ink:#382a25;--brown:#6f4b35;--muted:#9e8071;--accent:#eb695b;--gold:#d6a073;--gold-ink:#9c6c43;--blush:#fdf0ea;--line:#f0e5da;--edge:#ecd9c9;--shadow:0 12px 35px rgba(122,80,47,.045)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;font-size:15px;line-height:1.65}button,input{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible,input:focus-visible{outline:3px solid #f1b7a3;outline-offset:2px}button:disabled{opacity:.6;cursor:not-allowed}.hidden{display:none!important}.header{position:sticky;top:0;z-index:40;background:rgba(255,251,246,.95);border-bottom:1px solid #f0e8df;backdrop-filter:blur(14px)}.header-main{max-width:1160px;margin:auto;min-height:74px;padding:12px 26px;display:flex;align-items:center;gap:18px}.brand{border:0;background:transparent;display:flex;align-items:center;gap:10px;text-align:left;color:var(--ink);padding:0;white-space:nowrap}.brand-icon{width:40px;height:40px;border-radius:12px;color:white;background:linear-gradient(145deg,#df9b68,#e37b6a);display:grid;place-items:center;font:italic bold 29px Georgia,serif;box-shadow:0 4px 12px #d08b6640}.brand-icon span{color:#f6dba9}.brand-name{font-weight:850;font-size:18px;letter-spacing:.2px}.brand-en{font-size:10px;display:block;letter-spacing:2.1px;font-weight:650;color:#b49177;margin-top:-5px}.desktop-nav{display:flex;align-items:center;gap:4px;margin:0 auto}.nav-link{padding:8px 13px;border:0;background:none;border-radius:12px;color:#80685b;font-weight:700;font-size:13px}.nav-link.active{color:#ad6a44;background:#f8ece1}.header-actions{display:flex;align-items:center;gap:10px;white-space:nowrap}.header-count{font-size:12px;color:#a98771}.membership-chip{border:1px solid #ecd1bc;border-radius:99px;background:linear-gradient(110deg,#fff3e6,#fbe1d2);color:#a36743;font-size:12px;font-weight:800;padding:7px 12px}.membership-chip.active{background:#e5b68d;color:#5e3825;border-color:#d9a776}.main{max-width:1160px;margin:0 auto;padding:0 26px}.hero{margin-top:27px;border-radius:28px;background:radial-gradient(circle at 89% 12%,#fff7e4 0,transparent 34%),linear-gradient(112deg,#fff4e6,#ffe6da 56%,#fae5d6);min-height:278px;padding:30px 36px 45px;position:relative;overflow:visible;box-shadow:var(--shadow)}.hero-copy{position:relative;z-index:2;max-width:750px}.eyebrow{color:#b67951;font-size:11px;font-weight:850;letter-spacing:2.2px}.eyebrow-dot{display:inline-block;height:7px;width:7px;border-radius:50%;background:var(--accent);margin-right:6px}.hero h1{font-size:clamp(27px,3.65vw,42px);line-height:1.3;margin:10px 0 8px;letter-spacing:.8px}.hero h1 em{font-weight:800;font-style:normal;color:#cb775d}.hero-copy>p{color:#936e5c;margin:0 0 18px;max-width:690px;font-size:14px}.search-wrap{position:relative;max-width:674px}.searchbar{background:#fff;display:flex;align-items:center;gap:11px;border:1px solid #edcfbd;border-radius:14px;padding:6px 6px 6px 16px;box-shadow:0 7px 26px #a7674430}.searchbar:focus-within{border-color:#e8a47e}.search-glyph{font-size:30px;color:#ab8268;line-height:1}.searchbar input{border:0;background:transparent;outline:0;width:100%;min-width:30px;flex:1;color:#47332b;font-size:15px}.searchbar input::-webkit-search-cancel-button{cursor:pointer}.primary-btn{background:linear-gradient(135deg,#e7a276,#db7669);border:0;border-radius:10px;color:white;padding:10px 17px;white-space:nowrap;font-weight:800;font-size:13px;box-shadow:0 5px 12px #c9846740}.primary-btn:hover{filter:brightness(.97)}.primary-btn.sm{padding:9px 13px}.popular{display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:#9f806e;font-size:12px;margin-top:13px}.popular button{background:#ffffff90;border:1px solid #efd8c5;border-radius:100px;color:#a76d55;padding:2px 10px;font-size:12px}.hero-deco{position:absolute;right:50px;top:30px;opacity:.88;pointer-events:none}.deco-disc{width:132px;height:132px;transform:rotate(14deg);background:#fff8ec99;border:1px solid #fffaf5;border-radius:28px;display:flex;align-items:center;justify-content:center;gap:7px;color:#dba77e;box-shadow:0 18px 25px #d9ad8122;font:700 16px Georgia,serif}.deco-disc span:first-child{font-size:30px}.deco-disc span:last-child{font-size:23px}.deco-leaf{position:absolute;width:55px;height:18px;border-radius:80% 0 80% 0;background:#e7ac8d80;transform:rotate(-28deg)}.leaf-one{left:-36px;top:64px}.leaf-two{right:-25px;bottom:5px;transform:rotate(45deg)}.hero-foot{position:absolute;left:36px;right:36px;bottom:13px;border-top:1px solid #e8d4c64d;padding-top:7px;display:flex;justify-content:space-between;color:#b28e79;font-size:11px}.suggestions{position:absolute;top:calc(100% + 7px);left:0;right:0;z-index:18;border-radius:14px;background:white;box-shadow:0 16px 35px #8b51333b;border:1px solid #efdccf;max-height:330px;overflow-y:auto;padding:6px}.suggestion{padding:10px 12px;display:flex;align-items:center;gap:8px;justify-content:space-between;width:100%;background:transparent;border:0;border-radius:9px;text-align:left}.suggestion:hover,.suggestion:focus-visible{background:#fff2e9}.suggestion b{font-size:15px}.suggestion small{font-size:12px;margin-left:8px;color:#8e796b}.suggestion .mini-tag{font-size:11px;color:#ae7f58;background:#fcf1e5;border-radius:6px;padding:1px 7px}.suggestion-empty{padding:16px 11px;color:#9b7c68;font-size:13px}.dashboard-top{display:flex;align-items:center;justify-content:space-between;padding:25px 3px 12px}.section-label{font-size:19px;font-weight:900}.label-squares{color:#dca170;font-size:22px;vertical-align:-1px;margin-right:5px}.label-caption{font-size:10px;letter-spacing:1.5px;margin-left:8px;color:#c3ac99;font-weight:700}.text-link{border:0;background:transparent;color:#b98563;font-size:12px;font-weight:700;padding:5px}.learn-layout{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(240px,.8fr);gap:20px;align-items:start}.learn-main{min-width:0}.learn-aside{display:flex;flex-direction:column;gap:18px}.card{background:var(--white);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}.word-detail{padding:26px 30px;margin-bottom:18px}.mini-label{color:#b28c76;font-size:11px;font-weight:800;letter-spacing:1.9px}.word-head{display:flex;justify-content:space-between;gap:12px;align-items:start}.word-english{font-family:Georgia,'Times New Roman',serif;font-size:clamp(32px,4.1vw,45px);font-weight:730;line-height:1.22;word-break:break-word;margin:8px 0 3px}.root-highlight{color:#e36c5d}.english-action{display:flex;gap:6px;flex-shrink:0;padding-top:7px}.round-btn{display:inline-grid;place-items:center;border:1px solid #f0dbc7;background:#fffaf4;border-radius:11px;width:39px;height:39px;font-size:17px;color:#9d6f54;flex-shrink:0}.round-btn:hover{background:#fff0e2}.round-btn.selected{color:#d68d3b;background:#fff4df;border-color:#ecc895}.meaning-line{font-weight:750;font-size:19px;color:#795239;margin-top:8px}.tag-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:14px}.tag{display:inline-block;background:#fff2e9;border:1px solid #f2decc;border-radius:6px;color:#a36c4c;font-weight:700;font-size:11px;padding:3px 8px;white-space:nowrap}.tag.red{background:#fff0ed;color:#cc6d64;border-color:#f4d2ca}.tag.gray{background:#f9f7f4;color:#847669;border-color:#ebe5de}.word-note{border-top:1px dashed #efdcd1;padding-top:13px;margin-top:18px;display:flex;align-items:center;gap:7px;color:#987d6c;font-size:12px;flex-wrap:wrap}.word-note b{color:#a37051}.side-actions{display:flex;gap:7px;margin-top:13px}.tiny-link{background:transparent;color:#b27250;border:1px solid #f1ded0;border-radius:9px;padding:5px 10px;font-size:12px;font-weight:700}.tiny-link:hover{background:#fff5ea}.lesson{padding:27px 30px;margin-bottom:18px}.section-topline{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px;gap:10px}.lesson-number{display:flex;align-items:baseline;gap:12px}.lesson-number span{font:italic 40px/1 Georgia,serif;color:#f0cdaa}.lesson-number h3{font-weight:850;font-size:19px;margin:0}.lesson-description{color:#aa8170;font-size:13px;margin-top:-6px;margin-bottom:18px}.lesson-description strong{color:#e46b60}.seg-chain{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px}.seg-card{min-width:84px;flex:1 1 95px;background:#fff7ef;border:1px solid #eecfb4;border-radius:13px;text-align:center;padding:10px 8px}.seg-card.main{background:#fff0e9;border-color:#edbda8}.seg-card label{display:block;color:#ad8a72;font-size:10px}.seg-card b{display:block;font:700 23px Georgia,serif;color:#ad654f;margin-top:2px}.seg-card.main b{color:#d95f56}.seg-card p{font-size:11px;line-height:1.4;color:#977767;margin:2px 0 0}.seg-plus{display:grid;place-items:center;color:#bd957a;font-size:20px;font-weight:300}.formula{margin-top:14px;background:#fff9f4;padding:13px;border-radius:11px;border:1px dashed #e8d2bf;color:#815e4a;font-size:13px}.origin{display:flex;gap:9px;align-items:start;margin:14px 0 0;color:#917463;font-size:13px}.origin b{color:#aa7554;flex-shrink:0}.memory-box{background:linear-gradient(110deg,#fff0e9,#fffaef);border-left:3px solid #edb08a;padding:11px 14px;margin-top:12px;font-size:13px;color:#8b5c41;border-radius:0 9px 9px 0}.root-family-nav{display:flex;gap:8px;overflow-x:auto;padding:2px 0 7px;scrollbar-width:thin}.family-word{border:1px solid #efd9c7;border-radius:12px;background:#fffaf6;min-width:140px;text-align:left;padding:8px 12px;flex:0 0 auto;color:#775743}.family-word.active{background:#fae7d6;border-color:#dcad80}.family-word b{display:block;font:700 17px Georgia,serif}.family-word small{display:block;font-size:11px;color:#ab8975;margin-top:3px;max-width:160px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.sense-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.sense-box{border:1px solid #eedccc;background:#fffcf8;border-radius:13px;padding:15px}.sense-head{display:flex;justify-content:space-between;gap:5px;align-items:baseline;border-bottom:1px solid #f0e4d6;padding-bottom:7px;margin-bottom:7px}.sense-head strong{color:#8b5438}.sense-head small{font-size:11px;color:#b39989;white-space:nowrap}.sense-note{font-size:11px;color:#ad8d7a;margin:0 0 9px}.sense-word-row{display:flex;align-items:center;gap:7px;padding:4px 0;min-width:0}.word-inline{border:0;background:none;font-family:Georgia,serif;font-weight:700;font-size:15px;color:#644432;padding:0;min-width:0;overflow-wrap:anywhere;text-align:left}.word-inline:hover{color:#e86f60}.sense-cn{margin-left:auto;text-align:right;color:#a18b7f;font-size:11px;max-width:85px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.speak-small{border:0;background:transparent;color:#b98861;font-size:16px;flex-shrink:0}.quote-card{background:linear-gradient(120deg,#fff7f0,#fffdf8);border:1px solid #edddcd;border-radius:13px;padding:17px 19px}.quote-card .quote-text{font-size:17px;font-weight:650;line-height:1.6;color:#704d3b;font-family:Georgia,serif;margin:8px 0}.quote-zh{font-size:13px;color:#9b7b67;margin-top:10px}.quote-acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}.no-copy{font-size:11px;color:#b49985;margin-top:10px}.side-root-badge{display:inline-flex;align-items:center;gap:6px;background:#fff1e4;color:#b17750;border-radius:99px;font-size:11px;font-weight:850;padding:4px 10px}.sidebar-card{padding:22px}.sidebar-card h3{font-family:Georgia,serif;font-size:30px;margin:13px 0 4px;color:#8b5f41}.aside-meaning{font-size:17px;font-weight:750;color:#a77453}.aside-source{font-size:12px;color:#a48b7c;margin:10px 0;border-bottom:1px solid #f0e3d8;padding-bottom:14px}.aside-progress{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#a68a79;margin:12px 0 6px}.progress-track{background:#f8e8db;height:7px;border-radius:99px;overflow:hidden}.progress-fill{background:linear-gradient(90deg,#eac097,#e88c73);height:100%;border-radius:99px;transition:width .25s}.aside-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:17px}.outline-btn{background:#fff9f3;color:#a4704b;border:1px solid #eac9ae;border-radius:10px;padding:9px;font-weight:750;font-size:12px}.outline-btn:hover{background:#ffefe1}.mini-promo{padding:23px;position:relative;overflow:hidden;background:linear-gradient(145deg,#fffaf4,#fff0e9)}.side-visual{display:flex;align-items:center;justify-content:space-between;color:#e7b58c;font:italic bold 36px Georgia,serif;letter-spacing:3px}.side-overline{font-size:10px;letter-spacing:1.5px;color:#bf936f;margin:10px 0}.mini-promo h3{font-size:19px;line-height:1.45;margin:5px 0 8px}.mini-promo p{font-size:12px;color:#987a68;margin-bottom:15px}.small-tip{display:flex;gap:9px;align-items:flex-start;padding:17px;background:#fffcf7}.tip-icon{color:#dfa96f;font-size:19px}.small-tip b{font-size:12px;color:#886348}.small-tip p{font-size:11px;margin:3px 0;color:#a79384}.premium-teaser{position:relative;overflow:hidden;border-radius:20px;background:linear-gradient(133deg,#fff6ec,#fff0e9);padding:28px 28px;border:1px solid #f0d9c5;margin-bottom:18px}.premium-teaser:before{content:'✦';position:absolute;font-size:150px;top:-70px;right:-10px;color:#f6dec8;opacity:.5}.premium-teaser .lock-badge{display:inline-block;background:#edc9a8;color:#754a2d;border-radius:6px;padding:2px 10px;font-size:11px;font-weight:850;position:relative}.premium-teaser h3{position:relative;font-size:23px;line-height:1.3;margin:12px 0 6px}.premium-teaser p{position:relative;color:#9c7a69;font-size:13px}.premium-teaser .primary-btn{position:relative;margin-top:12px}.preview-mock{opacity:.55;position:relative;margin:15px 0 0;filter:blur(.8px)}.preview-mock span{display:inline-block;padding:7px 12px;background:white;border:1px solid #eacdaf;border-radius:6px;color:#b27d55;font-weight:700;margin-right:5px;font-family:Georgia,serif}
@@ -337,51 +337,33 @@
 .historical-form-card small{font-size:11px;color:#99806d}
 @media(max-width:600px){.historical-forms-grid{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="./reader-v24.css" />
+<link rel="stylesheet" href="./reader-v25.css" />
 </head>
 <body>
   <div class="app-shell">
     <header class="header">
       <div class="header-main">
-        <button class="brand" data-action="navigate" data-view="learn" aria-label="回到词根学习首页">
-          <span class="brand-icon">r<span>·</span></span>
-          <span class="brand-name">词根实验室 <span class="brand-en">ROOT LAB</span></span>
-        </button>
+        <button class="brand" data-reader="home" aria-label="回到查词首页">词根实验室</button>
         <nav class="desktop-nav" aria-label="主要导航">
-          <button class="nav-link active" data-action="navigate" data-view="learn">查词精讲</button>
-          <button class="nav-link" data-action="navigate" data-view="roots">词根词库</button>
-          <button class="nav-link" data-action="navigate" data-view="review">记忆复习</button>
-          <button class="nav-link" data-action="navigate" data-view="profile">我的学习</button>
+          <button class="nav-link active" data-action="navigate" data-view="learn">查词</button>
+          <button class="nav-link" data-action="navigate" data-view="roots">词库</button>
+          <button class="nav-link" data-action="navigate" data-view="review">复习</button>
+          <button class="nav-link" data-action="navigate" data-view="profile">我的</button>
         </nav>
-        <div class="header-actions">
-          <span class="header-count" id="headerCount">78 组词根</span>
-        </div>
       </div>
     </header>
 
     <main class="main">
       <section class="view" id="learnView">
-        <section class="hero">
-          <div class="hero-copy">
-            <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR DAILY ENGLISH BOOST</div>
-            <h1>查一个词，<em>读一段来历。</em></h1>
-            <p>直接查词，或沿一条短路线，发现词与词之间的联系。</p>
-            <div class="search-wrap" id="searchWrap">
-              <div class="searchbar">
-                <span class="search-glyph" aria-hidden="true">⌕</span>
-                <input id="searchInput" type="search" autocomplete="off" spellcheck="false" aria-label="搜索英语单词、中文释义或词根" aria-controls="searchSuggestions" placeholder="输入英文、中文或词根，快速查询…" />
-                <button class="primary-btn search-button" data-action="search">查询 <span aria-hidden="true">→</span></button>
-              </div>
-              <div class="suggestions hidden" id="searchSuggestions" role="listbox"></div>
+        <section class="hero" aria-label="查词">
+          <div class="search-wrap" id="searchWrap">
+            <div class="searchbar">
+              <svg class="search-glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg>
+              <input id="searchInput" type="search" autocomplete="off" spellcheck="false" aria-label="输入英文、中文或词根" aria-controls="searchSuggestions" placeholder="输入英文、中文或词根" />
+              <button class="primary-btn search-button" data-action="search">查询</button>
             </div>
-            <div class="popular">试试：<button data-action="open-word" data-word="concession">concession</button><button data-action="open-word" data-word="process">process</button><button data-action="open-word" data-word="predict">predict</button><button data-action="open-word" data-word="construct">construct</button></div>
+            <div class="suggestions hidden" id="searchSuggestions" role="listbox"></div>
           </div>
-          <div class="hero-deco" aria-hidden="true"><div class="deco-disc"><span>A</span><span>→</span><span>A+</span></div><div class="deco-leaf leaf-one"></div><div class="deco-leaf leaf-two"></div></div>
-          <div class="hero-foot"><span>词根 × 构词 × 语义 × 应用</span><span id="heroCount">精选词汇学习库</span></div>
-        </section>
-
-        <section class="dashboard-top">
-          <div class="section-label"><span class="label-squares" aria-hidden="true">▥</span> 查词结果 <span class="label-caption">ROOT DEEP DIVE</span></div>
         </section>
         <div class="learn-layout" id="learnLayout">
           <div class="learn-main">
@@ -392,41 +374,30 @@
           </div>
           <aside class="learn-aside">
             <article id="rootAside" class="card sidebar-card"></article>
-            <article class="card mini-promo">
-              <div class="side-visual"><span>abc</span><span>✦</span></div>
-              <div class="side-overline">BUILD YOUR VOCABULARY</div>
-              <h3>不仅记住一个词<br/>更要看懂一整组词</h3>
-              <p>查词、收藏、例句、复习，一条路径形成记忆闭环。</p>
-              <button class="outline-btn" data-action="navigate" data-view="roots">浏览全部词根 <span aria-hidden="true">→</span></button>
-            </article>
-            <article class="card small-tip">
-              <span class="tip-icon">✳</span><div><b>词源说明</b><p>了解词根、前缀和后缀之间的关系，让单词更容易理解和记忆。考试等级为学习参考。</p></div>
-            </article>
           </aside>
         </div>
       </section>
 
       <section class="view hidden" id="rootsView">
-        <div class="page-intro"><div><div class="eyebrow">WORD ROOT LIBRARY</div><h2>词根词库<span class="title-flower">✳</span></h2><p>词根、前缀、后缀均可查找，点击词族中的任意单词继续学习。</p></div><div class="intro-number" id="rootCatalogNumber">78 <small>个词根主题</small></div></div>
+        <div class="page-intro"><div><h1>词库</h1></div><div class="intro-number" id="rootCatalogNumber">78 <small>个主题</small></div></div>
         <div class="root-library-toggle" id="rootLibraryToggle"><button class="active" type="button" data-action="root-set" data-set="curated">精选精讲</button><button type="button" data-action="root-set" data-set="reference">词根大全</button><button type="button" data-action="root-set" data-set="prefix">常见前缀</button><button type="button" data-action="root-set" data-set="suffix">常见后缀</button></div>
         <article id="selectedRootPanel" class="card selected-root-panel hidden"></article>
-        <div class="catalog-tools"><div class="filter-search"><span aria-hidden="true">⌕</span><input id="catalogSearch" type="search" placeholder="搜索词根、单词或中文释义" aria-label="筛选词根库" /></div><div class="filter-bar" id="levelFilters"></div></div>
+        <div class="catalog-tools"><div class="filter-search"><span aria-hidden="true">⌕</span><input id="catalogSearch" type="search" placeholder="搜索词根、单词或中文释义" aria-label="筛选词根库" /></div><details class="catalog-levels"><summary>学习范围</summary><div class="filter-bar" id="levelFilters"></div></details></div>
         <div id="rootsGrid" class="roots-grid"></div>
       </section>
 
       <section class="view hidden" id="reviewView">
-        <div class="page-intro"><div><div class="eyebrow">REMEMBER BETTER</div><h2>智能复习<span class="title-flower">✳</span></h2><p>根据回忆难度自适应安排复习，优先巩固容易遗忘的单词。</p></div><div class="intro-number" id="reviewCount">0 <small>复习计划单词</small></div></div>
+        <div class="page-intro"><div><h1>复习</h1></div><div class="intro-number" id="reviewCount">0 <small>复习计划单词</small></div></div>
         <div class="review-toggle"><button class="switch-button active" data-action="review-mode" data-mode="spaced">今日复习</button><button class="switch-button" data-action="review-mode" data-mode="quiz">主动测验</button><button class="switch-button" data-action="review-mode" data-mode="insights">学习统计</button></div>
         <div id="reviewBody"></div>
       </section>
 
       <section class="view hidden" id="profileView">
-        <div class="page-intro"><div><div class="eyebrow">YOUR LEARNING SPACE</div><h2>学习档案<span class="title-flower">✳</span></h2><p>掌握度、近两周学习趋势和复习记录只保存在本设备。</p></div></div>
+        <div class="page-intro"><div><h1>我的</h1></div></div>
         <div id="profileBody"></div>
       </section>
-      <footer class="footer"><span>ROOT LAB · 词根实验室</span><span>免费查词 · 无需会员 · 考试级别仅供参考 · <a href="./credits.html" target="_blank" rel="noopener noreferrer">数据与版权说明</a></span></footer>
     </main>
-    <nav class="mobile-nav" aria-label="手机底部导航"><button class="mobile-tab active" data-action="navigate" data-view="learn"><span aria-hidden="true">⌕</span>查词</button><button class="mobile-tab" data-action="navigate" data-view="roots"><span aria-hidden="true">▦</span>词库</button><button class="mobile-tab" data-action="navigate" data-view="review"><span aria-hidden="true">◷</span>复习</button><button class="mobile-tab" data-action="navigate" data-view="profile"><span aria-hidden="true">♡</span>我的</button></nav>
+<nav class="mobile-nav" aria-label="主要导航"><button class="mobile-tab active" data-action="navigate" data-view="learn" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><span>查词</span></button><button class="mobile-tab" data-action="navigate" data-view="roots"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 4h7l2 2 2-2h7v16h-7l-2 1-2-1H3V4Zm9 2v15"/></svg><span>词库</span></button><button class="mobile-tab" data-action="navigate" data-view="review"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><span>复习</span></button><button class="mobile-tab" data-action="navigate" data-view="profile"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>我的</span></button></nav>
   </div>
 
   <div class="toast hidden" role="status" id="toast"></div>
@@ -440,7 +411,7 @@
   <script src="./history-ui-v24.js"></script>
   <script src="./memory-engine-v2.js"></script>
   <script src="./reading-cards-v24.js"></script>
-  <script src="./reader-v24.js"></script>
+  <script src="./reader-v25.js"></script>
   <script>
 /* Root Lab · educational, offline-ready vocabulary explorer.
  * Data is independently authored. Example sentences are illustrative, not exam quotations.
@@ -549,7 +520,7 @@ function gradeSession(rating){if(!session||!session.revealed||!MEM.RATINGS.inclu
 }
 function endSession(){session=null;renderReview();}
 function navigate(to){if(!['learn','roots','review','profile'].includes(to))return;view=to;for(const name of ['learn','roots','review','profile']){$(name+'View').classList.toggle('hidden',name!==to);}
- document.querySelectorAll('[data-action="navigate"]').forEach(btn=>btn.classList.toggle('active',btn.dataset.view===to));
+ document.querySelectorAll('[data-action="navigate"]').forEach(btn=>{btn.classList.toggle('active',btn.dataset.view===to);if(btn.dataset.view===to)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current');});
  if(to==='learn')renderCurrent();if(to==='roots')renderCatalog();if(to==='review')renderReview();if(to==='profile')renderProfile();
  if(window.RootLabReader?.ready)window.RootLabReader.view(to);
  if(to!=='learn'||!window.RootLabReader?.ready)window.scrollTo({top:0,behavior:'smooth'});
@@ -558,8 +529,7 @@ function highlight(item){const forms=item.root.forms.map(x=>x.toLowerCase());ret
 function tags(item){const labels=(item.levels||[]).map(level=>`<span class="tag ${level==='考研'?'red':''}" title="考试等级是参考标注，并非官方大纲认证">${esc(level)}</span>`);if(!labels.length)labels.push('<span class="tag gray" title="暂无考试等级标注">拓展词</span>');return [...labels,`<span class="tag gray">${esc(item.pos)}</span>`].join('');}
 function rootCount(root){return root.groups.reduce((a,g)=>a+g.entries.length,0);}
 function renderCurrent(){renderWord();renderAside();renderLearningSections();renderLexicon();renderHeader();if(window.RootLabReader?.ready)window.RootLabReader.show(readerContext());}
-function renderHeader(){$('headerCount').textContent=`内置 ${LEX_MAP.size.toLocaleString('zh-CN')} 词 · ${ROOTS.length+REF_ROOTS.length} 词根`;$('heroCount').textContent=`${ROOTS.length} 组精选 · ${REF_ROOTS.length} 组词根/词缀 · ${LEX_MAP.size.toLocaleString('zh-CN')} 个离线词条`;
-}
+function renderHeader(){}
 
 function phoneticHint(phon){return String(phon||'').replace(/ә/g,'ə').replace(/ˊ/g,'ˈ').trim();}
 function rootLinkMarkup(word){const ids=[...(RELATED_WORD_ROOTS.get(String(word||'').toLowerCase())||[])];
@@ -730,10 +700,10 @@ function renderLearningSections(){
  const extraWords=(src?.extra||[]).map(word=>`<button class="family-word source-family-word" data-action="open-any" data-word="${esc(word)}"><b>${esc(word)}</b><small>${esc(short(LEX_MAP.get(word)?.[2]||''))}</small></button>`).join('');
  const senses=r.groups.map(group=>`<div class="sense-box"><div class="sense-head"><strong>${esc(group.title)}</strong><small>${group.entries.length} 词</small></div><p class="sense-note">${esc(group.note)}</p>${group.entries.map(e=>`<div class="sense-word-row"><button class="word-inline" data-action="open-word" data-word="${esc(e.word)}" data-root="${esc(r.id)}">${esc(e.word)}</button><span class="sense-cn" title="${esc(e.meaning)}">${esc(short(e.meaning))}</span><button class="speak-small" data-action="speak" data-text="${esc(e.word)}" aria-label="朗读 ${esc(e.word)}">♫</button></div>`).join('')}</div>`).join('');
  $('learningSections').innerHTML=`
- <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>01</span><h3>词根记词，公式拆解更高效</h3></div></div><div class="lesson-description"><strong>词根拆分单词，全面理解含义</strong>，看得懂也记得牢。</div><div class="seg-chain">${partMarkup}</div><div class="formula"><b>记忆公式：</b>${parts.map(x=>esc(x)).join(' + ')} → ${esc(w.word)} → <b>${esc(w.meaning)}</b></div><div class="origin"><b>${esc(wordNote.heading)}</b><span>${esc(wordNote.story)}</span></div>${window.RootLabHistoryUI.guide()}${window.RootLabHistoryUI.render(w.word,'curated')}${sourceNote}<div class="memory-box">✳ 记忆线索：${esc(wordNote.memory)}</div></section>
- <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>02</span><h3>词根串联，记住一组单词</h3></div><span class="tag">${rootCount(r)} 个关联词</span></div><div class="lesson-description"><strong>一个熟词拓展多个生词</strong>，先掌握规律，再认识整组。</div><div class="root-family-nav">${rail}</div>${extraWords?`<div class="root-family-extra"><div class="mini-label">SOURCE-BASED FAMILY · 参考词族延伸</div><div class="root-family-nav">${extraWords}</div><p class="source-small">点击拓展词，查看中文释义与更多词汇联想。</p></div>`:''}</section>
- <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>03</span><h3>释义分组，结合词义强化记忆</h3></div></div><div class="lesson-description"><strong>按照含义归纳分组</strong>，记住一个词时，也记住它和其他词的关系。</div><div class="sense-grid">${senses}</div></section>
- <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>04</span><h3>分级标签，例句巩固应用</h3></div></div><div class="lesson-description"><strong>搭配学习等级标签和原创双语例句</strong>，从理解走向使用。</div><div class="tag-row" style="margin:0 0 13px">${tags(w)}</div><div class="quote-card"><span class="mini-label">EXAMPLE SENTENCE · ${esc(w.word)}</span><div class="quote-text">${esc(w.example)}</div><div class="quote-zh">${esc(w.translation)}</div><div class="quote-acts"><button class="tiny-link" data-action="speak" data-text="${esc(w.example)}">♫ 听例句</button><button class="tiny-link" data-action="copy-example">复制双语例句</button></div></div><div class="no-copy">注：例句为独立编写的学习例句，并非历年考试真题；标签仅为非官方学习参考。</div></section>`;}
+ <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>01</span><h3>构词拆解</h3></div></div><div class="lesson-description"><strong>词根拆分单词，全面理解含义</strong>，看得懂也记得牢。</div><div class="seg-chain">${partMarkup}</div><div class="formula"><b>记忆公式：</b>${parts.map(x=>esc(x)).join(' + ')} → ${esc(w.word)} → <b>${esc(w.meaning)}</b></div><div class="origin"><b>${esc(wordNote.heading)}</b><span>${esc(wordNote.story)}</span></div>${window.RootLabHistoryUI.guide()}${window.RootLabHistoryUI.render(w.word,'curated')}${sourceNote}<div class="memory-box">✳ 记忆线索：${esc(wordNote.memory)}</div></section>
+ <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>02</span><h3>同根词</h3></div><span class="tag">${rootCount(r)} 个关联词</span></div><div class="lesson-description"><strong>一个熟词拓展多个生词</strong>，先掌握规律，再认识整组。</div><div class="root-family-nav">${rail}</div>${extraWords?`<div class="root-family-extra"><div class="mini-label">SOURCE-BASED FAMILY · 参考词族延伸</div><div class="root-family-nav">${extraWords}</div><p class="source-small">点击拓展词，查看中文释义与更多词汇联想。</p></div>`:''}</section>
+ <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>03</span><h3>词义分组</h3></div></div><div class="lesson-description"><strong>按照含义归纳分组</strong>，记住一个词时，也记住它和其他词的关系。</div><div class="sense-grid">${senses}</div></section>
+ <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>04</span><h3>例句与用法</h3></div></div><div class="lesson-description"><strong>搭配学习等级标签和原创双语例句</strong>，从理解走向使用。</div><div class="tag-row" style="margin:0 0 13px">${tags(w)}</div><div class="quote-card"><span class="mini-label">EXAMPLE SENTENCE · ${esc(w.word)}</span><div class="quote-text">${esc(w.example)}</div><div class="quote-zh">${esc(w.translation)}</div><div class="quote-acts"><button class="tiny-link" data-action="speak" data-text="${esc(w.example)}">♫ 听例句</button><button class="tiny-link" data-action="copy-example">复制双语例句</button></div></div><div class="no-copy">注：例句为独立编写的学习例句，并非历年考试真题；标签仅为非官方学习参考。</div></section>`;}
 function rememberSearch(name){name=String(name||'').trim().slice(0,70);if(!name)return;state.searchHistory=[name,...state.searchHistory.filter(x=>x.toLowerCase()!==name.toLowerCase())].slice(0,12);persist();}
 function jumpToResult(){if(window.RootLabReader?.ready){window.RootLabReader.afterOpen();return;}setTimeout(()=>{const el=$('learnLayout');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},80);}
 function setOnlineMode(on){document.body.classList.toggle('rd-online-view',!!on);if($('readerV24'))$('readerV24').hidden=!!on;$('learnLayout').classList.toggle('online-mode',!!on);$('onlineResult').classList.toggle('hidden',!on);if(on){$('learnLayout').classList.remove('dictionary-mode');$('lexiconDetail').classList.add('hidden');}}
@@ -834,13 +804,13 @@ function openRoot(id){
 let catalogPage=1;
 function renderCatalog(){
  const grid=$('rootsGrid'),q=rootQuery.trim().toLowerCase(),kind=rootCatalogSet;
- $('rootCatalogNumber').innerHTML=`${ROOTS.length+REF_ROOTS.length} <small>词根及词缀主题</small>`;
+ $('rootCatalogNumber').innerHTML=`${ROOTS.length+REF_ROOTS.length} <small>个主题</small>`;
  $('rootLibraryToggle').querySelectorAll('[data-set]').forEach(b=>b.classList.toggle('active',b.dataset.set===kind));
  $('levelFilters').innerHTML=levels.map(x=>`<button class="filter ${x===rootFilter?'active':''}" data-action="level-filter" data-level="${esc(x)}">${esc(x)}</button>`).join('');
  if(kind==='curated'){
   const visible=ROOTS.filter(r=>{const ws=r.groups.flatMap(g=>g.entries);return(rootFilter==='全部'||ws.some(w=>w.levels.includes(rootFilter)))&&(!q||[r.label,r.meaning,r.source,...ws.map(w=>w.word),...ws.map(w=>w.meaning)].join(' ').toLowerCase().includes(q));});
-  grid.innerHTML=visible.map(r=>{const ws=r.groups.flatMap(g=>g.entries);return `<article class="root-tile"><div class="tile-top"><span class="tile-no">精选精讲</span><span class="tile-count">${ws.length} 词 · ${r.groups.length} 分组</span></div>
-  <div class="tile-name">${esc(r.label)}</div><div class="tile-meaning">${esc(r.meaning)}</div><div class="tile-desc">${esc(r.mnemonic)}</div>
+  grid.innerHTML=visible.map(r=>{const ws=r.groups.flatMap(g=>g.entries);return `<article class="root-tile">
+  <div class="tile-name">${esc(r.label)}</div><div class="tile-meaning">${esc(r.meaning)}</div>
   <div class="tile-footer"><span class="tile-examples">${ws.slice(0,3).map(w=>esc(w.word)).join(' · ')}</span><button class="tile-go" data-action="open-root" data-root="${esc(r.id)}">探索词族 ↗</button></div></article>`;}).join('')||'<div class="empty-message">没有符合条件的词根。</div>';
  }else{
   const wanted=kind==='reference'?'root':kind;
@@ -849,8 +819,8 @@ function renderCatalog(){
     return lvl&&(!q||[r.key,r.cn,r.en,...ws,...ws.slice(0,12).flatMap(w=>translationParts(LEX_MAP.get(w)))].join(' ').toLowerCase().includes(q));
   });
   const page=visible.slice(0,catalogPage*48);
-  grid.innerHTML=page.map(r=>`<article class="root-tile"><div class="tile-top"><span class="tile-no">${r.kind==='prefix'?'前缀':r.kind==='suffix'?'后缀':'词根'}</span><span class="tile-count">${r.examples.length} 个例词</span></div>
-   <div class="tile-name">${esc(r.key)}</div><div class="tile-meaning">${esc(r.cn||r.en)}</div><div class="tile-desc">${esc(r.en||'')}</div>
+  grid.innerHTML=page.map(r=>`<article class="root-tile">
+   <div class="tile-name">${esc(r.key)}</div><div class="tile-meaning">${esc(r.cn||r.en)}</div>
    <div class="tile-footer"><span class="tile-examples">${r.examples.slice(0,3).map(esc).join(' · ')}</span><button class="tile-go" data-action="open-root" data-root="${esc(r.id)}">查看词族 ↗</button></div></article>`).join('')||'<div class="empty-message">没有符合条件的词根。</div>';
   if(visible.length>page.length)grid.innerHTML+=`<div class="catalog-load-more"><button class="outline-btn" data-action="catalog-more">再看 ${Math.min(48,visible.length-page.length)} 组 · 还剩 ${visible.length-page.length} 组</button></div>`;
  }
@@ -937,17 +907,18 @@ function renderSpaced(){
   const row=state.review[name]||{},source=item.rootId?`<span class="tag">词根：${esc(item.root.label)}</span>`:'<span class="tag gray">离线英汉词典</span>';
   const content=revealed?`<div class="recall-back"><div class="meaning-line">${esc(item.meaning)}</div><div class="tag-row">${source}${masteryMark(name)}</div>${item.example?`<blockquote class="recall-example">${esc(item.example)}<small>${esc(item.translation)}</small></blockquote>`:''}<div class="review-grade-choices"><button data-action="session-grade" data-grade="again" class="grade-btn again"><span>忘记</span><small>重新学习</small></button><button data-action="session-grade" data-grade="hard" class="grade-btn hard"><span>困难</span><small>短间隔</small></button><button data-action="session-grade" data-grade="good" class="grade-btn good"><span>记住</span><small>正常间隔</small></button><button data-action="session-grade" data-grade="easy" class="grade-btn easy"><span>轻松</span><small>延长间隔</small></button></div></div>`:
    '<div class="recall-hint"><p>先尝试在心里说出中文释义，再显示答案。不要提前翻看提示。</p><button class="primary-btn" data-action="session-reveal">显示答案 →</button></div>';
-  $('reviewBody').innerHTML=`<article class="card study-session"><div class="session-top"><span class="mini-label">ACTIVE RECALL · 主动回忆</span><span class="session-count">${session.index+1} / ${total}</span></div><div class="progress-track"><div class="progress-fill" style="width:${Math.round(100*session.index/total)}%"></div></div><h2 class="recall-word">${esc(name)}</h2><button class="tiny-link" data-action="speak" data-text="${esc(name)}">♫ 听发音</button>${content}<button class="text-link" data-action="end-session">退出本轮</button></article>`;return;
+  $('reviewBody').innerHTML=`<article class="card study-session"><div class="session-top"><span class="mini-label">回忆词义</span><span class="session-count">${session.index+1} / ${total}</span></div><div class="progress-track"><div class="progress-fill" style="width:${Math.round(100*session.index/total)}%"></div></div><h2 class="recall-word">${esc(name)}</h2><button class="tiny-link" data-action="speak" data-text="${esc(name)}">♫ 听发音</button>${content}<button class="text-link" data-action="end-session">退出本轮</button></article>`;return;
  }
- const summary=`<div class="stat-cards"><div class="stat-card"><strong>${pending.length}</strong><p>今日待复习</p></div><div class="stat-card"><strong>${day.reviews||0}</strong><p>今日已复习</p></div><div class="stat-card"><strong>${mistakes.length}</strong><p>待强化错词</p></div></div>`;
+ const summary='';
  const dueList=pending.length?pending.slice(0,16).map(name=>{const item=studyItem(name),p=state.review[name],badge=masteryMark(name);return `<div class="review-row"><div><b>${esc(name)}</b><p>${esc(short(item.meaning))} · ${badge}</p><span class="due-badge">到期 ${esc(p.due)}</span></div><div class="row-actions"><button class="outline-btn" data-action="open-any" data-word="${esc(name)}">查词 ↗</button></div></div>`;}).join(''):'<div class="empty-message">当前没有到期的单词。可以查词并加入复习计划，或通过错题强化继续巩固。</div>';
  const mistakeList=mistakes.slice(0,12).map(name=>`<button class="mistake-chip" data-action="open-any" data-word="${esc(name)}">${esc(name)} <small>错 ${Number(state.mistakeCounts[name])||1} 次</small></button>`).join('');
  const upcoming=entries.filter(({p})=>!due(p)).slice(0,12).map(({w,p})=>`<div class="upcoming-word"><button data-action="open-any" data-word="${esc(w)}">${esc(w)}</button><span>${esc(p.due)}</span></div>`).join('');
- $('reviewBody').innerHTML=summary+`<article class="card daily-panel"><div class="section-topline"><h3>今天的学习计划</h3><span class="tag">每日目标 ${goal} 次</span></div>
- <p class="daily-counter"><b>${day.reviews||0}</b><span> / ${goal} 次复习</span></p><div class="progress-track"><div class="progress-fill" style="width:${Math.min(100,Math.round(100*(day.reviews||0)/goal))}%"></div></div>
- <div class="daily-actions"><button class="primary-btn" data-action="session-start" data-scope="due" ${!pending.length?'disabled':''}>开始今日复习 · ${Math.min(pending.length,goal)} 词 →</button><button class="outline-btn" data-action="session-start" data-scope="mistakes" ${!mistakes.length?'disabled':''}>错题强化 · ${mistakes.length} 词</button></div><p class="source-small">系统会根据「忘记 / 困难 / 记住 / 轻松」调整复习间隔；算法借鉴 SM-2，并非 FSRS 预测模型。</p></article>
- <div class="review-layout"><article class="card profile-panel"><h3>今天到期的单词</h3><div class="review-list">${dueList}</div></article><aside class="card review-aside"><h3>高频错词 · 优先巩固</h3><p>连续两次反馈「记住」或「轻松」，错词会从待强化列表移出。</p><div class="mistake-chip-list">${mistakeList||'<span class="source-small">暂无活跃错词</span>'}</div></aside></div>
- ${upcoming?`<article class="card profile-panel"><h3>下一批复习日期</h3><div class="upcoming-grid">${upcoming}</div></article>`:''}`;
+ $('reviewBody').innerHTML=`<article class="daily-panel"><h2>${pending.length?'今天有 '+pending.length+' 个词待复习':entries.length?'今天暂时没有到期的词':'还没有复习计划'}</h2>
+ <p class="review-summary">${pending.length?'先回忆词义，再按难度安排下一次复习。':entries.length?'可以复习错词，或继续查词阅读。':'查词时在“更多释义与用法”中加入单词。'}${day.reviews?' 今日已完成 '+day.reviews+' 次复习。':''}</p>
+ <div class="daily-actions">${pending.length?`<button class="primary-btn" data-action="session-start" data-scope="due">开始复习 · ${Math.min(pending.length,goal)} 词 →</button>`:!entries.length?'<button class="primary-btn" data-reader="home">去查一个词 →</button>':''}${mistakes.length?`<button class="outline-btn" data-action="session-start" data-scope="mistakes">错词强化 · ${mistakes.length} 词</button>`:''}</div></article>
+ ${pending.length?`<details class="page-fold"><summary>今日到期 · ${pending.length} 词</summary><div class="review-list">${dueList}</div></details>`:''}
+ ${mistakes.length?`<details class="page-fold"><summary>待强化错词 · ${mistakes.length}</summary><div class="page-fold-body"><p>连续两次回忆正确后移出待强化列表。</p><div class="mistake-chip-list">${mistakeList}</div></div></details>`:''}
+ ${upcoming?`<details class="page-fold"><summary>后续复习安排</summary><div class="upcoming-grid">${upcoming}</div></details>`:''}`;
 }
 function csvField(v){return '"'+String(v??'').replace(/"/g,'""')+'"';}
 function downloadBlob(blob,filename){const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),6000);}
@@ -993,12 +964,9 @@ function loadBackup(f){if(!f)return;if(f.size>5000000){toast('备份文件过大
  }catch(e){toast('导入失败，请选择本工具导出的有效 JSON 文件');}finally{$('importFile').value='';}};
  reader.readAsText(f,'utf-8');
 }
-function renderProfile(){const totalPlans=Object.keys(state.review).filter(knownWord).length;
- const fav=state.favorites.map(studyItem).filter(Boolean);
- const favEntries=fav.length?`<div class="favorite-list">${fav.map(w=>`<div class="favorite-entry"><div class="favorite-info"><b>${esc(w.word)}</b><small>${esc(short(w.meaning))} · ${masteryMark(w.word)}</small></div><button class="icon-outline" data-action="speak" data-text="${esc(w.word)}">♫</button><button class="icon-outline" data-action="open-any" data-word="${esc(w.word)}">查词</button><button class="icon-outline" data-action="favorite" data-word="${esc(w.word)}">移除</button></div>`).join('')}</div>`:'<div class="empty-message">还没有收藏词汇。在查词页面点 ☆，建立你的个人词库。</div>';
- $('profileBody').innerHTML=renderAnalytics()+`<article class="card profile-panel"><h3>我的单词收藏 <span style="color:#c2a28b;font-size:13px">${fav.length} 个</span></h3>${favEntries}</article>
- <article class="card profile-panel"><h3>数据管理</h3><p class="profile-footnote">免费、无需注册。本机保存收藏、复习算法参数、每日统计和错题。清除浏览器数据会删除进度，建议定期导出 JSON 备份。在线查词与音标验证会向第三方词典发送所查英文单词。</p>
- <div class="account-tools"><button class="outline-btn" data-action="export-json">导出完整学习记录 JSON</button><button class="outline-btn" data-action="import-json">导入旧版/新版备份</button><button class="outline-btn" data-action="export-csv">导出收藏词表 CSV</button><button class="outline-btn" data-action="clear-data">清空记录</button></div></article>`;
+function renderProfile(){const fav=state.favorites.map(studyItem).filter(Boolean);
+ const items=fav.length?'<div class="favorite-list">'+fav.map(w=>'<div class="favorite-entry"><button class="favorite-info" data-action="open-any" data-word="'+esc(w.word)+'"><b>'+esc(w.word)+'</b><small>'+esc(short(w.meaning))+'</small></button><button class="icon-outline" data-action="favorite" data-word="'+esc(w.word)+'" aria-label="移除收藏 '+esc(w.word)+'">移除</button></div>').join('')+'</div>':'<p class="empty-message">暂无收藏。查词时点星标即可保存。</p>';
+ $('profileBody').innerHTML='<article class="profile-panel"><h2>收藏 <span class="profile-count">'+fav.length+'</span></h2>'+items+'</article><details class="page-fold"><summary>学习统计</summary><div class="page-fold-body">'+renderAnalytics()+'</div></details><details class="page-fold"><summary>备份与数据管理</summary><div class="page-fold-body"><p>清除浏览器数据前，建议导出备份。旧版学习记录仍可导入。</p><div class="account-tools"><button class="outline-btn" data-action="export-json">导出全部记录</button><button class="outline-btn" data-action="import-json">导入备份</button><button class="outline-btn" data-action="export-csv">导出收藏词表</button><button class="outline-btn" data-action="clear-data">清空记录</button></div></div></details>';
 }
 function copyExample(){const t=current.example+'\n'+current.translation;if(navigator.clipboard?.writeText){navigator.clipboard.writeText(t).then(()=>toast('双语例句已复制')).catch(()=>fallbackCopy(t));}else fallbackCopy(t);}
 function fallbackCopy(t){let a=document.createElement('textarea');a.value=t;document.body.append(a);a.select();try{document.execCommand('copy');toast('双语例句已复制');}catch(e){toast('无法自动复制，请手动选择复制');}a.remove();}
@@ -1088,9 +1056,9 @@ function readerContext(){const word=String(currentLexicon?.[0]||current.word).to
  const wrong=UNIQUE.find(x=>x.word!==word&&short(x.meaning)!==short(item?.meaning));
  return {word,curated:!!w,meaning:custom?.meaning|| (Array.isArray(row?.[2])?row[2][0]:short(item?.meaning)),phonetic:row?.[1]?'/ '+phoneticHint(row[1])+' /':'',example:example[0]||'',translation:example[1]||'',favorite:isFavorite(word),planned:!!state.review[word],notes:w?wordSpecificNotes(w):null,related:readerRelated(word),fullHtml:cloned.innerHTML,distractor:wrong?short(wrong.meaning):null};
 }
-async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const response=await fetch('./data/reader-v24-manifest.json',{signal});if(!response.ok)throw Error('Manifest unavailable');const meta=await response.json(),items=Object.values(meta.bundles||{}),cache=await caches.open('rootlab-offline-20261025-v240-reader');let done=0;
+async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const response=await fetch('./data/reader-v24-manifest.json',{signal});if(!response.ok)throw Error('Manifest unavailable');const meta=await response.json(),items=Object.values(meta.bundles||{}),cache=await caches.open('rootlab-offline-20261025-v250-minimal');let done=0;
  for(const item of items){if(signal.aborted)throw new DOMException('Cancelled','AbortError');const url=new URL(item.url,location.href).href;let saved=await cache.match(url);if(!saved){const r=await fetch(url,{signal});if(!r.ok)throw Error('Bundle unavailable');await cache.put(url,r.clone());}done++;onProgress(done,items.length);}}
-window.RootLabReaderBridge={downloadAll:downloadReaderOffline,current:readerContext,known:knownWord,open:openAnyWord,speak,favorite:toggleFavorite,plan:addPlan,toast,refresh:renderCurrent,hydrate:ensureReaderDetails,loaded:readerDetailsLoaded,related:readerRelated,search:directMatches};
+window.RootLabReaderBridge={navigate,home:()=>{setOnlineMode(false);navigate('learn');},downloadAll:downloadReaderOffline,current:readerContext,known:knownWord,open:openAnyWord,speak,favorite:toggleFavorite,plan:addPlan,toast,refresh:renderCurrent,hydrate:ensureReaderDetails,loaded:readerDetailsLoaded,related:readerRelated,search:directMatches};
 
 window.RootLabTest={get state(){return state;},get current(){return current;},get view(){return view;},get quiz(){return quiz;},get rootCount(){return ROOTS.length;},get wordCount(){return UNIQUE.length;},get entries(){return ALL.length;},get lexiconCount(){return LEX_MAP.size;},get referenceRootCount(){return REF_ROOTS.length;},get relatedRootCount(){return RELATED_WORD_ROOTS.size;},get searchHistory(){return state.searchHistory;},get quizType(){return quizType;},get session(){return session;},gradeWord:rateWord,startSession,renderAnalytics,openWord,navigate,matchWords,doSearch,lookupOnline};
 window.RootLabReader.init(window.RootLabReaderBridge);

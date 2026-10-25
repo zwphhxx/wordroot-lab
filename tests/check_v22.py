@@ -22,7 +22,7 @@ checks=[
  ('Source credit and sharealike noted','CC BY-SA 4.0' in (root/'history-ui-v24.js').read_text() and 'CC BY-SA 4.0' in (root/'credits.html').read_text()),
  ('Site loads new assets',all(z in h for z in ['word-history-v22.js','history-ui-v24.js'])),
  ('PWA includes new assets',all(z in cached for z in ['word-history-v22.js','history-ui-v24.js'])),
- ('New cache name','rootlab-offline-20261025-v240-reader' in cached),
+ ('New cache name','rootlab-offline-20261025-v250-minimal' in cached),
  ('Old record key unchanged','rootlab_standalone_demo_v3' in h),
  ('No member gates',not any(x in h for x in ['开通会员','会员精讲','data-action="open-member"']))
 ]

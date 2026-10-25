@@ -1,7 +1,20 @@
-const CACHE_NAME='rootlab-offline-20261025-v240-reader';
-const APP_SHELL=['./','./index.html','./lexicon-core-v24.js','./roots-v21.js','./word-history-v22.js','./word-etymology-curated-v23.js','./history-ui-v24.js','./memory-engine-v2.js','./reader-v24.js','./reader-v24.css','./reading-cards-v24.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./credits.html','./data/reader-v24-manifest.json'];
+/* V2.5 shell upgrade preserves previously downloaded dictionary bundles. */
+const CACHE_NAME='rootlab-offline-20261025-v250-minimal';
+const APP_SHELL=['./','./index.html','./lexicon-core-v24.js','./roots-v21.js','./word-history-v22.js','./word-etymology-curated-v23.js','./history-ui-v24.js','./memory-engine-v2.js','./reader-v25.js','./reader-v25.css','./reading-cards-v24.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./credits.html','./data/reader-v24-manifest.json'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(APP_SHELL)).then(()=>self.skipWaiting()));});
-self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('rootlab-offline-')&&k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
+self.addEventListener('activate',event=>{event.waitUntil((async()=>{
+ const next=await caches.open(CACHE_NAME);
+ for(const key of await caches.keys()){
+  if(!key.startsWith('rootlab-offline-')||key===CACHE_NAME)continue;
+  const old=await caches.open(key);
+  for(const req of await old.keys()){
+   const url=new URL(req.url);
+   if(url.origin===self.location.origin&&url.pathname.includes('/data/reader-v24/')&&!(await next.match(req))){const saved=await old.match(req);if(saved?.ok)await next.put(req,saved);}
+  }
+  await caches.delete(key);
+ }
+ await self.clients.claim();
+})());});
 self.addEventListener('fetch',event=>{
  const req=event.request,url=new URL(req.url);if(req.method!=='GET'||url.origin!==self.location.origin)return;
  const isIndex=req.mode==='navigate'&&(url.pathname.endsWith('/')||url.pathname.endsWith('/index.html'));
