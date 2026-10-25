@@ -1,0 +1,52 @@
+// V2.11 regression of existing learning behavior; expected asset names track this release.
+/* Isolated test Chrome profile only. */
+const connect=require('./cdp_helper.cjs');
+(async()=>{const c=await connect(Number(process.argv[2]||9266)),checks=[];
+const check=(name,ok,detail='')=>{checks.push({name,ok:!!ok});console.log((ok?'PASS ':'FAIL ')+name,JSON.stringify(detail));};
+const v=async(name,exp)=>{const r=await c.val(exp);check(name,r?.ok??r,r?.details??'');};
+const open=async word=>{await c.val(`RootLabReaderBridge.open(${JSON.stringify(word)})`);await c.wait(160);};
+await c.call('Network.emulateNetworkConditions',{offline:false,latency:0,downloadThroughput:-1,uploadThroughput:-1});await c.call('Network.setBypassServiceWorker',{bypass:true});
+await c.call('Page.navigate',{url:'http://localhost:8799/?word=banana&v210-test=setup'});await c.wait(700);
+await c.val(`(async()=>{for(const r of await navigator.serviceWorker.getRegistrations())await r.unregister();for(const k of await caches.keys())await caches.delete(k);localStorage.setItem('rootlab_visual_auto_v29','off');localStorage.removeItem('rootlab_meaning_topics_v210');localStorage.setItem('rootlab_standalone_demo_v3',JSON.stringify({favorites:['success'],review:{success:{step:3,due:'2031-02-03',last:'2026-10-25'}},mistakes:[]}));})()`);
+await c.call('Network.setBypassServiceWorker',{bypass:false});await c.call('Page.navigate',{url:'http://localhost:8799/?word=banana&v210-test=clean'});await c.wait(900);
+await v('V2.11 and entire dictionary retained',`document.querySelector('meta[name="application-version"]').content==='2.11.0'&&RootLabTest.lexiconCount===49426`);
+await v('Old favorites and exact review dates kept',`RootLabTest.state.favorites.includes('success')&&RootLabTest.state.review.success.due==='2031-02-03'`);
+await v('138 independent expanded Chinese definitions',`RootLabMeanings.count===138&&Object.keys(ROOTLAB_MEANING_NOTES).length===138`);
+await v('Banana explains shape peel flesh and taste',`(()=>{const t=document.querySelector('.lr-plain-explanation').innerText;return t.includes('细长')&&t.includes('果皮')&&t.includes('果肉')&&t.includes('甜味')})()`);
+await v('Banana plant sense also explained',`document.querySelector('.lr-meaning-additional')?.textContent.includes('草本植物')`);
+await v('Banana definition before its picture',`document.querySelector('.lr-plain-explanation').getBoundingClientRect().top<document.querySelector('.visual-learning').getBoundingClientRect().top`);
+await v('Banana has self-authored bilingual usage',`RootLabReader.context.learning.examples.some(x=>x.zh&&x.en==='She peeled a banana before eating it.')`);
+await v('122 sense-bound image entries retained',`RootLabEncyclopedia.stats.seeds===122`);
+await open('apple');await v('User requested exact phrase removed',`!document.querySelector('#readerV24').innerText.includes('它适合把整个词记下来')&&!document.querySelector('#readerV24').innerText.includes('硬拆')`);
+await open('andiron');await v('Andiron keeps visual decoder without lecture',`!!document.querySelector('.definition-decoder')&&!document.querySelector('#readerV24').innerText.includes('不必硬拆')`);
+for(const word of ['photograph','microphone','submarine','transport','microscope','photographer']){await open(word);await v(word+' has word-root breakdown and image',`RootLabReader.context.learning.route==='root'&&document.querySelectorAll('.lr-part').length>1&&!!document.querySelector('.visual-zoom img')&&!!document.querySelector('.lr-plain-explanation')`);}
+await open('microscopic');await v('Derived adjective has contextual image with label',`document.querySelector('.visual-figure figcaption').innerText.includes('形容词')&&document.querySelector('.lr-plain-explanation').innerText.includes('难以看清')`);
+await open('procedure');await v('Meaning and historical root story coexist',`document.querySelector('.lr-plain-explanation').innerText.includes('顺序')&&document.querySelector('#readerV24').innerText.includes('procedere')`);
+await v('No whole-word-only guard in explanation renderer',`Object.keys(ROOTLAB_MEANING_NOTES).every(word=>RootLabMeanings.render({word}).includes(ROOTLAB_MEANING_NOTES[word].text))`);
+await v('Uncovered words are not given fabricated definition',`RootLabMeanings.entry('teapot')===null&&RootLabMeanings.render({word:'teapot'})===''`);
+await v('English encyclopedia never presented as Chinese meaning',`RootLabMeanings.fromTopic('teapot',{title:'Teapot',language:'en',summary:'A vessel for making tea.',source:'https://en.wikipedia.org/wiki/Teapot'})===false`);
+await v('Chinese chosen topic is scoped and saved',`RootLabMeanings.fromTopic('teapot',{title:'茶壶',language:'zh',summary:'茶壶是用来泡茶并把茶汤倒入杯中的器具。',source:'https://zh.wikipedia.org/wiki/茶壶'})&&RootLabMeanings.render({word:'teapot'}).includes('所选主题：茶壶')`);
+await v('Selected topic does not overwrite editorial fruit sense',`(()=>{RootLabMeanings.fromTopic('apple',{title:'苹果公司',language:'zh',summary:'苹果公司是一家科技企业。',source:'https://zh.wikipedia.org/wiki/苹果公司'});return RootLabMeanings.entry('apple').label.includes('水果')})()`);
+await v('External content is escaped',`(()=>{RootLabMeanings.fromTopic('teapot',{title:'茶壶',language:'zh',summary:'茶壶 <img src=x onerror="window.bad=true">',source:'https://zh.wikipedia.org/wiki/茶壶'});const d=document.createElement('div');d.innerHTML=RootLabMeanings.render({word:'teapot'});return !d.querySelector('img')&&!window.bad})()`);
+await v('Untrusted source hosts rejected',`RootLabMeanings.fromTopic('teapot',{title:'茶壶',language:'zh',summary:'茶壶中文内容',source:'https://evil.example/x'})===false`);
+await c.val(`RootLabMeanings.clear();RootLabEncyclopedia.clear();RootLabEncyclopedia.setAuto(true);window.__originalFetch=fetch;window.__visualQueries=[];window.fetch=async(input,options)=>{const u=String(input);if(!u.includes('wikipedia.org/w/api.php'))return __originalFetch(input,options);__visualQueries.push(u);return new Response(JSON.stringify({query:{pages:[{ns:0,title:'Success',index:1,extract:'Accomplishment of an aim.',langlinks:[{lang:'zh',title:'成功'}]}]}}),{headers:{'Content-Type':'application/json'}});};RootLabReaderBridge.open('success')`);
+await c.val(`document.querySelector('.visual-learning').scrollIntoView({block:'center',behavior:'instant'})`);await c.wait(350);
+await v('Abstract root word offers explicit image-topic choice',`__visualQueries.length>0&&!!document.querySelector('.visual-candidate')&&!document.querySelector('.wiki-article')`);
+await c.val(`window.fetch=__originalFetch;RootLabEncyclopedia.setAuto(false)`);
+await open('banana');await c.val(`document.querySelector('#searchInput').focus()`);await c.call('Input.insertText',{text:'water'});await c.wait(190);await c.val(`document.querySelector('#searchSuggestions [data-word="water"]').click()`);
+await v('Search does not concatenate query and suggestion',`document.querySelector('#searchInput').value==='water'&&RootLabReader.context.word==='water'`);
+await v('No collapsed learning cards',`!document.querySelector('#readerV24 details')&&!document.querySelector('#readerV24 summary')`);
+await open('photograph');await c.val(`document.querySelector('.visual-zoom').scrollIntoView({block:'center',behavior:'instant'})`);await c.wait(150);await c.val(`document.querySelector('.visual-zoom').click()`);
+await v('New word-root images enlarge with source',`document.querySelector('#visualLightbox').open&&document.querySelector('#visualLightbox figcaption').innerText.includes('CC BY')`);
+await c.call('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});await c.call('Input.dispatchKeyEvent',{type:'keyUp',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});
+for(const width of [320,390,768,1365]){await c.call('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:width<800});await c.wait(70);const sizes=await c.val(`({vw:innerWidth,body:document.body.scrollWidth})`);check('Definitions and root photos fit '+width,sizes.vw===sizes.body,sizes);}
+await c.call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await open('banana');await c.val(`document.querySelector('.lr-plain-explanation').scrollIntoView({block:'center',behavior:'instant'})`);await c.shot('/tmp/rootlab-v210-final-banana.png');
+await open('photograph');await c.val(`document.querySelector('.lr-plain-explanation').scrollIntoView({block:'center',behavior:'instant'})`);await c.shot('/tmp/rootlab-v210-final-root.png');await c.val(`navigator.serviceWorker.ready`);await c.wait(180);
+await v('New root illustration cached locally',`(async()=>{const x=await caches.open('rootlab-offline-20261026-v2110-state');return !!(await x.match(new URL('./images/visual-v210/photograph.jpg',location.href).href))})()`);
+await c.call('Network.emulateNetworkConditions',{offline:true,latency:0,downloadThroughput:0,uploadThroughput:0});await c.call('Page.navigate',{url:'http://localhost:8799/?word=photograph&test=offline-v210'});await c.wait(900);
+await v('Offline Chinese definition root and photo intact',`!navigator.onLine&&RootLabReader.context.word==='photograph'&&document.querySelector('.lr-plain-explanation').textContent.includes('静态影像')&&document.querySelector('.visual-zoom img').naturalWidth>0`);
+await v('Learning dates survive the upgrade offline',`RootLabTest.state.review.success.due==='2031-02-03'`);
+await c.call('Network.emulateNetworkConditions',{offline:false,latency:0,downloadThroughput:-1,uploadThroughput:-1});
+check('No uncaught browser exceptions',c.events.filter(e=>e.method==='Runtime.exceptionThrown').length===0,c.events.filter(e=>e.method==='Runtime.exceptionThrown'));
+console.log('SUMMARY',checks.filter(x=>x.ok).length,'/',checks.length);c.close();if(checks.some(x=>!x.ok))process.exitCode=1;
+})().catch(e=>{console.error(e);process.exit(1)});
