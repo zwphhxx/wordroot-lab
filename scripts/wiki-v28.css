@@ -1,0 +1,30 @@
+/* The encyclopedia is a reading aid, not a second full-page search UI. */
+.definition-decoder{margin:24px 0 22px;padding-top:22px;border-top:1px solid #ebdacd}
+.definition-decoder h3,.wiki-enrichment h3{margin:0 0 12px;font-size:18px;line-height:1.45;color:#5d3d2c}
+.definition-original{font-family:Georgia,serif;font-size:17px;line-height:1.7;color:#80614c}
+.definition-chinese{margin:10px 0 16px;font-size:17px;line-height:1.85;color:#503a2b;font-weight:600}
+.definition-parts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.definition-parts>div{padding:10px 12px;background:#fcf4e9;border-radius:8px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.definition-parts b{font:700 17px Georgia,serif;color:#9d5736;overflow-wrap:anywhere}
+.definition-parts span{font-size:13px;line-height:1.7;color:#745943}
+.wiki-enrichment{border-top:1px solid #eddace;margin-top:24px;padding-top:20px}
+.wiki-open{font-weight:650}
+.wiki-note{font-size:12px!important;line-height:1.7!important;color:#947b66!important;margin:9px 0 12px!important}
+.wiki-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wiki-heading h3{margin:0}
+.wiki-heading>span{font-size:11px;color:#a18167}
+.wiki-figure{margin:17px 0 18px}
+.wiki-figure img{display:block;width:100%;max-width:680px;height:auto;max-height:440px;object-fit:contain;background:#fff;border-radius:8px}
+.wiki-figure img[hidden]{display:none!important}
+.wiki-figure figcaption{font-size:11px;color:#947b65;line-height:1.65;margin:10px 0 0}
+.wiki-figure figcaption p{font-size:13px!important;line-height:1.7!important;margin:0 0 6px!important;color:#76583f}
+.wiki-enrichment a{color:#a15b38;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#dcbc9f}
+.wiki-summary{font-size:16px;line-height:1.85;color:#684632;margin:12px 0 16px}
+.wiki-attribution{font-size:11px!important;line-height:1.7!important;color:#9a8271!important;margin:14px 0 8px!important}
+.wiki-candidates{display:flex;flex-direction:column;margin-top:10px}
+.wiki-candidates>button{border:0;border-top:1px solid #eadace;background:transparent;text-align:left;padding:16px 0;display:flex;flex-direction:column;gap:7px;min-width:0;color:#63432d;cursor:pointer}
+.wiki-candidates b{font:700 20px Georgia,serif}
+.wiki-candidates small{font-size:13px;line-height:1.65;color:#8d735d;overflow-wrap:anywhere}
+.wiki-candidates>button>span{font-size:12px;color:#a15c3a}
+.wiki-candidates button:focus-visible,.wiki-open:focus-visible{outline:2px solid #b1774c;outline-offset:4px}
+@media(max-width:480px){.definition-parts{grid-template-columns:1fr}.definition-chinese{font-size:16px}.wiki-summary{font-size:15px}.wiki-figure img{max-height:310px}.wiki-enrichment h3{font-size:17px}}

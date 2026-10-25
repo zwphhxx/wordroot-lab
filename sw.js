@@ -1,6 +1,6 @@
 /* V2.5 shell upgrade preserves previously downloaded dictionary bundles. */
-const CACHE_NAME='rootlab-offline-20261025-v270-universal';
-const APP_SHELL=['./','./index.html','./lexicon-core-v24.js','./roots-v21.js','./word-history-v22.js','./word-etymology-curated-v23.js','./history-ui-v24.js','./memory-engine-v2.js','./reader-v27.js','./whole-word-v27.js','./search-control-v27.js','./basic-learning-v261.js','./reader-v27.css','./reading-cards-v24.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./credits.html','./data/reader-v24-manifest.json','./data/usage-v27-manifest.json'];
+const CACHE_NAME='rootlab-offline-20261025-v280-encyclopedia';
+const APP_SHELL=['./','./index.html','./lexicon-core-v24.js','./roots-v21.js','./word-history-v22.js','./word-etymology-curated-v23.js','./history-ui-v24.js','./memory-engine-v2.js','./reader-v28.js','./whole-word-v27.js','./search-control-v27.js','./basic-learning-v261.js','./plain-objects-v28.js','./encyclopedia-v28.js','./images/andiron-in-use.png','./reader-v28.css','./reading-cards-v24.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./credits.html','./data/reader-v24-manifest.json','./data/usage-v27-manifest.json'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(APP_SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{
  const next=await caches.open(CACHE_NAME);
