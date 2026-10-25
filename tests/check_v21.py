@@ -8,7 +8,7 @@ meta=json.loads(re.search(r'window.ROOTLAB_ROOT_PROVENANCE=(\{.*\});',(root/'roo
 wn=json.loads(re.search(r'window.ROOTLAB_WORDNET=(\[.*\]);',(root/'wordnet-v21.js').read_text(encoding='utf8'),re.S).group(1))
 words={r[0]:r for r in lex}
 checks=[
- ('index and scripts',all(k in s for k in ('lexicon-v21.js','roots-v21.js','wordnet-v21.js','memory-engine-v2.js'))),
+ ('index and scripts',all(k in s for k in ('lexicon-core-v24.js','roots-v21.js','reader-v24.js','memory-engine-v2.js'))),
  ('49k dictionary',len(lex)==49426 and len(words)==len(lex)),
  ('dictionary field structure',all(len(row)==8 and isinstance(row[2],list) and isinstance(row[6],list) for row in lex)),
  ('available English examples or synonyms',len(wn)==19323),
@@ -23,8 +23,8 @@ checks=[
  ('copyright attribution','Princeton WordNet' in (root/'credits.html').read_text() and 'WordNet 3.0 Copyright 2006' in (root/'credits.html').read_text()),
  ('MIT notice','MIT License' in (root/'THIRD_PARTY_NOTICES.md').read_text()),
  ('no source repository link in consumer pages','href="https://github.com' not in s),
- ('PWA refreshed','rootlab-offline-20261025-v230-etymology' in (root/'sw.js').read_text()),
- ('offline assets',all(x in (root/'sw.js').read_text() for x in ['lexicon-v21.js','roots-v21.js','wordnet-v21.js'])),
+ ('PWA refreshed','rootlab-offline-20261025-v240-reader' in (root/'sw.js').read_text()),
+ ('offline assets',all(x in (root/'sw.js').read_text() for x in ['lexicon-core-v24.js','roots-v21.js','reader-v24.js'])),
  ('files present',all((root/n).is_file() for n in ['index.html','lexicon-v21.js','roots-v21.js','wordnet-v21.js','memory-engine-v2.js','sw.js','manifest.webmanifest','credits.html']))
 ]
 for label,p in checks:print(('PASS ' if p else 'FAIL ')+label)

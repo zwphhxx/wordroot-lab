@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "words": 49426,
+  "seedWords": 346,
+  "bundles": {
+    "a": {
+      "url": "./data/reader-v24/a.json",
+      "bytes": 680479,
+      "sha256": "f2db08e3945d84d7ff22d74fa2c40c45f37d2e62d5e04467a838cf8160aea916",
+      "words": 3079
+    },
+    "b": {
+      "url": "./data/reader-v24/b.json",
+      "bytes": 604249,
+      "sha256": "e340777f73bd615c84d9620f8a6aa4e160f4dc3bb140456ed7173bbd986e8e75",
+      "words": 2935
+    },
+    "c": {
+      "url": "./data/reader-v24/c.json",
+      "bytes": 1051503,
+      "sha256": "aa45f0b8e8a00308c58d235dd32eb9e3d56661b43001da332d8c88043e1bf680",
+      "words": 4581
+    },
+    "d": {
+      "url": "./data/reader-v24/d.json",
+      "bytes": 669785,
+      "sha256": "cb55b05784ffdaf012edd44fb764d22a5c6e7bd3c580a208591b8be721a0ceba",
+      "words": 2938
+    },
+    "e": {
+      "url": "./data/reader-v24/e.json",
+      "bytes": 469947,
+      "sha256": "0addede59d63909daca801bbc6a06209c5a75fd7341d96850e5edb3925425791",
+      "words": 2057
+    },
+    "f": {
+      "url": "./data/reader-v24/f.json",
+      "bytes": 465698,
+      "sha256": "77caa380e3a6c508955dfa12e6321ceacf2cc0466ac13025a5d76d793456c9dc",
+      "words": 2001
+    },
+    "g": {
+      "url": "./data/reader-v24/g.json",
+      "bytes": 346796,
+      "sha256": "615b9550e0e8fec83b417102d33d231aee4792f97a25eec5d9366d21b6eabb75",
+      "words": 1673
+    },
+    "h": {
+      "url": "./data/reader-v24/h.json",
+      "bytes": 407095,
+      "sha256": "30d7555b1505207b31f930a3c7b062bfeede481e3090103f3e0e8689b8f27c59",
+      "words": 2013
+    },
+    "i": {
+      "url": "./data/reader-v24/i.json",
+      "bytes": 506337,
+      "sha256": "7d8bf419ab2ea19ff8bae01bf702d8b32c93cdbde12c11106585ded58dc602a5",
+      "words": 2100
+    },
+    "j": {
+      "url": "./data/reader-v24/j.json",
+      "bytes": 102669,
+      "sha256": "31a3ba1c1698db973fd6e9ce8e2b75ed2d77eb2f39b20166e5be62aeb1dfa436",
+      "words": 522
+    },
+    "k": {
+      "url": "./data/reader-v24/k.json",
+      "bytes": 87309,
+      "sha256": "fa32a3d8cb45418f28f8fb8936fc2275a71cc0b45a14bd9910b480638a834baa",
+      "words": 517
+    },
+    "l": {
+      "url": "./data/reader-v24/l.json",
+      "bytes": 344373,
+      "sha256": "fb567cb5534f9c862a4833078ee47b6e87c7a4d6c5b958651786539c3cc43a5e",
+      "words": 1661
+    },
+    "m": {
+      "url": "./data/reader-v24/m.json",
+      "bytes": 607927,
+      "sha256": "670e17bd576bb9d217111b3b6d0a528dd6010858c7003e835e784ae8e35ce545",
+      "words": 3005
+    },
+    "n": {
+      "url": "./data/reader-v24/n.json",
+      "bytes": 222635,
+      "sha256": "d902b04d28063641112aa5d86cdd58ffeca34ae91ef2d292a9562187232fc5c8",
+      "words": 1105
+    },
+    "o": {
+      "url": "./data/reader-v24/o.json",
+      "bytes": 269140,
+      "sha256": "b04a0568bb8ad767dc852527e67bc16e6c6ab84c7824085c43260ae6da43f150",
+      "words": 1194
+    },
+    "p": {
+      "url": "./data/reader-v24/p.json",
+      "bytes": 891694,
+      "sha256": "e09c7ff6e985de5b624b1884f763df782327a279b8da5d4410b208f097631361",
+      "words": 3784
+    },
+    "q": {
+      "url": "./data/reader-v24/q.json",
+      "bytes": 48344,
+      "sha256": "10583601f06b5459b9a988eeb90de9856a1243a7ce6b52338518574e322a96c4",
+      "words": 205
+    },
+    "r": {
+      "url": "./data/reader-v24/r.json",
+      "bytes": 617428,
+      "sha256": "fb3a79ce1720a9d20a620eecc7bfa91277f9d81d90ae0103828a59a9c8c82d52",
+      "words": 2582
+    },
+    "s": {
+      "url": "./data/reader-v24/s.json",
+      "bytes": 1235820,
+      "sha256": "7efe4303b51031d4a28bf4833f34a6917977baf69a4424da16a87e1577567eec",
+      "words": 5223
+    },
+    "t": {
+      "url": "./data/reader-v24/t.json",
+      "bytes": 545020,
+      "sha256": "45247d87b7f8dd1a573e40c48728e8a4f2be80dcc13c22615d0aec2f0e72af6b",
+      "words": 2398
+    },
+    "u": {
+      "url": "./data/reader-v24/u.json",
+      "bytes": 324123,
+      "sha256": "a37351596c201703f3d0db4336ef48f7c1b403bf84bcc55e4c10c5e88507967b",
+      "words": 1454
+    },
+    "v": {
+      "url": "./data/reader-v24/v.json",
+      "bytes": 173599,
+      "sha256": "90f931fd9df312b78117cd399e3f53924d26313ee1038356c52304909cb06135",
+      "words": 780
+    },
+    "w": {
+      "url": "./data/reader-v24/w.json",
+      "bytes": 273084,
+      "sha256": "ab50f0fb31a012386cf3c046fddc913c0d04e89364b82d2638cbc6f8cc34df17",
+      "words": 1309
+    },
+    "x": {
+      "url": "./data/reader-v24/x.json",
+      "bytes": 5686,
+      "sha256": "c697a5f7f1ecf10afba83edb3955dfa1d705a6a05b9483455c01b7a2133466c9",
+      "words": 35
+    },
+    "y": {
+      "url": "./data/reader-v24/y.json",
+      "bytes": 30631,
+      "sha256": "4a8e3f06f0c3d9f3a11c1da050655781016765628c36c0fe53eee12328731559",
+      "words": 161
+    },
+    "z": {
+      "url": "./data/reader-v24/z.json",
+      "bytes": 22623,
+      "sha256": "1f543b4951336929e01f24e29fc43cd308ab5d7862f9e887783a7d4cfaeebc9b",
+      "words": 114
+    }
+  },
+  "coreBytes": 4551348,
+  "oldInitialDataBytes": 11002746
+}
