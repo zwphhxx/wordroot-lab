@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#fffdfa" />
-  <meta name="application-version" content="2.8.0" />
+  <meta name="application-version" content="2.9.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="./manifest.webmanifest" />
@@ -337,7 +337,7 @@
 .historical-form-card small{font-size:11px;color:#99806d}
 @media(max-width:600px){.historical-forms-grid{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="./reader-v28.css" />
+<link rel="stylesheet" href="./reader-v29.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -413,10 +413,11 @@
   <script src="./reading-cards-v24.js"></script>
   <script src="./basic-learning-v261.js"></script>
   <script src="./plain-objects-v28.js"></script>
-  <script src="./encyclopedia-v28.js"></script>
+  <script src="./visual-seeds-v29.js"></script>
+  <script src="./encyclopedia-v29.js"></script>
   <script src="./whole-word-v27.js"></script>
 <script src="./search-control-v27.js"></script>
-<script src="./reader-v28.js"></script>
+<script src="./reader-v29.js"></script>
   <script>
 /* Root Lab · educational, offline-ready vocabulary explorer.
  * Data is independently authored. Example sentences are illustrative, not exam quotations.
@@ -1111,7 +1112,7 @@ function readerContext(){const word=String(currentLexicon?.[0]||current.word).to
  return {word,curated:!!w,meaning:custom?.meaning|| (Array.isArray(row?.[2])?row[2][0]:short(item?.meaning)),phonetic:window.ROOTLAB_BASIC_CARDS?.[word]?.phonetic||(row?.[1]?'/ '+phoneticHint(row[1])+' /':''),example:example[0]||'',translation:example[1]||'',favorite:isFavorite(word),planned:!!state.review[word],notes:w?wordSpecificNotes(w):null,related:readerRelated(word),learning:readerCardData(word),fullHtml:cloned.innerHTML,distractor:wrong?short(wrong.meaning):null};
 }
 async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const metas=await Promise.all(['./data/reader-v24-manifest.json','./data/usage-v27-manifest.json'].map(async url=>{const r=await fetch(url,{signal});if(!r.ok)throw Error('Manifest unavailable');return r.json();}));
- const items=metas.flatMap(m=>Object.values(m.bundles||{})),cache=await caches.open('rootlab-offline-20261025-v270-universal');let done=0;
+ const pictures=Object.values(window.ROOTLAB_VISUAL_SEEDS||{}).map(r=>({url:r.image.src}));const items=[...metas.flatMap(m=>Object.values(m.bundles||{})),...pictures],cache=await caches.open('rootlab-offline-20261025-v290-visual');let done=0;
  for(const item of items){if(signal.aborted)throw new DOMException('Cancelled','AbortError');const url=new URL(item.url,location.href).href;let saved=await cache.match(url);if(!saved){const r=await fetch(url,{signal});if(!r.ok)throw Error('Bundle unavailable');await cache.put(url,r.clone());}onProgress(++done,items.length);}}
 
 window.RootLabReaderBridge={navigate,home:()=>{setOnlineMode(false);navigate('learn');},downloadAll:downloadReaderOffline,current:readerContext,known:knownWord,open:openAnyWord,speak,favorite:toggleFavorite,plan:addPlan,toast,refresh:renderCurrent,hydrate:ensureReaderDetails,loaded:readerDetailsLoaded,related:readerRelated,search:directMatches};

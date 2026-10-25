@@ -99,3 +99,9 @@ The andiron Chinese summary is an adaptation of Wikipedia contributors’ Andiro
 Image: Andirons (PSF).png, Pearson Scott Foresman, Wikimedia Commons; public domain per the file description: https://commons.wikimedia.org/wiki/File:Andirons_(PSF).png . Local image is a resized version.
 
 On-demand Wikipedia extracts retain source URLs and CC BY-SA 4.0 attribution. Commons images are only displayed with verified public-domain or CC0 / CC BY / CC BY-SA metadata and author/license links.
+
+## V2.9 word-sense visual library
+
+85 local thumbnail files are sourced from Wikimedia Commons. Each image record in visual-seeds-v29.js records the original file page, creator, exact license name and license link where applicable. The word-to-sense captions are independently written learning notes. Thumbnail images are shown at reduced sizes without other edits.
+
+All images and metadata were checked against the per-file Commons records; unsupported license variants were excluded from the packaged set rather than assigned another license. Additional live candidates remain user-selectable topics, not automatic lexical conclusions.

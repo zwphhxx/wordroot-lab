@@ -1,0 +1,39 @@
+{
+  "requested": 92,
+  "localPictures": 85,
+  "concreteCandidateWords": 9774,
+  "imageBytes": 5489750,
+  "dictionaryEntries": 49426,
+  "missing": [
+    [
+      "elephant",
+      "unsupported-license:GFDL 1.2"
+    ],
+    [
+      "giraffe",
+      "unsupported-license:GFDL 1.2"
+    ],
+    [
+      "bear",
+      "unsupported-license:FAL"
+    ],
+    [
+      "fork",
+      "unsupported-license:CC BY-SA 3.0 us"
+    ],
+    [
+      "guitar",
+      "unsupported-license:CC BY-SA 2.0 de"
+    ],
+    [
+      "airplane",
+      "unsupported-license:GFDL"
+    ],
+    [
+      "ship",
+      "unsupported-license:CC BY-SA 3.0 de"
+    ]
+  ],
+  "license": "Per-image Commons license preserved",
+  "policy": "Only reviewed word-sense mapping automatically commits a picture; other matches remain topic choices."
+}

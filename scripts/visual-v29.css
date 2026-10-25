@@ -1,0 +1,25 @@
+/* A picture is part of the lesson, not a decorative banner. */
+#readerV24 .visual-learning{margin:18px 0 24px;padding:0;border:0;min-width:0}
+.visual-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 12px;flex-wrap:wrap}.visual-heading h3{font-size:18px;margin:0!important}.visual-heading>span{font-size:13px;color:#8d624b}
+#readerV24 .visual-figure{margin:0;background:#fffaf4;border:1px solid #efdfd1;border-radius:16px;overflow:hidden}
+.visual-zoom{display:block;position:relative;border:0;padding:12px;margin:0;width:100%;background:#fff;cursor:zoom-in;color:#8a654b}
+#readerV24 .visual-zoom img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;border-radius:8px;margin:0}
+.visual-zoom>span{position:absolute;right:16px;bottom:15px;padding:5px 9px;font-size:11px;background:rgba(255,255,255,.94);border:1px solid #ead3c1;border-radius:99px}
+#readerV24 .visual-figure figcaption{padding:13px 16px;margin:0;font-size:14px;line-height:1.7}.visual-figure figcaption p{margin:0 0 8px!important}.visual-figure figcaption small{display:block;font-size:10px;line-height:1.6;color:#9c8777;overflow-wrap:anywhere}.visual-figure figcaption small a{font-size:inherit}
+.visual-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:12px 0 0}.visual-links button{min-height:38px;font-size:13px!important}
+.visual-compact{padding:14px 16px;background:#fff8f0;border:1px solid #f1dfcd;border-radius:12px}.visual-compact h3{margin:0 0 7px!important;font-size:16px}.visual-compact .wiki-note{margin:0 0 8px;font-size:12px}.visual-compact button{font-size:13px!important}
+.visual-loading{padding:18px;background:#fff8f0;border-radius:12px;font-size:13px;color:#a1765c;line-height:1.7}
+#readerV24 .visual-candidates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0}
+#readerV24 .visual-candidate{min-width:0;border:1px solid #e9d5c6;border-radius:13px;background:#fff;overflow:hidden;display:flex;flex-direction:column}
+#readerV24 .visual-candidate>button{display:flex;flex-direction:column;gap:7px;text-align:left;padding:11px;border:0;border-radius:0;background:#fff;width:100%;min-width:0;height:100%;color:#714f3b}
+#readerV24 .visual-candidate img{display:block;width:100%;height:148px;object-fit:contain;background:#fffaf5;border-radius:8px;margin-bottom:3px}
+#readerV24 .visual-candidate b{font-size:16px;overflow-wrap:anywhere}.visual-candidate small{font-size:11px!important;line-height:1.6;overflow-wrap:anywhere}.visual-candidate button>span:last-child{font-size:12px;color:#a36443;margin-top:auto;padding-top:4px}
+.visual-no-thumbnail{display:flex;align-items:center;justify-content:center;min-height:85px;color:#a99280;font-size:12px;background:#fff9f3;border-radius:8px;width:100%}
+.visual-thumb-credit{padding:7px 10px;border-top:1px solid #f1e5db;font-size:9px;color:#927767;line-height:1.55;overflow-wrap:anywhere}.visual-thumb-credit a{font-size:inherit!important}
+.visual-preference{margin:12px 0;padding:14px;border:1px solid #e8d8ca;border-radius:10px}.visual-preference>p{font-size:12px!important;line-height:1.65;color:#957d6b;margin:9px 0 0}.visual-preference button{font-size:13px;min-height:42px}
+.visual-lightbox{border:0;border-radius:14px;padding:44px 18px 18px;max-width:min(1000px,94vw);max-height:92dvh;background:#fffaf6;color:#604430;box-shadow:0 15px 70px #0004;overflow:auto}.visual-lightbox::backdrop{background:rgba(32,24,18,.72)}
+.visual-close{position:absolute;right:9px;top:8px;width:38px;height:38px;border:1px solid #ead5c5;border-radius:50%;background:white;font-size:27px;line-height:1;cursor:pointer;color:#6c503b}.visual-large-image figure{margin:0}.visual-large-image img{display:block;max-width:100%;width:auto;height:auto;max-height:67dvh;object-fit:contain;margin:auto}.visual-large-image figcaption{font-size:13px;line-height:1.65;margin:14px 0 0}.visual-large-image figcaption small{font-size:10px}.visual-lightbox a{color:#9b6040}
+.visual-zoom:focus-visible,.visual-candidate button:focus-visible{outline:3px solid #b77c55;outline-offset:-3px}
+.image-unavailable .visual-zoom{display:none}.wiki-image-error{font-size:12px;color:#937869;padding:12px}.image-unavailable{min-height:0!important}
+@media(max-width:600px){#readerV24 .visual-zoom img{max-height:255px}#readerV24 .visual-figure figcaption{padding:12px 13px;font-size:13px}#readerV24 .visual-candidates{gap:8px}#readerV24 .visual-candidate img{height:112px}#readerV24 .visual-candidate b{font-size:14px}.visual-heading h3{font-size:17px}.visual-heading>span{font-size:12px}.visual-lightbox{padding:44px 10px 12px;max-width:94vw}}
+@media(prefers-reduced-motion:reduce){.visual-learning *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
