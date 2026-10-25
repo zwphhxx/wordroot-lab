@@ -1,5 +1,5 @@
-const CACHE_NAME='rootlab-offline-20261025-v11';
-const APP_SHELL=['./','./index.html','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
+const CACHE_NAME='rootlab-offline-20261025-v12';
+const APP_SHELL=['./','./index.html','./lexicon-v12.js','./roots-v12.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(APP_SHELL)).then(()=>self.skipWaiting()));
 });
