@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "provenance": "ECDICT (MIT) + Princeton WordNet 3.0",
+  "coverage": {
+    "total": 49426,
+    "phrases": 7734,
+    "relations": 24120,
+    "phrasePairs": 17148,
+    "union": 25904,
+    "editorialWords": 20
+  },
+  "bundles": {
+    "a": {
+      "url": "./data/usage-v27/a.json",
+      "bytes": 470122,
+      "sha256": "3725e88ba67d468261d9acc60dcfa1828116901008e868516b1f421f364dd22e"
+    },
+    "b": {
+      "url": "./data/usage-v27/b.json",
+      "bytes": 482076,
+      "sha256": "86577a8939c1880cb20b5ca9b5b58f44c37804251da8ed69eb5cf934f665c962"
+    },
+    "c": {
+      "url": "./data/usage-v27/c.json",
+      "bytes": 827611,
+      "sha256": "1c6d183064802b007ff57637e52fe88e41cd1c5961674c7d8bafc00c66380f9e"
+    },
+    "d": {
+      "url": "./data/usage-v27/d.json",
+      "bytes": 447452,
+      "sha256": "4c14271ba2cfc82f97133bbed613ce5be2a510adf1bc8eb819c8de94565a3b1d"
+    },
+    "e": {
+      "url": "./data/usage-v27/e.json",
+      "bytes": 311887,
+      "sha256": "7eb2fa67d190b804cd7937ccd0d9b89364ef7379c2c065125b906ef9c0719640"
+    },
+    "f": {
+      "url": "./data/usage-v27/f.json",
+      "bytes": 350412,
+      "sha256": "c1f5d22f20e4703063fb62ee406ae4eb81791255e11b7ddf0a6e49fc85d72b4f"
+    },
+    "g": {
+      "url": "./data/usage-v27/g.json",
+      "bytes": 260403,
+      "sha256": "a2f6cf147aae7acdd39a4c6ef90174fef4dad4db5f252f7ccd3f55058d68dbb5"
+    },
+    "h": {
+      "url": "./data/usage-v27/h.json",
+      "bytes": 282652,
+      "sha256": "e2ddb263aa0fd840a9532e81371522e66b0c9ced903507ee8eb6379d6211c75c"
+    },
+    "i": {
+      "url": "./data/usage-v27/i.json",
+      "bytes": 267649,
+      "sha256": "f7c7fc00ead94df732259f3c3eb318c843a417ba315c57c5c4357cc2d171e2b7"
+    },
+    "j": {
+      "url": "./data/usage-v27/j.json",
+      "bytes": 67765,
+      "sha256": "bbdaf24d13dd2bc75d3e4e2a4cc96cc00849a47b0c1e20629a4c1eed49dd88a8"
+    },
+    "k": {
+      "url": "./data/usage-v27/k.json",
+      "bytes": 58247,
+      "sha256": "aadbf8b47da5e25f7e3a338d29c80e5368ba0bd16254b10ba4c612d732be8927"
+    },
+    "l": {
+      "url": "./data/usage-v27/l.json",
+      "bytes": 269822,
+      "sha256": "ae5b33d065ef01df84d33cf7906e2b200424a3a5ae4b4d55eb854d5695eaf059"
+    },
+    "m": {
+      "url": "./data/usage-v27/m.json",
+      "bytes": 429821,
+      "sha256": "07e8569e8a938e61af09ade170319bf9dfcaf8f36cae3f66224533c2fe63e3d2"
+    },
+    "n": {
+      "url": "./data/usage-v27/n.json",
+      "bytes": 142359,
+      "sha256": "71b7da6fbdd616081b83fe2083235c40722f4cbb72ad8dbf3e710cfb2d64f257"
+    },
+    "o": {
+      "url": "./data/usage-v27/o.json",
+      "bytes": 170595,
+      "sha256": "6f04f489fea3a2bc579efe665c7a2c4b23da36e2e8b51aaa2186ea21366def31"
+    },
+    "p": {
+      "url": "./data/usage-v27/p.json",
+      "bytes": 666502,
+      "sha256": "0796f7a6ecd93e5ed08ffdcf253a417ea7436e43af12d4ba7013a9686e4a9c58"
+    },
+    "q": {
+      "url": "./data/usage-v27/q.json",
+      "bytes": 33992,
+      "sha256": "4a474380ec1f7546961ec0c5ae7604eb189dd43d01389e219b81782e9b3b1960"
+    },
+    "r": {
+      "url": "./data/usage-v27/r.json",
+      "bytes": 417107,
+      "sha256": "2ee041816ef7f080cc60fe11c34382d4d1f623add2d4fdeb87d2c9e005702b2d"
+    },
+    "s": {
+      "url": "./data/usage-v27/s.json",
+      "bytes": 911073,
+      "sha256": "f9c47ce528e860e54ab1ef6361b519028d39f50223f3cdf665b1fcf872b4ee00"
+    },
+    "t": {
+      "url": "./data/usage-v27/t.json",
+      "bytes": 420027,
+      "sha256": "d8a6738860835618f42d389c3cb86bf5a392c07be2879689f51dbae0c5a2509e"
+    },
+    "u": {
+      "url": "./data/usage-v27/u.json",
+      "bytes": 81165,
+      "sha256": "2b06678be54b00a76e9e71c2401722f852742c8f571ed5c3b494ab5b38883078"
+    },
+    "v": {
+      "url": "./data/usage-v27/v.json",
+      "bytes": 128855,
+      "sha256": "e739558f4a1568e86270df1f62ad674e858ea4139bc02665d8286e0468c7cea6"
+    },
+    "w": {
+      "url": "./data/usage-v27/w.json",
+      "bytes": 210865,
+      "sha256": "611e3d2da3222c01fdae7e9dda3e7c7977b2eefa844fb800f629974f7c65f692"
+    },
+    "x": {
+      "url": "./data/usage-v27/x.json",
+      "bytes": 1773,
+      "sha256": "cf3acf7e425c05e561c12262465704606cb3e4e1f103eb65913cd308ef250e68"
+    },
+    "y": {
+      "url": "./data/usage-v27/y.json",
+      "bytes": 22538,
+      "sha256": "cc5944c96dd459bda9acb78e739d06520f997a4d6786f0608f7133e6e2e4936c"
+    },
+    "z": {
+      "url": "./data/usage-v27/z.json",
+      "bytes": 15530,
+      "sha256": "2019876dc7d37680b6fd039fb7103ce092162e301cfbc82d6771c73a28683641"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "dog":[["dog food","狗粮"],["guide dog","导盲犬"],["police dog","警犬"],["walk the dog","遛狗"],["a pet dog","宠物狗"],["dog show","犬展"]],
+ "table":[["dining table","餐桌"],["coffee table","茶几"],["set the table","摆好餐具"],["at the table","在桌旁"],["table of contents","目录"],["a data table","数据表"]],
+ "time":[["on time","按时"],["in time","及时"],["at the same time","同时"],["all the time","一直；总是"],["ahead of time","提前"],["take your time","慢慢来；不用着急"]],
+ "light":[["turn on the light","开灯"],["natural light","自然光"],["a light bag","一个轻的包"],["a light meal","一顿便餐"],["green light","绿灯；许可（按语境）"],["light a candle","点燃蜡烛"]],
+ "friend":[["best friend","最好的朋友"],["close friend","亲密的朋友"],["make friends","交朋友"],["a friend of mine","我的一个朋友"],["keep in touch with friends","与朋友保持联系"]],
+ "coffee":[["black coffee","不加奶的黑咖啡"],["a cup of coffee","一杯咖啡"],["coffee shop","咖啡店"],["coffee break","短暂休息、喝咖啡的时间"],["coffee beans","咖啡豆"],["coffee maker","咖啡机"]],
+ "read":[["read a book","读一本书"],["read aloud","朗读"],["read carefully","仔细阅读"],["read the instructions","阅读说明"],["read between the lines","领会字里行间的意思"]],
+ "happy":[["happy birthday","生日快乐"],["happy to help","乐意帮忙"],["happy with the result","对结果感到满意"],["a happy childhood","快乐的童年"]],
+ "flower":[["a bunch of flowers","一束花"],["flower shop","花店"],["flower bed","花坛"],["water the flowers","给花浇水"],["flowers in bloom","盛开的花"]],
+ "rain":[["heavy rain","大雨"],["light rain","小雨"],["in the rain","在雨中"],["rain forest","雨林"],["a rain cloud","雨云"],["come rain or shine","无论如何；风雨无阻"]],
+ "computer":[["personal computer","个人电脑"],["computer screen","电脑屏幕"],["computer keyboard","电脑键盘"],["computer software","计算机软件"],["computer memory","计算机存储器"],["computer user","计算机用户"]],
+ "house":[["a small house","一幢小房子"],["buy a house","买房"],["move house","搬家"],["at someone's house","在某人家里"],["house prices","房价"]],
+ "music":[["listen to music","听音乐"],["classical music","古典音乐"],["live music","现场演奏的音乐"],["music festival","音乐节"],["folk music","民间音乐"]],
+ "school":[["go to school","去上学"],["at school","在学校；在上学"],["primary school","小学"],["school uniform","校服"],["after school","放学后"]],
+ "food":[["healthy food","健康食物"],["fast food","快餐"],["food safety","食品安全"],["fresh food","新鲜食物"],["a food allergy","食物过敏"]],
+ "work":[["go to work","去上班"],["at work","在工作；在工作场所"],["work from home","居家办公"],["hard work","艰苦的工作"],["work on a project","从事一个项目"]],
+ "play":[["play a game","玩游戏"],["play the piano","弹钢琴"],["play football","踢足球"],["play a role","发挥作用；扮演角色"],["a school play","一出校园戏剧"]],
+ "hand":[["wash your hands","洗手"],["by hand","手工"],["give someone a hand","帮某人一把"],["hand in your homework","交作业"],["on the other hand","另一方面"]],
+ "home":[["go home","回家"],["at home","在家"],["work from home","居家办公"],["feel at home","感觉自在"],["a family home","家庭住宅"]],
+ "child":[["an only child","独生子女"],["young children","年幼的孩子"],["child care","儿童照护"],["child development","儿童发展"],["a child of five","一个五岁的孩子"]]
+}

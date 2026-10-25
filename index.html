@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#fffdfa" />
-  <meta name="application-version" content="2.6.1" />
+  <meta name="application-version" content="2.7.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="./manifest.webmanifest" />
@@ -337,7 +337,7 @@
 .historical-form-card small{font-size:11px;color:#99806d}
 @media(max-width:600px){.historical-forms-grid{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="./reader-v261.css" />
+<link rel="stylesheet" href="./reader-v27.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -412,12 +412,16 @@
   <script src="./memory-engine-v2.js"></script>
   <script src="./reading-cards-v24.js"></script>
   <script src="./basic-learning-v261.js"></script>
-  <script src="./reader-v261.js"></script>
+  <script src="./whole-word-v27.js"></script>
+<script src="./search-control-v27.js"></script>
+<script src="./reader-v27.js"></script>
   <script>
 /* Root Lab · educational, offline-ready vocabulary explorer.
  * Data is independently authored. Example sentences are illustrative, not exam quotations.
  */
 (()=>{'use strict';
+// Word keys such as constructor must not resolve to inherited object properties.
+for(const name of ['ROOTLAB_READING_CARDS','ROOTLAB_BASIC_CARDS','ROOTLAB_WORD_HISTORY','ROOTLAB_CURATED_ETYM']){const data=window[name];if(data&&typeof data==='object'&&!Array.isArray(data))Object.setPrototypeOf(data,null);}
 const ROOTS=window.ROOTLAB_DATA;
 const MEM=window.RootLabMemory;
 const LEX_ROWS=Array.isArray(window.ROOTLAB_LEXICON)?window.ROOTLAB_LEXICON:[];
@@ -466,6 +470,8 @@ try{const saved=JSON.parse(localStorage.getItem(KEY)||'{}');if(saved&&typeof sav
 }}catch(_){/* private browsing, inaccessible localStorage, or malformed backup */}
 function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){toast('浏览器阻止存储，本次进度可能不会保留');}}
 const levels=['全部','中考','高考','四级','六级','考研'];
+let searchController=null;
+function setSearchInput(value){if(searchController)searchController.setValue(value);else $('searchInput').value=String(value||'');}
 let current=ALL.find(x=>x.word==='successful')||ALL[0];let currentLexicon=null;let selectedRootId=null;let rootCatalogSet='curated';
 let session=null;let view='learn';let onlineRequestId=0;const onlineCache=new Map();const phoneticCache=new Map();let rootFilter='全部';let rootQuery='';let reviewMode='spaced';let quizScope='all';let quizType='recognize';let quiz=null;let toastTimer=null;
 const DAY=(d)=>{const y=d.getFullYear(),m=('0'+(d.getMonth()+1)).slice(-2),dd=('0'+d.getDate()).slice(-2);return `${y}-${m}-${dd}`;};
@@ -539,7 +545,7 @@ function rootLinkMarkup(word){const ids=[...(RELATED_WORD_ROOTS.get(String(word|
 function openDictionaryWord(name){window.RootLabReader?.beforeOpen();const key=String(name||'').toLowerCase();const row=LEX_MAP.get(key);if(!row){lookupOnline(key);return;}
  const curated=getWord(key);if(curated){openWord(curated.word,curated.rootId);return;}
  onlineRequestId++;currentLexicon=row;setOnlineMode(false);$('learnLayout').classList.add('dictionary-mode');$('lexiconDetail').classList.remove('hidden');
- $('searchSuggestions').classList.add('hidden');$('searchInput').value=row[0];$('searchInput').blur();rememberSearch(row[0]);navigate('learn');jumpToResult();}
+ setSearchInput(row[0]);$('searchInput').blur();rememberSearch(row[0]);navigate('learn');jumpToResult();}
 function openAnyWord(name,rootId){const curated=getWord(name,rootId);if(curated)openWord(curated.word,curated.rootId);else if(LEX_MAP.has(String(name||'').toLowerCase()))openDictionaryWord(name);else lookupOnline(name);}
 
 function definitionParts(record){return Array.isArray(record?.[6])?record[6]:record?.[6]?[String(record[6])]:[];}
@@ -709,7 +715,7 @@ function rememberSearch(name){name=String(name||'').trim().slice(0,70);if(!name)
 function jumpToResult(){if(window.RootLabReader?.ready){window.RootLabReader.afterOpen();return;}setTimeout(()=>{const el=$('learnLayout');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},80);}
 function setOnlineMode(on){document.body.classList.toggle('rd-online-view',!!on);if($('readerV24'))$('readerV24').hidden=!!on;$('learnLayout').classList.toggle('online-mode',!!on);$('onlineResult').classList.toggle('hidden',!on);if(on){$('learnLayout').classList.remove('dictionary-mode');$('lexiconDetail').classList.add('hidden');}}
 function openWord(name,rootId){window.RootLabReader?.beforeOpen();const w=getWord(name,rootId);if(!w){openAnyWord(name);return;}onlineRequestId++;setOnlineMode(false);$('learnLayout').classList.remove('dictionary-mode');$('lexiconDetail').classList.add('hidden');currentLexicon=null;current=w;rememberSearch(w.word);
- const input=$('searchInput');input.value=w.word;if(document.activeElement===input)input.blur();$('searchSuggestions').classList.add('hidden');navigate('learn');jumpToResult();}
+ const input=$('searchInput');setSearchInput(w.word);if(document.activeElement===input)input.blur();$('searchSuggestions').classList.add('hidden');navigate('learn');jumpToResult();}
 function randomRoot(){const options=ROOTS.filter(r=>r.id!==current.rootId);const r=options[Math.floor(Math.random()*options.length)];const w=r.groups[0].entries[0];openWord(w.word,r.id);}
 function editDistance(a,b){const n=a.length,m=b.length,prev=Array.from({length:m+1},(_,i)=>i);for(let i=1;i<=n;i++){let last=i-1;prev[0]=i;for(let j=1;j<=m;j++){let old=prev[j];prev[j]=Math.min(prev[j]+1,prev[j-1]+1,last+(a[i-1]===b[j-1]?0:1));last=old;}}return prev[m];}
 const SORTED_LEX=LEX_ROWS.map(x=>x[0]);
@@ -750,14 +756,14 @@ function renderOnlineWord(query,entries){const e=entries[0],phonetic=e.phonetic|
  $('onlineResult').innerHTML='<div class="mini-label">ONLINE DICTIONARY · 联网词典</div><div class="online-heading"><div><h2 class="online-title">'+esc(word)+'</h2><p class="online-phonetic">'+esc(phonetic)+'</p></div><button class="round-btn" data-action="speak" data-text="'+esc(word)+'" aria-label="朗读 '+esc(word)+'">♫</button></div><p class="online-flag">以下为在线英文词典释义。</p>'
  +(definitions||'<p>词典没有返回详细释义。</p>')+'<div class="online-links"><a target="_blank" rel="noopener noreferrer" href="https://dictionary.cambridge.org/dictionary/english-chinese-simplified/'+encodeURIComponent(word)+'">查看剑桥英汉释义 ↗</a><a target="_blank" rel="noopener noreferrer" href="https://dictionaryapi.dev/">词典接口来源 ↗</a></div>';
 }
-async function lookupOnline(q){const query=String(q||'').trim().toLowerCase();if(!query)return;const id=++onlineRequestId;rememberSearch(query);$('searchSuggestions').classList.add('hidden');$('searchInput').value=query;$('searchInput').blur();navigate('learn');setOnlineMode(true);jumpToResult();
+async function lookupOnline(q){const query=String(q||'').trim().toLowerCase();if(!query)return;const id=++onlineRequestId;rememberSearch(query);$('searchSuggestions').classList.add('hidden');setSearchInput(query);$('searchInput').blur();navigate('learn');setOnlineMode(true);jumpToResult();
  if(!/^[a-z][a-z'-]{1,49}$/.test(query)){renderOnlineState(query,'请输入英文单词。中文搜索目前覆盖本地词库，外部词典暂不支持中文反查。',null);return;}
  renderOnlineState(query,'正在查询扩展英文词典…',query);
  try{let entries=onlineCache.get(query);if(!entries){const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8000);try{const response=await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/'+encodeURIComponent(query),{signal:controller.signal});if(!response.ok)throw new Error(response.status===404?'词典没有收录该拼写':'服务暂不可用');entries=await response.json();if(!Array.isArray(entries)||!entries.length)throw new Error('词典没有返回有效词条');onlineCache.set(query,entries);}finally{clearTimeout(timeout);}}
  if(id!==onlineRequestId)return;renderOnlineWord(query,entries);
  }catch(err){if(id!==onlineRequestId)return;const near=fuzzyMatches(query).map(x=>x.w.word).slice(0,3).join('、');renderOnlineState(query,err.name==='AbortError'?'在线查询超时，可能是当前网络无法访问公共词典。':('查询未完成：'+err.message+(near?'。你也可以试试本地单词：'+near:'')),query);}
 }
-function doSearch(){const v=$('searchInput').value.trim();if(!v){$('searchInput').focus();renderSearchHistory();return;}const name=v.toLowerCase();
+function doSearch(){searchController?.close();const v=$('searchInput').value.trim();if(!v){$('searchInput').focus();renderSearchHistory();return;}const name=v.toLowerCase();
  if(WORD_MAP.has(name)){openWord(name);return;}
  if(LEX_MAP.has(name)){openDictionaryWord(name);return;}
  const lemma=canonicalWord(name);if(lemma){openWord(lemma.word,lemma.rootId);toast('已根据词形还原为 '+lemma.word);return;}
@@ -990,7 +996,7 @@ document.addEventListener('click',event=>{
  case 'favorite':toggleFavorite(btn.dataset.word);break;
  case 'plan':addPlan(btn.dataset.word);break;
  case 'speak':speak(btn.dataset.text);break;
- case 'search':doSearch();break;
+ case 'search':if(searchController?.composing){$('searchInput').blur();setTimeout(doSearch,0);}else doSearch();break;
   case 'online-search':lookupOnline(btn.dataset.query);break;
   case 'history-search':$('searchInput').value=btn.dataset.query;doSearch();break;
   case 'clear-history':state.searchHistory=[];persist();$('searchSuggestions').classList.add('hidden');toast('最近查询已清除');break;
@@ -1019,20 +1025,21 @@ document.addEventListener('click',event=>{
  case 'clear-data':if(window.confirm('确定清除收藏、复习计划和测试记录吗？此操作不可恢复，建议先导出备份。')){state.favorites=[];state.review={};state.searchHistory=[];state.mistakes=[];state.mistakeCounts={};state.mistakeGoodStreak={};state.activity={};state.quizRuns=0;state.quizCorrect=0;state.dailyGoal=20;quiz=null;session=null;window.RootLabReader?.clearData();persist();renderAll();toast('本地学习记录已清空');}break;
  }
 });
-let suggestionTimer=0;$('searchInput').addEventListener('input',e=>{const q=e.target.value;clearTimeout(suggestionTimer);suggestionTimer=setTimeout(()=>updateSuggestions(q),110);});
-$('searchInput').addEventListener('focus',e=>updateSuggestions(e.target.value));
-$('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();doSearch();}if(e.key==='Escape')$('searchSuggestions').classList.add('hidden');});
 document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.id==='quizTextAnswer'){e.preventDefault();answerTextQuiz();}});
 $('catalogSearch').addEventListener('input',e=>{rootQuery=e.target.value;catalogPage=1;renderCatalog();});
 $('importFile').addEventListener('change',e=>loadBackup(e.target.files&&e.target.files[0]));
-document.addEventListener('keydown',e=>{if(e.key==='Escape')$('searchSuggestions').classList.add('hidden');});
-document.addEventListener('click',e=>{if(!e.target.closest('#searchWrap'))$('searchSuggestions').classList.add('hidden');});
+
+
+searchController=window.RootLabSearch.create({input:$('searchInput'),popup:$('searchSuggestions'),render:updateSuggestions,
+ onPick:choice=>{if(choice.action==='online-search')lookupOnline(choice.query);else if(choice.word)openAnyWord(choice.word,choice.root);else{setSearchInput(choice.query);doSearch();}},
+ onSearch:doSearch,onClear:()=>{state.searchHistory=[];persist();toast('最近查询已清除');}});
+window.RootLabSearchController=searchController;
 renderAll();
 if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{}));}
 
 const DETAIL_SEEDS=new Set(window.ROOTLAB_DETAIL_SEEDS||[]),DETAIL_BUNDLES=new Set(),DETAIL_PROMISES=new Map();
-function readerDetailsLoaded(word){return DETAIL_SEEDS.has(word)||DETAIL_BUNDLES.has(word[0]);}
-async function ensureReaderDetails(word){const letter=String(word||'').toLowerCase()[0];if(!/^[a-z]$/.test(letter))throw Error('Invalid word');if(readerDetailsLoaded(word))return;
+function readerLexDetailsLoaded(word){return DETAIL_SEEDS.has(word)||DETAIL_BUNDLES.has(word[0]);}
+async function ensureReaderLexDetails(word){const letter=String(word||'').toLowerCase()[0];if(!/^[a-z]$/.test(letter))throw Error('Invalid word');if(readerLexDetailsLoaded(word))return;
  if(DETAIL_PROMISES.has(letter))return DETAIL_PROMISES.get(letter);
  const task=(async()=>{const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),14000);
  try{const response=await fetch('./data/reader-v24/'+letter+'.json',{signal:ctrl.signal});if(!response.ok)throw Error('Word details unavailable');const data=await response.json();if(data.schema!==1||data.letter!==letter||!Array.isArray(data.entries))throw Error('Invalid dictionary chunk');
@@ -1041,24 +1048,32 @@ async function ensureReaderDetails(word){const letter=String(word||'').toLowerCa
  DETAIL_BUNDLES.add(letter);
  }finally{clearTimeout(timer);}})();DETAIL_PROMISES.set(letter,task);try{await task;}catch(err){DETAIL_PROMISES.delete(letter);throw err;}
 }
+const USAGE_MAP=new Map(),USAGE_BUNDLES=new Set(),USAGE_PROMISES=new Map();
+function readerDetailsLoaded(word){return readerLexDetailsLoaded(word)&&(Boolean(window.ROOTLAB_BASIC_CARDS?.[word])||USAGE_BUNDLES.has(word[0]));}
+async function loadUsage(word){const letter=word[0];if(window.ROOTLAB_BASIC_CARDS?.[word]||USAGE_BUNDLES.has(letter))return;if(USAGE_PROMISES.has(letter))return USAGE_PROMISES.get(letter);
+ const task=(async()=>{const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),14000);try{const r=await fetch('./data/usage-v27/'+letter+'.json',{signal:ctrl.signal});if(!r.ok)throw Error('Usage data unavailable');const data=await r.json();if(data.schema!==1||data.letter!==letter||!data.words||Array.isArray(data.words))throw Error('Invalid usage data');for(const [name,value] of Object.entries(data.words))if(knownWord(name))USAGE_MAP.set(name,value);USAGE_BUNDLES.add(letter);}finally{clearTimeout(timer);}})();
+ USAGE_PROMISES.set(letter,task);try{await task;}catch(err){USAGE_PROMISES.delete(letter);throw err;}
+}
+async function ensureReaderDetails(word){await Promise.all([ensureReaderLexDetails(word),loadUsage(word)]);}
 function readerRelated(word){const items=[],seen=new Set([word]);
  const source=window.RootLabHistoryUI?.record(word);const formula=source?.status==='source_formation'?source.timeline?.[0]?.term:'';
  for(const part of String(formula||'').split(/\s*\+\s*/)){if(/^[a-z]{3,}$/.test(part)&&knownWord(part)&&!seen.has(part)){items.push({word:part,label:'构词关系',reason:'公开词源记录中的组成词，比较它与 '+word+' 的词性和用法。'});seen.add(part);}}
  const ids=[...(RELATED_WORD_ROOTS.get(word)||[])];for(const id of ids){const root=ROOT_BY_ID.get(id)||REF_BY_ID.get(id);if(!root||root.kind==='prefix'||root.kind==='suffix')continue;
  const words=(root.examples||root.groups?.flatMap(g=>g.entries.map(e=>e.word))||[]).map(x=>x.toLowerCase()).filter(knownWord).sort((a,b)=>(LEX_MAP.get(a)?.[4]||99999)-(LEX_MAP.get(b)?.[4]||99999));
  for(const w of words){if(!seen.has(w)){items.push({word:w,label:'词根例词关联',reason:'同见于 '+(root.label||root.key)+' 词根资料，比较意思怎样分开。'});seen.add(w);}if(items.length>=6)break;}if(items.length>=6)break;}
+ for(const rel of USAGE_MAP.get(word)?.related||[]){if(knownWord(rel.word)&&!seen.has(rel.word)){items.push({word:rel.word,label:rel.label,reason:'相关词义：'+rel.sense});seen.add(rel.word);}if(items.length>=6)break;}
  if(items.length<3)for(const w of WORDNET_MAP.get(word)?.[2]||[]){if(knownWord(w)&&!seen.has(w)){items.push({word:w,label:'近义词参考',reason:'比较近似含义在不同句子中的用法，不直接当作同根词。'});seen.add(w);}if(items.length>=3)break;}
  return items;
 }
 
 /* V2.6 structured learning data: four original learning modules, one word at a time. */
 function readerCardData(word){
- const w=getWord(word),row=LEX_MAP.get(word),history=window.RootLabHistoryUI?.record(word),custom=window.ROOTLAB_READING_CARDS?.[word],basic=window.ROOTLAB_BASIC_CARDS?.[word]||null;
+ const w=getWord(word),row=LEX_MAP.get(word),history=window.RootLabHistoryUI?.record(word),custom=window.ROOTLAB_READING_CARDS?.[word];let basic=window.ROOTLAB_BASIC_CARDS?.[word]||null;
  let pieces=[],pieceType='none';
  if(basic){pieces=[];pieceType='whole';}
  else if(history?.components?.length){pieces=history.components.map(x=>({...x}));pieceType='documented';}
  else if(w){pieces=w.segments.map((part,i)=>{const role=partType(part,i,w.segments,w.root);return{part,role:role==='核心词根'?'词根':role,meaning:role==='核心词根'?w.root.meaning:segmentDesc(part,role)};});pieceType='curated';}
- else{const info=bestMorph(word);if(info){pieces=info.components.map(x=>({part:x.part,role:x.kind,meaning:x.explain}));pieceType=info.attested?'attested':'affix';}}
+ else{const info=bestMorph(word);if(info?.attested&&info.components.length>1){pieces=info.components.map(x=>({part:x.part,role:x.kind,meaning:x.explain}));pieceType='attested';}}
  const ids=[...(RELATED_WORD_ROOTS.get(word)||[])];
  const choices=ids.map(id=>({id,r:ROOT_BY_ID.get(id)||REF_BY_ID.get(id)})).filter(x=>x.r&&(!x.r.kind||x.r.kind==='root'));
  choices.sort((a,b)=>Number(!!b.r.groups)-Number(!!a.r.groups));
@@ -1082,7 +1097,9 @@ function readerCardData(word){
  for(const pair of basic?.examples||[])addExample(pair[0],pair[1],'自编学习例句');if(custom?.example)addExample(custom.example[0],custom.example[1],'学习例句');if(w?.example)addExample(w.example,w.translation,'学习例句');
  for(const en of WORDNET_MAP.get(word)?.[1]||[])addExample(en,'','开放词典例句');
  const forms=String(row?.[7]||'').split('/').map(x=>x.split(':')).filter(([type,value])=>['0','s','3','i','p','d','r','t'].includes(type)&&/^[a-z]{2,30}$/i.test(value||''));
- return{pieces,pieceType,family:basic?null:family,basic,definitions:basic?.definitions||translationParts(row),english:definitionParts(row),levels:lexTags(row),forms:basic?.forms||forms,examples,history:basic?.history||history||null,links:choices.map(x=>({id:x.id,label:x.r.label||x.r.key})),synonyms:WORDNET_MAP.get(word)?.[2]||[],loaded:readerDetailsLoaded(word)};
+ basic=window.RootLabWholeWords.build({word,manual:basic,pieces,pieceType,definitions:translationParts(row),forms,usage:USAGE_MAP.get(word),history});
+ if(basic){pieces=[];pieceType='whole';}
+ return{pieces,pieceType,route:basic?'whole':'root',family:basic?null:family,basic,definitions:basic?.definitions||translationParts(row),english:definitionParts(row),levels:lexTags(row),forms:basic?.forms||forms,examples,history:basic?.history||history||null,links:choices.map(x=>({id:x.id,label:x.r.label||x.r.key})),synonyms:WORDNET_MAP.get(word)?.[2]||[],loaded:readerDetailsLoaded(word)};
 }
 
 function readerContext(){const word=String(currentLexicon?.[0]||current.word).toLowerCase(),item=studyItem(word),row=LEX_MAP.get(word),w=getWord(word),custom=window.ROOTLAB_READING_CARDS?.[word];
@@ -1091,11 +1108,13 @@ function readerContext(){const word=String(currentLexicon?.[0]||current.word).to
  const wrong=UNIQUE.find(x=>x.word!==word&&short(x.meaning)!==short(item?.meaning));
  return {word,curated:!!w,meaning:custom?.meaning|| (Array.isArray(row?.[2])?row[2][0]:short(item?.meaning)),phonetic:window.ROOTLAB_BASIC_CARDS?.[word]?.phonetic||(row?.[1]?'/ '+phoneticHint(row[1])+' /':''),example:example[0]||'',translation:example[1]||'',favorite:isFavorite(word),planned:!!state.review[word],notes:w?wordSpecificNotes(w):null,related:readerRelated(word),learning:readerCardData(word),fullHtml:cloned.innerHTML,distractor:wrong?short(wrong.meaning):null};
 }
-async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const response=await fetch('./data/reader-v24-manifest.json',{signal});if(!response.ok)throw Error('Manifest unavailable');const meta=await response.json(),items=Object.values(meta.bundles||{}),cache=await caches.open('rootlab-offline-20261025-v260-cards');let done=0;
- for(const item of items){if(signal.aborted)throw new DOMException('Cancelled','AbortError');const url=new URL(item.url,location.href).href;let saved=await cache.match(url);if(!saved){const r=await fetch(url,{signal});if(!r.ok)throw Error('Bundle unavailable');await cache.put(url,r.clone());}done++;onProgress(done,items.length);}}
+async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const metas=await Promise.all(['./data/reader-v24-manifest.json','./data/usage-v27-manifest.json'].map(async url=>{const r=await fetch(url,{signal});if(!r.ok)throw Error('Manifest unavailable');return r.json();}));
+ const items=metas.flatMap(m=>Object.values(m.bundles||{})),cache=await caches.open('rootlab-offline-20261025-v270-universal');let done=0;
+ for(const item of items){if(signal.aborted)throw new DOMException('Cancelled','AbortError');const url=new URL(item.url,location.href).href;let saved=await cache.match(url);if(!saved){const r=await fetch(url,{signal});if(!r.ok)throw Error('Bundle unavailable');await cache.put(url,r.clone());}onProgress(++done,items.length);}}
+
 window.RootLabReaderBridge={navigate,home:()=>{setOnlineMode(false);navigate('learn');},downloadAll:downloadReaderOffline,current:readerContext,known:knownWord,open:openAnyWord,speak,favorite:toggleFavorite,plan:addPlan,toast,refresh:renderCurrent,hydrate:ensureReaderDetails,loaded:readerDetailsLoaded,related:readerRelated,search:directMatches};
 
-window.RootLabTest={get state(){return state;},get current(){return current;},get view(){return view;},get quiz(){return quiz;},get rootCount(){return ROOTS.length;},get wordCount(){return UNIQUE.length;},get entries(){return ALL.length;},get lexiconCount(){return LEX_MAP.size;},get referenceRootCount(){return REF_ROOTS.length;},get relatedRootCount(){return RELATED_WORD_ROOTS.size;},get searchHistory(){return state.searchHistory;},get quizType(){return quizType;},get session(){return session;},gradeWord:rateWord,startSession,renderAnalytics,openWord,navigate,matchWords,doSearch,lookupOnline};
+window.RootLabTest={get state(){return state;},get current(){return current;},get view(){return view;},get quiz(){return quiz;},get rootCount(){return ROOTS.length;},get wordCount(){return UNIQUE.length;},get entries(){return ALL.length;},get lexiconCount(){return LEX_MAP.size;},get referenceRootCount(){return REF_ROOTS.length;},cardModel:readerCardData,get relatedRootCount(){return RELATED_WORD_ROOTS.size;},get searchHistory(){return state.searchHistory;},get quizType(){return quizType;},get session(){return session;},gradeWord:rateWord,startSession,renderAnalytics,openWord,navigate,matchWords,doSearch,lookupOnline};
 window.RootLabReader.init(window.RootLabReaderBridge);
 })();
 

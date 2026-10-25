@@ -87,3 +87,7 @@ Princeton University and LICENSEE agrees to preserve same.
 - 开放提取工具与数据：https://kaikki.org/dictionary/English/
 - 许可：https://creativecommons.org/licenses/by-sa/4.0/
 - Kaikki / Wiktextract 由 Tatu Ylonen 开发；详情参见 https://kaikki.org/dictionary/rawdata.html
+
+## V2.7 搭配与语义索引
+
+新增搭配及语义关系使用 ECDICT（MIT）和 Princeton WordNet 3.0 的现有授权资料。自动表达只展示 WordNet 原有英文解释；部分中文学习搭配为独立整理内容。WordNet 的上位、下位概念按其词义分支标注，不能视为全部义项同义或词源关系。上述来源与完整许可条款继续适用。
