@@ -1,0 +1,15 @@
+{
+  "totalCurated": 335,
+  "previouslyManual": 5,
+  "otherManual": 2,
+  "newEtymologyEntries": 330,
+  "statuses": {
+    "source_path": 189,
+    "source_formation": 128,
+    "source_excerpt": 7,
+    "teaching_formation": 6
+  },
+  "missing": [],
+  "source": "en.wiktionary contributors / Wiktextract as-of 2026-10-01",
+  "license": "CC BY-SA 4.0"
+}

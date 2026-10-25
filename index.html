@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#fff8f0" />
-  <meta name="application-version" content="2.2.0" />
+  <meta name="application-version" content="2.3.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="./manifest.webmanifest" />
@@ -319,6 +319,23 @@
 .historical-reference{display:flex;gap:5px;flex-wrap:wrap;font-size:11px;color:#aa917e;line-height:1.7;margin-top:12px}
 @media(max-width:720px){.morph-primer-grid{grid-template-columns:1fr}.history-step{grid-template-columns:94px minmax(0,1fr);gap:9px;padding-left:10px}.history-inline{padding:17px 11px}.history-era{font-size:11px}.history-content b{font-size:13px}}
 
+/* V2.3: provenanced word histories for the entire curated vocabulary */
+.etym-stage-label{color:#a27054;font-size:11px;font-weight:800;letter-spacing:.04em;margin:0 0 8px}
+.etym-source-excerpt{margin:13px 0 16px;padding:12px 14px;background:#fff9f1;border:1px solid #efdece;border-radius:10px;color:#876b57}
+.etym-source-excerpt summary{font-size:12px;font-weight:720;cursor:pointer}
+.etym-source-excerpt p{font-size:12px;line-height:1.75;overflow-wrap:anywhere;margin:8px 0 0}
+.etym-source-method{color:#a18a77;font-size:11px;line-height:1.5;margin:11px 0}
+.history-sources .license-cc{font-size:11px;color:#9a806f;flex-basis:100%}
+.history-sources .license-cc a{font-size:11px}
+@media(max-width:690px){.etym-source-excerpt{padding:11px}.history-sources{gap:7px}}
+
+/* Related historical forms: not a falsely precise chronology. */
+.historical-forms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0 16px}
+.historical-form-card{display:flex;flex-direction:column;gap:3px;padding:11px 13px;background:#fffaf3;border:1px solid #eddcc9;border-radius:10px;min-width:0}
+.historical-form-card span{font-size:11px;color:#9f795e}
+.historical-form-card b{font:700 15px Georgia,serif;color:#694733;overflow-wrap:anywhere}
+.historical-form-card small{font-size:11px;color:#99806d}
+@media(max-width:600px){.historical-forms-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -418,7 +435,8 @@
   <script src="./roots-v21.js"></script>
   <script src="./wordnet-v21.js"></script>
   <script src="./word-history-v22.js"></script>
-  <script src="./history-ui-v22.js"></script>
+  <script src="./word-etymology-curated-v23.js"></script>
+  <script src="./history-ui-v23.js"></script>
   <script src="./memory-engine-v2.js"></script>
   <script>
 /* Root Lab · educational, offline-ready vocabulary explorer.

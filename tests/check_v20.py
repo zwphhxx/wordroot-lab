@@ -21,7 +21,7 @@ checks=[
  ('separate mistake reinforcement','mistakeCounts' in html and 'data-scope="mistakes"' in html),
  ('daily chart and mastery','activity-chart' in html and 'mastery-row' in html),
  ('portable without server dependency',not re.search(r'<script[^>]+src="https?://',html)),
- ('PWA cache bumped','rootlab-offline-20261025-v220-histories' in sw),
+ ('PWA cache bumped','rootlab-offline-20261025-v230-etymology' in sw),
  ('offline caches new engine'," './memory-engine-v2.js'" in sw or "'./memory-engine-v2.js'" in sw),
  ('dictionary & root assets still cached','lexicon-v21.js' in sw and 'roots-v21.js' in sw),
  ('mobile standalone install','standalone' == manifest['display'] and '词根实验室' in manifest['name']),

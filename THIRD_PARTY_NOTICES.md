@@ -75,3 +75,15 @@ any associated documentation shall at all times remain with
 Princeton University and LICENSEE agrees to preserve same.
 
 ```
+
+## Wiktionary / Wiktextract（单词词源）
+
+本项目精选词库中的单词词源形式、部分历史派生信息和有限的英文摘录由 Wiktionary 贡献者维护的开放资料提供，经 Kaikki.org / Wiktextract 提取整理。所用原始词库以 2026 年 10 月 1 日英文 Wiktionary 数据转储为基础。
+
+原始内容版权归 Wiktionary Contributors，采用 Creative Commons Attribution-ShareAlike 4.0 International（CC BY-SA 4.0）。本项目将部分词源形式改写为简洁中文词源路径，并明确区分可确证的历史记录和教学构词提示。每个词条提供来源 URL 与许可归属。
+
+- 数据作者/贡献者：Wiktionary Contributors
+- 原始词条：https://en.wiktionary.org/
+- 开放提取工具与数据：https://kaikki.org/dictionary/English/
+- 许可：https://creativecommons.org/licenses/by-sa/4.0/
+- Kaikki / Wiktextract 由 Tatu Ylonen 开发；详情参见 https://kaikki.org/dictionary/rawdata.html
