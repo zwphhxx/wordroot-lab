@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#fff8f0" />
-  <meta name="application-version" content="2.1.1" />
+  <meta name="application-version" content="2.2.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="./manifest.webmanifest" />
@@ -289,6 +289,36 @@
 .affix-chip strong{font:700 19px Georgia,serif;color:#815840}
 .affix-chip small{font-size:12px;color:#917462}
 @media(max-width:480px){.affix-chips{flex-direction:column}.affix-chip{width:100%}}
+/* V2.2: separated word formation, etymological path, and semantic evolution */
+.morph-primer{margin:17px 0 18px;padding:13px 16px;background:#fff9f1;border:1px solid #eedccd;border-radius:12px;color:#86644f}
+.morph-primer summary{font-size:13px;font-weight:750;cursor:pointer;list-style:inside}
+.morph-primer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
+.morph-primer-grid>div{background:#fff;border:1px solid #f0e1d6;border-radius:9px;padding:10px}
+.morph-primer-grid b{font-size:12px;color:#a56648}
+.morph-primer-grid p{font-size:12px;line-height:1.65;margin:5px 0 0}
+.historical-components{margin:10px 0 14px;display:flex;flex-direction:column;gap:7px}
+.historical-components p{margin:0;background:#fffaf5;padding:7px 11px;color:#7f5b48;font-size:13px;border-left:3px solid #edcab4;border-radius:0 7px 7px 0}
+.historical-components b{color:#b06b49;font-family:Georgia,serif}
+.history-inline{padding:22px 16px;margin:17px 0;background:#fffaf5;border:1px solid #eedccd;border-radius:14px}
+.history-inline h3{font-size:17px;margin:0 0 10px;color:#624535}
+.history-summary{padding:11px 14px;border-radius:9px;background:#fff4e8;color:#81583f;line-height:1.65;font-size:13px;font-weight:650;margin-bottom:19px}
+.history-timeline{margin:11px 4px 16px;display:flex;flex-direction:column;gap:0}
+.history-step{display:grid;grid-template-columns:minmax(94px,28%) minmax(0,1fr);gap:14px;border-left:2px solid #ebc4a8;padding:0 0 17px 16px;position:relative}
+.history-step::before{content:'';width:9px;height:9px;position:absolute;top:5px;left:-6px;background:#c88059;border:2px solid #fff9f3;border-radius:50%}
+.history-step:last-child{padding-bottom:0}
+.history-era{color:#aa775c;font-size:12px;font-weight:700;line-height:1.6}
+.history-content b{font-size:14px;color:#5e3e2e;overflow-wrap:anywhere}
+.history-content p{font-size:13px;color:#947565;margin:4px 0 0;line-height:1.7}
+.history-sources{display:flex;flex-wrap:wrap;align-items:center;gap:8px;border-top:1px solid #ead9cd;padding:12px 0 0;margin-top:17px;font-size:11px;color:#9c8672}
+.history-sources a,.historical-reference a,.historical-attribution a,.wiktionary-source-result a{color:#a46a4b;text-decoration:underline;text-decoration-color:#e7c2a9;text-underline-offset:3px}
+.historical-source-action{margin:14px 0 9px}
+.historical-source-action>button{font-size:12px;padding:8px 14px}
+.wiktionary-source-result{padding:14px 15px;background:#fff;border:1px solid #e9d5c7;border-radius:11px;margin:12px 0;overflow-wrap:anywhere}
+.wiktionary-source-result>p{font-size:13px;line-height:1.72;margin:0 0 8px;color:#756154}
+.historical-attribution{font-size:11px;color:#987e6d;margin-top:10px;border-top:1px solid #f0e4d9;padding-top:8px}
+.historical-reference{display:flex;gap:5px;flex-wrap:wrap;font-size:11px;color:#aa917e;line-height:1.7;margin-top:12px}
+@media(max-width:720px){.morph-primer-grid{grid-template-columns:1fr}.history-step{grid-template-columns:94px minmax(0,1fr);gap:9px;padding-left:10px}.history-inline{padding:17px 11px}.history-era{font-size:11px}.history-content b{font-size:13px}}
+
 </style>
 </head>
 <body>
@@ -387,6 +417,8 @@
   <script src="./lexicon-v21.js"></script>
   <script src="./roots-v21.js"></script>
   <script src="./wordnet-v21.js"></script>
+  <script src="./word-history-v22.js"></script>
+  <script src="./history-ui-v22.js"></script>
   <script src="./memory-engine-v2.js"></script>
   <script>
 /* Root Lab · educational, offline-ready vocabulary explorer.
@@ -554,6 +586,8 @@ function bestMorph(word){
  return{components:hints,attested:false};
 }
 function morphologyMarkup(word){
+ const documented=window.RootLabHistoryUI.morphology(word);
+ if(documented)return documented;
  const info=bestMorph(word);
  if(!info)return '<p class="dictionary-hint">此词暂未收录词根拆解，可继续查看下方词族和例句。</p>';
  if(!info.attested)return '<div class="affix-explainer"><span class="affix-caption">词缀联想 · 辅助记忆</span><div class="affix-chips">'+info.components.map(x=>'<div class="affix-chip"><span>'+esc(x.kind)+'</span><strong>'+esc(x.part)+'</strong><small>'+esc(x.explain)+'</small></div>').join('')+'</div></div>';
@@ -605,14 +639,15 @@ function renderLexicon(){
  <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">02</span><h3>英文释义</h3></div>
  ${english.length?`<ol class="dictionary-english-defs">${english.map(v=>`<li>${esc(v)}</li>`).join('')}</ol>`:'<p class="dictionary-hint">暂未提供离线英文释义。</p>'}</div>
  <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">03</span><h3>词根拆解 · 科学助记</h3></div>
- ${morphologyMarkup(name)}<div class="root-link-list">${chosenRoots||'<span class="dictionary-hint">暂无可确认的词根索引关联</span>'}</div></div>
- <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">04</span><h3>同根词 · 词族联想</h3></div>
+ ${morphologyMarkup(name)}${window.RootLabHistoryUI.guide()}<div class="root-link-list">${chosenRoots||'<span class="dictionary-hint">暂无可确认的词根索引关联</span>'}</div></div>
+ ${window.RootLabHistoryUI.render(name,'dictionary')}
+ <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">05</span><h3>同根词 · 词族联想</h3></div>
  ${familyMarkup(name)}</div>
- <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">05</span><h3>英文例句</h3></div>
+ <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">06</span><h3>英文例句</h3></div>
  ${sentences.length?`<div class="dictionary-example-list">${sentences.map(t=>`<div class="dictionary-example"><span>“</span><p>${esc(t)}</p><button class="tiny-link" data-action="speak" data-text="${esc(t)}">♫ 听例句</button></div>`).join('')}</div><p class="dictionary-hint">来自开放英语词汇资料的例句。请结合实际语境理解。</p>`:'<p class="dictionary-hint">这个词暂未收录可核验的离线例句。你仍可学习词义、词根和词形变化。</p>'}</div>
- <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">06</span><h3>词形变化</h3></div>
+ <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">07</span><h3>词形变化</h3></div>
  ${exchangeMarkup(e)}</div>
- ${synonyms.length?`<div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">07</span><h3>近义词联想</h3></div><div class="root-link-list">${synonyms.filter(knownWord).slice(0,12).map(w=>`<button class="root-link" data-action="open-any" data-word="${esc(w)}">${esc(w)}</button>`).join('')}</div></div>`:''}
+ ${synonyms.length?`<div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">08</span><h3>近义词联想</h3></div><div class="root-link-list">${synonyms.filter(knownWord).slice(0,12).map(w=>`<button class="root-link" data-action="open-any" data-word="${esc(w)}">${esc(w)}</button>`).join('')}</div></div>`:''}
  <div class="dictionary-footer"><p>需要查看更多词源或词义，可参考下方词典。</p>
  <a href="https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${encodeURIComponent(name)}" target="_blank" rel="noopener noreferrer">英汉词典 ↗</a>
  <a href="https://www.etymonline.com/word/${encodeURIComponent(name)}" target="_blank" rel="noopener noreferrer">词源参考 ↗</a>
@@ -667,14 +702,14 @@ function wordSpecificNotes(w){
 
 function renderLearningSections(){
  const w=current,r=w.root,parts=w.segments,wordNote=wordSpecificNotes(w);const partMarkup=parts.map((seg,i)=>{
- const kind=partType(seg,i,parts,r);return`${i?'<span class="seg-plus">+</span>':''}<div class="seg-card ${kind==='核心词根'?'main':''}"><label>${esc(kind)}</label><b>${esc(seg)}</b><p>${esc(segmentDesc(seg,kind))}</p></div>`;}).join('');
+ const kind=partType(seg,i,parts,r);return`${i?'<span class="seg-plus">+</span>':''}<div class="seg-card ${kind==='核心词根'?'main':''}"><label>${esc(kind)}</label><b>${esc(seg)}</b><p>${esc(window.RootLabHistoryUI.morphDescription(w.word,seg)||segmentDesc(seg,kind))}</p></div>`;}).join('');
  const rail=r.groups.flatMap(g=>g.entries).map(e=>`<button class="family-word ${e.word===w.word?'active':''}" data-action="open-word" data-word="${esc(e.word)}" data-root="${esc(r.id)}"><b>${esc(e.word)}</b><small>${esc(e.meaning)}</small></button>`).join('');
  const src=PROVENANCE.core?.[r.id]||null;
  const sourceNote=src?.status==='reference'?`<div class="root-evidence"><div><b>词根资料</b> · ${esc(src.origin)} · ${esc(src.english)}</div><a target="_blank" rel="noopener noreferrer" href="${esc(refSourceUrl())}">词根资料说明 ↗</a><span class="source-small"></span></div>`:'<div class="source-small"></div>';
  const extraWords=(src?.extra||[]).map(word=>`<button class="family-word source-family-word" data-action="open-any" data-word="${esc(word)}"><b>${esc(word)}</b><small>${esc(short(LEX_MAP.get(word)?.[2]||''))}</small></button>`).join('');
  const senses=r.groups.map(group=>`<div class="sense-box"><div class="sense-head"><strong>${esc(group.title)}</strong><small>${group.entries.length} 词</small></div><p class="sense-note">${esc(group.note)}</p>${group.entries.map(e=>`<div class="sense-word-row"><button class="word-inline" data-action="open-word" data-word="${esc(e.word)}" data-root="${esc(r.id)}">${esc(e.word)}</button><span class="sense-cn" title="${esc(e.meaning)}">${esc(short(e.meaning))}</span><button class="speak-small" data-action="speak" data-text="${esc(e.word)}" aria-label="朗读 ${esc(e.word)}">♫</button></div>`).join('')}</div>`).join('');
  $('learningSections').innerHTML=`
- <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>01</span><h3>词根记词，公式拆解更高效</h3></div></div><div class="lesson-description"><strong>词根拆分单词，全面理解含义</strong>，看得懂也记得牢。</div><div class="seg-chain">${partMarkup}</div><div class="formula"><b>记忆公式：</b>${parts.map(x=>esc(x)).join(' + ')} → ${esc(w.word)} → <b>${esc(w.meaning)}</b></div><div class="origin"><b>${esc(wordNote.heading)}</b><span>${esc(wordNote.story)}</span></div>${sourceNote}<div class="memory-box">✳ 记忆线索：${esc(wordNote.memory)}</div></section>
+ <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>01</span><h3>词根记词，公式拆解更高效</h3></div></div><div class="lesson-description"><strong>词根拆分单词，全面理解含义</strong>，看得懂也记得牢。</div><div class="seg-chain">${partMarkup}</div><div class="formula"><b>记忆公式：</b>${parts.map(x=>esc(x)).join(' + ')} → ${esc(w.word)} → <b>${esc(w.meaning)}</b></div><div class="origin"><b>${esc(wordNote.heading)}</b><span>${esc(wordNote.story)}</span></div>${window.RootLabHistoryUI.guide()}${window.RootLabHistoryUI.render(w.word,'curated')}${sourceNote}<div class="memory-box">✳ 记忆线索：${esc(wordNote.memory)}</div></section>
  <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>02</span><h3>词根串联，记住一组单词</h3></div><span class="tag">${rootCount(r)} 个关联词</span></div><div class="lesson-description"><strong>一个熟词拓展多个生词</strong>，先掌握规律，再认识整组。</div><div class="root-family-nav">${rail}</div>${extraWords?`<div class="root-family-extra"><div class="mini-label">SOURCE-BASED FAMILY · 参考词族延伸</div><div class="root-family-nav">${extraWords}</div><p class="source-small">点击拓展词，查看中文释义与更多词汇联想。</p></div>`:''}</section>
  <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>03</span><h3>释义分组，结合词义强化记忆</h3></div></div><div class="lesson-description"><strong>按照含义归纳分组</strong>，记住一个词时，也记住它和其他词的关系。</div><div class="sense-grid">${senses}</div></section>
  <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>04</span><h3>分级标签，例句巩固应用</h3></div></div><div class="lesson-description"><strong>搭配学习等级标签和原创双语例句</strong>，从理解走向使用。</div><div class="tag-row" style="margin:0 0 13px">${tags(w)}</div><div class="quote-card"><span class="mini-label">EXAMPLE SENTENCE · ${esc(w.word)}</span><div class="quote-text">${esc(w.example)}</div><div class="quote-zh">${esc(w.translation)}</div><div class="quote-acts"><button class="tiny-link" data-action="speak" data-text="${esc(w.example)}">♫ 听例句</button><button class="tiny-link" data-action="copy-example">复制双语例句</button></div></div><div class="no-copy">注：例句为独立编写的学习例句，并非历年考试真题；标签仅为非官方学习参考。</div></section>`;}
@@ -957,6 +992,7 @@ document.addEventListener('click',event=>{
   case 'open-any':openAnyWord(btn.dataset.word,btn.dataset.root);break;
   case 'open-dictionary':openDictionaryWord(btn.dataset.word);break;
   case 'lex-phonetic':verifyLexPhonetic(btn.dataset.word);break;
+  case 'wiktionary-etymology':window.RootLabHistoryUI.fetchRemote(btn.dataset.word);break;
  case 'favorite':toggleFavorite(btn.dataset.word);break;
  case 'plan':addPlan(btn.dataset.word);break;
  case 'speak':speak(btn.dataset.text);break;

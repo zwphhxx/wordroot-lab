@@ -23,7 +23,7 @@ checks=[
  ('copyright attribution','Princeton WordNet' in (root/'credits.html').read_text() and 'WordNet 3.0 Copyright 2006' in (root/'credits.html').read_text()),
  ('MIT notice','MIT License' in (root/'THIRD_PARTY_NOTICES.md').read_text()),
  ('no source repository link in consumer pages','href="https://github.com' not in s),
- ('PWA refreshed','rootlab-offline-20261025-v21' in (root/'sw.js').read_text()),
+ ('PWA refreshed','rootlab-offline-20261025-v220-histories' in (root/'sw.js').read_text()),
  ('offline assets',all(x in (root/'sw.js').read_text() for x in ['lexicon-v21.js','roots-v21.js','wordnet-v21.js'])),
  ('files present',all((root/n).is_file() for n in ['index.html','lexicon-v21.js','roots-v21.js','wordnet-v21.js','memory-engine-v2.js','sw.js','manifest.webmanifest','credits.html']))
 ]

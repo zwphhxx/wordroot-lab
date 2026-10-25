@@ -2,6 +2,14 @@
 
 网站：https://zwphhxx.github.io/wordroot-lab/
 
+## V2.2 · 构词结构与历史词源
+
+- 将**前缀 / 词根 / 后缀**的教学解释与**历史词源及语义演变**分开呈现。
+- 为 concession、procedure、antecedent、destructive、success、succeed、succession 增加依据公开词源资料独立整理的中文历史年表及参考链接，修正 concession 的 con- 在该词中可能用于强调，而不是机械地解释为“共同”。
+- 所有其他单词可由用户主动点击“查看开放词源原文”，按需调用 Wiktionary API 获取该词的英文 Etymology 小节；网络不可用时保留原始词条链接，不臆造历史信息。
+- 公开 API 内容显示时标注 Wiktionary 贡献者及 CC BY-SA 4.0，相关许可和其他语源链接集中在 credits.html。
+- 复习算法、本机历史记录、49,426 个离线单词及 643 组词根主题继续保留。中文年表只覆盖已整理的词条，并不声称 49,426 个单词都有完整历史记载。
+
 ## V2.1.1：单词解析纠正
 
 - 修复旧版将整组词根的故事、记忆线索直接复制到每个单词的错误。示例：查 procedure 时不再显示 success 的词源故事。
@@ -38,6 +46,10 @@
 - roots-v21.js：词根、前缀、后缀示例及关联索引。
 - wordnet-v21.js：开放英文例句和近义词。
 - memory-engine-v2.js：智能复习引擎。
+- word-history-v22.js：独立整理的中文词源时间线、前后缀语义及每条历史的公开参考链接。
+- history-ui-v22.js：展示历史年表与词根/词缀知识，并在用户主动点击后从 Wiktionary 获取原始英文词源（CC BY-SA 4.0，逐词显示来源），失败时提供词条链接。
+- tests/check_v22.py：中文时间线、源链接与缓存完整性回归检查。
+
 - sw.js、manifest.webmanifest、图标：离线 PWA。
 - scripts/build_v21.py：重建词库，需要原始许可数据放入本地 .v12-work 目录，此目录不入 Git。
 - tests/check_v21.py：数据与发布完整性检查。
