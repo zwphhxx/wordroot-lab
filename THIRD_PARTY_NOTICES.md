@@ -105,3 +105,9 @@ On-demand Wikipedia extracts retain source URLs and CC BY-SA 4.0 attribution. Co
 85 local thumbnail files are sourced from Wikimedia Commons. Each image record in visual-seeds-v29.js records the original file page, creator, exact license name and license link where applicable. The word-to-sense captions are independently written learning notes. Thumbnail images are shown at reduced sizes without other edits.
 
 All images and metadata were checked against the per-file Commons records; unsupported license variants were excluded from the packaged set rather than assigned another license. Additional live candidates remain user-selectable topics, not automatic lexical conclusions.
+
+## V2.10 Chinese explanatory definitions and root-word illustrations
+
+The 138 Chinese explanatory notes and bilingual learning examples are independently authored. They do not replace the original dictionary entries. The banana reference includes Cambridge Dictionary; other references are linked per entry. Explicitly selected Chinese Wikipedia topic extracts retain their page and CC BY-SA 4.0 attribution and remain topic-scoped.
+
+New Commons pictures and derivative scene mappings are listed in visual-extra-v210.js. Each retains file description URL, original author, license, and license URL; no unsupported-license file is included. Files are display-sized copies, with no transfer of ownership claimed.

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#fffdfa" />
-  <meta name="application-version" content="2.9.0" />
+  <meta name="application-version" content="2.10.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="./manifest.webmanifest" />
@@ -337,7 +337,7 @@
 .historical-form-card small{font-size:11px;color:#99806d}
 @media(max-width:600px){.historical-forms-grid{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="./reader-v29.css" />
+<link rel="stylesheet" href="./reader-v210.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -410,14 +410,17 @@
   <script src="./word-etymology-curated-v23.js"></script>
   <script src="./history-ui-v24.js"></script>
   <script src="./memory-engine-v2.js"></script>
-  <script src="./reading-cards-v24.js"></script>
-  <script src="./basic-learning-v261.js"></script>
-  <script src="./plain-objects-v28.js"></script>
+  <script src="./reading-cards-v210.js"></script>
+  <script src="./basic-learning-v210.js"></script>
+  <script src="./plain-objects-v210.js"></script>
   <script src="./visual-seeds-v29.js"></script>
-  <script src="./encyclopedia-v29.js"></script>
+  <script src="./visual-extra-v210.js"></script>
+  <script src="./meaning-notes-v210.js"></script>
+  <script src="./meaning-explainer-v210.js"></script>
+  <script src="./encyclopedia-v210.js"></script>
   <script src="./whole-word-v27.js"></script>
 <script src="./search-control-v27.js"></script>
-<script src="./reader-v29.js"></script>
+<script src="./reader-v210.js"></script>
   <script>
 /* Root Lab · educational, offline-ready vocabulary explorer.
  * Data is independently authored. Example sentences are illustrative, not exam quotations.
@@ -1025,7 +1028,7 @@ document.addEventListener('click',event=>{
  case 'export-json':exportData();break;
  case 'import-json':$('importFile').click();break;
  case 'export-csv':exportCsv();break;
- case 'clear-data':if(window.confirm('确定清除收藏、复习计划和测试记录吗？此操作不可恢复，建议先导出备份。')){state.favorites=[];state.review={};state.searchHistory=[];state.mistakes=[];state.mistakeCounts={};state.mistakeGoodStreak={};state.activity={};state.quizRuns=0;state.quizCorrect=0;state.dailyGoal=20;quiz=null;session=null;window.RootLabReader?.clearData();window.RootLabEncyclopedia?.clear();persist();renderAll();toast('本地学习记录已清空');}break;
+ case 'clear-data':if(window.confirm('确定清除收藏、复习计划和测试记录吗？此操作不可恢复，建议先导出备份。')){state.favorites=[];state.review={};state.searchHistory=[];state.mistakes=[];state.mistakeCounts={};state.mistakeGoodStreak={};state.activity={};state.quizRuns=0;state.quizCorrect=0;state.dailyGoal=20;quiz=null;session=null;window.RootLabReader?.clearData();window.RootLabEncyclopedia?.clear();window.RootLabMeanings?.clear();persist();renderAll();toast('本地学习记录已清空');}break;
  }
 });
 document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.id==='quizTextAnswer'){e.preventDefault();answerTextQuiz();}});
@@ -1097,7 +1100,7 @@ function readerCardData(word){
   family={id:main.id,label:r.label||r.key,meaning:r.meaning||r.cn||r.en||'',forms:r.forms||rootAliases(r),groups};
  }
  const examples=[],seen=new Set();const addExample=(en,zh,kind)=>{if(en&&!seen.has(en.toLowerCase().trim())){seen.add(en.toLowerCase().trim());examples.push({en,zh:zh||'',kind});}};
- for(const pair of basic?.examples||[])addExample(pair[0],pair[1],'自编学习例句');if(custom?.example)addExample(custom.example[0],custom.example[1],'学习例句');if(w?.example)addExample(w.example,w.translation,'学习例句');
+ const plainExample=window.RootLabMeanings?.example(word);if(plainExample)addExample(plainExample.en,plainExample.zh,plainExample.kind);for(const pair of basic?.examples||[])addExample(pair[0],pair[1],'自编学习例句');if(custom?.example)addExample(custom.example[0],custom.example[1],'学习例句');if(w?.example)addExample(w.example,w.translation,'学习例句');
  for(const en of WORDNET_MAP.get(word)?.[1]||[])addExample(en,'','开放词典例句');
  const forms=String(row?.[7]||'').split('/').map(x=>x.split(':')).filter(([type,value])=>['0','s','3','i','p','d','r','t'].includes(type)&&/^[a-z]{2,30}$/i.test(value||''));
  basic=window.RootLabWholeWords.build({word,manual:basic,pieces,pieceType,definitions:translationParts(row),forms,usage:USAGE_MAP.get(word),history});
@@ -1112,7 +1115,7 @@ function readerContext(){const word=String(currentLexicon?.[0]||current.word).to
  return {word,curated:!!w,meaning:custom?.meaning|| (Array.isArray(row?.[2])?row[2][0]:short(item?.meaning)),phonetic:window.ROOTLAB_BASIC_CARDS?.[word]?.phonetic||(row?.[1]?'/ '+phoneticHint(row[1])+' /':''),example:example[0]||'',translation:example[1]||'',favorite:isFavorite(word),planned:!!state.review[word],notes:w?wordSpecificNotes(w):null,related:readerRelated(word),learning:readerCardData(word),fullHtml:cloned.innerHTML,distractor:wrong?short(wrong.meaning):null};
 }
 async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const metas=await Promise.all(['./data/reader-v24-manifest.json','./data/usage-v27-manifest.json'].map(async url=>{const r=await fetch(url,{signal});if(!r.ok)throw Error('Manifest unavailable');return r.json();}));
- const pictures=Object.values(window.ROOTLAB_VISUAL_SEEDS||{}).map(r=>({url:r.image.src}));const items=[...metas.flatMap(m=>Object.values(m.bundles||{})),...pictures],cache=await caches.open('rootlab-offline-20261025-v290-visual');let done=0;
+ const pictures=[...new Set(Object.values(window.ROOTLAB_VISUAL_SEEDS||{}).map(r=>r.image.src))].map(url=>({url}));const items=[...metas.flatMap(m=>Object.values(m.bundles||{})),...pictures],cache=await caches.open('rootlab-offline-20261025-v2100-clearmeaning');let done=0;
  for(const item of items){if(signal.aborted)throw new DOMException('Cancelled','AbortError');const url=new URL(item.url,location.href).href;let saved=await cache.match(url);if(!saved){const r=await fetch(url,{signal});if(!r.ok)throw Error('Bundle unavailable');await cache.put(url,r.clone());}onProgress(++done,items.length);}}
 
 window.RootLabReaderBridge={navigate,home:()=>{setOnlineMode(false);navigate('learn');},downloadAll:downloadReaderOffline,current:readerContext,known:knownWord,open:openAnyWord,speak,favorite:toggleFavorite,plan:addPlan,toast,refresh:renderCurrent,hydrate:ensureReaderDetails,loaded:readerDetailsLoaded,related:readerRelated,search:directMatches};

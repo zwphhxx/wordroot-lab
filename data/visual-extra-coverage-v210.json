@@ -1,0 +1,12 @@
+{
+  "topicRequests": 24,
+  "directPictures": 23,
+  "imageWords": 37,
+  "contextPictures": 14,
+  "failed": [
+    [
+      "rotation",
+      "unsupported-image-format"
+    ]
+  ]
+}
