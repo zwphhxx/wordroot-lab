@@ -1,4 +1,4 @@
-const CACHE_NAME='rootlab-offline-20261025-v21-copyfix';
+const CACHE_NAME='rootlab-offline-20261025-v211-wordnotes';
 const APP_SHELL=['./','./index.html','./lexicon-v21.js','./roots-v21.js','./wordnet-v21.js','./memory-engine-v2.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(APP_SHELL)).then(()=>self.skipWaiting()));
