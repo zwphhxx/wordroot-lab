@@ -279,6 +279,16 @@
  .tile-footer .tile-examples{min-width:0;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
  .tile-footer .tile-go{flex:none}
 }
+
+/* Focused and readable affix memory hints. */
+.affix-explainer{margin:10px 0 15px}
+.affix-caption{display:block;font-size:12px;font-weight:650;color:#9a765f;margin-bottom:10px}
+.affix-chips{display:flex;gap:10px;flex-wrap:wrap}
+.affix-chip{display:flex;align-items:center;gap:9px;flex-wrap:wrap;max-width:100%;padding:11px 14px;background:#fff8f0;border:1px solid #eedacb;border-radius:11px}
+.affix-chip span{font-size:11px;color:#a58876}
+.affix-chip strong{font:700 19px Georgia,serif;color:#815840}
+.affix-chip small{font-size:12px;color:#917462}
+@media(max-width:480px){.affix-chips{flex-direction:column}.affix-chip{width:100%}}
 </style>
 </head>
 <body>
@@ -342,7 +352,7 @@
               <button class="outline-btn" data-action="navigate" data-view="roots">浏览全部词根 <span aria-hidden="true">→</span></button>
             </article>
             <article class="card small-tip">
-              <span class="tip-icon">✳</span><div><b>词源说明</b><p>构词拆分是便于记忆的教学近似，不代表严格的现代英语形态分析。考试标签属于未经逐项核验的学习参考。</p></div>
+              <span class="tip-icon">✳</span><div><b>词源说明</b><p>了解词根、前缀和后缀之间的关系，让单词更容易理解和记忆。考试等级为学习参考。</p></div>
             </article>
           </aside>
         </div>
@@ -491,7 +501,7 @@ function navigate(to){if(!['learn','roots','review','profile'].includes(to))retu
  window.scrollTo({top:0,behavior:'smooth'});
 }
 function highlight(item){const forms=item.root.forms.map(x=>x.toLowerCase());return item.segments.map(s=>forms.includes(s.toLowerCase())?`<span class="root-highlight">${esc(s)}</span>`:esc(s)).join('');}
-function tags(item){const labels=(item.levels||[]).map(level=>`<span class="tag ${level==='考研'?'red':''}" title="考试等级是参考标注，并非官方大纲认证">${esc(level)}</span>`);if(!labels.length)labels.push('<span class="tag gray" title="此词尚未核验考试等级">拓展词</span>');return [...labels,`<span class="tag gray">${esc(item.pos)}</span>`].join('');}
+function tags(item){const labels=(item.levels||[]).map(level=>`<span class="tag ${level==='考研'?'red':''}" title="考试等级是参考标注，并非官方大纲认证">${esc(level)}</span>`);if(!labels.length)labels.push('<span class="tag gray" title="暂无考试等级标注">拓展词</span>');return [...labels,`<span class="tag gray">${esc(item.pos)}</span>`].join('');}
 function rootCount(root){return root.groups.reduce((a,g)=>a+g.entries.length,0);}
 function renderCurrent(){renderWord();renderAside();renderLearningSections();renderLexicon();renderHeader();}
 function renderHeader(){$('headerCount').textContent=`内置 ${LEX_MAP.size.toLocaleString('zh-CN')} 词 · ${ROOTS.length+REF_ROOTS.length} 词根`;$('heroCount').textContent=`${ROOTS.length} 组精选 · ${REF_ROOTS.length} 组词根/词缀 · ${LEX_MAP.size.toLocaleString('zh-CN')} 个离线词条`;
@@ -499,7 +509,7 @@ function renderHeader(){$('headerCount').textContent=`内置 ${LEX_MAP.size.toLo
 
 function phoneticHint(phon){return String(phon||'').replace(/ә/g,'ə').replace(/ˊ/g,'ˈ').trim();}
 function rootLinkMarkup(word){const ids=[...(RELATED_WORD_ROOTS.get(String(word||'').toLowerCase())||[])];
- if(!ids.length)return '<span class="source-small">暂无已收录的词源索引关联；不按字母相似程度臆测词根。</span>';
+ if(!ids.length)return '<span class="source-small">暂无其他关联词根。</span>';
  return ids.map(id=>{const r=ROOT_BY_ID.get(id)||REF_BY_ID.get(id),label=r?.label||r?.key||id;return '<button class="root-link" data-action="open-root" data-root="'+esc(id)+'">'+esc(label)+' ↗</button>';}).join('');}
 function openDictionaryWord(name){const key=String(name||'').toLowerCase();const row=LEX_MAP.get(key);if(!row){lookupOnline(key);return;}
  const curated=getWord(key);if(curated){openWord(curated.word,curated.rootId);return;}
@@ -533,22 +543,21 @@ function bestMorph(word){
   if(a.right)components.push({part:a.right,kind:suffixes[a.right]?'后缀':'构词部分',explain:suffixes[a.right]||'拼写变体或后缀'});
   return{components,attested:true,root:a.source.ref};
  }
- // Partial substring matches are not reliable evidence of etymology.
+ // Without a recorded word-root relationship, show affix memory hints only.
+ // Do not fabricate a middle root or a complete word-origin formula from matching letters.
  const pfx=Object.keys(prefixes).filter(x=>word.startsWith(x)&&word.length>x.length+4).sort((a,b)=>b.length-a.length)[0];
  const suf=Object.keys(suffixes).filter(x=>word.endsWith(x)&&word.length>x.length+4).sort((a,b)=>b.length-a.length)[0];
  if(!pfx&&!suf)return null;
- const inner=word.slice(pfx?pfx.length:0,suf?-suf.length:undefined);
- if(inner.length<3)return null;
- const components=[];
- if(pfx)components.push({part:pfx,kind:'可能的前缀',explain:prefixes[pfx]});
- components.push({part:inner,kind:'中间部分',explain:'未经逐词词源核验'});
- if(suf)components.push({part:suf,kind:'可能的后缀',explain:suffixes[suf]});
- return{components,attested:false};
+ const hints=[];
+ if(pfx)hints.push({part:pfx+'-',kind:'前缀联想',explain:prefixes[pfx]});
+ if(suf)hints.push({part:'-'+suf,kind:'后缀联想',explain:suffixes[suf]});
+ return{components:hints,attested:false};
 }
 function morphologyMarkup(word){
  const info=bestMorph(word);
- if(!info)return '<p class="dictionary-hint">当前没有足够可靠的构词拆分，暂不按照字母相似性推测词源。</p>';
- return '<div class="morph-sequence">'+info.components.map(x=>'<div class="morph-piece"><span>'+esc(x.kind)+'</span><b>'+esc(x.part)+'</b><small>'+esc(x.explain)+'</small></div>').join('<div class="morph-plus">+</div>')+'</div><p class="dictionary-hint">'+(info.attested?'该单词在相应词根的例词资料中出现；拆分为便于理解的教学形式，具体历史音变仍需结合语源资料。':'这是常见前后缀提供的记忆线索，不代表词源已经证实。')+'</p>';
+ if(!info)return '<p class="dictionary-hint">此词暂未收录词根拆解，可继续查看下方词族和例句。</p>';
+ if(!info.attested)return '<div class="affix-explainer"><span class="affix-caption">词缀联想 · 辅助记忆</span><div class="affix-chips">'+info.components.map(x=>'<div class="affix-chip"><span>'+esc(x.kind)+'</span><strong>'+esc(x.part)+'</strong><small>'+esc(x.explain)+'</small></div>').join('')+'</div></div>';
+ return '<div class="morph-sequence">'+info.components.map(x=>'<div class="morph-piece"><span>'+esc(x.kind)+'</span><b>'+esc(x.part)+'</b><small>'+esc(x.explain)+'</small></div>').join('<div class="morph-plus">+</div>')+'</div>';
 }
 function familyMarkup(word){
  const group=rootIndex(word),roots=group.filter(x=>rootKind(x.ref)==='root');
@@ -604,7 +613,7 @@ function renderLexicon(){
  <div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">06</span><h3>词形变化</h3></div>
  ${exchangeMarkup(e)}</div>
  ${synonyms.length?`<div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">07</span><h3>近义词联想</h3></div><div class="root-link-list">${synonyms.filter(knownWord).slice(0,12).map(w=>`<button class="root-link" data-action="open-any" data-word="${esc(w)}">${esc(w)}</button>`).join('')}</div></div>`:''}
- <div class="dictionary-footer"><p>词源与构词说明用于理解和记忆；考试标签、读音和释义均可结合上下文进一步核实。</p>
+ <div class="dictionary-footer"><p>需要查看更多词源或词义，可参考下方词典。</p>
  <a href="https://dictionary.cambridge.org/dictionary/english-chinese-simplified/${encodeURIComponent(name)}" target="_blank" rel="noopener noreferrer">英汉词典 ↗</a>
  <a href="https://www.etymonline.com/word/${encodeURIComponent(name)}" target="_blank" rel="noopener noreferrer">词源参考 ↗</a>
  <a href="./credits.html" target="_blank" rel="noopener noreferrer">资料版权说明</a></div>`;
@@ -635,12 +644,12 @@ function renderLearningSections(){
  const kind=partType(seg,i,parts,r);return`${i?'<span class="seg-plus">+</span>':''}<div class="seg-card ${kind==='核心词根'?'main':''}"><label>${esc(kind)}</label><b>${esc(seg)}</b><p>${esc(segmentDesc(seg,kind))}</p></div>`;}).join('');
  const rail=r.groups.flatMap(g=>g.entries).map(e=>`<button class="family-word ${e.word===w.word?'active':''}" data-action="open-word" data-word="${esc(e.word)}" data-root="${esc(r.id)}"><b>${esc(e.word)}</b><small>${esc(e.meaning)}</small></button>`).join('');
  const src=PROVENANCE.core?.[r.id]||null;
- const sourceNote=src?.status==='reference'?`<div class="root-evidence"><div><b>词根资料</b> · ${esc(src.origin)} · ${esc(src.english)}</div><a target="_blank" rel="noopener noreferrer" href="${esc(refSourceUrl())}">词根资料说明 ↗</a><span class="source-small">词根资料核对不代表每个单词的严格语源已逐项确认。</span></div>`:'<div class="source-small">该词根尚未在参考词根资料中找到直接匹配，当前解释仅作为学习线索。</div>';
+ const sourceNote=src?.status==='reference'?`<div class="root-evidence"><div><b>词根资料</b> · ${esc(src.origin)} · ${esc(src.english)}</div><a target="_blank" rel="noopener noreferrer" href="${esc(refSourceUrl())}">词根资料说明 ↗</a><span class="source-small"></span></div>`:'<div class="source-small"></div>';
  const extraWords=(src?.extra||[]).map(word=>`<button class="family-word source-family-word" data-action="open-any" data-word="${esc(word)}"><b>${esc(word)}</b><small>${esc(short(LEX_MAP.get(word)?.[2]||''))}</small></button>`).join('');
  const senses=r.groups.map(group=>`<div class="sense-box"><div class="sense-head"><strong>${esc(group.title)}</strong><small>${group.entries.length} 词</small></div><p class="sense-note">${esc(group.note)}</p>${group.entries.map(e=>`<div class="sense-word-row"><button class="word-inline" data-action="open-word" data-word="${esc(e.word)}" data-root="${esc(r.id)}">${esc(e.word)}</button><span class="sense-cn" title="${esc(e.meaning)}">${esc(short(e.meaning))}</span><button class="speak-small" data-action="speak" data-text="${esc(e.word)}" aria-label="朗读 ${esc(e.word)}">♫</button></div>`).join('')}</div>`).join('');
  $('learningSections').innerHTML=`
  <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>01</span><h3>词根记词，公式拆解更高效</h3></div></div><div class="lesson-description"><strong>词根拆分单词，全面理解含义</strong>，看得懂也记得牢。</div><div class="seg-chain">${partMarkup}</div><div class="formula"><b>记忆公式：</b>${parts.map(x=>esc(x)).join(' + ')} → ${esc(w.word)} → <b>${esc(w.meaning)}</b></div><div class="origin"><b>词源故事</b><span>${esc(r.source)}</span></div>${sourceNote}<div class="memory-box">✳ 记忆线索：${esc(r.mnemonic)}</div></section>
- <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>02</span><h3>词根串联，记住一组单词</h3></div><span class="tag">${rootCount(r)} 个关联词</span></div><div class="lesson-description"><strong>一个熟词拓展多个生词</strong>，先掌握规律，再认识整组。</div><div class="root-family-nav">${rail}</div>${extraWords?`<div class="root-family-extra"><div class="mini-label">SOURCE-BASED FAMILY · 参考词族延伸</div><div class="root-family-nav">${extraWords}</div><p class="source-small">来自 开放词库中的例词，点击可查看离线释义；不代表已完成逐词语源核验。</p></div>`:''}</section>
+ <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>02</span><h3>词根串联，记住一组单词</h3></div><span class="tag">${rootCount(r)} 个关联词</span></div><div class="lesson-description"><strong>一个熟词拓展多个生词</strong>，先掌握规律，再认识整组。</div><div class="root-family-nav">${rail}</div>${extraWords?`<div class="root-family-extra"><div class="mini-label">SOURCE-BASED FAMILY · 参考词族延伸</div><div class="root-family-nav">${extraWords}</div><p class="source-small">点击拓展词，查看中文释义与更多词汇联想。</p></div>`:''}</section>
  <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>03</span><h3>释义分组，结合词义强化记忆</h3></div></div><div class="lesson-description"><strong>按照含义归纳分组</strong>，记住一个词时，也记住它和其他词的关系。</div><div class="sense-grid">${senses}</div></section>
  <section class="card lesson"><div class="section-topline"><div class="lesson-number"><span>04</span><h3>分级标签，例句巩固应用</h3></div></div><div class="lesson-description"><strong>搭配学习等级标签和原创双语例句</strong>，从理解走向使用。</div><div class="tag-row" style="margin:0 0 13px">${tags(w)}</div><div class="quote-card"><span class="mini-label">EXAMPLE SENTENCE · ${esc(w.word)}</span><div class="quote-text">${esc(w.example)}</div><div class="quote-zh">${esc(w.translation)}</div><div class="quote-acts"><button class="tiny-link" data-action="speak" data-text="${esc(w.example)}">♫ 听例句</button><button class="tiny-link" data-action="copy-example">复制双语例句</button></div></div><div class="no-copy">注：例句为独立编写的学习例句，并非历年考试真题；标签仅为非官方学习参考。</div></section>`;}
 function rememberSearch(name){name=String(name||'').trim().slice(0,70);if(!name)return;state.searchHistory=[name,...state.searchHistory.filter(x=>x.toLowerCase()!==name.toLowerCase())].slice(0,12);persist();}
@@ -680,7 +689,7 @@ function renderOnlineWord(query,entries){const e=entries[0],phonetic=e.phonetic|
  const word=String(e.word||query);const meanings=(e.meanings||[]).slice(0,4);
  const definitions=meanings.map(item=>'<section class="online-meaning"><b>'+esc(item.partOfSpeech||'词性')+'</b>'+((item.definitions||[]).slice(0,2).map(d=>'<p>'+esc(d.definition||'')+'</p>'+(d.example?'<small>'+esc(d.example)+'</small>':'')).join(''))+'</section>').join('');
  const audio=(e.phonetics||[]).find(p=>typeof p.audio==='string'&&/^https:\/\//.test(p.audio));
- $('onlineResult').innerHTML='<div class="mini-label">ONLINE DICTIONARY · 联网词典</div><div class="online-heading"><div><h2 class="online-title">'+esc(word)+'</h2><p class="online-phonetic">'+esc(phonetic)+'</p></div><button class="round-btn" data-action="speak" data-text="'+esc(word)+'" aria-label="朗读 '+esc(word)+'">♫</button></div><p class="online-flag">这不是本地词根精讲：以下为公开英文词典释义，不代表已完成词根核验。</p>'
+ $('onlineResult').innerHTML='<div class="mini-label">ONLINE DICTIONARY · 联网词典</div><div class="online-heading"><div><h2 class="online-title">'+esc(word)+'</h2><p class="online-phonetic">'+esc(phonetic)+'</p></div><button class="round-btn" data-action="speak" data-text="'+esc(word)+'" aria-label="朗读 '+esc(word)+'">♫</button></div><p class="online-flag">以下为在线英文词典释义。</p>'
  +(definitions||'<p>词典没有返回详细释义。</p>')+'<div class="online-links"><a target="_blank" rel="noopener noreferrer" href="https://dictionary.cambridge.org/dictionary/english-chinese-simplified/'+encodeURIComponent(word)+'">查看剑桥英汉释义 ↗</a><a target="_blank" rel="noopener noreferrer" href="https://dictionaryapi.dev/">词典接口来源 ↗</a></div>';
 }
 async function lookupOnline(q){const query=String(q||'').trim().toLowerCase();if(!query)return;const id=++onlineRequestId;rememberSearch(query);$('searchSuggestions').classList.add('hidden');$('searchInput').value=query;$('searchInput').blur();navigate('learn');setOnlineMode(true);jumpToResult();
@@ -713,12 +722,12 @@ function renderRootPanel(){
  const more=curated?entry?.extra||[]:[];
  const neighborKeys=[...new Set(words.flatMap(w=>[...(RELATED_WORD_ROOTS.get(w.toLowerCase())||[])].filter(id=>id!==selectedRootId)))].slice(0,8);
  const linked=neighborKeys.map(id=>{const r=ROOT_BY_ID.get(id)||REF_BY_ID.get(id);return '<button class="root-link" data-action="open-root" data-root="'+esc(id)+'">'+esc(r?.label||r?.key||'关联词根')+'</button>';}).join('');
- const label=curated?entry?.status==='reference'?'已收录词根资料线索':'词根资料待核实':'收录词根资料与例词';
+ const label=curated?entry?.status==='reference'?'词根与词族':'更多词源资料整理中':'关联词语';
  node.classList.remove('hidden');
  node.innerHTML=`<div class="root-panel-top"><div><div class="mini-label">WORD ROOTS · ${group}</div><h2>${esc(title)}</h2><p class="root-definition">${esc(meaning||english)}</p></div><button class="root-close" data-action="close-root">收起 ×</button></div>
  <div class="root-facts"><div><small>词根原义</small><p>${esc(english||meaning||'暂无更多资料')}</p></div>
  <div><small>词源语言</small><p>${esc(origin||'待核实')}</p></div></div>
- <div class="source-status ${curated&&entry?.status!=='reference'?'needs-review':''}">${label} · 词根例词不一定代表所有现代构词关系都已逐一考证</div>
+ <div class="source-status ${curated&&entry?.status!=='reference'?'needs-review':''}">${label} · 点击单词查看详情</div>
  <h3 class="root-subtitle">关联词语 · ${words.length} 个</h3>
  <div class="root-word-grid">${words.map(w=>rootWordChip(w,curated?'curated':'source')).join('')}</div>
  ${more.length?`<h3 class="root-subtitle">延伸词族 · ${more.length} 个</h3><div class="root-word-grid">${more.map(w=>rootWordChip(w,'source')).join('')}</div>`:''}
