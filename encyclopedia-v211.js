@@ -11,7 +11,7 @@ const localImage=u=>typeof u==='string'&&(u==='./images/andiron-in-use.png'||/^\
 const urlOK=(raw,kind)=>{try{const u=new URL(raw,location.href);if(u.protocol!=='https:')return false;return kind==='image'?['upload.wikimedia.org','thumb.wikimedia.org'].includes(u.hostname):(/(^|\.)(wikipedia\.org|wikimedia\.org|creativecommons\.org)$/.test(u.hostname));}catch(_){return false;}};
 const allowedLicense=s=>/^(?:Public domain|CC0(?: 1\.0)?|CC[- ]BY(?:-SA)?(?:[ -][0-9.]+)?)$/i.test(String(s||''));
 const seeds=window.ROOTLAB_VISUAL_SEEDS||Object.create(null),legacy=window.ROOTLAB_ENCYCLOPEDIA_SEEDS||Object.create(null),hints=window.ROOTLAB_VISUAL_HINTS||Object.create(null);
-const searches=new Map(),searchTasks=new Map(),images=new Map(),imageTasks=new Map(),articles=new Map(),dom=new Map(),pending=new WeakMap(),contexts=new WeakMap();
+const operations=new Map(),searches=new Map(),searchTasks=new Map(),images=new Map(),imageTasks=new Map(),articles=new Map(),dom=new Map(),pending=new WeakMap(),contexts=new WeakMap();
 const KEY='rootlab_wikipedia_cache_v211',CHOICES='rootlab_visual_choices_v29',PREF='rootlab_visual_auto_v29';
 const loadJSON=k=>{try{const v=JSON.parse(localStorage.getItem(k)||'{}');return v&&typeof v==='object'&&!Array.isArray(v)?v:{};}catch(_){return{};}};
 // Topic identity is case-sensitive after the initial letter. REvolution is an album,
@@ -32,6 +32,7 @@ for(const [key,r]of Object.entries(loadJSON(KEY)).slice(-30)){if(r&&Date.now()-r
 function remember(key,a){articles.set(key,a);try{localStorage.setItem(KEY,JSON.stringify(Object.fromEntries([...articles].slice(-30).map(([k,v])=>[k,{time:Date.now(),article:v}]))));}catch(_){}}
 function saveChoice(word,title,lang){choices[word]={title,lang};try{localStorage.setItem(CHOICES,JSON.stringify(Object.fromEntries(Object.entries(choices).slice(-80))));}catch(_){}}
 function live(node){return node.isConnected&&node.closest('#readerV24')&&!document.getElementById('readerV24')?.hidden;}
+function currentTarget(node,word,token){if(operations.get(word)!==token)return null;const target=node&&live(node)?node:document.querySelector('#readerV24 .wiki-enrichment');return target&&live(target)&&target.dataset.wikiWord===word?target:null;}
 function rememberDOM(node){if(live(node))dom.set(node.dataset.wikiWord,node.innerHTML);}
 function creditMarkup(img){if(!img||!allowedLicense(img.license)||!urlOK(img.source))return'';return'<a href="'+esc(img.source)+'" target="_blank" rel="noopener noreferrer">'+esc(img.credit||'Wikimedia Commons')+'</a> · '+(urlOK(img.licenseUrl)?'<a href="'+esc(img.licenseUrl)+'" target="_blank" rel="noopener noreferrer">'+esc(img.license)+'</a>':esc(img.license));}
 function imageMarkup(img){if(!img?.src||(!localImage(img.src)&&!urlOK(img.src,'image'))||!creditMarkup(img))return'';return'<figure class="wiki-figure visual-figure"><button type="button" class="visual-zoom" data-wiki="zoom" aria-label="放大图片：'+esc(img.alt||'单词配图')+'"><img src="'+esc(img.src)+'" alt="'+esc(img.alt||'所选百科主题的图片')+'" loading="lazy" decoding="async" referrerpolicy="no-referrer"'+(img.width&&img.height?' width="'+Number(img.width)+'" height="'+Number(img.height)+'"':'')+'><span>点图放大</span></button><figcaption>'+(img.caption?'<p>'+esc(img.caption)+'</p>':'')+'<small>'+creditMarkup(img)+'</small></figcaption></figure>';}
@@ -77,17 +78,17 @@ async function findTopics(word){
   searches.set(word,rows);return rows;
  }finally{clearTimeout(timer);}})();searchTasks.set(word,task);try{return await task;}finally{searchTasks.delete(word);}
 }
-async function search(node){const word=node.dataset.wikiWord;if(!/^[a-z][a-z'-]{0,49}$/i.test(word))return;pending.get(node)?.abort();const token=new AbortController();pending.set(node,token);node.dataset.visualPending='no';node.innerHTML=placeholder(word,contexts.get(node)?.meaning||'百科图文')+'<div class="visual-loading" role="status">正在寻找相关图文…</div>';
- try{const rows=await findTopics(word);if(!live(node)||pending.get(node)!==token)return;if(!rows.length){fallback(node,'暂无对应的百科图片主题；已有词义和例句照常保留。');return;}
+async function search(node){const word=node.dataset.wikiWord;if(!/^[a-z][a-z'-]{0,49}$/i.test(word))return;pending.get(node)?.abort();const token=new AbortController();pending.set(node,token);operations.set(word,token);node.dataset.visualPending='no';node.innerHTML=placeholder(word,contexts.get(node)?.meaning||'百科图文')+'<div class="visual-loading" role="status">正在寻找相关图文…</div>';
+ try{const rows=await findTopics(word);node=currentTarget(node,word,token);if(!node)return;pending.set(node,token);if(!rows.length){fallback(node,'暂无对应的百科图片主题；已有词义和例句照常保留。');return;}
  node.innerHTML='<div class="visual-heading"><h3>选一个与词义相符的画面</h3></div><p class="wiki-note">同一个词可能指不同事物，选择当前想了解的主题。</p><div class="wiki-candidates visual-candidates">'+rows.map(r=>'<article class="visual-candidate"><button type="button" data-wiki="article" data-title="'+esc(r.title)+'" data-lang="en">'+(r.image?'<img src="'+esc(r.image.src)+'" alt="'+esc(r.zhTitle||r.title)+'：主题配图" loading="lazy" decoding="async" referrerpolicy="no-referrer">':placeholder(r.zhTitle||r.title,r.title,true))+'<b>'+esc(r.zhTitle||r.title)+'</b>'+(r.zhTitle?'<small lang="en">'+esc(r.title)+'</small>':'')+'<small>'+esc(r.disambiguation?'先确认具体主题':r.sense||r.summary||'查看这个主题的介绍')+'</small><span>查看图文 →</span></button>'+(r.image?'<div class="visual-thumb-credit">'+creditMarkup(r.image)+'</div>':'')+'</article>').join('')+'</div>';rememberDOM(node);
- }catch(e){if(pending.get(node)===token)fallback(node,e.name==='AbortError'?'找图超时，请重试；已有词典内容不受影响。':'图片来源暂时不可用；词义、例句和已缓存图片仍可阅读。');}}
+ }catch(e){const target=currentTarget(node,word,token);if(target)fallback(target,e.name==='AbortError'?'找图超时，请重试；已有词典内容不受影响。':'图片来源暂时不可用；词义、例句和已缓存图片仍可阅读。');}}
 async function article(node,title,lang){
  if(!title||title.length>180||!['en','zh'].includes(lang))return;
  const word=node.dataset.wikiWord;
  if(lang==='en'&&!acceptable(word,title)){dom.delete(word);delete choices[word];try{localStorage.setItem(CHOICES,JSON.stringify(choices));}catch(_){}return search(node);}
  const key=lang+':'+title,cached=articles.get(key);
- if(cached&&cached.schema===2&&acceptable(word,cached.en?.title||cached.title,cached.en?.text||'')){saveChoice(word,title,lang);window.RootLabMeanings?.fromTopic(word,cached);node.innerHTML=articleMarkup(cached)+'<button class="rd-text" data-wiki="search">换一个主题</button>';rememberDOM(node);return;}
- pending.get(node)?.abort();const ctrl=new AbortController();pending.set(node,ctrl);const timer=setTimeout(()=>ctrl.abort(),18000);
+ if(cached&&cached.schema===2&&acceptable(word,cached.en?.title||cached.title,cached.en?.text||'')){pending.get(node)?.abort();operations.set(word,{});saveChoice(word,title,lang);window.RootLabMeanings?.fromTopic(word,cached);node.innerHTML=articleMarkup(cached)+'<button class="rd-text" data-wiki="search">换一个主题</button>';rememberDOM(node);return;}
+ pending.get(node)?.abort();const ctrl=new AbortController();pending.set(node,ctrl);operations.set(word,ctrl);const timer=setTimeout(()=>ctrl.abort(),18000);
  node.innerHTML=placeholder(title,contexts.get(node)?.meaning||'百科图文')+'<p class="wiki-note" role="status">正在读取中英图文…</p>';
  try{
   const params={prop:'extracts|pageimages|info|pageprops|langlinks',redirects:1,exintro:1,explaintext:1,exchars:650,piprop:'name',pilicense:'free',inprop:'url',llprop:'url',lllimit:5};
@@ -104,14 +105,14 @@ async function article(node,title,lang){
   const files=[...new Set([en?.pageimage,zh?.pageimage].filter(Boolean))];
   for(const file of files){try{a.image=await commonsImage(file,ctrl.signal);if(a.image)break;}catch(_){}}
   const seed=own(seeds,word);if(!a.image&&seed&&normalizeTitle(seed.title)===normalizeTitle(en?.title||title))a.image=seed.image;
-  if(!live(node)||pending.get(node)!==ctrl)return;
+  node=currentTarget(node,word,ctrl);if(!node)return;pending.set(node,ctrl);
   remember(key,a);saveChoice(word,title,lang);window.RootLabMeanings?.fromTopic(word,a);
   node.innerHTML=articleMarkup(a)+'<button class="rd-text" data-wiki="search">换一个主题</button>';rememberDOM(node);
- }catch(e){if(pending.get(node)===ctrl)fallback(node,e.name==='AbortError'?'图文读取超时，已有词义仍可阅读。':e.message||'读取失败');}finally{clearTimeout(timer);}
+ }catch(e){const target=currentTarget(node,word,ctrl);if(target)fallback(target,e.name==='AbortError'?'图文读取超时，已有词义仍可阅读。':e.message||'读取失败');}finally{clearTimeout(timer);}
 }
 function zoom(button){const figure=button.closest('figure'),img=figure?.querySelector('img');if(!img||img.hidden)return;let dialog=document.getElementById('visualLightbox');if(!dialog){dialog=document.createElement('dialog');dialog.id='visualLightbox';dialog.className='visual-lightbox';dialog.setAttribute('aria-label','单词图片大图');document.body.append(dialog);}dialog.innerHTML='<button type="button" data-wiki="close-zoom" class="visual-close" aria-label="关闭大图">×</button><div class="visual-large-image"></div>';const copy=figure.cloneNode(true),nested=copy.querySelector('.visual-zoom');if(nested){const image=nested.querySelector('img');image.loading='eager';nested.replaceWith(image);}dialog.querySelector('.visual-large-image').append(copy);dialog.addEventListener('close',()=>button.isConnected&&button.focus({preventScroll:true}),{once:true});dialog.showModal();dialog.querySelector('.visual-close')?.focus();}
 function setAuto(value){auto=!!value;try{localStorage.setItem(PREF,auto?'on':'off');}catch(_){}document.querySelectorAll('[data-wiki="toggle-auto"]').forEach(b=>{b.setAttribute('aria-pressed',String(auto));b.textContent='相关图片自动查找：'+(auto?'开启':'关闭');});}
 function preferences(){return'<div class="visual-preference"><button type="button" class="outline-btn" data-wiki="toggle-auto" aria-pressed="'+auto+'">相关图片自动查找：'+(auto?'开启':'关闭')+'</button><p>已整理的配图直接显示；具体事物和词根词进入视野后会查询相关主题。关闭后仍可手动找图。</p></div>';}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-wiki]');if(!b)return;const action=b.dataset.wiki;if(action==='close-zoom'){e.preventDefault();document.getElementById('visualLightbox')?.close();return;}if(action==='toggle-auto'){e.preventDefault();setAuto(!auto);return;}const n=b.closest('.wiki-enrichment');if(!n)return;e.preventDefault();e.stopPropagation();if(action==='search')search(n);if(action==='article')article(n,b.dataset.title,b.dataset.lang);if(action==='zoom')zoom(b);});
-window.RootLabEncyclopedia={mount,search,article,preferences,setAuto,placeholder,acceptable,get auto(){return auto;},get stats(){return{seeds:Object.keys(seeds).length,candidates:Object.keys(hints).length};},clear(){searches.clear();articles.clear();dom.clear();for(const key of Object.keys(choices))delete choices[key];try{localStorage.removeItem(KEY);localStorage.removeItem(CHOICES);}catch(_){}}};
+window.RootLabEncyclopedia={mount,search,article,preferences,setAuto,placeholder,acceptable,get auto(){return auto;},get stats(){return{seeds:Object.keys(seeds).length,candidates:Object.keys(hints).length};},clear(){operations.clear();searches.clear();articles.clear();dom.clear();for(const key of Object.keys(choices))delete choices[key];try{localStorage.removeItem(KEY);localStorage.removeItem(CHOICES);}catch(_){}}};
 })();
