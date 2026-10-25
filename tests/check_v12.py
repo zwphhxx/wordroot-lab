@@ -23,14 +23,14 @@ checks=[
  ('license included',(ROOT/'THIRD_PARTY_NOTICES.md').exists() and 'MIT License' in (ROOT/'THIRD_PARTY_NOTICES.md').read_text()),
  ('script references','lexicon-v12.js' in html and 'roots-v12.js' in html),
  ('offline cache contents','lexicon-v12.js' in (ROOT/'sw.js').read_text() and 'roots-v12.js' in (ROOT/'sw.js').read_text()),
- ('cache bumped','rootlab-offline-20261025-v12' in (ROOT/'sw.js').read_text()),
+ ('cache bumped','rootlab-offline-20261025-v20' in (ROOT/'sw.js').read_text()),
  ('curated labels source-marked',all('levels' in w and w.get('labelSource') in ('ECDICT','未核实') for r in core for g in r['groups'] for w in g['entries'])),
  ('unrestricted',not any(t in html for t in ['开通会员','会员精讲','data-action="open-member"'])),
  ('old storage compatibility','rootlab_standalone_demo_v3' in html),
  ('data format',all(len(row)==6 and re.fullmatch(r'[a-z]{2,25}',row[0]) and re.search(r'[\u3400-\u9fff]',row[2]) for row in lex)),
  ('unique reference roots',len(set(r['id'] for r in prov['referenceRoots']))==41),
  ('source labels','ECDICT' in html and '参考' in html),
- ('all site assets',all((ROOT/asset).is_file() for asset in ['index.html','lexicon-v12.js','roots-v12.js','manifest.webmanifest','sw.js','icon.svg','icon-192.png','icon-512.png','apple-touch-icon.png']))
+ ('all site assets',all((ROOT/asset).is_file() for asset in ['index.html','lexicon-v12.js','roots-v12.js','manifest.webmanifest','sw.js','icon.svg','icon-192.png','icon-512.png','apple-touch-icon.png','memory-engine-v2.js']))
 ]
 for name,success in checks:
  print(('PASS' if success else 'FAIL')+' '+name)

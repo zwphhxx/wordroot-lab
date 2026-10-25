@@ -1,5 +1,5 @@
-const CACHE_NAME='rootlab-offline-20261025-v12';
-const APP_SHELL=['./','./index.html','./lexicon-v12.js','./roots-v12.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
+const CACHE_NAME='rootlab-offline-20261025-v20';
+const APP_SHELL=['./','./index.html','./lexicon-v12.js','./roots-v12.js','./memory-engine-v2.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(APP_SHELL)).then(()=>self.skipWaiting()));
 });
@@ -13,7 +13,7 @@ self.addEventListener('fetch',event=>{
   if(url.origin!==self.location.origin)return;
   if(request.mode==='navigate'){
     event.respondWith(fetch(request).then(response=>{
-      if(response.ok){const copy=response.clone();caches.open(CACHE_NAME).then(cache=>cache.put('./index.html',copy));}
+      if(response.ok && (url.pathname.endsWith('/')||url.pathname.endsWith('/index.html'))){const copy=response.clone();caches.open(CACHE_NAME).then(cache=>cache.put('./index.html',copy));}
       return response;
     }).catch(()=>caches.match('./index.html').then(cached=>cached||Response.error())));
   }else{
