@@ -1,6 +1,6 @@
 /* V2.5 shell upgrade preserves previously downloaded dictionary bundles. */
-const CACHE_NAME='rootlab-offline-20261025-v260-cards';
-const APP_SHELL=['./','./index.html','./lexicon-core-v24.js','./roots-v21.js','./word-history-v22.js','./word-etymology-curated-v23.js','./history-ui-v24.js','./memory-engine-v2.js','./reader-v26.js','./reader-v26.css','./reading-cards-v24.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./credits.html','./data/reader-v24-manifest.json'];
+const CACHE_NAME='rootlab-offline-20261025-v261-adaptive';
+const APP_SHELL=['./','./index.html','./lexicon-core-v24.js','./roots-v21.js','./word-history-v22.js','./word-etymology-curated-v23.js','./history-ui-v24.js','./memory-engine-v2.js','./reader-v261.js','./basic-learning-v261.js','./reader-v261.css','./reading-cards-v24.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./credits.html','./data/reader-v24-manifest.json'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(APP_SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{
  const next=await caches.open(CACHE_NAME);

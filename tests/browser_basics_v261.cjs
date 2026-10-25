@@ -1,0 +1,55 @@
+/* Isolated headless Chrome only. CDP_PORT=9258 node tests/browser_basics_v261.cjs */
+const fs=require('node:fs');
+(async()=>{
+ const c=await require('./cdp_helper.cjs')(Number(process.env.CDP_PORT||9258)),checks=[];
+ const check=(name,ok,info='')=>{checks.push({name,ok:!!ok,info});console.log((ok?'PASS ':'FAIL ')+name+' '+JSON.stringify(info));};
+ const v=async(name,e)=>{const r=await c.val(e);check(name,r?.ok??r,r?.info??'');};
+ const wait=async e=>{for(let n=0;n<60;n++){if(await c.val(e))return true;await c.wait(100);}return false;};
+ const click=q=>c.val(`document.querySelector(${JSON.stringify(q)}).click()`);
+ await c.call('Network.emulateNetworkConditions',{offline:false,latency:0,downloadThroughput:-1,uploadThroughput:-1});
+ await c.call('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});
+ await c.call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+ await c.val(`RootLabReaderBridge.open('apple')`);await wait(`RootLabReaderBridge.loaded('apple')`);await c.wait(120);
+ await v('apple primary meaning is not a confusing guy gloss',`document.querySelector('#readerV24 .rd-meaning').textContent==='n. 苹果'`);
+ await v('apple phonetic uses normal IPA',`document.querySelector('#readerV24 .rd-ipa').textContent==='/ˈæp.əl/'`);
+ await v('All four basic learning cards are open',`document.querySelectorAll('#readerV24 [data-module]').length===4&&!document.querySelector('#readerV24 details')`);
+ await v('apple uses whole-word history, never fake prefix/root',`!document.querySelector('#readerV24 .lr-parts')&&document.querySelector('#readerV24 .lr-origin-text').textContent.includes('æppel')`);
+ await v('There are no no-content or no-related-root cards',`!(/暂无明确|尚未收录中文词源|暂未收录这个词的例句/.test(document.querySelector('#readerV24').textContent))`);
+ await v('Six everyday collocations available',`document.querySelectorAll('#readerV24 .lr-phrase-row').length===6&&document.querySelector('[data-module="family"]').textContent.includes('apple juice')`);
+ await v('Common grammar and idioms visible',`['an apple','a bad apple',"the apple of someone's eye",'compare apples and oranges'].every(x=>document.querySelector('#readerV24 [data-module="meanings"]').textContent.includes(x))`);
+ await v('Usage examples are independently written and bilingual',`document.querySelectorAll('#readerV24 .lr-usage-item blockquote small').length===4&&document.querySelectorAll('#readerV24 .lr-example-zh').length>=2`);
+ await v('Current phrase plays the correct speech text',`(()=>{const original=RootLabReaderBridge.speak;let heard='';RootLabReaderBridge.speak=t=>{heard=t};document.querySelector('#readerV24 .lr-phrase-row button').click();RootLabReaderBridge.speak=original;return heard==='apple juice';})()`);
+ await v('Sources are present without developer repository links',`document.querySelector('#readerV24 a[href*="dictionary.cambridge.org"]')!==null&&!document.querySelector('#readerV24 a[href*="github.com"]')`);
+ await v('Topic relations are not misrepresented as etymological',`document.querySelector('#readerV24 .lr-next-list').textContent.includes('主题关联')&&!document.querySelector('#readerV24 [data-module="family"]').textContent.includes('同根词')`);
+ await c.val('scrollTo({top:0,behavior:"instant"})');await c.shot('/tmp/rootlab-v261-apple-final.png');
+ await c.val(`document.querySelector('#readerV24 [data-module="meanings"]').scrollIntoView({block:'start',behavior:'instant'})`);await c.shot('/tmp/rootlab-v261-apple-usage-final.png');
+ const old=await c.val(`({fav:[...RootLabTest.state.favorites],review:JSON.stringify(RootLabTest.state.review)})`);
+ if(!old.fav.includes('apple'))await click('#readerV24 [data-reader="favorite"]');
+ await v('Saving apple does not enroll it in review',`RootLabTest.state.favorites.includes('apple')&&JSON.stringify(RootLabTest.state.review)===${JSON.stringify(old.review)}`);
+ await click('#readerV24 [data-reader="plan"]');
+ await v('apple can explicitly join review',`!!RootLabTest.state.review.apple`);
+ await click('#readerV24 [data-reader="answer"][data-index="1"]');
+ await v('apple recall is answerable with feedback',`RootLabReader.state.answers.apple?.correct===true&&document.querySelector('#readerV24 .rd-feedback').textContent.includes('元音')`);
+ for(const word of ['water','book']){await c.val(`RootLabReaderBridge.open('${word}')`);await c.wait(150);await v(word+' receives usage cards, no fake root or empty states',`document.querySelectorAll('#readerV24 [data-module]').length===4&&document.querySelectorAll('#readerV24 .lr-phrase-row').length===6&&!document.querySelector('#readerV24 .lr-parts')&&!document.querySelector('#readerV24').textContent.includes('暂无明确')`);}
+ await c.val(`RootLabReaderBridge.open('zodiac')`);await wait(`RootLabReaderBridge.loaded('zodiac')`);
+ await v('Other ordinary words drop empty cards instead of filler',`document.querySelectorAll('#readerV24 [data-module]').length>=1&&!(/暂无明确|尚未收录中文词源/.test(document.querySelector('#readerV24').textContent))`);
+ await v('Card numbers remain sequential when a module is absent',`Array.from(document.querySelectorAll('#readerV24 .lr-number')).every((x,i)=>x.textContent===String(i+1).padStart(2,'0'))`);
+ await c.val(`RootLabTest.navigate('roots');document.querySelector('[data-action="root-set"][data-set="curated"]').click();document.querySelector('#rootsGrid [data-root="port"]').click()`);await c.wait(100);
+ for(const width of [1365,768,390,320]){await c.call('Emulation.setDeviceMetricsOverride',{width,height:900,deviceScaleFactor:1,mobile:width<800});await c.wait(70);
+ const layout=await c.val(`(()=>{const p=document.querySelector('#selectedRootPanel'),r=p.getBoundingClientRect(),t=p.querySelector('h2').getBoundingClientRect(),b=p.querySelector('.root-close').getBoundingClientRect();return{ok:document.body.scrollWidth===innerWidth&&t.left-r.left>=16&&t.top-r.top>=18&&r.right-b.right>=15,info:{vw:innerWidth,body:document.body.scrollWidth,left:t.left-r.left,top:t.top-r.top,right:r.right-b.right}}})()`);check(width+'px root title, return button and grid fit card',layout.ok,layout.info);}
+ await v('port word inventory remains complete',`document.querySelectorAll('#selectedRootPanel .root-word-grid')[0].children.length===10&&document.querySelectorAll('#selectedRootPanel .root-word-chip').length===28`);
+ await v('Known source language translated for reader',`document.querySelector('#selectedRootPanel .root-facts').textContent.includes('拉丁语')`);
+ await click('#selectedRootPanel [data-word="transport"]');await c.wait(130);
+ await v('Root word link still opens the intended word',`RootLabReader.context.word==='transport'&&RootLabReader.context.learning.family.id==='port'`);
+ await c.val(`RootLabTest.navigate('roots');document.querySelector('#rootsGrid [data-root="port"]').click()`);await c.wait(120);
+ await c.call('Emulation.setDeviceMetricsOverride',{width:1365,height:900,deviceScaleFactor:1,mobile:false});await c.val(`document.querySelector('#selectedRootPanel').scrollIntoView({behavior:'instant',block:'start'})`);await c.shot('/tmp/rootlab-v261-root-final.png');
+ await click('#selectedRootPanel .root-close');await v('Return-to-list navigation works without hiding learning content',`document.querySelector('#selectedRootPanel').classList.contains('hidden')&&document.querySelectorAll('#rootsGrid .root-tile').length===37`);
+ const cache=await c.val(`(async()=>{await navigator.serviceWorker.ready;const c=await caches.open('rootlab-offline-20261025-v261-adaptive');return(await c.keys()).map(x=>new URL(x.url).pathname)})()`);
+ check('Reviewed basic content included in offline cache',cache.some(x=>x.endsWith('/basic-learning-v261.js'))&&cache.some(x=>x.endsWith('/reader-v261.js')),cache.length);
+ await c.call('Network.emulateNetworkConditions',{offline:true,latency:0,downloadThroughput:0,uploadThroughput:0});await c.call('Page.navigate',{url:'http://localhost:8799/?word=apple'});await wait('!!window.RootLabReader?.ready');await c.wait(140);
+ await v('apple keeps meaningful cards offline',`!navigator.onLine&&RootLabReader.context.word==='apple'&&document.querySelectorAll('#readerV24 .lr-phrase-row').length===6&&document.querySelector('#readerV24').textContent.includes('æppel')`);
+ await v('Saved study state not reset on release',`RootLabTest.state.favorites.includes('apple')&&!!RootLabTest.state.review.apple`);
+ await c.call('Network.emulateNetworkConditions',{offline:false,latency:0,downloadThroughput:-1,uploadThroughput:-1});
+ check('No uncaught browser exception',!c.events.some(x=>x.method==='Runtime.exceptionThrown'));
+ fs.writeFileSync('/tmp/rootlab-v261-basics-results.json',JSON.stringify(checks,null,2));console.log('SUMMARY',checks.filter(x=>x.ok).length,'/',checks.length);c.close();if(checks.some(x=>!x.ok))process.exitCode=1;
+})().catch(e=>{console.error(e);process.exit(2)});
