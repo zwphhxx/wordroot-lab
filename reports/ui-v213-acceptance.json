@@ -1,0 +1,164 @@
+{
+  "status": "PASS",
+  "version": "2.13.0",
+  "lexicalBuild": "v212-20dbabd4241ad0",
+  "scope": "UI-only release; no new claim of dictionary semantic accuracy.",
+  "dataIntegrity": {
+    "status": "PASS",
+    "lexicalBuild": "v212-20dbabd4241ad0",
+    "counts": {
+      "words": 49426,
+      "senses": 110238,
+      "relations": 84682,
+      "presentationRelations": 84681,
+      "packages": 3662
+    },
+    "failures": [],
+    "method": "All original sense IDs and all relation IDs retained; only equivalent displayed edges grouped; source objects unchanged; every package digest checked."
+  },
+  "uiChecks": {
+    "passed": 42,
+    "total": 42
+  },
+  "stateAndContrastChecks": {
+    "passed": 12,
+    "total": 12
+  },
+  "preservedRegression": {
+    "status": "REVIEW_REQUIRED",
+    "uiVersion": "2.13.0",
+    "lexicalBuild": "v212-20dbabd4241ad0",
+    "suites": [
+      {
+        "suite": "browser_bilingual_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "25",
+          "25"
+        ],
+        "failures": [],
+        "seconds": 1.51
+      },
+      {
+        "suite": "browser_release_boundaries_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "11",
+          "11"
+        ],
+        "failures": [],
+        "seconds": 1.45
+      },
+      {
+        "suite": "browser_authored_pairs_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": null,
+        "failures": [],
+        "seconds": 9.83
+      },
+      {
+        "suite": "browser_external_bilingual_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "16",
+          "16"
+        ],
+        "failures": [],
+        "seconds": 0.81
+      },
+      {
+        "suite": "browser_visual_pairs_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "10",
+          "10"
+        ],
+        "failures": [],
+        "seconds": 1.01
+      },
+      {
+        "suite": "browser_universal_v211.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "38",
+          "38"
+        ],
+        "failures": [],
+        "seconds": 12.3
+      },
+      {
+        "suite": "browser_visual_v211.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "31",
+          "31"
+        ],
+        "failures": [],
+        "seconds": 6.31
+      },
+      {
+        "suite": "browser_meanings_v211.cjs",
+        "status": "FAIL",
+        "exitCode": 1,
+        "summary": [
+          "36",
+          "37"
+        ],
+        "failures": [
+          "FAIL Banana definition before its picture \"\""
+        ],
+        "seconds": 6.49
+      },
+      {
+        "suite": "browser_cards_v211.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "37",
+          "37"
+        ],
+        "failures": [],
+        "seconds": 3.79
+      }
+    ],
+    "scope": "Preserved assertions with environment and UI-shell version adapted only. Changed UX contracts are reported separately, not silently removed."
+  },
+  "intentionalContractChange": {
+    "oldExpectation": "Banana definition before its picture",
+    "newExpectation": "Reviewed image precedes the full narrative while all meanings remain directly visible",
+    "authority": "User accepted UI audit recommendation to bring pictures forward",
+    "proof": "browser_ui_v213.cjs: Reviewed banana image precedes the full narrative explanation",
+    "oldFailurePreserved": true
+  },
+  "measuredLayout": {
+    "carrier": {
+      "height": 12650,
+      "firstSense": 1032.3125,
+      "firstExample": 413.171875
+    },
+    "banana": {
+      "height": 5513,
+      "imageY": 601.3125
+    }
+  },
+  "assets": {
+    "index.html": "4fa9a44ccd788f0502089a27a7be4d9a87f2bea78699e7df49c1de230296e395",
+    "reader-v213.js": "d8829cbe15701b30a6492b539e13df554177077760fe3d0cbafe31d9dab650bf",
+    "reader-v213.css": "dc96ea2594aa2d3a10b186a3237ea5b0ad788b8a9ba5807f05bb856c1869af5d",
+    "reading-ui-v213.js": "ffa6bc53dcec9ccfb7ecb832010a3faab9e5d61a25714ba19e1231ad6bd13301",
+    "bilingual-v213.js": "6678ab2ac453e6ca238cdaa08383f8eb35652d1fb58f71b228eeb448378c1baa",
+    "encyclopedia-v213.js": "99bec09aadd8508b2640a12ec2381c603fddc10b46397bc411e9878217cb9c3b",
+    "navigation-v213.js": "8622d4bc06e71d3eb15b4329cc9f653dbceacce8d4822e728b2db4bcce9ceb1a",
+    "authored-ui-v213.js": "278d3766b68558fd8be9a472e642372c2546c7ffce4bd25ba06d4ed03e2e3c02",
+    "sw.js": "500071f5a60155bcfbe29206874f98b7ff1d140abde23bdae409c98646f28231"
+  },
+  "privateStateTests": "Isolated browser only; exact saved due date and favorites preserved.",
+  "published": false
+}

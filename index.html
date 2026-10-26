@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#fffdfa" />
-  <meta name="application-version" content="2.12.0" />
+  <meta name="application-version" content="2.13.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="./manifest.webmanifest" />
@@ -337,7 +337,7 @@
 .historical-form-card small{font-size:11px;color:#99806d}
 @media(max-width:600px){.historical-forms-grid{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="./reader-v212.css" />
+<link rel="stylesheet" href="./reader-v213.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -380,9 +380,10 @@
 
       <section class="view hidden" id="rootsView">
         <div class="page-intro"><div><h1>词库</h1></div><div class="intro-number" id="rootCatalogNumber">78 <small>个主题</small></div></div>
+        <div class="catalog-tools"><div class="filter-search"><span aria-hidden="true">⌕</span><input id="catalogSearch" type="search" placeholder="搜索词根、单词或中文释义" aria-label="筛选词根库" /></div><details class="catalog-levels"><summary>学习范围</summary><div class="filter-bar" id="levelFilters"></div></details></div>
         <div class="root-library-toggle" id="rootLibraryToggle"><button class="active" type="button" data-action="root-set" data-set="curated">精选精讲</button><button type="button" data-action="root-set" data-set="reference">词根大全</button><button type="button" data-action="root-set" data-set="prefix">常见前缀</button><button type="button" data-action="root-set" data-set="suffix">常见后缀</button></div>
         <article id="selectedRootPanel" class="card selected-root-panel hidden"></article>
-        <div class="catalog-tools"><div class="filter-search"><span aria-hidden="true">⌕</span><input id="catalogSearch" type="search" placeholder="搜索词根、单词或中文释义" aria-label="筛选词根库" /></div><details class="catalog-levels"><summary>学习范围</summary><div class="filter-bar" id="levelFilters"></div></details></div>
+
         <div id="rootsGrid" class="roots-grid"></div>
       </section>
 
@@ -418,16 +419,17 @@
   <script src="./meaning-notes-v210.js"></script>
   <script src="./meaning-explainer-v212.js"></script>
   <script src="./visual-caption-v212.js"></script>
-  <script src="./encyclopedia-v212.js"></script>
+  <script src="./encyclopedia-v213.js"></script>
   <script src="./whole-word-v27.js"></script>
 <script src="./search-control-v27.js"></script>
-<script src="./navigation-v212.js"></script>
+<script src="./navigation-v213.js"></script>
 <script src="./bilingual-seeds-v212.js"></script>
   <script src="./dictionary-repository-v212.js"></script>
   <script src="./authored-pairs-v212.js"></script>
-  <script src="./bilingual-v212.js"></script>
-  <script src="./authored-ui-v212.js"></script>
-  <script src="./reader-v212.js"></script>
+  <script src="./bilingual-v213.js"></script>
+  <script src="./authored-ui-v213.js"></script>
+  <script src="./reading-ui-v213.js"></script>
+  <script src="./reader-v213.js"></script>
   <script>
 /* Root Lab · educational, offline-ready vocabulary explorer.
  * Data is independently authored. Example sentences are illustrative, not exam quotations.
@@ -896,6 +898,7 @@ function renderAnalytics(){
  const totalReviews=twoWeeks.reduce((sum,x)=>sum+x.reviewed,0),totalCorrect=twoWeeks.reduce((sum,x)=>sum+x.remembered,0);
  const accuracy=totalReviews?Math.round(100*totalCorrect/totalReviews):0,streak=MEM.streak(state.activity,dt);
  const bars=twoWeeks.map(item=>`<div class="activity-day" title="${item.date}：${item.reviewed} 次复习" aria-label="${item.date}，复习 ${item.reviewed} 次"><div class="activity-bar ${item.reviewed?'has-activity':''}" style="height:${item.reviewed?Math.max(8,Math.round(100*item.reviewed/top)):5}%"></div><small>${item.date.slice(8)}</small></div>`).join('');
+ if(!metrics.total&&!Object.values(state.activity).some(d=>Number(d.reviews)>0))return '<section class="analytics-empty profile-panel"><h2>从第一个词开始</h2><p>查词后加入复习，完成回忆后这里会显示你的学习统计。</p><button class="primary-btn" data-reader="home">去查词 →</button></section>';
  const distribution=[['new','待学习'],['learning','学习中'],['growing','巩固中'],['mastered','已掌握']];
  const mastery=distribution.map(([key,label])=>`<div class="mastery-row"><span>${label}</span><div class="mastery-track"><div class="mastery-progress ${key}" style="width:${metrics.total?Math.round(100*metrics[key]/metrics.total):0}%"></div></div><b>${metrics[key]}</b></div>`).join('');
  const goalOptions=[10,20,30].map(n=>`<button data-action="daily-goal" data-goal="${n}" class="goal-choice ${goal===n?'active':''}">${n} 次</button>`).join('');
@@ -933,7 +936,7 @@ function renderSpaced(){
  const mistakeList=mistakes.slice(0,12).map(name=>`<button class="mistake-chip" data-action="open-any" data-word="${esc(name)}">${esc(name)} <small>错 ${Number(state.mistakeCounts[name])||1} 次</small></button>`).join('');
  const upcoming=entries.filter(({p})=>!due(p)).slice(0,12).map(({w,p})=>`<div class="upcoming-word"><button data-action="open-any" data-word="${esc(w)}">${esc(w)}</button><span>${esc(p.due)}</span></div>`).join('');
  $('reviewBody').innerHTML=`<article class="daily-panel"><h2>${pending.length?'今天有 '+pending.length+' 个词待复习':entries.length?'今天暂时没有到期的词':'还没有复习计划'}</h2>
- <p class="review-summary">${pending.length?'先回忆词义，再按难度安排下一次复习。':entries.length?'可以复习错词，或继续查词阅读。':'查词时在“更多释义与用法”中加入单词。'}${day.reviews?' 今日已完成 '+day.reviews+' 次复习。':''}</p>
+ <p class="review-summary">${pending.length?'先回忆词义，再按难度安排下一次复习。':entries.length?'可以复习错词，或继续查词阅读。':'查词后点“加入复习”，即可安排下一次回忆。'}${day.reviews?' 今日已完成 '+day.reviews+' 次复习。':''}</p>
  <div class="daily-actions">${pending.length?`<button class="primary-btn" data-action="session-start" data-scope="due">开始复习 · ${Math.min(pending.length,goal)} 词 →</button>`:!entries.length?'<button class="primary-btn" data-reader="home">去查一个词 →</button>':''}${mistakes.length?`<button class="outline-btn" data-action="session-start" data-scope="mistakes">错词强化 · ${mistakes.length} 词</button>`:''}</div></article>
  ${pending.length?`<details class="page-fold"><summary>今日到期 · ${pending.length} 词</summary><div class="review-list">${dueList}</div></details>`:''}
  ${mistakes.length?`<details class="page-fold"><summary>待强化错词 · ${mistakes.length}</summary><div class="page-fold-body"><p>连续两次回忆正确后移出待强化列表。</p><div class="mistake-chip-list">${mistakeList}</div></div></details>`:''}
@@ -983,14 +986,22 @@ function loadBackup(f){if(!f)return;if(f.size>5000000){toast('备份文件过大
  }catch(e){toast('导入失败，请选择本工具导出的有效 JSON 文件');}finally{$('importFile').value='';}};
  reader.readAsText(f,'utf-8');
 }
+function renderProfileGoals(){return '<section class="profile-goals"><div class="goal-controls">'+[10,20,30].map(n=>'<button class="goal-choice '+(state.dailyGoal===n?'active':'')+'" data-action="daily-goal" data-goal="'+n+'">'+n+' 次</button>').join('')+'</div><p>目标按复习次数计算；不会改变已有复习日期。</p><button class="rd-text" data-action="profile-insights">查看复习统计 →</button></section>';}
 function renderProfile(){const fav=state.favorites.map(studyItem).filter(Boolean);
  const items=fav.length?'<div class="favorite-list">'+fav.map(w=>'<div class="favorite-entry"><button class="favorite-info" data-action="open-any" data-word="'+esc(w.word)+'"><b>'+esc(w.word)+'</b><small>'+esc(short(w.meaning))+'</small></button><button class="icon-outline" data-action="favorite" data-word="'+esc(w.word)+'" aria-label="移除收藏 '+esc(w.word)+'">移除</button></div>').join('')+'</div>':'<p class="empty-message">暂无收藏。查词时点星标即可保存。</p>';
- $('profileBody').innerHTML='<article class="profile-panel"><h2>收藏 <span class="profile-count">'+fav.length+'</span></h2>'+items+'</article><details class="page-fold"><summary>学习统计</summary><div class="page-fold-body">'+renderAnalytics()+'</div></details><details class="page-fold"><summary>备份与数据管理</summary><div class="page-fold-body"><p>清除浏览器数据前，建议导出备份。旧版学习记录仍可导入。</p><div class="account-tools"><button class="outline-btn" data-action="export-json">导出全部记录</button><button class="outline-btn" data-action="import-json">导入备份</button><button class="outline-btn" data-action="export-csv">导出收藏词表</button><button class="outline-btn" data-action="clear-data">清空记录</button></div></div></details>';
+ $('profileBody').innerHTML='<article class="profile-panel"><h2>收藏 <span class="profile-count">'+fav.length+'</span></h2>'+items+'</article><details class="page-fold"><summary>学习目标</summary><div class="page-fold-body">'+renderProfileGoals()+'</div></details><details class="page-fold"><summary>备份与数据管理</summary><div class="page-fold-body"><p>清除浏览器数据前，建议导出备份。旧版学习记录仍可导入。</p><div class="account-tools"><button class="outline-btn" data-action="export-json">导出全部记录</button><button class="outline-btn" data-action="import-json">导入备份</button><button class="outline-btn" data-action="export-csv">导出收藏词表</button><button class="outline-btn" data-action="clear-data">清空记录</button></div></div></details>';
 }
 function copyExample(){const t=current.example+'\n'+current.translation;if(navigator.clipboard?.writeText){navigator.clipboard.writeText(t).then(()=>toast('双语例句已复制')).catch(()=>fallbackCopy(t));}else fallbackCopy(t);}
 function fallbackCopy(t){let a=document.createElement('textarea');a.value=t;document.body.append(a);a.select();try{document.execCommand('copy');toast('双语例句已复制');}catch(e){toast('无法自动复制，请手动选择复制');}a.remove();}
-function speak(t){if(!('speechSynthesis' in window)){toast('此浏览器暂不支持系统英语发音');return;}
- try{window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.88;u.pitch=1;window.speechSynthesis.speak(u);}catch(e){toast('无法播放语音，请检查设备音量和浏览器权限');}}
+let audioGeneration=0;
+function speak(t){
+ const generation=++audioGeneration;
+ const notify=(state,message='')=>generation===audioGeneration&&window.dispatchEvent(new CustomEvent('rootlab:audio',{detail:{text:t,state,message}}));
+ if(!('speechSynthesis' in window)){notify('error','此浏览器暂不支持系统英语发音');toast('此浏览器暂不支持系统英语发音');return;}
+ try{window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.88;u.pitch=1;
+ u.onstart=()=>notify('playing');u.onend=()=>notify('idle');u.onerror=e=>{if(e.error!=='interrupted'&&e.error!=='canceled'){notify('error','播放失败，请重试');toast('播放失败，请检查设备音量或重试');}else notify('idle');};notify('loading');window.speechSynthesis.speak(u);
+ }catch(e){notify('error','无法播放语音');toast('无法播放语音，请检查设备音量和浏览器权限');}}
+
 function renderAll(){renderHeader();renderCurrent();if(view==='roots')renderCatalog();if(view==='review')renderReview();if(view==='profile')renderProfile();}
 document.addEventListener('click',event=>{
  const btn=event.target.closest('[data-action]');if(!btn)return;
@@ -1016,6 +1027,7 @@ document.addEventListener('click',event=>{
  case 'random-root':randomRoot();break;
  case 'quiz-root':session=null;startQuiz('root');break;
  case 'level-filter':rootFilter=btn.dataset.level;catalogPage=1;renderCatalog();break;
+ case 'profile-insights':reviewMode='insights';navigate('review');renderReview();break;
  case 'review-mode':reviewMode=btn.dataset.mode;session=null;renderReview();break;
  case 'quiz-scope':quizScope=btn.dataset.scope;quiz=null;renderReview();break;
   case 'quiz-type':quizType=btn.dataset.type;quiz=null;renderReview();break;
@@ -1122,7 +1134,7 @@ function readerContext(){const word=String(currentLexicon?.[0]||current.word).to
  return window.RootLabBilingual.enrich({word,curated:!!w,meaning:custom?.meaning|| (Array.isArray(row?.[2])?row[2][0]:short(item?.meaning)),phonetic:window.ROOTLAB_BASIC_CARDS?.[word]?.phonetic||(row?.[1]?'/ '+phoneticHint(row[1])+' /':''),example:example[0]||'',translation:example[1]||'',favorite:isFavorite(word),planned:!!state.review[word],notes:w?wordSpecificNotes(w):null,related:readerRelated(word),learning:readerCardData(word),fullHtml:cloned.innerHTML,distractor:null});
 }
 async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const metas=await Promise.all(['./data/reader-v24-manifest.json','./data/usage-v27-manifest.json','./data/bilingual-v212/'+window.ROOTLAB_BILINGUAL_META.buildId+'/manifest.json'].map(async url=>{const r=await fetch(url,{signal});if(!r.ok)throw Error('Manifest unavailable');return r.json();}));
- const pictures=[...new Set(Object.values(window.ROOTLAB_VISUAL_SEEDS||{}).map(r=>r.image.src))].map(url=>({url}));const items=[...metas.flatMap(m=>Object.values(m.bundles||{})),...pictures],cache=await caches.open('rootlab-offline-20261026-v2120-20dbabd4241ad0');let done=0;
+ const pictures=[...new Set(Object.values(window.ROOTLAB_VISUAL_SEEDS||{}).map(r=>r.image.src))].map(url=>({url}));const items=[...metas.flatMap(m=>Object.values(m.bundles||{})),...pictures],cache=await caches.open('rootlab-offline-20261026-v2130-reading-20dbabd4241ad0');let done=0;
  for(const item of items){if(signal.aborted)throw new DOMException('Cancelled','AbortError');const url=new URL(item.url,location.href).href;let saved=await cache.match(url);if(!saved){const r=await fetch(url,{signal});if(!r.ok)throw Error('Bundle unavailable');await cache.put(url,r.clone());}onProgress(++done,items.length);}}
 
 window.RootLabReaderBridge={navigate,lookup:lookupOnline,home:()=>{setOnlineMode(false);navigate('learn');},downloadAll:downloadReaderOffline,current:readerContext,known:knownWord,open:openAnyWord,speak,favorite:toggleFavorite,plan:addPlan,toast,refresh:renderCurrent,hydrate:ensureReaderDetails,loaded:readerDetailsLoaded,related:readerRelated,search:directMatches};
