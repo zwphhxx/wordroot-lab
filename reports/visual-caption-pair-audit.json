@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "122 previously inspected local image captions only; not arbitrary fetched encyclopedia text",
+  "total": 122,
+  "paired": 122,
+  "sourceSnapshotSha256": "0f2131d85e7634f8879f15d4d411c2325ee5ef33a4f2cf7c71c3d74b2f7ca465",
+  "reviewFileSha256": "fa87df75794086e2d7e3ab18c10b31a9fff377a8cd78616822b3fd985a706e76",
+  "outputSha256": "530fd3255beb670487377d5f9cb29ec79b8604f653c45898ac646e06cd9f4f04",
+  "reviewer": "assistant_linguistic_review"
+}

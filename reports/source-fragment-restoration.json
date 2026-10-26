@@ -1,0 +1,887 @@
+{
+  "source": "Princeton WordNet 3.0",
+  "restoredCounts": {
+    "phrase_gloss_restored": 104,
+    "example_restored": 3
+  },
+  "newTranslationInputs": 15,
+  "changes": [
+    {
+      "word": "access",
+      "type": "phrase_gloss_restored",
+      "phrase": "random access memory",
+      "old": "the most common computer memory which can be used by programs to perform necessary tasks while the computer is on; an integrated circuit memory chip allows information to be stored or accessed in any order and all storag",
+      "restored": "the most common computer memory which can be used by programs to perform necessary tasks while the computer is on; an integrated circuit memory chip allows information to be stored or accessed in any order and all storage locations are equally accessible",
+      "sourceSynset": "04052757-n"
+    },
+    {
+      "word": "anabolic",
+      "type": "phrase_gloss_restored",
+      "phrase": "anabolic steroid",
+      "old": "any of a group of synthetic steroid hormones used to stimulate muscle and bone growth; more than 100 have been developed and each requires a prescription to be used legally in the United States; sometimes used illicitly",
+      "restored": "any of a group of synthetic steroid hormones used to stimulate muscle and bone growth; more than 100 have been developed and each requires a prescription to be used legally in the United States; sometimes used illicitly by athletes to increase their strength",
+      "sourceSynset": "15111116-n"
+    },
+    {
+      "word": "anal",
+      "type": "phrase_gloss_restored",
+      "phrase": "anal personality",
+      "old": "(psychoanalysis) a personality characterized by meticulous neatness and suspicion and reserve; said to be formed in early childhood by fixation during the anal stage of development (usually as a consequence of toilet tra",
+      "restored": "(psychoanalysis) a personality characterized by meticulous neatness and suspicion and reserve; said to be formed in early childhood by fixation during the anal stage of development (usually as a consequence of toilet training)",
+      "sourceSynset": "04619083-n"
+    },
+    {
+      "word": "anthrax",
+      "type": "phrase_gloss_restored",
+      "phrase": "cutaneous anthrax",
+      "old": "a form of anthrax infection that begins as papule that becomes a vesicle and breaks with a discharge of toxins; symptoms of septicemia are severe with vomiting and high fever and profuse sweating; the infection is often",
+      "restored": "a form of anthrax infection that begins as papule that becomes a vesicle and breaks with a discharge of toxins; symptoms of septicemia are severe with vomiting and high fever and profuse sweating; the infection is often fatal",
+      "sourceSynset": "14072625-n"
+    },
+    {
+      "word": "antisocial",
+      "type": "phrase_gloss_restored",
+      "phrase": "antisocial personality disorder",
+      "old": "a personality disorder characterized by amorality and lack of affect; capable of violent acts without guilt feelings (`psychopathic personality' was once widely used but was superseded by `sociopathic personality' to ind",
+      "restored": "a personality disorder characterized by amorality and lack of affect; capable of violent acts without guilt feelings (`psychopathic personality' was once widely used but was superseded by `sociopathic personality' to indicate the social aspects of the disorder, but now `antisocial personality disorder' is the preferred term)",
+      "sourceSynset": "14388139-n"
+    },
+    {
+      "word": "arthritis",
+      "type": "phrase_gloss_restored",
+      "phrase": "rheumatoid arthritis",
+      "old": "a chronic autoimmune disease with inflammation of the joints and marked deformities; something (possibly a virus) triggers an attack on the synovium by the immune system, which releases cytokines that stimulate an inflam",
+      "restored": "a chronic autoimmune disease with inflammation of the joints and marked deformities; something (possibly a virus) triggers an attack on the synovium by the immune system, which releases cytokines that stimulate an inflammatory reaction that can lead to the destruction of all components of the joint",
+      "sourceSynset": "14186738-n"
+    },
+    {
+      "word": "ascension",
+      "type": "phrase_gloss_restored",
+      "phrase": "right ascension",
+      "old": "(astronomy) the equatorial coordinate specifying the angle, measured eastward along the celestial equator, from the vernal equinox to the intersection of the hour circle that passes through an object in the sky; usually",
+      "restored": "(astronomy) the equatorial coordinate specifying the angle, measured eastward along the celestial equator, from the vernal equinox to the intersection of the hour circle that passes through an object in the sky; usually expressed in hours and minutes and seconds; used with declination to specify positions on the celestial sphere",
+      "sourceSynset": "08633191-n"
+    },
+    {
+      "word": "beta",
+      "type": "phrase_gloss_restored",
+      "phrase": "beta receptor",
+      "old": "receptors postulated to exist on nerve cell membranes of the sympathetic nervous system in order to explain the specificity of certain agents that affect only some sympathetic activities (such as vasodilation and increas",
+      "restored": "receptors postulated to exist on nerve cell membranes of the sympathetic nervous system in order to explain the specificity of certain agents that affect only some sympathetic activities (such as vasodilation and increased heart beat)",
+      "sourceSynset": "05609524-n"
+    },
+    {
+      "word": "bypass",
+      "type": "phrase_gloss_restored",
+      "phrase": "coronary bypass",
+      "old": "open-heart surgery in which the rib cage is opened and a section of a blood vessel is grafted from the aorta to the coronary artery to bypass the blocked section of the coronary artery and improve the blood supply to the",
+      "restored": "open-heart surgery in which the rib cage is opened and a section of a blood vessel is grafted from the aorta to the coronary artery to bypass the blocked section of the coronary artery and improve the blood supply to the heart",
+      "sourceSynset": "00675808-n"
+    },
+    {
+      "word": "cardiac",
+      "type": "phrase_gloss_restored",
+      "phrase": "cardiac resuscitation",
+      "old": "an emergency procedure consisting of external cardiac massage and artificial respiration; the first treatment for a person who has collapsed and has no pulse and has stopped breathing; attempts to restore circulation of",
+      "restored": "an emergency procedure consisting of external cardiac massage and artificial respiration; the first treatment for a person who has collapsed and has no pulse and has stopped breathing; attempts to restore circulation of the blood and prevent death or brain damage due to lack of oxygen",
+      "sourceSynset": "00832626-n"
+    },
+    {
+      "word": "cardiopulmonary",
+      "type": "phrase_gloss_restored",
+      "phrase": "cardiopulmonary resuscitation",
+      "old": "an emergency procedure consisting of external cardiac massage and artificial respiration; the first treatment for a person who has collapsed and has no pulse and has stopped breathing; attempts to restore circulation of",
+      "restored": "an emergency procedure consisting of external cardiac massage and artificial respiration; the first treatment for a person who has collapsed and has no pulse and has stopped breathing; attempts to restore circulation of the blood and prevent death or brain damage due to lack of oxygen",
+      "sourceSynset": "00832626-n"
+    },
+    {
+      "word": "cellular",
+      "type": "phrase_gloss_restored",
+      "phrase": "cellular respiration",
+      "old": "the metabolic processes whereby certain organisms obtain energy from organic molecules; processes that take place in the cells and tissues during which energy is released and carbon dioxide is produced and absorbed by th",
+      "restored": "the metabolic processes whereby certain organisms obtain energy from organic molecules; processes that take place in the cells and tissues during which energy is released and carbon dioxide is produced and absorbed by the blood to be transported to the lungs",
+      "sourceSynset": "00830811-n"
+    },
+    {
+      "word": "closed",
+      "type": "phrase_gloss_restored",
+      "phrase": "closed universe",
+      "old": "(cosmology) a universe that is spatially closed and in which there is sufficient matter to halt the expansion that began with the big bang; the visible matter is only 10 percent of the matter required for closure but the",
+      "restored": "(cosmology) a universe that is spatially closed and in which there is sufficient matter to halt the expansion that began with the big bang; the visible matter is only 10 percent of the matter required for closure but there may be large amounts of dark matter",
+      "sourceSynset": "09247071-n"
+    },
+    {
+      "word": "code",
+      "type": "phrase_gloss_restored",
+      "phrase": "bar code",
+      "old": "code consisting of a series of vertical bars of variable width that are scanned by a laser; printed on consumer product packages to identify the item for a computer that provides the price and registers inventory informa",
+      "restored": "code consisting of a series of vertical bars of variable width that are scanned by a laser; printed on consumer product packages to identify the item for a computer that provides the price and registers inventory information",
+      "sourceSynset": "06354774-n"
+    },
+    {
+      "word": "combined",
+      "type": "phrase_gloss_restored",
+      "phrase": "severe combined immunodeficiency",
+      "old": "a congenital disease affecting T cells that can result from a mutation in any one of several different genes; children with it are susceptible to infectious disease; if untreated it is lethal within the first year or two",
+      "restored": "a congenital disease affecting T cells that can result from a mutation in any one of several different genes; children with it are susceptible to infectious disease; if untreated it is lethal within the first year or two of life",
+      "sourceSynset": "14128812-n"
+    },
+    {
+      "word": "conditioning",
+      "type": "phrase_gloss_restored",
+      "phrase": "classical conditioning",
+      "old": "conditioning that pairs a neutral stimulus with a stimulus that evokes a reflex; the stimulus that evokes the reflex is given whether or not the conditioned response occurs until eventually the neutral stimulus comes to",
+      "restored": "conditioning that pairs a neutral stimulus with a stimulus that evokes a reflex; the stimulus that evokes the reflex is given whether or not the conditioned response occurs until eventually the neutral stimulus comes to evoke the reflex",
+      "sourceSynset": "05759182-n"
+    },
+    {
+      "word": "consent",
+      "type": "phrase_gloss_restored",
+      "phrase": "age of consent",
+      "old": "the minimum age for marrying without parental consent or the minimum age for consensual sexual relations; intercourse at an earlier age can result in a charge of assault or statutory rape; the age differs in different st",
+      "restored": "the minimum age for marrying without parental consent or the minimum age for consensual sexual relations; intercourse at an earlier age can result in a charge of assault or statutory rape; the age differs in different states of the Union",
+      "sourceSynset": "15151764-n"
+    },
+    {
+      "word": "council",
+      "type": "phrase_gloss_restored",
+      "phrase": "works council",
+      "old": "(chiefly Brit) a council representing employer and employees of a plant or business to discuss working conditions etc; also: a committee representing the workers elected to negotiate with management about grievances and",
+      "restored": "(chiefly Brit) a council representing employer and employees of a plant or business to discuss working conditions etc; also: a committee representing the workers elected to negotiate with management about grievances and wages etc",
+      "sourceSynset": "08311933-n"
+    },
+    {
+      "word": "cutaneous",
+      "type": "phrase_gloss_restored",
+      "phrase": "cutaneous anthrax",
+      "old": "a form of anthrax infection that begins as papule that becomes a vesicle and breaks with a discharge of toxins; symptoms of septicemia are severe with vomiting and high fever and profuse sweating; the infection is often",
+      "restored": "a form of anthrax infection that begins as papule that becomes a vesicle and breaks with a discharge of toxins; symptoms of septicemia are severe with vomiting and high fever and profuse sweating; the infection is often fatal",
+      "sourceSynset": "14072625-n"
+    },
+    {
+      "word": "diabetes",
+      "type": "phrase_gloss_restored",
+      "phrase": "juvenile diabetes",
+      "old": "severe diabetes mellitus with an early onset; characterized by polyuria and excessive thirst and increased appetite and weight loss and episodic ketoacidosis; diet and insulin injections are required to control the disea",
+      "restored": "severe diabetes mellitus with an early onset; characterized by polyuria and excessive thirst and increased appetite and weight loss and episodic ketoacidosis; diet and insulin injections are required to control the disease",
+      "sourceSynset": "14118423-n"
+    },
+    {
+      "word": "dialog",
+      "type": "phrase_gloss_restored",
+      "phrase": "dialog box",
+      "old": "(computer science) a small temporary window in a graphical user interface that appears in order to request information from the user; after the information has been provided the user dismisses the box with `okay' or `can",
+      "restored": "(computer science) a small temporary window in a graphical user interface that appears in order to request information from the user; after the information has been provided the user dismisses the box with `okay' or `cancel'",
+      "sourceSynset": "03187268-n"
+    },
+    {
+      "word": "discord",
+      "type": "phrase_gloss_restored",
+      "phrase": "apple of discord",
+      "old": "(classical mythology) a golden apple thrown into a banquet of the gods by Eris (goddess of discord--who had not been invited); the apple had `for the fairest' written on it and Hera and Athena and Aphrodite all claimed i",
+      "restored": "(classical mythology) a golden apple thrown into a banquet of the gods by Eris (goddess of discord--who had not been invited); the apple had `for the fairest' written on it and Hera and Athena and Aphrodite all claimed it; when Paris (prince of Troy) awarded it to Aphrodite it began a chain of events that led to the Trojan War",
+      "sourceSynset": "02729345-n"
+    },
+    {
+      "word": "disorganized",
+      "type": "phrase_gloss_restored",
+      "phrase": "disorganized schizophrenia",
+      "old": "a form of schizophrenia characterized by severe disintegration of personality including erratic speech and childish mannerisms and bizarre behavior; usually becomes evident during puberty; the most common diagnostic cate",
+      "restored": "a form of schizophrenia characterized by severe disintegration of personality including erratic speech and childish mannerisms and bizarre behavior; usually becomes evident during puberty; the most common diagnostic category in mental institutions",
+      "sourceSynset": "14399438-n"
+    },
+    {
+      "word": "distress",
+      "type": "phrase_gloss_restored",
+      "phrase": "adult respiratory distress syndrome",
+      "old": "acute lung injury characterized by coughing and rales; inflammation of the lungs which become stiff and fibrous and cannot exchange oxygen; occurs among persons exposed to irritants such as corrosive chemical vapors or a",
+      "restored": "acute lung injury characterized by coughing and rales; inflammation of the lungs which become stiff and fibrous and cannot exchange oxygen; occurs among persons exposed to irritants such as corrosive chemical vapors or ammonia or chlorine etc.",
+      "sourceSynset": "14055052-n"
+    },
+    {
+      "word": "distress",
+      "type": "phrase_gloss_restored",
+      "phrase": "respiratory distress syndrome",
+      "old": "an acute lung disease of the newborn (especially the premature newborn); lungs cannot expand because of a wetting agent is lacking; characterized by rapid shallow breathing and cyanosis and the formation of a glassy hyal",
+      "restored": "an acute lung disease of the newborn (especially the premature newborn); lungs cannot expand because of a wetting agent is lacking; characterized by rapid shallow breathing and cyanosis and the formation of a glassy hyaline membrane over the alveoli",
+      "sourceSynset": "14150740-n"
+    },
+    {
+      "word": "fern",
+      "type": "phrase_gloss_restored",
+      "phrase": "tree fern",
+      "old": "any of numerous usually tropical ferns having a thick woody stem or caudex and a crown of large fronds; found especially in Australia and New Zealand; chiefly of the families Cyatheaceae and Marattiaceae but some from Po",
+      "restored": "any of numerous usually tropical ferns having a thick woody stem or caudex and a crown of large fronds; found especially in Australia and New Zealand; chiefly of the families Cyatheaceae and Marattiaceae but some from Polypodiaceae",
+      "sourceSynset": "13186654-n"
+    },
+    {
+      "word": "gender",
+      "type": "phrase_gloss_restored",
+      "phrase": "grammatical gender",
+      "old": "a grammatical category in inflected languages governing the agreement between nouns and pronouns and adjectives; in some languages it is quite arbitrary but in Indo-European languages it is usually based on sex or animat",
+      "restored": "a grammatical category in inflected languages governing the agreement between nouns and pronouns and adjectives; in some languages it is quite arbitrary but in Indo-European languages it is usually based on sex or animateness",
+      "sourceSynset": "06328643-n"
+    },
+    {
+      "word": "gram",
+      "type": "phrase_gloss_restored",
+      "phrase": "green gram",
+      "old": "erect bushy annual widely cultivated in warm regions of India and Indonesia and United States for forage and especially its edible seeds; chief source of bean sprouts used in Chinese cookery; sometimes placed in genus Ph",
+      "restored": "erect bushy annual widely cultivated in warm regions of India and Indonesia and United States for forage and especially its edible seeds; chief source of bean sprouts used in Chinese cookery; sometimes placed in genus Phaseolus",
+      "sourceSynset": "12578255-n"
+    },
+    {
+      "word": "guilt",
+      "type": "phrase_gloss_restored",
+      "phrase": "survivor guilt",
+      "old": "a deep feeling of guilt often experienced by those who have survived some catastrophe that took the lives of many others; derives in part from a feeling that they did not do enough to save the others who perished and in",
+      "restored": "a deep feeling of guilt often experienced by those who have survived some catastrophe that took the lives of many others; derives in part from a feeling that they did not do enough to save the others who perished and in part from feelings of being unworthy relative to those who died",
+      "sourceSynset": "07536437-n"
+    },
+    {
+      "word": "hearing",
+      "type": "phrase_gloss_restored",
+      "phrase": "fair hearing",
+      "old": "a hearing that is granted in extraordinary situations where the normal judicial process would be inadequate to secure due process because the person would be harmed or denied their rights before a judicial remedy became",
+      "restored": "a hearing that is granted in extraordinary situations where the normal judicial process would be inadequate to secure due process because the person would be harmed or denied their rights before a judicial remedy became available (as in deportation or loss of welfare benefits)",
+      "sourceSynset": "01200502-n"
+    },
+    {
+      "word": "hepatitis",
+      "type": "phrase_gloss_restored",
+      "phrase": "serum hepatitis",
+      "old": "an acute (sometimes fatal) form of viral hepatitis caused by a DNA virus that tends to persist in the blood serum and is transmitted by sexual contact or by transfusion or by ingestion of contaminated blood or other bodi",
+      "restored": "an acute (sometimes fatal) form of viral hepatitis caused by a DNA virus that tends to persist in the blood serum and is transmitted by sexual contact or by transfusion or by ingestion of contaminated blood or other bodily fluids",
+      "sourceSynset": "14130942-n"
+    },
+    {
+      "word": "human",
+      "type": "phrase_gloss_restored",
+      "phrase": "human relationship",
+      "old": "a relation between people; (`relationship' is often used where `relation' would serve, as in `the relationship between inflation and unemployment', but the preferred usage of `relationship' is for human relations or stat",
+      "restored": "a relation between people; (`relationship' is often used where `relation' would serve, as in `the relationship between inflation and unemployment', but the preferred usage of `relationship' is for human relations or states of relatedness)",
+      "sourceSynset": "13780719-n"
+    },
+    {
+      "word": "hyacinth",
+      "type": "phrase_gloss_restored",
+      "phrase": "hyacinth bean",
+      "old": "perennial twining vine of Old World tropics having trifoliate leaves and racemes of fragrant purple pea-like flowers followed by maroon pods of edible seeds; grown as an ornamental and as a vegetable on the Indian subcon",
+      "restored": "perennial twining vine of Old World tropics having trifoliate leaves and racemes of fragrant purple pea-like flowers followed by maroon pods of edible seeds; grown as an ornamental and as a vegetable on the Indian subcontinent; sometimes placed in genus Dolichos",
+      "sourceSynset": "12537569-n"
+    },
+    {
+      "word": "illusive",
+      "type": "example_restored",
+      "old": "Secret activities offer presidents the alluring but often illusory promise that they can achieve foreign policy goals without the bothersome debate and open decision that are staples of demo",
+      "restored": "Secret activities offer presidents the alluring but often illusory promise that they can achieve foreign policy goals without the bothersome debate and open decision that are staples of democracy",
+      "sourceSynset": "01937390-a"
+    },
+    {
+      "word": "illusory",
+      "type": "example_restored",
+      "old": "Secret activities offer presidents the alluring but often illusory promise that they can achieve foreign policy goals without the bothersome debate and open decision that are staples of demo",
+      "restored": "Secret activities offer presidents the alluring but often illusory promise that they can achieve foreign policy goals without the bothersome debate and open decision that are staples of democracy",
+      "sourceSynset": "01937390-a"
+    },
+    {
+      "word": "immunodeficiency",
+      "type": "phrase_gloss_restored",
+      "phrase": "severe combined immunodeficiency",
+      "old": "a congenital disease affecting T cells that can result from a mutation in any one of several different genes; children with it are susceptible to infectious disease; if untreated it is lethal within the first year or two",
+      "restored": "a congenital disease affecting T cells that can result from a mutation in any one of several different genes; children with it are susceptible to infectious disease; if untreated it is lethal within the first year or two of life",
+      "sourceSynset": "14128812-n"
+    },
+    {
+      "word": "inflammatory",
+      "type": "phrase_gloss_restored",
+      "phrase": "pelvic inflammatory disease",
+      "old": "inflammation of the female pelvic organs (especially the Fallopian tubes) caused by infection by any of several microorganisms (chiefly gonococci and chlamydia); symptoms are abdominal pain and fever and foul-smelling va",
+      "restored": "inflammation of the female pelvic organs (especially the Fallopian tubes) caused by infection by any of several microorganisms (chiefly gonococci and chlamydia); symptoms are abdominal pain and fever and foul-smelling vaginal discharge",
+      "sourceSynset": "14172558-n"
+    },
+    {
+      "word": "junction",
+      "type": "phrase_gloss_restored",
+      "phrase": "thermocouple junction",
+      "old": "a kind of thermometer consisting of two wires of different metals that are joined at both ends; one junction is at the temperature to be measured and the other is held at a fixed lower temperature; the current generated",
+      "restored": "a kind of thermometer consisting of two wires of different metals that are joined at both ends; one junction is at the temperature to be measured and the other is held at a fixed lower temperature; the current generated in the circuit is proportional to the temperature difference",
+      "sourceSynset": "04420720-n"
+    },
+    {
+      "word": "juvenile",
+      "type": "phrase_gloss_restored",
+      "phrase": "juvenile diabetes",
+      "old": "severe diabetes mellitus with an early onset; characterized by polyuria and excessive thirst and increased appetite and weight loss and episodic ketoacidosis; diet and insulin injections are required to control the disea",
+      "restored": "severe diabetes mellitus with an early onset; characterized by polyuria and excessive thirst and increased appetite and weight loss and episodic ketoacidosis; diet and insulin injections are required to control the disease",
+      "sourceSynset": "14118423-n"
+    },
+    {
+      "word": "kudzu",
+      "type": "phrase_gloss_restored",
+      "phrase": "kudzu vine",
+      "old": "fast-growing vine from eastern Asia having tuberous starchy roots and hairy trifoliate leaves and racemes of purple flowers followed by long hairy pods containing many seeds; grown for fodder and forage and root starch;",
+      "restored": "fast-growing vine from eastern Asia having tuberous starchy roots and hairy trifoliate leaves and racemes of purple flowers followed by long hairy pods containing many seeds; grown for fodder and forage and root starch; widespread in the southern United States",
+      "sourceSynset": "12566954-n"
+    },
+    {
+      "word": "lily",
+      "type": "phrase_gloss_restored",
+      "phrase": "lily family",
+      "old": "includes species sometimes divided among the following families: Alliaceae; Aloeaceae; Alstroemeriaceae; Aphyllanthaceae; Asparagaceae; Asphodelaceae; Colchicaceae; Convallariaceae; Hemerocallidaceae; Hostaceae; Hyacinth",
+      "restored": "includes species sometimes divided among the following families: Alliaceae; Aloeaceae; Alstroemeriaceae; Aphyllanthaceae; Asparagaceae; Asphodelaceae; Colchicaceae; Convallariaceae; Hemerocallidaceae; Hostaceae; Hyacinthaceae; Melanthiaceae; Ruscaceae; Smilacaceae; Tecophilaeacea; Xanthorrhoeaceae",
+      "sourceSynset": "12423565-n"
+    },
+    {
+      "word": "linguistic",
+      "type": "phrase_gloss_restored",
+      "phrase": "linguistic performance",
+      "old": "(linguistics) a speaker's actual use of language in real situations; what the speaker actually says, including grammatical errors and other non-linguistic features such as hesitations and other disfluencies (contrasted w",
+      "restored": "(linguistics) a speaker's actual use of language in real situations; what the speaker actually says, including grammatical errors and other non-linguistic features such as hesitations and other disfluencies (contrasted with linguistic competence)",
+      "sourceSynset": "00098051-n"
+    },
+    {
+      "word": "listeria",
+      "type": "phrase_gloss_restored",
+      "phrase": "listeria meningitis",
+      "old": "an infectious disease of animals and humans (especially newborn or immunosuppressed persons) caused by the bacterium Listeria monocytogenes; in sheep and cattle the infection frequently involves the central nervous syste",
+      "restored": "an infectious disease of animals and humans (especially newborn or immunosuppressed persons) caused by the bacterium Listeria monocytogenes; in sheep and cattle the infection frequently involves the central nervous system and causes various neurological symptoms",
+      "sourceSynset": "14137066-n"
+    },
+    {
+      "word": "logic",
+      "type": "phrase_gloss_restored",
+      "phrase": "logic bomb",
+      "old": "a set of instructions inserted into a program that are designed to execute (or `explode') if a particular condition is satisfied; when exploded it may delete or corrupt data, or print a spurious message, or have other ha",
+      "restored": "a set of instructions inserted into a program that are designed to execute (or `explode') if a particular condition is satisfied; when exploded it may delete or corrupt data, or print a spurious message, or have other harmful effects",
+      "sourceSynset": "06585203-n"
+    },
+    {
+      "word": "longitude",
+      "type": "phrase_gloss_restored",
+      "phrase": "celestial longitude",
+      "old": "(astronomy) the equatorial coordinate specifying the angle, measured eastward along the celestial equator, from the vernal equinox to the intersection of the hour circle that passes through an object in the sky; usually",
+      "restored": "(astronomy) the equatorial coordinate specifying the angle, measured eastward along the celestial equator, from the vernal equinox to the intersection of the hour circle that passes through an object in the sky; usually expressed in hours and minutes and seconds; used with declination to specify positions on the celestial sphere",
+      "sourceSynset": "08633191-n"
+    },
+    {
+      "word": "major",
+      "type": "phrase_gloss_restored",
+      "phrase": "major planet",
+      "old": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their",
+      "restored": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their proximity to the sun; viewed from the constellation Hercules, all the planets rotate around the sun in a counterclockwise direction",
+      "sourceSynset": "09394007-n"
+    },
+    {
+      "word": "mall",
+      "type": "phrase_gloss_restored",
+      "phrase": "shopping mall",
+      "old": "mercantile establishment consisting of a carefully landscaped complex of shops representing leading merchandisers; usually includes restaurants and a convenient parking area; a modern version of the traditional marketpla",
+      "restored": "mercantile establishment consisting of a carefully landscaped complex of shops representing leading merchandisers; usually includes restaurants and a convenient parking area; a modern version of the traditional marketplace",
+      "sourceSynset": "03965456-n"
+    },
+    {
+      "word": "meningitis",
+      "type": "phrase_gloss_restored",
+      "phrase": "listeria meningitis",
+      "old": "an infectious disease of animals and humans (especially newborn or immunosuppressed persons) caused by the bacterium Listeria monocytogenes; in sheep and cattle the infection frequently involves the central nervous syste",
+      "restored": "an infectious disease of animals and humans (especially newborn or immunosuppressed persons) caused by the bacterium Listeria monocytogenes; in sheep and cattle the infection frequently involves the central nervous system and causes various neurological symptoms",
+      "sourceSynset": "14137066-n"
+    },
+    {
+      "word": "mock",
+      "type": "phrase_gloss_restored",
+      "phrase": "mock orange",
+      "old": "small shrubby deciduous yellowwood tree of south central United States having spines, glossy dark green leaves and an inedible fruit that resembles an orange; its hard orange-colored wood used for bows by Native American",
+      "restored": "small shrubby deciduous yellowwood tree of south central United States having spines, glossy dark green leaves and an inedible fruit that resembles an orange; its hard orange-colored wood used for bows by Native Americans; frequently planted as boundary hedge",
+      "sourceSynset": "12399899-n"
+    },
+    {
+      "word": "mucous",
+      "type": "phrase_gloss_restored",
+      "phrase": "mucous secretion",
+      "old": "protective secretion of the mucus membranes; in the gut it lubricates the passage of food and protects the epithelial cells; in the nose and throat and lungs it can make it difficult for bacteria to penetrate the body th",
+      "restored": "protective secretion of the mucus membranes; in the gut it lubricates the passage of food and protects the epithelial cells; in the nose and throat and lungs it can make it difficult for bacteria to penetrate the body through the epithelium",
+      "sourceSynset": "05415395-n"
+    },
+    {
+      "word": "mushroom",
+      "type": "phrase_gloss_restored",
+      "phrase": "winter mushroom",
+      "old": "an edible agaric that is available in early spring or late fall when few other mushrooms are; has a viscid smooth orange to brown cap and a velvety stalk that turns black in maturity and pallid gills; often occur in clus",
+      "restored": "an edible agaric that is available in early spring or late fall when few other mushrooms are; has a viscid smooth orange to brown cap and a velvety stalk that turns black in maturity and pallid gills; often occur in clusters",
+      "sourceSynset": "13022210-n"
+    },
+    {
+      "word": "nebula",
+      "type": "phrase_gloss_restored",
+      "phrase": "planetary nebula",
+      "old": "a nebula that was once thought to be a star with its planets but is now thought to be a very hot star surrounded by an expanding envelope of ionized gases that emit a fluorescent glow because of intense radiation from th",
+      "restored": "a nebula that was once thought to be a star with its planets but is now thought to be a very hot star surrounded by an expanding envelope of ionized gases that emit a fluorescent glow because of intense radiation from the star",
+      "sourceSynset": "09394797-n"
+    },
+    {
+      "word": "nuclear",
+      "type": "phrase_gloss_restored",
+      "phrase": "nuclear winter",
+      "old": "a long period of darkness and extreme cold that scientists predict would follow a full-scale nuclear war; a layer of dust and smoke in the atmosphere would cover the earth and block the rays of the sun; most living organ",
+      "restored": "a long period of darkness and extreme cold that scientists predict would follow a full-scale nuclear war; a layer of dust and smoke in the atmosphere would cover the earth and block the rays of the sun; most living organisms would perish",
+      "sourceSynset": "11434150-n"
+    },
+    {
+      "word": "opportunistic",
+      "type": "phrase_gloss_restored",
+      "phrase": "opportunistic infection",
+      "old": "any infection caused by a microorganism that does not normally cause disease in humans; occurs in persons with abnormally functioning immune systems (as AIDS patients or transplant patients receiving immunosuppressive dr",
+      "restored": "any infection caused by a microorganism that does not normally cause disease in humans; occurs in persons with abnormally functioning immune systems (as AIDS patients or transplant patients receiving immunosuppressive drugs)",
+      "sourceSynset": "14178482-n"
+    },
+    {
+      "word": "paranoid",
+      "type": "phrase_gloss_restored",
+      "phrase": "paranoid schizophrenia",
+      "old": "a form of schizophrenia characterized by delusions (of persecution or grandeur or jealousy); symptoms may include anger and anxiety and aloofness and doubts about gender identity; unlike other types of schizophrenia the",
+      "restored": "a form of schizophrenia characterized by delusions (of persecution or grandeur or jealousy); symptoms may include anger and anxiety and aloofness and doubts about gender identity; unlike other types of schizophrenia the patients are usually presentable and (if delusions are not acted on) may function in an apparently normal manner",
+      "sourceSynset": "14399852-n"
+    },
+    {
+      "word": "parity",
+      "type": "phrase_gloss_restored",
+      "phrase": "parity bit",
+      "old": "(computer science) a bit that is used in an error detection procedure in which a 0 or 1 is added to each group of bits so that it will have either an odd number of 1's or an even number of 1's; e.g., if the parity is odd",
+      "restored": "(computer science) a bit that is used in an error detection procedure in which a 0 or 1 is added to each group of bits so that it will have either an odd number of 1's or an even number of 1's; e.g., if the parity is odd then any group of bits that arrives with an even number of 1's must contain an error",
+      "sourceSynset": "13625482-n"
+    },
+    {
+      "word": "partial",
+      "type": "phrase_gloss_restored",
+      "phrase": "partial veil",
+      "old": "membrane of the young sporophore of various mushrooms extending from the margin of the cap to the stem and is ruptured by growth; represented in mature mushroom by an annulus around the stem and sometimes a cortina on th",
+      "restored": "membrane of the young sporophore of various mushrooms extending from the margin of the cap to the stem and is ruptured by growth; represented in mature mushroom by an annulus around the stem and sometimes a cortina on the margin of the cap",
+      "sourceSynset": "13095013-n"
+    },
+    {
+      "word": "pelvic",
+      "type": "phrase_gloss_restored",
+      "phrase": "pelvic inflammatory disease",
+      "old": "inflammation of the female pelvic organs (especially the Fallopian tubes) caused by infection by any of several microorganisms (chiefly gonococci and chlamydia); symptoms are abdominal pain and fever and foul-smelling va",
+      "restored": "inflammation of the female pelvic organs (especially the Fallopian tubes) caused by infection by any of several microorganisms (chiefly gonococci and chlamydia); symptoms are abdominal pain and fever and foul-smelling vaginal discharge",
+      "sourceSynset": "14172558-n"
+    },
+    {
+      "word": "performance",
+      "type": "phrase_gloss_restored",
+      "phrase": "linguistic performance",
+      "old": "(linguistics) a speaker's actual use of language in real situations; what the speaker actually says, including grammatical errors and other non-linguistic features such as hesitations and other disfluencies (contrasted w",
+      "restored": "(linguistics) a speaker's actual use of language in real situations; what the speaker actually says, including grammatical errors and other non-linguistic features such as hesitations and other disfluencies (contrasted with linguistic competence)",
+      "sourceSynset": "00098051-n"
+    },
+    {
+      "word": "placebo",
+      "type": "phrase_gloss_restored",
+      "phrase": "placebo effect",
+      "old": "any effect that seems to be a consequence of administering a placebo; the change is usually beneficial and is assumed result from the person's faith in the treatment or preconceptions about what the experimental drug was",
+      "restored": "any effect that seems to be a consequence of administering a placebo; the change is usually beneficial and is assumed result from the person's faith in the treatment or preconceptions about what the experimental drug was supposed to do; pharmacologists were the first to talk about placebo effects but now the idea has been generalized to many situations having nothing to do with drugs",
+      "sourceSynset": "11416087-n"
+    },
+    {
+      "word": "planet",
+      "type": "phrase_gloss_restored",
+      "phrase": "major planet",
+      "old": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their",
+      "restored": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their proximity to the sun; viewed from the constellation Hercules, all the planets rotate around the sun in a counterclockwise direction",
+      "sourceSynset": "09394007-n"
+    },
+    {
+      "word": "planetary",
+      "type": "phrase_gloss_restored",
+      "phrase": "planetary nebula",
+      "old": "a nebula that was once thought to be a star with its planets but is now thought to be a very hot star surrounded by an expanding envelope of ionized gases that emit a fluorescent glow because of intense radiation from th",
+      "restored": "a nebula that was once thought to be a star with its planets but is now thought to be a very hot star surrounded by an expanding envelope of ionized gases that emit a fluorescent glow because of intense radiation from the star",
+      "sourceSynset": "09394797-n"
+    },
+    {
+      "word": "portia",
+      "type": "phrase_gloss_restored",
+      "phrase": "portia tree",
+      "old": "pantropical tree of usually seacoasts sometimes cultivated as an ornamental for its rounded heart-shaped leaves and showy yellow and purple flowers; yields valuable pink to dark red close-grained wood and oil from its se",
+      "restored": "pantropical tree of usually seacoasts sometimes cultivated as an ornamental for its rounded heart-shaped leaves and showy yellow and purple flowers; yields valuable pink to dark red close-grained wood and oil from its seeds",
+      "sourceSynset": "12188635-n"
+    },
+    {
+      "word": "potato",
+      "type": "phrase_gloss_restored",
+      "phrase": "potato family",
+      "old": "large and economically important family of herbs or shrubs or trees often strongly scented and sometimes narcotic or poisonous; includes the genera Solanum, Atropa, Brugmansia, Capsicum, Datura, Hyoscyamus, Lycopersicon,",
+      "restored": "large and economically important family of herbs or shrubs or trees often strongly scented and sometimes narcotic or poisonous; includes the genera Solanum, Atropa, Brugmansia, Capsicum, Datura, Hyoscyamus, Lycopersicon, Nicotiana, Petunia, Physalis, and Solandra",
+      "sourceSynset": "12892226-n"
+    },
+    {
+      "word": "pyramid",
+      "type": "phrase_gloss_restored",
+      "phrase": "pyramid scheme",
+      "old": "a fraudulent scheme in which people are recruited to make payments to the person who recruited them while expecting to receive payments from the persons they recruit; when the number of new recruits fails to sustain the",
+      "restored": "a fraudulent scheme in which people are recruited to make payments to the person who recruited them while expecting to receive payments from the persons they recruit; when the number of new recruits fails to sustain the hierarchical payment structure the scheme collapses with most of the participants losing the money they put in",
+      "sourceSynset": "05908000-n"
+    },
+    {
+      "word": "pyramidal",
+      "type": "phrase_gloss_restored",
+      "phrase": "pyramidal motor system",
+      "old": "any of the important motor nerves on each side of the central nervous system that run from the sensorimotor areas of the cortex through the brainstem to motor neurons of the cranial nerve nuclei and the ventral root of t",
+      "restored": "any of the important motor nerves on each side of the central nervous system that run from the sensorimotor areas of the cortex through the brainstem to motor neurons of the cranial nerve nuclei and the ventral root of the spinal cord",
+      "sourceSynset": "05491612-n"
+    },
+    {
+      "word": "rabbit",
+      "type": "phrase_gloss_restored",
+      "phrase": "rabbit brush",
+      "old": "pleasantly aromatic shrub having erect slender flexible hairy branches and dense clusters of small yellow flowers covering vast areas of western alkali plains and affording a retreat for jackrabbits; source of a yellow d",
+      "restored": "pleasantly aromatic shrub having erect slender flexible hairy branches and dense clusters of small yellow flowers covering vast areas of western alkali plains and affording a retreat for jackrabbits; source of a yellow dye used by the Navajo",
+      "sourceSynset": "11952541-n"
+    },
+    {
+      "word": "radial",
+      "type": "phrase_gloss_restored",
+      "phrase": "radial nerve",
+      "old": "largest branch of the brachial plexus; extends down the humerus to the lateral epicondyle where it divides into one branch that goes to the skin on the back of the hand and another that goes to the underlying extensor mu",
+      "restored": "largest branch of the brachial plexus; extends down the humerus to the lateral epicondyle where it divides into one branch that goes to the skin on the back of the hand and another that goes to the underlying extensor muscles",
+      "sourceSynset": "05504807-n"
+    },
+    {
+      "word": "random",
+      "type": "phrase_gloss_restored",
+      "phrase": "random access memory",
+      "old": "the most common computer memory which can be used by programs to perform necessary tasks while the computer is on; an integrated circuit memory chip allows information to be stored or accessed in any order and all storag",
+      "restored": "the most common computer memory which can be used by programs to perform necessary tasks while the computer is on; an integrated circuit memory chip allows information to be stored or accessed in any order and all storage locations are equally accessible",
+      "sourceSynset": "04052757-n"
+    },
+    {
+      "word": "receptor",
+      "type": "phrase_gloss_restored",
+      "phrase": "beta receptor",
+      "old": "receptors postulated to exist on nerve cell membranes of the sympathetic nervous system in order to explain the specificity of certain agents that affect only some sympathetic activities (such as vasodilation and increas",
+      "restored": "receptors postulated to exist on nerve cell membranes of the sympathetic nervous system in order to explain the specificity of certain agents that affect only some sympathetic activities (such as vasodilation and increased heart beat)",
+      "sourceSynset": "05609524-n"
+    },
+    {
+      "word": "reduction",
+      "type": "phrase_gloss_restored",
+      "phrase": "reduction division",
+      "old": "(genetics) cell division that produces reproductive cells in sexually reproducing organisms; the nucleus divides into four nuclei each containing half the chromosome number (leading to gametes in animals and spores in pl",
+      "restored": "(genetics) cell division that produces reproductive cells in sexually reproducing organisms; the nucleus divides into four nuclei each containing half the chromosome number (leading to gametes in animals and spores in plants)",
+      "sourceSynset": "13512725-n"
+    },
+    {
+      "word": "relationship",
+      "type": "phrase_gloss_restored",
+      "phrase": "human relationship",
+      "old": "a relation between people; (`relationship' is often used where `relation' would serve, as in `the relationship between inflation and unemployment', but the preferred usage of `relationship' is for human relations or stat",
+      "restored": "a relation between people; (`relationship' is often used where `relation' would serve, as in `the relationship between inflation and unemployment', but the preferred usage of `relationship' is for human relations or states of relatedness)",
+      "sourceSynset": "13780719-n"
+    },
+    {
+      "word": "respiration",
+      "type": "phrase_gloss_restored",
+      "phrase": "cellular respiration",
+      "old": "the metabolic processes whereby certain organisms obtain energy from organic molecules; processes that take place in the cells and tissues during which energy is released and carbon dioxide is produced and absorbed by th",
+      "restored": "the metabolic processes whereby certain organisms obtain energy from organic molecules; processes that take place in the cells and tissues during which energy is released and carbon dioxide is produced and absorbed by the blood to be transported to the lungs",
+      "sourceSynset": "00830811-n"
+    },
+    {
+      "word": "resuscitation",
+      "type": "phrase_gloss_restored",
+      "phrase": "cardiac resuscitation",
+      "old": "an emergency procedure consisting of external cardiac massage and artificial respiration; the first treatment for a person who has collapsed and has no pulse and has stopped breathing; attempts to restore circulation of",
+      "restored": "an emergency procedure consisting of external cardiac massage and artificial respiration; the first treatment for a person who has collapsed and has no pulse and has stopped breathing; attempts to restore circulation of the blood and prevent death or brain damage due to lack of oxygen",
+      "sourceSynset": "00832626-n"
+    },
+    {
+      "word": "resuscitation",
+      "type": "phrase_gloss_restored",
+      "phrase": "cardiopulmonary resuscitation",
+      "old": "an emergency procedure consisting of external cardiac massage and artificial respiration; the first treatment for a person who has collapsed and has no pulse and has stopped breathing; attempts to restore circulation of",
+      "restored": "an emergency procedure consisting of external cardiac massage and artificial respiration; the first treatment for a person who has collapsed and has no pulse and has stopped breathing; attempts to restore circulation of the blood and prevent death or brain damage due to lack of oxygen",
+      "sourceSynset": "00832626-n"
+    },
+    {
+      "word": "rheumatoid",
+      "type": "phrase_gloss_restored",
+      "phrase": "rheumatoid arthritis",
+      "old": "a chronic autoimmune disease with inflammation of the joints and marked deformities; something (possibly a virus) triggers an attack on the synovium by the immune system, which releases cytokines that stimulate an inflam",
+      "restored": "a chronic autoimmune disease with inflammation of the joints and marked deformities; something (possibly a virus) triggers an attack on the synovium by the immune system, which releases cytokines that stimulate an inflammatory reaction that can lead to the destruction of all components of the joint",
+      "sourceSynset": "14186738-n"
+    },
+    {
+      "word": "schizophrenia",
+      "type": "phrase_gloss_restored",
+      "phrase": "paranoid schizophrenia",
+      "old": "a form of schizophrenia characterized by delusions (of persecution or grandeur or jealousy); symptoms may include anger and anxiety and aloofness and doubts about gender identity; unlike other types of schizophrenia the",
+      "restored": "a form of schizophrenia characterized by delusions (of persecution or grandeur or jealousy); symptoms may include anger and anxiety and aloofness and doubts about gender identity; unlike other types of schizophrenia the patients are usually presentable and (if delusions are not acted on) may function in an apparently normal manner",
+      "sourceSynset": "14399852-n"
+    },
+    {
+      "word": "schizophrenia",
+      "type": "phrase_gloss_restored",
+      "phrase": "disorganized schizophrenia",
+      "old": "a form of schizophrenia characterized by severe disintegration of personality including erratic speech and childish mannerisms and bizarre behavior; usually becomes evident during puberty; the most common diagnostic cate",
+      "restored": "a form of schizophrenia characterized by severe disintegration of personality including erratic speech and childish mannerisms and bizarre behavior; usually becomes evident during puberty; the most common diagnostic category in mental institutions",
+      "sourceSynset": "14399438-n"
+    },
+    {
+      "word": "secret",
+      "type": "phrase_gloss_restored",
+      "phrase": "secret service",
+      "old": "the United States intelligence agency that protects current and former presidents and vice presidents and their immediate families and protects distinguished foreign visitors; detects and apprehends counterfeiters; suppr",
+      "restored": "the United States intelligence agency that protects current and former presidents and vice presidents and their immediate families and protects distinguished foreign visitors; detects and apprehends counterfeiters; suppresses forgery of government securities and documents",
+      "sourceSynset": "08348400-n"
+    },
+    {
+      "word": "secretion",
+      "type": "phrase_gloss_restored",
+      "phrase": "mucous secretion",
+      "old": "protective secretion of the mucus membranes; in the gut it lubricates the passage of food and protects the epithelial cells; in the nose and throat and lungs it can make it difficult for bacteria to penetrate the body th",
+      "restored": "protective secretion of the mucus membranes; in the gut it lubricates the passage of food and protects the epithelial cells; in the nose and throat and lungs it can make it difficult for bacteria to penetrate the body through the epithelium",
+      "sourceSynset": "05415395-n"
+    },
+    {
+      "word": "serum",
+      "type": "phrase_gloss_restored",
+      "phrase": "serum hepatitis",
+      "old": "an acute (sometimes fatal) form of viral hepatitis caused by a DNA virus that tends to persist in the blood serum and is transmitted by sexual contact or by transfusion or by ingestion of contaminated blood or other bodi",
+      "restored": "an acute (sometimes fatal) form of viral hepatitis caused by a DNA virus that tends to persist in the blood serum and is transmitted by sexual contact or by transfusion or by ingestion of contaminated blood or other bodily fluids",
+      "sourceSynset": "14130942-n"
+    },
+    {
+      "word": "severe",
+      "type": "phrase_gloss_restored",
+      "phrase": "severe combined immunodeficiency",
+      "old": "a congenital disease affecting T cells that can result from a mutation in any one of several different genes; children with it are susceptible to infectious disease; if untreated it is lethal within the first year or two",
+      "restored": "a congenital disease affecting T cells that can result from a mutation in any one of several different genes; children with it are susceptible to infectious disease; if untreated it is lethal within the first year or two of life",
+      "sourceSynset": "14128812-n"
+    },
+    {
+      "word": "shopping",
+      "type": "phrase_gloss_restored",
+      "phrase": "shopping centre",
+      "old": "mercantile establishment consisting of a carefully landscaped complex of shops representing leading merchandisers; usually includes restaurants and a convenient parking area; a modern version of the traditional marketpla",
+      "restored": "mercantile establishment consisting of a carefully landscaped complex of shops representing leading merchandisers; usually includes restaurants and a convenient parking area; a modern version of the traditional marketplace",
+      "sourceSynset": "03965456-n"
+    },
+    {
+      "word": "shopping",
+      "type": "phrase_gloss_restored",
+      "phrase": "shopping center",
+      "old": "mercantile establishment consisting of a carefully landscaped complex of shops representing leading merchandisers; usually includes restaurants and a convenient parking area; a modern version of the traditional marketpla",
+      "restored": "mercantile establishment consisting of a carefully landscaped complex of shops representing leading merchandisers; usually includes restaurants and a convenient parking area; a modern version of the traditional marketplace",
+      "sourceSynset": "03965456-n"
+    },
+    {
+      "word": "sickness",
+      "type": "phrase_gloss_restored",
+      "phrase": "radiation sickness",
+      "old": "syndrome resulting from exposure to ionizing radiation (e.g., exposure to radioactive chemicals or to nuclear explosions); low doses cause diarrhea and nausea and vomiting and sometimes loss of hair; greater exposure can",
+      "restored": "syndrome resulting from exposure to ionizing radiation (e.g., exposure to radioactive chemicals or to nuclear explosions); low doses cause diarrhea and nausea and vomiting and sometimes loss of hair; greater exposure can cause sterility and cataracts and some forms of cancer and other diseases; severe exposure can cause death within hours",
+      "sourceSynset": "14308472-n"
+    },
+    {
+      "word": "sociopathic",
+      "type": "phrase_gloss_restored",
+      "phrase": "sociopathic personality",
+      "old": "a personality disorder characterized by amorality and lack of affect; capable of violent acts without guilt feelings (`psychopathic personality' was once widely used but was superseded by `sociopathic personality' to ind",
+      "restored": "a personality disorder characterized by amorality and lack of affect; capable of violent acts without guilt feelings (`psychopathic personality' was once widely used but was superseded by `sociopathic personality' to indicate the social aspects of the disorder, but now `antisocial personality disorder' is the preferred term)",
+      "sourceSynset": "14388139-n"
+    },
+    {
+      "word": "solitary",
+      "type": "phrase_gloss_restored",
+      "phrase": "solitary wave",
+      "old": "(physics) a quantum of energy or quasiparticle that can be propagated as a traveling wave in nonlinear systems and is neither preceded nor followed by another such disturbance; does not obey the superposition principle a",
+      "restored": "(physics) a quantum of energy or quasiparticle that can be propagated as a traveling wave in nonlinear systems and is neither preceded nor followed by another such disturbance; does not obey the superposition principle and does not dissipate",
+      "sourceSynset": "07346344-n"
+    },
+    {
+      "word": "spinal",
+      "type": "phrase_gloss_restored",
+      "phrase": "spinal cord",
+      "old": "a major part of the central nervous system which conducts sensory and motor nerve impulses to and from the brain; a long tubelike structure extending from the base of the brain through the vertebral canal to the upper lu",
+      "restored": "a major part of the central nervous system which conducts sensory and motor nerve impulses to and from the brain; a long tubelike structure extending from the base of the brain through the vertebral canal to the upper lumbar region",
+      "sourceSynset": "05503705-n"
+    },
+    {
+      "word": "static",
+      "type": "phrase_gloss_restored",
+      "phrase": "static line",
+      "old": "a cord used instead of a ripcord to open a parachute; the cord is attached at one end to the aircraft and temporarily attached to the pack of a parachute at the other; it opens the parachute after the jumper is clear of",
+      "restored": "a cord used instead of a ripcord to open a parachute; the cord is attached at one end to the aircraft and temporarily attached to the pack of a parachute at the other; it opens the parachute after the jumper is clear of the plane",
+      "sourceSynset": "04305641-n"
+    },
+    {
+      "word": "stations",
+      "type": "phrase_gloss_restored",
+      "phrase": "stations of the cross",
+      "old": "(Roman Catholic Church) a devotion consisting of fourteen prayers said before a series of fourteen pictures or carvings representing successive incidents during Jesus' passage from Pilate's house to his crucifixion at Ca",
+      "restored": "(Roman Catholic Church) a devotion consisting of fourteen prayers said before a series of fourteen pictures or carvings representing successive incidents during Jesus' passage from Pilate's house to his crucifixion at Calvary",
+      "sourceSynset": "01043333-n"
+    },
+    {
+      "word": "steroid",
+      "type": "phrase_gloss_restored",
+      "phrase": "anabolic steroid",
+      "old": "any of a group of synthetic steroid hormones used to stimulate muscle and bone growth; more than 100 have been developed and each requires a prescription to be used legally in the United States; sometimes used illicitly",
+      "restored": "any of a group of synthetic steroid hormones used to stimulate muscle and bone growth; more than 100 have been developed and each requires a prescription to be used legally in the United States; sometimes used illicitly by athletes to increase their strength",
+      "sourceSynset": "15111116-n"
+    },
+    {
+      "word": "suit",
+      "type": "phrase_gloss_restored",
+      "phrase": "body suit",
+      "old": "a tight-fitting garment of stretchy material that covers the body from the shoulders to the thighs (and may have long sleeves or legs reaching down to the ankles); worn by ballet dancers and acrobats for practice or perf",
+      "restored": "a tight-fitting garment of stretchy material that covers the body from the shoulders to the thighs (and may have long sleeves or legs reaching down to the ankles); worn by ballet dancers and acrobats for practice or performance",
+      "sourceSynset": "03657511-n"
+    },
+    {
+      "word": "survivor",
+      "type": "phrase_gloss_restored",
+      "phrase": "survivor guilt",
+      "old": "a deep feeling of guilt often experienced by those who have survived some catastrophe that took the lives of many others; derives in part from a feeling that they did not do enough to save the others who perished and in",
+      "restored": "a deep feeling of guilt often experienced by those who have survived some catastrophe that took the lives of many others; derives in part from a feeling that they did not do enough to save the others who perished and in part from feelings of being unworthy relative to those who died",
+      "sourceSynset": "07536437-n"
+    },
+    {
+      "word": "syndrome",
+      "type": "phrase_gloss_restored",
+      "phrase": "toxic shock syndrome",
+      "old": "syndrome resulting from a serious acute (sometimes fatal) infection associated with the presence of staphylococcus; characterized by fever and diarrhea and nausea and diffuse erythema and shock; occurs especially in mens",
+      "restored": "syndrome resulting from a serious acute (sometimes fatal) infection associated with the presence of staphylococcus; characterized by fever and diarrhea and nausea and diffuse erythema and shock; occurs especially in menstruating women using highly absorbent tampons",
+      "sourceSynset": "14470144-n"
+    },
+    {
+      "word": "syndrome",
+      "type": "phrase_gloss_restored",
+      "phrase": "radiation syndrome",
+      "old": "syndrome resulting from exposure to ionizing radiation (e.g., exposure to radioactive chemicals or to nuclear explosions); low doses cause diarrhea and nausea and vomiting and sometimes loss of hair; greater exposure can",
+      "restored": "syndrome resulting from exposure to ionizing radiation (e.g., exposure to radioactive chemicals or to nuclear explosions); low doses cause diarrhea and nausea and vomiting and sometimes loss of hair; greater exposure can cause sterility and cataracts and some forms of cancer and other diseases; severe exposure can cause death within hours",
+      "sourceSynset": "14308472-n"
+    },
+    {
+      "word": "thermocouple",
+      "type": "phrase_gloss_restored",
+      "phrase": "thermocouple junction",
+      "old": "a kind of thermometer consisting of two wires of different metals that are joined at both ends; one junction is at the temperature to be measured and the other is held at a fixed lower temperature; the current generated",
+      "restored": "a kind of thermometer consisting of two wires of different metals that are joined at both ends; one junction is at the temperature to be measured and the other is held at a fixed lower temperature; the current generated in the circuit is proportional to the temperature difference",
+      "sourceSynset": "04420720-n"
+    },
+    {
+      "word": "toxic",
+      "type": "phrase_gloss_restored",
+      "phrase": "toxic shock",
+      "old": "syndrome resulting from a serious acute (sometimes fatal) infection associated with the presence of staphylococcus; characterized by fever and diarrhea and nausea and diffuse erythema and shock; occurs especially in mens",
+      "restored": "syndrome resulting from a serious acute (sometimes fatal) infection associated with the presence of staphylococcus; characterized by fever and diarrhea and nausea and diffuse erythema and shock; occurs especially in menstruating women using highly absorbent tampons",
+      "sourceSynset": "14470144-n"
+    },
+    {
+      "word": "toxic",
+      "type": "phrase_gloss_restored",
+      "phrase": "toxic shock syndrome",
+      "old": "syndrome resulting from a serious acute (sometimes fatal) infection associated with the presence of staphylococcus; characterized by fever and diarrhea and nausea and diffuse erythema and shock; occurs especially in mens",
+      "restored": "syndrome resulting from a serious acute (sometimes fatal) infection associated with the presence of staphylococcus; characterized by fever and diarrhea and nausea and diffuse erythema and shock; occurs especially in menstruating women using highly absorbent tampons",
+      "sourceSynset": "14470144-n"
+    },
+    {
+      "word": "unconcerned",
+      "type": "example_restored",
+      "old": "the average American...is unconcerned that his or her plight is the result of a complex of personal and economic and governmental actions...beyond the normal citizen's comprehension and cont",
+      "restored": "the average American...is unconcerned that his or her plight is the result of a complex of personal and economic and governmental actions...beyond the normal citizen's comprehension and control",
+      "sourceSynset": "00545015-a"
+    },
+    {
+      "word": "universe",
+      "type": "phrase_gloss_restored",
+      "phrase": "closed universe",
+      "old": "(cosmology) a universe that is spatially closed and in which there is sufficient matter to halt the expansion that began with the big bang; the visible matter is only 10 percent of the matter required for closure but the",
+      "restored": "(cosmology) a universe that is spatially closed and in which there is sufficient matter to halt the expansion that began with the big bang; the visible matter is only 10 percent of the matter required for closure but there may be large amounts of dark matter",
+      "sourceSynset": "09247071-n"
+    },
+    {
+      "word": "vapor",
+      "type": "phrase_gloss_restored",
+      "phrase": "vapor lock",
+      "old": "a stoppage in a pipeline caused by gas bubbles (especially a stoppage that develops in hot weather in an internal-combustion engine when fuel in the gas line boils and forms bubbles that block the flow of gasoline to the",
+      "restored": "a stoppage in a pipeline caused by gas bubbles (especially a stoppage that develops in hot weather in an internal-combustion engine when fuel in the gas line boils and forms bubbles that block the flow of gasoline to the carburetor)",
+      "sourceSynset": "04521125-n"
+    },
+    {
+      "word": "vapour",
+      "type": "phrase_gloss_restored",
+      "phrase": "vapour lock",
+      "old": "a stoppage in a pipeline caused by gas bubbles (especially a stoppage that develops in hot weather in an internal-combustion engine when fuel in the gas line boils and forms bubbles that block the flow of gasoline to the",
+      "restored": "a stoppage in a pipeline caused by gas bubbles (especially a stoppage that develops in hot weather in an internal-combustion engine when fuel in the gas line boils and forms bubbles that block the flow of gasoline to the carburetor)",
+      "sourceSynset": "04521125-n"
+    },
+    {
+      "word": "veil",
+      "type": "phrase_gloss_restored",
+      "phrase": "partial veil",
+      "old": "membrane of the young sporophore of various mushrooms extending from the margin of the cap to the stem and is ruptured by growth; represented in mature mushroom by an annulus around the stem and sometimes a cortina on th",
+      "restored": "membrane of the young sporophore of various mushrooms extending from the margin of the cap to the stem and is ruptured by growth; represented in mature mushroom by an annulus around the stem and sometimes a cortina on the margin of the cap",
+      "sourceSynset": "13095013-n"
+    },
+    {
+      "word": "virtual",
+      "type": "phrase_gloss_restored",
+      "phrase": "virtual memory",
+      "old": "(computer science) memory created by using the hard disk to simulate additional random-access memory; the addressable storage space available to the user of a computer system in which virtual addresses are mapped into re",
+      "restored": "(computer science) memory created by using the hard disk to simulate additional random-access memory; the addressable storage space available to the user of a computer system in which virtual addresses are mapped into real addresses",
+      "sourceSynset": "04537919-n"
+    },
+    {
+      "word": "winter",
+      "type": "phrase_gloss_restored",
+      "phrase": "nuclear winter",
+      "old": "a long period of darkness and extreme cold that scientists predict would follow a full-scale nuclear war; a layer of dust and smoke in the atmosphere would cover the earth and block the rays of the sun; most living organ",
+      "restored": "a long period of darkness and extreme cold that scientists predict would follow a full-scale nuclear war; a layer of dust and smoke in the atmosphere would cover the earth and block the rays of the sun; most living organisms would perish",
+      "sourceSynset": "11434150-n"
+    },
+    {
+      "word": "winter",
+      "type": "phrase_gloss_restored",
+      "phrase": "winter mushroom",
+      "old": "an edible agaric that is available in early spring or late fall when few other mushrooms are; has a viscid smooth orange to brown cap and a velvety stalk that turns black in maturity and pallid gills; often occur in clus",
+      "restored": "an edible agaric that is available in early spring or late fall when few other mushrooms are; has a viscid smooth orange to brown cap and a velvety stalk that turns black in maturity and pallid gills; often occur in clusters",
+      "sourceSynset": "13022210-n"
+    },
+    {
+      "word": "works",
+      "type": "phrase_gloss_restored",
+      "phrase": "works council",
+      "old": "(chiefly Brit) a council representing employer and employees of a plant or business to discuss working conditions etc; also: a committee representing the workers elected to negotiate with management about grievances and",
+      "restored": "(chiefly Brit) a council representing employer and employees of a plant or business to discuss working conditions etc; also: a committee representing the workers elected to negotiate with management about grievances and wages etc",
+      "sourceSynset": "08311933-n"
+    }
+  ],
+  "unresolved": [
+    {
+      "word": "push",
+      "phrase": "push up",
+      "pos": "v",
+      "definition": "push upward",
+      "matches": 2
+    },
+    {
+      "word": "shake",
+      "phrase": "shake off",
+      "pos": "v",
+      "definition": "get rid of",
+      "matches": 2
+    },
+    {
+      "word": "throw",
+      "phrase": "throw off",
+      "pos": "v",
+      "definition": "get rid of",
+      "matches": 2
+    }
+  ],
+  "note": "Restores documented source fragments, not generated completions."
+}

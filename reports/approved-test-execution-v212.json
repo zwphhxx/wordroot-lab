@@ -1,0 +1,32 @@
+[
+  {
+    "suite": "approved-browser",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/approved-browser.log"
+  },
+  {
+    "suite": "approved-boundary",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/approved-boundary.log"
+  },
+  {
+    "suite": "approved-authored",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/approved-authored.log"
+  },
+  {
+    "suite": "approved-external",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/approved-external.log"
+  },
+  {
+    "suite": "approved-visual",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/approved-visual.log"
+  },
+  {
+    "suite": "approved-legacy",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/approved-legacy.log"
+  }
+]

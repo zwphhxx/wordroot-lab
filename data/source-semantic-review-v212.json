@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "en": "a tannic acid that is extracted from black catechu as a white crystalline substance",
+      "words": [
+        "catechin",
+        "tannin"
+      ],
+      "reason": "catechin 的旧定义称为 tannic acid，需核对化学类别，不能只去掉乱码便视为整体正确。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "any of several North American composite subshrubs of the genera Artemis or Seriphidium",
+      "words": [
+        "sagebrush"
+      ],
+      "reason": "来源中的 genus Artemis 可能是 Artemisia 的误写，需确认后才规范化属名。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "a gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus",
+      "words": [
+        "ankle"
+      ],
+      "reason": "来源将 ankle 描述为 gliding joint，需独立核对关节类型，暂不把译文修复当来源正确。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "(of meat) full of sinews; especially impossible to chew a consisting of tendons or resembling a tendon",
+      "words": [
+        "sinewy"
+      ],
+      "reason": "同一条内仍残留无点a词性边界，需按确切原行恢复两个义项而非翻成混合长句。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "a radioactive transuranic element synthesized by bombarding curium with carbon ions; 7 isotopes are known",
+      "words": [
+        "no",
+        "nos"
+      ],
+      "reason": "nobelium的7 isotopes are known属于旧来源时间性断言，需标明来源时期或独立更新。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "hinge joint in the human leg connecting the tibia and fibula with the femur and protected in front by the patella",
+      "words": [
+        "joint",
+        "knee"
+      ],
+      "reason": "knee定义把fibula和femur直接作为膝铰链连接，来源解剖描述应复核。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "a short-lived radioactive metallic element formed from uranium and disintegrating into actinium and then into lead",
+      "words": [
+        "pa"
+      ],
+      "reason": "将整个protactinium元素称为short-lived可能过度概括，需核实与同位素语境。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "A colloquial or humorous appellation for a negro; sometimes, the offspring of a black person and a mulatto; a zambo.",
+      "words": [
+        "sambo"
+      ],
+      "reason": "sambo原来源称colloquial/humorous，必须增加有依据的现代冒犯性用法标签，不可直接作为普通称谓。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "large mackerel with long pointed snout; important food and game fish of the eastern Atlantic coast southward to Brazil",
+      "words": [
+        "mackerel"
+      ],
+      "reason": "原文eastern Atlantic coast与southward to Brazil在地理上可疑，需核对鱼种和来源。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "a semiaquatic plant that grows in soft wet land; most are monocots: sedge, sphagnum, grasses, cattails, etc; possibly heath",
+      "words": [
+        "bog",
+        "marsh",
+        "swamp"
+      ],
+      "reason": "沼泽植物定义在monocots列举中含sphagnum，需区分例外及旧分类表达。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "extremely poisonous usually white fungus with a prominent cup-shaped base; differs from edible Agaricus only in its white gills",
+      "words": [
+        "cup"
+      ],
+      "reason": "毒蘑菇定义的only in its white gills具有过度简化的鉴别断言，不能作为可靠识别方法呈现。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "an Asian peninsula (off Manchuria) separating the Yellow Sea and the Sea of Japan; the Korean name is Dae-Han-Min-Gook or Han-Gook",
+      "words": [
+        "korea"
+      ],
+      "reason": "Korea半岛与Dae-Han-Min-Gook/Republic of Korea政体名称混淆，需义项层面修正而非只翻译。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "annual native to South America having underground stolons bearing edible starchy tubers; widely cultivated as a garden vegetable; vines are poisonous",
+      "words": [
+        "potato"
+      ],
+      "reason": "potato为多年生植物而常作一年生栽培，原文直接称annual须核对植物与栽培用法。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "a yellow trivalent metallic element of the rare earth group; occurs in monazite and bastnasite in association with cerium and lanthanum and praseodymium",
+      "words": [
+        "nd",
+        "neodymium"
+      ],
+      "reason": "neodymium元素原文称yellow，需核对元素外观，不能只修稀土乱码。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "powerful free-swimming tropical ray noted for `soaring' by flapping winglike fins; usually harmless but has venomous tissue near base of the tail as in stingrays",
+      "words": [
+        "ray"
+      ],
+      "reason": "manta/devil ray相关条目声称尾基有毒组织，需核对具体物种及毒刺结构。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "any of the elementary particles having a mass equal to or greater than that of a proton and that participate in strong interactions; a hadron with a baryon number of +1",
+      "words": [
+        "baryon",
+        "fermion",
+        "hadron"
+      ],
+      "reason": "baryon被称elementary particle与现代复合粒子定义冲突，需要来源语义更新。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "a lustrous grey strong metallic element resembling titanium; it is used in nuclear reactors as a neutron absorber; it occurs in baddeleyite but is obtained chiefly from zircon",
+      "words": [
+        "zirconium"
+      ],
+      "reason": "zirconium被描述为中子吸收体，疑与锆低中子吸收性质混淆，需独立核查。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "English chemist who was a pioneer in electrochemistry and who used it to isolate elements sodium and potassium and barium and boron and calcium and magnesium and chlorine (1778-1829)",
+      "words": [
+        "davies",
+        "davy"
+      ],
+      "reason": "Davy条目把氯与多种金属统一写成通过电化学分离，需核对元素发现与分离方法。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "a radioactive gaseous element formed by the disintegration of radium; the heaviest of the inert gasses; occurs naturally (especially in areas over granite) and is considered a hazard to health",
+      "words": [
+        "radon",
+        "rn"
+      ],
+      "reason": "radon称最重惰性气体为旧来源表述，需加时间性限定或更新。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "A whitish woolly plant (Teucrium Polium) of the order Labiatae, found throughout the Mediterranean region. The name, with sundry prefixes, is sometimes given to other related species of the same genus.",
+      "words": [
+        "poly"
+      ],
+      "reason": "Labiatae按旧order层级写成现代目可能误导，需复核旧分类与现代唇形科。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "a very poisonous metallic element that has three allotropic forms; arsenic and arsenic compounds are used as herbicides and insecticides and various alloys; found in arsenopyrite and orpiment and realgar",
+      "words": [
+        "arsenic",
+        "as"
+      ],
+      "reason": "arsenic原文称metallic而现代分类为metalloid，需独立编辑源义项。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "A line in the Scriptures; specifically (Hebrew Scriptures), one of the rhythmic lines in the poetical books and passages of the Old Treatment, as written in the oldest Hebrew manuscripts and in the Revised Version of the English Bible.",
+      "words": [
+        "stich"
+      ],
+      "reason": "stich原文Old Treatment疑为Old Testament误字，需以原始权威词源记录校核并保留修正证据。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    },
+    {
+      "en": "the acetylated derivative of salicylic acid; used as an analgesic anti-inflammatory drug (trade names Bayer, Empirin, and St. Joseph) usually taken in tablet form; used as an antipyretic; slows clotting of the blood by poisoning platelets",
+      "words": [
+        "analgesic",
+        "anodyne",
+        "aspirin"
+      ],
+      "reason": "aspirin以poisoning platelets概括抗血小板作用不准确，需更新药理描述而非机械翻译。",
+      "status": "needs_source_review",
+      "sourceSnapshotHash": "624ccffe1b9ceb5e1196ed802a709e8c34f5387b366e94ff1cd416e42eb6bd19"
+    }
+  ]
+}

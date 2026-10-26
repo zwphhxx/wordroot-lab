@@ -1,0 +1,1056 @@
+{
+  "snapshot": ".work/bilingual-v212/final-risk-used.json",
+  "reviewerType": "assistant_linguistic_review",
+  "corrections": {
+    "220": [
+      "（化学）分子中相对较长的一串相连原子。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "221": [
+      "（法律）诉讼的一方当事人；参与诉讼的人。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "222": [
+      "（数学）数字或符号组成的抽象集合。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "223": [
+      "（医学旧用语）严重畸形、通常无法存活的胎儿。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "224": [
+      "亨利八世的第6任妻子，英格兰王后，生于1512年、卒于1548年。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "225": [
+      "主教的；由主教管理的；与主教有关的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "226": [
+      "认为除物质之外没有其他存在的人。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "227": [
+      "（生物学）目以下的分类群。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "228": [
+      "（遗传学）女性通常具有的一组性染色体。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "229": [
+      "（法律）偿还债务或履行义务。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "230": [
+      "在某种程度上；有些；到一定程度或距离。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "231": [
+      "（化学）有助于抵抗pH变化的离子化合物。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "232": [
+      "（法律）法院或司法官员签发的法律文书。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "233": [
+      "（物理学）数值围绕某一平均值发生的规则周期性变化。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "234": [
+      "已无实际法律意义的，例如有关问题已经裁定。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "235": [
+      "没有财产或财富的人，作为一个群体而言。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "236": [
+      "（解剖学）身体结构或部位上的沟或槽。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "237": [
+      "果实具有两个角而非4个尖角的一种菱。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "238": [
+      "（解剖学）分隔两个组织或腔隙的隔膜或隔板。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "239": [
+      "（解剖学）器官最靠近其附着处的部分。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "240": [
+      "（生物学）介于属与亚科之间的分类等级。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "241": [
+      "（法律）减轻依法判处的刑罚。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "242": [
+      "（医学）使用某种药物或实施某项医疗处置的依据。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "243": [
+      "（物理学）核反应堆中吸收辐射的材料。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "244": [
+      "由2把小提琴、1把中提琴和1把大提琴组成的器乐四重奏。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "245": [
+      "距今190百万年至135百万年，即1.9亿年至1.35亿年前；恐龙；针叶植物。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "246": [
+      "具有一定形状和体积的；坚实的；既不是液态也不是气态。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "247": [
+      "（生物学）低于纲、高于目的分类等级。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "248": [
+      "（医学）系统的治疗方案，通常也包括饮食安排。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "249": [
+      "（数学）研究球面上图形的几何学。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "250": [
+      "（医学）生物体能够抵抗疾病的状态。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "251": [
+      "（物理学）在相对论框架中作为能量看待的物体质量。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "252": [
+      "（物理学）周期性系统中位移最小的点。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "253": [
+      "（生物学）已丧失的组织或遭破坏的身体部分、器官重新生长。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "254": [
+      "（财务）销售净额减去所售商品和服务的成本。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "255": [
+      "（遗传学）女性具有三条X染色体的异常染色体组成。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "256": [
+      "（数学）一个数所给出的有效数字的位数。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "257": [
+      "（医学）接受供者移植组织或器官的受者。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "258": [
+      "（医学）为医疗诊断而对尿液进行的化学分析。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "259": [
+      "（物理学）两个或多个物体短暂地相碰。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "260": [
+      "数量、范围或程度很大或相当大的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "261": [
+      "第2颈椎，作为转动头部的枢轴。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "262": [
+      "（解剖学）包围某一结构的一层组织，如衬层或膜。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "263": [
+      "（解剖学）身体器官或部位中较圆的一部分。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "264": [
+      "（法律）因行为或疏忽而造成地产价值减少。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "265": [
+      "（数学）表示为另一个量的根的量。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "266": [
+      "（数学）数学群的一个非空子集。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "267": [
+      "（集合论）一个区间不包含它的两个端点的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "268": [
+      "这瓶珍贵的波尔多葡萄酒应至少醒酒2小时。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "269": [
+      "眼睛……呈现一种令人难以捉摸、变化多端、每次都不相同的灰色。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "270": [
+      "重量超过3又1/2磅、适合烤制的大型嫩鸡的肉。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "271": [
+      "董事会处置了价值20百万美元，即2,000万美元的不动产投资。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "272": [
+      "其中的；其人的；旧时也表示与其一起，用作关系词。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "273": [
+      "（生物学）用于保存或展示标本的介质。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "274": [
+      "（生物学）细菌或真菌活动造成的腐败分解过程。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "275": [
+      "（化学）分子中相连原子形成的闭合环。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "276": [
+      "（法律）可据此提起损害赔偿诉讼的不法行为。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "277": [
+      "（医学）同时给予两种药物时产生的协同增强作用。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "278": [
+      "（物理学）能够吸引铁并产生磁场的物体或装置。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "279": [
+      "因为电话太多，我们直到晚上10点才吃饭。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "280": [
+      "（生物学）构成界中主要分支的分类群。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "281": [
+      "（法律）对某人提出的正式指称或指控，常见于法庭。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "282": [
+      "（法律）自愿放弃自己对某事物的法律权利主张。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "283": [
+      "（物理学）一个相空间及其上的变换。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "284": [
+      "我们伸展一下身体吧——已经在这里坐了超过3个小时了。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "285": [
+      "（生物学）通过部分或颗粒附着、增加而发生的生长。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "286": [
+      "（化学）苯环的、与苯环有关的，或含有一个或多个苯环的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "287": [
+      "（法律）某位法官的意见与多数法官意见不一致。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "288": [
+      "（数学）有限或无限表达式序列的和。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "289": [
+      "（物理学）波之间没有稳定、确定的相位关系的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "290": [
+      "（物理学）使某个物理量发生变化的作用。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "291": [
+      "（物理学）做功的速率，以瓦特计量，即焦耳/秒。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "292": [
+      "以证据洗清指控、责难、嫌疑或疑问。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "293": [
+      "距今544百万年至约500百万年，即5.44亿年至约5亿年前；海洋无脊椎动物。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "294": [
+      "一年中的第一个月；原定义称其开始于冬至之后10天。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "295": [
+      "（生物学）研究科学分类的一般原则。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "296": [
+      "（化学）不参与化学反应的；化学性质惰性的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "297": [
+      "西南太平洋上的一个群岛，原词典称其约包含7,000个岛屿。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "298": [
+      "体重不超过2又1/2磅、适合烧烤的小型嫩鸡的肉。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "299": [
+      "距今25百万年至13百万年，即2,500万年至1,300万年前；食草哺乳动物的出现。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "300": [
+      "距今425百万年至405百万年，即4.25亿年至4.05亿年前；最早用空气呼吸的动物。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "301": [
+      "（解剖学）把器官分成若干叶的狭长裂隙或沟。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "302": [
+      "（化学）一串相互连接的原子，通常位于有机分子中。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "303": [
+      "（财务）记录企业在指定日期净值的账户。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "304": [
+      "（遗传学）由于基因内部的分子重排而产生的突变。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "305": [
+      "（遗传学）用于将DNA送入细胞的病毒或其他载体。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "306": [
+      "（遗传学）通过生物遗传从父母获得的特征。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "307": [
+      "（物理学）能够产生视觉感觉的电磁辐射。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "308": [
+      "（物理学）旋转物体的角速度变化率。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "309": [
+      "一位美国流行歌手，1958年出生，在1980年代被视为性感偶像。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "310": [
+      "9至12岁儿童的；与之有关或为他们设计的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "311": [
+      "（法律旧诉答程序）被告对原告的再答辩所作的回应。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "312": [
+      "（数学）代表某种数学运算的符号或函数。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "313": [
+      "（数学）仿射变换几何的；与之有关的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "314": [
+      "（物理学）对磁通的阻碍，类似于电路中的电阻。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "315": [
+      "（生物学）构成较大分类类别下一个分支的一组生物。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "316": [
+      "（数学）舍入到最接近的整数、十位、百位或千位的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "317": [
+      "（物理学）认为气体由随机运动的微小粒子构成的理论。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "318": [
+      "一位美国律师，担任联邦调查局局长48年，生于1895年、卒于1972年。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "319": [
+      "由同一花色的A、K、Q、J和10组成的一手扑克牌。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "320": [
+      "等于1,000兆比特或10^9（1,000,000,000）比特的信息单位。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "321": [
+      "新西兰的一种直立落叶灌木或乔木，可长到10英尺高，开栗红色的花。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "322": [
+      "（医学）显示某种疾病或异常存在的客观证据。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "323": [
+      "（物理学）使弹性物体伸长的应力。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "324": [
+      "我们只住了3晚，酒店却按4晚向我们收费。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "325": [
+      "可携带、供个人使用而非经营用途的财物。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "326": [
+      "（《旧约》）雅各的第2个儿子，以色列12位族长之一。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "327": [
+      "（生物学）单细胞微生物，尤指有鞭毛的原生动物。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "328": [
+      "（生物学）动植物的一个主要分类等级，其下包括若干纲。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "329": [
+      "（化学）物质参与化学反应的能力。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "330": [
+      "（遗传学）染色体上一个或多个核苷酸的丢失或缺失。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "331": [
+      "（法律）正式终止某种关系或司法程序等。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "332": [
+      "（物理学）物体在外力作用下发生的形变。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "333": [
+      "（生物学）解释动植物物种起源的科学理论。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "334": [
+      "（生物学）只有一个成员的分类群，例如只包含一个物种或一个属。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "335": [
+      "（法律）依据财产指定权处分财产的行为。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "336": [
+      "1920年代以不拘传统的行为和穿着彰显自我的年轻女性。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "337": [
+      "（化学）一种或多种物质转变为其他物质的过程。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "338": [
+      "（数学）将一个坐标轴的方向反转的变换。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "339": [
+      "（数学）满足某种公理体系的一组点。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "340": [
+      "（医学）为维持生命功能而作出反应的潜在能力。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "341": [
+      "（解剖学）共同完成某项功能的一组身体部位。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "342": [
+      "（解剖学）类似细根的小结构，例如神经的细纤维。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "343": [
+      "（遗传学）DNA在细胞分裂前复制自身的过程。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "344": [
+      "（法律或议会程序）通过长篇演说拖延或阻碍立法的策略。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "345": [
+      "（法律）通过正当法律程序确定某人是否有罪。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "346": [
+      "（法律）行使从所拥有财产中获得利益的法定权利。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "347": [
+      "（物理学）使系统略微偏离原状态的次要影响。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "348": [
+      "（物理学）磁针与水平面之间的夹角。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "349": [
+      "（物理学）竖直管内平静液体的弯曲上表面。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "350": [
+      "等于1,000吉比特或10^12（1,000,000,000,000）比特的信息单位。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "351": [
+      "从事某种活动，通常除了获得乐趣之外没有其他特定目的。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "352": [
+      "通过迅速、及时作出正确反应的能力表现出来的聪敏。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "353": [
+      "巴基斯坦首都，位于北部高原上；其城址于1959年选定。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "354": [
+      "（生物学）身体某一部分在结构上适应特定功能。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "355": [
+      "（法律）载明某种合同关系或授予某项权利的文书。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "356": [
+      "（法律旧诉答程序）被告对原告答辩所作的再答辩。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "357": [
+      "（法律旧诉答程序）原告对被告抗辩或答辩所作的回应。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "358": [
+      "（法律）在法律事务中可被采纳为证据的未经宣誓的陈述。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "359": [
+      "（数学）解决某类数学问题的标准步骤。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "360": [
+      "（医学）用于绷带和敷料的漂白平纹棉布。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "361": [
+      "（物理学）系统受扰动后按指数规律恢复平衡的过程。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "362": [
+      "同一个家族负责编辑这份有影响力的报纸，已经将近100年。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "363": [
+      "围绕共产主义中国的意识形态屏障，尤指1950年代和1960年代的情形。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "364": [
+      "（法律）提出新事实，以排除对方主张之法律效力的抗辩。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "365": [
+      "等于1,000吉字节或10^12（1,000,000,000,000）字节的信息单位。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "366": [
+      "自然对数的底数，约等于2.718282……。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "367": [
+      "（化学）能够确定聚合物中单体排列顺序的仪器。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "368": [
+      "（法律）被告针对事实事项作出的答辩，以区别于仅争议法律充分性的抗辩。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ],
+    "369": [
+      "（法律）对某事物享有的权利或合法份额；在其中的经济利益。",
+      "逐条按原定义核对领域、参与者、概念层级、数字和否定；修复genus/order/family等专业词的日常义误译。",
+      [
+        "local:adopted-wordnet-or-ecdict-source-gloss"
+      ]
+    ]
+  }
+}

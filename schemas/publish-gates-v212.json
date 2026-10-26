@@ -1,0 +1,23 @@
+{
+  "schema":1,
+  "policy":"Do not release merely because candidate translation fields are populated",
+  "requiredWords":49426,
+  "maxUnexplainedSourceLoss":0,
+  "maxMissingBilingualPairs":0,
+  "maxUnresolvedExampleAlignment":0,
+  "maxUnresolvedPhraseAlignment":0,
+  "maxOrphanSenseReferences":0,
+  "maxKnownSevereSemanticErrors":0,
+  "maxUnreviewedHighRiskPairs":0,
+  "maxCorruptOrPlaceholderTranslations":0,
+  "maxMixedBuildPackages":0,
+  "requiredBenchmarkWords":80,
+  "requireIndependentSemanticReview":true,
+  "requireBrowserRegression":true,
+  "requireSourceVersionMappingAudit":true,
+  "requireNativeChineseSenseReconciliation":true,
+  "requireExternalContentPairAudit":true,
+  "requirePreservedLearningState":true,
+  "allowDroppingUntranslatedContentToImproveCoverage":false,
+  "productionPushRequiresStatus":"PASS"
+}

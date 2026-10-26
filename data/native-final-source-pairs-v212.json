@@ -1,0 +1,8 @@
+{"translations":{
+"72":{"en":"noun: the ankle, the joint connecting the leg and the foot.","reason":"中文源文仅为踝，不必借用WordNet中gliding的错误扩展；使用准确的词义对应。"},
+"99":{"en":"noun: arsenic; arsenic trioxide, also called white arsenic.","reason":"保留原中文砷与砒霜两个义项；砷与其氧化物必须分开。"},
+"1622":{"en":"noun: neodymium, chemical element Nd.","reason":"原中文为元素名称，不引入旧来源错误的黄色金属外观。"},
+"1819":{"en":"noun: a potato, the edible starchy tuber of the potato plant; also the plant.","reason":"原中文马铃薯不区分植物/块茎，保留两者，不将多年生直接译一年生。"},
+"1876":{"en":"noun: radon, chemical element Rn.","reason":"只对应原中文元素名称，不重复原来源最重惰性气体过时断言。"},
+"2516":{"en":"noun: zirconium, chemical element Zr.","reason":"只对应中文元素名称，不引入中子吸收体这一旧词典错误。"}
+}}

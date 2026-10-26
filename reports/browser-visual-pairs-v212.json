@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "buildId": "v212-d99509bea02c69",
+  "checks": [
+    {
+      "name": "All 122 exact caption sources have reviewed counterparts",
+      "ok": true,
+      "details": {
+        "total": 122,
+        "translated": 122,
+        "bad": []
+      }
+    },
+    {
+      "name": "apple preserves exact bilingual caption, picture and licence",
+      "ok": true,
+      "details": "This picture shows the fruit apple, not the technology company. Notice the skin, flesh and stalk."
+    },
+    {
+      "name": "banana preserves exact bilingual caption, picture and licence",
+      "ok": true,
+      "details": "Connect banana with the shape of the fruit, then learn expressions such as a banana and banana peel."
+    },
+    {
+      "name": "water preserves exact bilingual caption, picture and licence",
+      "ok": true,
+      "details": "The picture shows drinking water. In water the plants, water instead names the action of giving plants water."
+    },
+    {
+      "name": "photograph preserves exact bilingual caption, picture and licence",
+      "ok": true,
+      "details": "A photograph records an image formed by light; photo- relates to light and -graph relates to recording."
+    },
+    {
+      "name": "portable preserves exact bilingual caption, picture and licence",
+      "ok": true,
+      "details": "The laptop illustrates something that can be carried relatively easily. Portable is an adjective."
+    },
+    {
+      "name": "microscope preserves exact bilingual caption, picture and licence",
+      "ok": true,
+      "details": "A microscope is used to examine very small objects; the picture shows this kind of instrument."
+    },
+    {
+      "name": "Image enlargement still works",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Title placeholder label is bilingual and honest",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "No learning accordion introduced",
+      "ok": true,
+      "details": ""
+    }
+  ],
+  "scope": "static editorial image captions only",
+  "sourceSha256": "530fd3255beb670487377d5f9cb29ec79b8604f653c45898ac646e06cd9f4f04"
+}

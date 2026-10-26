@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "buildId": "v212-d99509bea02c69",
+  "checks": [
+    {
+      "name": "Candidate version and dictionary retained",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Banner agrees with explicit build approval",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "15 carrier senses individually identified",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Stable source IDs replace list positions",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Carrier mobile and aircraft senses separately explained",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Paired explanatory paragraphs show Chinese first",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Examples all have matching bilingual fields",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Related definition belongs to target not carrier",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Unhelpful being relation omitted from recommendations",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Context question no random success distractor",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "No collapsed learning modules",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Nonseed word lazy loads checked current build",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Word URL follows lookup",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Polysemous bank has distinct definitions",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Unreviewed machine meanings do not generate quiz",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Refresh preserves word and input",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Favorites and scheduled review date preserved",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Bilingual cards fit 320",
+      "ok": true,
+      "details": {
+        "width": 320,
+        "client": 320,
+        "body": 320,
+        "reader": 300
+      }
+    },
+    {
+      "name": "Bilingual cards fit 390",
+      "ok": true,
+      "details": {
+        "width": 390,
+        "client": 390,
+        "body": 390,
+        "reader": 362
+      }
+    },
+    {
+      "name": "Bilingual cards fit 768",
+      "ok": true,
+      "details": {
+        "width": 768,
+        "client": 768,
+        "body": 768,
+        "reader": 720
+      }
+    },
+    {
+      "name": "Bilingual cards fit 1365",
+      "ok": true,
+      "details": {
+        "width": 1365,
+        "client": 1350,
+        "body": 1350,
+        "reader": 760
+      }
+    },
+    {
+      "name": "Bilingual cards fit 1920",
+      "ok": true,
+      "details": {
+        "width": 1920,
+        "client": 1905,
+        "body": 1905,
+        "reader": 760
+      }
+    },
+    {
+      "name": "Offline shell includes versioned repository",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Offline carrier and saved dates remain",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "No uncaught browser exceptions",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "scope": "Targeted candidate browser checks only; does not certify full old regression or semantic quality"
+}

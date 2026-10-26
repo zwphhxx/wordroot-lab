@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+"""Persist an honest current-build handoff. Does not approve or publish anything."""
+from pathlib import Path
+import json,hashlib,time,datetime,subprocess,tarfile
+R=Path(__file__).resolve().parent.parent;W=R/'.work/bilingual-v212';P=R/'reports';D=R.parent/'wordroot-lab-workspace'
+load=lambda p:json.loads(p.read_text())
+def sha(p):
+ h=hashlib.sha256()
+ with p.open('rb') as f:
+  for b in iter(lambda:f.read(1048576),b''):h.update(b)
+ return h.hexdigest()
+def atomic(p,x):
+ q=p.with_suffix(p.suffix+'.tmp');q.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n');q.replace(p)
+m=load(R/'data/bilingual-v212-manifest.json');g=load(P/'release-gate.json');a=load(P/'audit-summary.json');build=load(P/'normalized-build.json');legacy=load(P/'legacy-browser-regression.json');browser=load(P/'browser-results.json')
+assert g['buildId']==m['buildId']==build['buildId']==browser['buildId']==legacy['buildId']
+assert g['status']=='BLOCKED','This checkpoint is for an explicitly blocked draft; a PASS needs a separate release process.'
+native_file=W/'native-zh-en-candidates.jsonl';native=set()
+if native_file.exists():
+ with native_file.open() as f:
+  for line in f:native.add(json.loads(line)['zh'])
+review=load(P/'semantic-sample-review-resume.json');source=load(P/'source-pos-repair.json');fragments=load(P/'source-fragment-restoration.json')
+report={'date':'2026-10-26','status':'BLOCKED_NOT_DEPLOYED','buildId':m['buildId'],'workspace':str(R),'migration':'VERIFIED','productionChanged':False,'sourceRepair':{'affectedWords':source['changedWords'],'separatedSourceEntries':source['splitDifference'],'restoredPhraseGlosses':fragments['restoredCounts']['phrase_gloss_restored'],'restoredExamples':fragments['restoredCounts']['example_restored'],'unresolvedPhraseMappings':g['counts'].get('unresolvedPhrases',0),'unresolvedExampleMappings':g['counts'].get('unresolvedExamples',0)},'dataset':{k:build[k] for k in ['words','senses','examples','phrases','relations','bundles','bytes','maxBundleBytes']},'exactTranslationCorrections':len(load(R/'data/translation-corrections-v212.json')['pairs']),'finiteSampleReview':{k:review[k] for k in ['sampleSize','revised','sourceReviewPending','checkedNoMaterialError','status']},'nativeEnglishCandidates':len(native),'uniqueRuleFlaggedTexts':a['riskTextCount'],'releaseGate':g,'tests':{'sourceParser':{'passed':11,'total':11},'sourceRepairs':{'passed':9,'total':9},'versionedRepository':{'passed':10,'total':10},'spacedRepetition':{'passed':11,'total':11},'targetedBrowser':{'passed':sum(x['ok'] for x in browser['checks']),'total':len(browser['checks']),'buildId':browser['buildId']},'legacyBrowser':legacy},'deploymentAuthorization':'User authorized deployment after the agreed quality gates pass; approval is not permission to waive gates.','notes':['Source reconciliation and translation correctness are separate.','Machine screening is not full semantic review.','The finite 120-text sample is not an estimated corpus-wide error rate.','Native source text is preserved; missing counterparts remain counted.']}
+atomic(P/'resume-progress.json',report)
+text=f'''# 词根实验室 V2.12：本轮执行结果\n\n日期：2026-10-26\n\n**当前状态：已执行修复，发布验收仍未通过，未部署生产。**\n\n## 工作区\n\n主项目、隔离工作区和运行资料均已迁至 `/Users/zhuwenpeng/Developer`。本轮改造在 `{R}` 的 `work/bilingual-sense-v212` 分支进行，生产及原主目录的未提交草稿未覆盖。\n\n## 已完成的全库修复\n\n- 保留 {build['words']:,} 个词条。\n- 修复 {source['changedWords']:,} 个词的来源词性行解析，重新分开 {source['splitDifference']:,} 条曾被合并的来源条目。\n- 恢复 {fragments['restoredCounts']['phrase_gloss_restored']} 处搭配解释、{fragments['restoredCounts']['example_restored']} 处例句的原文截断。\n- 搭配从 15,445 个未解决映射降到 {g['counts'].get('unresolvedPhrases',0)}；记录了短语自身义项和实际来源，不把短语强行等同于所含单词。\n- 载入 {build['senses']:,} 个去重候选义项、{build['examples']:,} 条例句、{build['phrases']:,} 条搭配、{build['relations']:,} 条词义关系。\n- 累计 {report['exactTranslationCorrections']} 条精确译文修订，每条有原文和理由。\n- 保留原始中文释义块，独立补齐英文对应，而非按列表下标拼到 WordNet 意思上。\n\n## 本轮测试\n\n来源解析 11/11；全库修复完整性 9/9；版本分包仓库 10/10；复习算法 11/11；专项浏览器 {report['tests']['targetedBrowser']['passed']}/{report['tests']['targetedBrowser']['total']}。\n\n旧卡片 37/37、搜索与整词 38/38、图片 31/31、扩展释义 37/37。其余两个旧检查仍失败，涉及“英文单独呈现”旧约定与新双语约定及异步重绘；尚不能声称完整回归全部通过。\n\n## 为什么没有部署\n\n1. {g['counts'].get('missingPairs',0):,} 个原始中文来源块出现位置仍缺英文对应，必须保留并补齐，不能删掉改善覆盖率。\n2. 当前数据有 {g['counts'].get('corruptTranslations',0):,} 个译文乱码或异常字符出现位置；全库规则筛查还标出了 {a['riskTextCount']:,} 条独立文本需要复核。两种数字不是同一个计数口径。\n3. 120条有限样本已实际检查，其中78条修订、36条未发现实质错误、6条需来源处理；这不能代替80词语义基准和新的独立抽样。\n4. 全模块动态内容双语审计及完整回归仍未完成。\n\n典型已改正的问题包括“受凉”误译为“冷静”、“火柴”误译为“比赛”、词性 v 被译成“五”。中文字段存在不等于意思准确。\n\n## 续接方式\n\n当前构建：`{m['buildId']}`。真实机器检查结果在 `reports/release-gate.json`。后续从检查点继续，不重新迁移或重复下载模型。部署授权已经记录，只有当全部既定门禁真正通过后才可发布；无须再以形式性确认代替执行。\n\n详细续接规范：`docs/bilingual-v212-resume.md`。\n'''
+(P/'predeploy-review.md').write_text(text)
+state=load(W/'state.json');state.update(phase='P4_CONTENT_QA_BLOCKED',migration='VERIFIED',authorized_deploy=True,deploy_condition='all documented current-build gates pass',build_id=m['buildId'],last_verified_step='source parsing and exact phrase provenance repaired; current-build browser and fail-closed release gate executed',last_checked_at=time.time(),active_writer=False,foreground_complete=True,production_changes=False,blocked_by=g['blockedBy'],reports={'progress':'reports/resume-progress.json','review':'reports/predeploy-review.md','gate':'reports/release-gate.json','handoff':'docs/bilingual-v212-resume.md'},input_hashes={str(p.relative_to(R)):sha(p) for p in [W/'source-records.json',R/'data/translation-corrections-v212.json',R/'schemas/publish-gates-v212.json',R/'data/bilingual-v212-manifest.json']},translation_candidates={'requiredInputCounts':a['source']['required_input_counts'],'translatedInputCounts':a['source']['translated_input_counts'],'missingInputCounts':a['source']['missing_inputs'],'nativeChineseBlockEnglishCandidates':len(native),'allAreApproved':False})
+atomic(W/'state.json',state)
+archive=D/'snapshots'/('post-repair-'+time.strftime('%Y%m%d-%H%M%S')+'.tar')
+files=[Path(x) for x in ['index.html','sw.js','bilingual-v212.js','reader-v212.js','reader-v212.css','dictionary-repository-v212.js','data/bilingual-v212-manifest.json','data/translation-corrections-v212.json','data/review-corrections-resume-v212.json','data/review-sample-revisions-v212.json','data/source-exclusions-reviewed-v212.json','reports/resume-progress.json','reports/predeploy-review.md','reports/release-gate.json','reports/semantic-sample-review-resume.json','docs/bilingual-v212-resume.md']]
+files+=list(Path('scripts').glob('*v212.py'))+list(Path('tests').glob('*v212.*'))+list(Path('schemas').glob('*v212.json'))
+with tarfile.open(archive,'w') as t:
+ for rel in sorted(set(files)):
+  p=R/rel
+  if p.is_file():t.add(p,arcname=str(rel),recursive=False)
+print('CHECKPOINT',m['buildId'],g['status']);print('SNAPSHOT',archive);print('REVIEW',P/'predeploy-review.md');print('PROGRESS',json.dumps({k:report[k] for k in ['sourceRepair','exactTranslationCorrections','nativeEnglishCandidates','uniqueRuleFlaggedTexts']},ensure_ascii=False))

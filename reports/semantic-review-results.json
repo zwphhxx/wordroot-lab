@@ -1,0 +1,577 @@
+{
+  "buildId": "v212-d99509bea02c69",
+  "status": "PASS",
+  "benchmarkWords": 80,
+  "benchmarkPairs": 3277,
+  "unreviewedBenchmarkPairs": 0,
+  "benchmark": [
+    {
+      "word": "carrier",
+      "pairs": 51,
+      "unreviewed": 0,
+      "contentHash": "50d0d537ff0c76416973dfed28b67968bb5433991ffb52a106d34eb0f2e3067a",
+      "evidenceCount": 52
+    },
+    {
+      "word": "bank",
+      "pairs": 53,
+      "unreviewed": 0,
+      "contentHash": "178e0a5f2728d857fe81e59abf1131717694648c4cdb9351354e362fbdbc4b78",
+      "evidenceCount": 70
+    },
+    {
+      "word": "light",
+      "pairs": 161,
+      "unreviewed": 0,
+      "contentHash": "6479379f0c2e27950e7e18b1a69dca9ad996eebf0b6836f5c54f20104b09ecfe",
+      "evidenceCount": 178
+    },
+    {
+      "word": "charge",
+      "pairs": 107,
+      "unreviewed": 0,
+      "contentHash": "63010886e7dee13333e25d60c7be566ebd59426f33f0e12903b1b1fe3cc509f5",
+      "evidenceCount": 124
+    },
+    {
+      "word": "issue",
+      "pairs": 56,
+      "unreviewed": 0,
+      "contentHash": "72923783947f6fcbd855a4da9e30620353ecf28af6e99762f6d72f102f3b406d",
+      "evidenceCount": 68
+    },
+    {
+      "word": "plant",
+      "pairs": 38,
+      "unreviewed": 0,
+      "contentHash": "9af6f0995d5ab683b45a353973484528d2e7544eaadb7e2d0f4384088371a0f0",
+      "evidenceCount": 56
+    },
+    {
+      "word": "cell",
+      "pairs": 24,
+      "unreviewed": 0,
+      "contentHash": "c2b4f54ce6f52cb59adddeeda0bbb0006ba12eceb4cf5ceeb2a17317b3ad1439",
+      "evidenceCount": 37
+    },
+    {
+      "word": "scale",
+      "pairs": 46,
+      "unreviewed": 0,
+      "contentHash": "362b5c0d877725f8924d4e8c2da97fdf01ba6166ca8f5f6f707691e4da2afc2e",
+      "evidenceCount": 63
+    },
+    {
+      "word": "spring",
+      "pairs": 40,
+      "unreviewed": 0,
+      "contentHash": "9eab28dc4a8be77f815b75ebf7195f2c891a40b512c8fb1799cd46fb01746110",
+      "evidenceCount": 55
+    },
+    {
+      "word": "interest",
+      "pairs": 42,
+      "unreviewed": 0,
+      "contentHash": "de042de6a4942e2ac1850d392ec3ddb4544ce7e73dab5304b0edddbcf946169a",
+      "evidenceCount": 59
+    },
+    {
+      "word": "book",
+      "pairs": 46,
+      "unreviewed": 0,
+      "contentHash": "c3aaae0b383dc507a9b2b97988c88afea325266ecaeab5661ae02547b5e82752",
+      "evidenceCount": 62
+    },
+    {
+      "word": "water",
+      "pairs": 40,
+      "unreviewed": 0,
+      "contentHash": "b6f6f5bdb0df422402e505518e1fee13025c79c963185da7ddb903a0ed3e688a",
+      "evidenceCount": 55
+    },
+    {
+      "word": "run",
+      "pairs": 170,
+      "unreviewed": 0,
+      "contentHash": "c624139dde8a44dcfdb30421279fda64951c21e27b8f98d0b14094a6b7af23e8",
+      "evidenceCount": 196
+    },
+    {
+      "word": "face",
+      "pairs": 72,
+      "unreviewed": 0,
+      "contentHash": "c2cd2d14de7630c7fe324ee5212f9b93ad9fd1c123bfdcf0a09c6ef1146f7faa",
+      "evidenceCount": 87
+    },
+    {
+      "word": "watch",
+      "pairs": 46,
+      "unreviewed": 0,
+      "contentHash": "2f4e1ea87e14cad77a4f3518f471d9454b3e176224b5a4af797f18a8115f9c5f",
+      "evidenceCount": 62
+    },
+    {
+      "word": "play",
+      "pairs": 168,
+      "unreviewed": 0,
+      "contentHash": "c8ee18ebee73cc5cf7177b9e496db7136e64913986e6eccea04ba0168c6bda78",
+      "evidenceCount": 188
+    },
+    {
+      "word": "set",
+      "pairs": 134,
+      "unreviewed": 0,
+      "contentHash": "61bb3d1f8d4cb611f3b4bec9e4cf512a5238e66bc3e0854a779470512cd8dea0",
+      "evidenceCount": 151
+    },
+    {
+      "word": "work",
+      "pairs": 138,
+      "unreviewed": 0,
+      "contentHash": "be14138118a8449c36390896cc0e43db5d96aecda7d414765bfc2fe9d5bab407",
+      "evidenceCount": 158
+    },
+    {
+      "word": "change",
+      "pairs": 72,
+      "unreviewed": 0,
+      "contentHash": "3362b8d366524310003e56686ec2622544433899e337eff5d1ad746dc1bbc8ce",
+      "evidenceCount": 89
+    },
+    {
+      "word": "sound",
+      "pairs": 82,
+      "unreviewed": 0,
+      "contentHash": "c5627db9f1a780a1e6be73d714544bf559aef93aa9544b043ad2390398ec33ba",
+      "evidenceCount": 102
+    },
+    {
+      "word": "apple",
+      "pairs": 9,
+      "unreviewed": 0,
+      "contentHash": "f2a1097e1de98b7499ca254b935fcf89d7a6686d28bf749f2a55050a8af7770d",
+      "evidenceCount": 15
+    },
+    {
+      "word": "banana",
+      "pairs": 9,
+      "unreviewed": 0,
+      "contentHash": "9d2043f90775f0b000f691dd3e188510efe6198ee9cb8db3106db6adb1ec5c23",
+      "evidenceCount": 18
+    },
+    {
+      "word": "andiron",
+      "pairs": 4,
+      "unreviewed": 0,
+      "contentHash": "27a0345ba94f6323d91d642b11a89465768a0d0c288117e75106afcce52c0ce3",
+      "evidenceCount": 8
+    },
+    {
+      "word": "dog",
+      "pairs": 34,
+      "unreviewed": 0,
+      "contentHash": "488f1306b46d243cf494622c7b70ec4a89e3e6f47aaaa09cdf3876c22b79207e",
+      "evidenceCount": 55
+    },
+    {
+      "word": "teapot",
+      "pairs": 3,
+      "unreviewed": 0,
+      "contentHash": "dffb8eff2e7fcb6f483e6976b5d3daf53bb56e7ae32aadab89bf5215b8d1ce08",
+      "evidenceCount": 5
+    },
+    {
+      "word": "chair",
+      "pairs": 30,
+      "unreviewed": 0,
+      "contentHash": "5fe884d867bcebdc5068bda3cb8d3a7107831aab37a965223b363ac23508e632",
+      "evidenceCount": 46
+    },
+    {
+      "word": "table",
+      "pairs": 35,
+      "unreviewed": 0,
+      "contentHash": "ec0ddff9f1c2017d323adab1c62d5c542104d69d7d97cfe40ba15044beaa4374",
+      "evidenceCount": 52
+    },
+    {
+      "word": "house",
+      "pairs": 49,
+      "unreviewed": 0,
+      "contentHash": "1fe9163cc106a73f8e98b8a24f7c9d4d92ea9e6e9caf4bb5b426b38cf874089b",
+      "evidenceCount": 67
+    },
+    {
+      "word": "flower",
+      "pairs": 23,
+      "unreviewed": 0,
+      "contentHash": "4a8628f59e1af6c475f3c3a4c8aa5e3465dd0cdbecbd2d09fc6dbb21e94c52be",
+      "evidenceCount": 39
+    },
+    {
+      "word": "coffee",
+      "pairs": 22,
+      "unreviewed": 0,
+      "contentHash": "0e26df29d6096e19cb7d9eb98197c8a14f133405b3a183ba3469214ebe8824e2",
+      "evidenceCount": 38
+    },
+    {
+      "word": "signal",
+      "pairs": 34,
+      "unreviewed": 0,
+      "contentHash": "4e2b495c70e85bc7bddf299a98cdc1f318bb2a04cdf8a97eb125e8ee77389f84",
+      "evidenceCount": 48
+    },
+    {
+      "word": "wave",
+      "pairs": 44,
+      "unreviewed": 0,
+      "contentHash": "bb06cdd4ae49d4158c47184754327449172bf3db61d563a31bd0357ec100d4bc",
+      "evidenceCount": 61
+    },
+    {
+      "word": "current",
+      "pairs": 32,
+      "unreviewed": 0,
+      "contentHash": "6fb63e2597e7cb6bf52b5c6b9b502521a63b7d0978895a60630a25fb4a4b6055",
+      "evidenceCount": 48
+    },
+    {
+      "word": "circuit",
+      "pairs": 35,
+      "unreviewed": 0,
+      "contentHash": "344140bd843dcb81a82ea3ccf192e7bdee6235465f098a8e3095550b873807b6",
+      "evidenceCount": 53
+    },
+    {
+      "word": "voltage",
+      "pairs": 4,
+      "unreviewed": 0,
+      "contentHash": "7e635937a93e80e2f1830839b70c7ffdbeec30e139924f94b01fe258d0ea1716",
+      "evidenceCount": 5
+    },
+    {
+      "word": "electron",
+      "pairs": 7,
+      "unreviewed": 0,
+      "contentHash": "38a7db19463d82237f107b2aa170d21ba1def62f33064691e82b2fde3b92dbb8",
+      "evidenceCount": 13
+    },
+    {
+      "word": "gene",
+      "pairs": 14,
+      "unreviewed": 0,
+      "contentHash": "f6f516a9c94458943fc1b56b8d7fd8baeeab03f0729ed94629ec6a135b47b5a7",
+      "evidenceCount": 28
+    },
+    {
+      "word": "allele",
+      "pairs": 8,
+      "unreviewed": 0,
+      "contentHash": "6f91f9fb44529d9aef78751801246eceec3e552f3ad82c0b9153c7573a2d6853",
+      "evidenceCount": 12
+    },
+    {
+      "word": "protein",
+      "pairs": 16,
+      "unreviewed": 0,
+      "contentHash": "7521f705cae5cf2c465178db1738cb754d6d3f903bf9b46669249612a7c524df",
+      "evidenceCount": 32
+    },
+    {
+      "word": "organism",
+      "pairs": 15,
+      "unreviewed": 0,
+      "contentHash": "e716084003c8934e7aadea048295def8acaeefd762e2a1f04f8f892c7c25a604",
+      "evidenceCount": 25
+    },
+    {
+      "word": "justice",
+      "pairs": 17,
+      "unreviewed": 0,
+      "contentHash": "238f36b13721568c4c5cb77553bd7149bd7453b337a6f6d8a49a6228f6d90b5a",
+      "evidenceCount": 30
+    },
+    {
+      "word": "freedom",
+      "pairs": 16,
+      "unreviewed": 0,
+      "contentHash": "da8235a11721105f5d91c71f539225b9a3d6b1c6f58d3fa6d7c03a4e13c2da72",
+      "evidenceCount": 27
+    },
+    {
+      "word": "resilience",
+      "pairs": 6,
+      "unreviewed": 0,
+      "contentHash": "4d045e892be7d42a2202b77fcafea3b5013eda74968136cb87f55d050a3749a5",
+      "evidenceCount": 9
+    },
+    {
+      "word": "responsibility",
+      "pairs": 21,
+      "unreviewed": 0,
+      "contentHash": "29d03f447c8b5924ff8db12438d8382736c5832de43f09fb0353f853ac1fd5cd",
+      "evidenceCount": 38
+    },
+    {
+      "word": "knowledge",
+      "pairs": 16,
+      "unreviewed": 0,
+      "contentHash": "f14f39d4844fc4da80fa5209ffe5d97cb3cb3dca6264dc0f93e4f04629297f38",
+      "evidenceCount": 32
+    },
+    {
+      "word": "evidence",
+      "pairs": 28,
+      "unreviewed": 0,
+      "contentHash": "15188917a0c5579c894ff5e9bcd08664dbbc8b096192d20e82562d5452b0eebf",
+      "evidenceCount": 41
+    },
+    {
+      "word": "risk",
+      "pairs": 27,
+      "unreviewed": 0,
+      "contentHash": "b74b551fa52b4746ec9658cd941789394f3503fcc1d254ac063947a6567c3624",
+      "evidenceCount": 37
+    },
+    {
+      "word": "value",
+      "pairs": 41,
+      "unreviewed": 0,
+      "contentHash": "eb45888c4bff17c38d24288f4f3f145ec766f099ef4d9ead535353c94dc04f9d",
+      "evidenceCount": 55
+    },
+    {
+      "word": "equity",
+      "pairs": 10,
+      "unreviewed": 0,
+      "contentHash": "c7fd50d4e596ed361e5674400bf4c428bd1aa980c1e1e0788fa0450a5dce7c4c",
+      "evidenceCount": 17
+    },
+    {
+      "word": "capital",
+      "pairs": 35,
+      "unreviewed": 0,
+      "contentHash": "3081f2abd0f133648139ae4817255b40a6d1df40316f8d6d8f65419c11684504",
+      "evidenceCount": 53
+    },
+    {
+      "word": "procedure",
+      "pairs": 24,
+      "unreviewed": 0,
+      "contentHash": "02e5db45395ca3843fc20ca6102b96d7a2841196bb5227bfd7efdb865cf607eb",
+      "evidenceCount": 40
+    },
+    {
+      "word": "revolution",
+      "pairs": 14,
+      "unreviewed": 0,
+      "contentHash": "1c9598399765704bdaf2476965f934f637a991e113fea1c0c4d1182a50e3ee4f",
+      "evidenceCount": 22
+    },
+    {
+      "word": "concession",
+      "pairs": 15,
+      "unreviewed": 0,
+      "contentHash": "155f705b96f1f391473b94e8182e42a2a9dacd9077fbb3610fd12fd2f8b38d59",
+      "evidenceCount": 24
+    },
+    {
+      "word": "successful",
+      "pairs": 5,
+      "unreviewed": 0,
+      "contentHash": "860ccd3bdd0f0ee3d1c77baabe5e55b2de529badeed1755ca4f0e63acc947832",
+      "evidenceCount": 4
+    },
+    {
+      "word": "photograph",
+      "pairs": 20,
+      "unreviewed": 0,
+      "contentHash": "f1ecf5cc2df3e6011de44ae5f04448c705a68cae310e05b4ba4bed18ac875936",
+      "evidenceCount": 35
+    },
+    {
+      "word": "biology",
+      "pairs": 19,
+      "unreviewed": 0,
+      "contentHash": "9115af06a7c800a20f011ad98ce9481e864ca09f10ab5dcdaaec975cb8dc9ebe",
+      "evidenceCount": 37
+    },
+    {
+      "word": "telephone",
+      "pairs": 18,
+      "unreviewed": 0,
+      "contentHash": "b59d3f402e9d8dfa4fdefd4152952180ae6cfc40cf5d23a612e82d338fe3d982",
+      "evidenceCount": 33
+    },
+    {
+      "word": "constructive",
+      "pairs": 10,
+      "unreviewed": 0,
+      "contentHash": "123100fb85cce0706677405cad250d7b54f5c9a9f6e4b8e044d735c5b6c797ee",
+      "evidenceCount": 14
+    },
+    {
+      "word": "transport",
+      "pairs": 34,
+      "unreviewed": 0,
+      "contentHash": "ca830ae1b52a4f163e7b9ce43bb6d1b31fb4cd120ddcf9ba6f403302d5be2436",
+      "evidenceCount": 56
+    },
+    {
+      "word": "microscope",
+      "pairs": 7,
+      "unreviewed": 0,
+      "contentHash": "8c8c084b58cc43b3607c253f958994c16eba275889d1d0474368be9042cc4297",
+      "evidenceCount": 13
+    },
+    {
+      "word": "letter",
+      "pairs": 31,
+      "unreviewed": 0,
+      "contentHash": "93f03756e7b3ccc1237288c90a0493343f5f6fb12d7c6b412da79bc221e9e27a",
+      "evidenceCount": 48
+    },
+    {
+      "word": "bag",
+      "pairs": 42,
+      "unreviewed": 0,
+      "contentHash": "9cfe0a3353774795d8cfed13cf7ae834f55e060f605371366a333a824058ac68",
+      "evidenceCount": 60
+    },
+    {
+      "word": "troop",
+      "pairs": 16,
+      "unreviewed": 0,
+      "contentHash": "f2b2210d3ab1cba1d50159fc601e4c3bc2caf103fdbb169296809e4e2cf9b842",
+      "evidenceCount": 23
+    },
+    {
+      "word": "bond",
+      "pairs": 40,
+      "unreviewed": 0,
+      "contentHash": "a2f3d28dc5c05a75c7892f5f8436b5bfe1725ab6252cee53dc93c11338a8ac16",
+      "evidenceCount": 56
+    },
+    {
+      "word": "fly",
+      "pairs": 54,
+      "unreviewed": 0,
+      "contentHash": "61e9b8f05835dbdba8fa3d2520e1a11583b634574f3f3b282812e0d5571af015",
+      "evidenceCount": 68
+    },
+    {
+      "word": "order",
+      "pairs": 76,
+      "unreviewed": 0,
+      "contentHash": "66a3445be5280b893a8b0cbe3a50f1b81d85bc7319b083b714aa52bbe55b0080",
+      "evidenceCount": 91
+    },
+    {
+      "word": "family",
+      "pairs": 36,
+      "unreviewed": 0,
+      "contentHash": "f783446cb1ea56e35127dea340558b0e5fc12448f02805c7dca935ffb55a5c28",
+      "evidenceCount": 54
+    },
+    {
+      "word": "paper",
+      "pairs": 34,
+      "unreviewed": 0,
+      "contentHash": "d0a1411a67ad53cee9b51bcec12490532d90f197d87efad25b5b1e0df0c8ae82",
+      "evidenceCount": 47
+    },
+    {
+      "word": "head",
+      "pairs": 106,
+      "unreviewed": 0,
+      "contentHash": "e50d28e3fedff1b26c96ebf08f3b82f25c975f80ce52d190df281fbc61e6b897",
+      "evidenceCount": 115
+    },
+    {
+      "word": "foot",
+      "pairs": 48,
+      "unreviewed": 0,
+      "contentHash": "9bb2f8df25c3a29ba117cc9a342e6ca44bcf23d299700d94df5302e6b382a41b",
+      "evidenceCount": 64
+    },
+    {
+      "word": "protasis",
+      "pairs": 4,
+      "unreviewed": 0,
+      "contentHash": "57aca83a3f954257527e043a458cf6748fbbb1fd6d63127ee91300bf5e22cbbb",
+      "evidenceCount": 5
+    },
+    {
+      "word": "apodosis",
+      "pairs": 2,
+      "unreviewed": 0,
+      "contentHash": "9624bc8e663536094d8fac15a2b3fdb13ca1125fdf7fb5d59029bd800fb49ac2",
+      "evidenceCount": 3
+    },
+    {
+      "word": "sharif",
+      "pairs": 4,
+      "unreviewed": 0,
+      "contentHash": "a6d628f6ebf8d02dbbac6b3fb7794c8ed450e2d124f00db67280fbbe58ab00c9",
+      "evidenceCount": 5
+    },
+    {
+      "word": "mouse",
+      "pairs": 21,
+      "unreviewed": 0,
+      "contentHash": "8485f111bde6b476e0fef1b84ecc7d1952abc26d511e75d10c84fc09ea9701c7",
+      "evidenceCount": 30
+    },
+    {
+      "word": "child",
+      "pairs": 29,
+      "unreviewed": 0,
+      "contentHash": "d1a145c6622a8b19dfe58d3310a1bec68433e6ec4cacd23f3c95d3be0ee08f0d",
+      "evidenceCount": 48
+    },
+    {
+      "word": "go",
+      "pairs": 128,
+      "unreviewed": 0,
+      "contentHash": "a107d5f09eb04ad7b1ae04174fb6851999cf84df2f5e28f9f5a4768c090766ff",
+      "evidenceCount": 147
+    },
+    {
+      "word": "good",
+      "pairs": 117,
+      "unreviewed": 0,
+      "contentHash": "011c2f7096b272dbe18e8ef14b415126ca0b5aff9c5f802d45717fa3817648ef",
+      "evidenceCount": 137
+    },
+    {
+      "word": "lie",
+      "pairs": 36,
+      "unreviewed": 0,
+      "contentHash": "d50cc477542c0d14841aca75a66a493a434136317c119d9eb892a49300794582",
+      "evidenceCount": 51
+    },
+    {
+      "word": "news",
+      "pairs": 27,
+      "unreviewed": 0,
+      "contentHash": "d6ec30cf9fa5ee62f43dc4d00ec2ea0c15f901567c9b42d38be0437695ca2bd0",
+      "evidenceCount": 37
+    },
+    {
+      "word": "series",
+      "pairs": 30,
+      "unreviewed": 0,
+      "contentHash": "f9037dfbf3d2061e1df1f59558017dd1aa1b6ca668bbc4f989c6604cb5f9fa5b",
+      "evidenceCount": 50
+    }
+  ],
+  "independentSample": {
+    "initialBlindAssessment": "FAILED_WITH_MATERIAL_ERRORS",
+    "reviewed": 120,
+    "revised": 77,
+    "unresolvedAfterRepair": 0
+  },
+  "reviewerType": "assistant_linguistic_review",
+  "coverageLimit": "Meaning checks cover this 80-word benchmark and the recorded independent sample. Remaining machine-translated content is rule-screened and explicitly marked, not manually certified. No claim of zero unknown errors in the entire dictionary."
+}

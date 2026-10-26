@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "policy": "Only confirmed damaged or wrong-source metadata; never omit an otherwise valid untranslated sense. Raw blocks remain in nativeSourceSummary.zh and source archive.",
+  "entries": [
+    {
+      "word": "garrick",
+      "sourceText": "灰吕",
+      "sourceTextHash": "f8ff35e2f35f5cbe4c1c32310fc47e782c2a6a037a5b08d6f7bee463d542224e",
+      "reason": "This native Chinese block is an undecodable mineral-name fragment with a private-use character and is not an interpretable translation of the retained Garrick actor entry. It is archived as a confirmed source error, not assigned an invented meaning.",
+      "reviewerType": "assistant_source_review",
+      "evidence": [
+        {
+          "id": "10991415-n",
+          "en": "English actor and theater manager who was the foremost Shakespearean actor of his day (1717-1779)"
+        }
+      ],
+      "status": "excluded_confirmed_source_error"
+    }
+  ]
+}

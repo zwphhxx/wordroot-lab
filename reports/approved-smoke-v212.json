@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "origin": "http://localhost:8800/",
+  "buildId": "v212-d99509bea02c69",
+  "checkedAt": "2026-10-26T08:39:32.960Z",
+  "checks": [
+    {
+      "name": "Published shell and approved data build agree",
+      "ok": true
+    },
+    {
+      "name": "Published approval receipt matches actual acceptance evidence",
+      "ok": true,
+      "detail": {
+        "status": "approved",
+        "build": "v212-d99509bea02c69",
+        "hashMatches": true,
+        "checks": 22
+      }
+    },
+    {
+      "name": "49,426 words and 15 carrier meanings retained",
+      "ok": true
+    },
+    {
+      "name": "Carrier senses, phrases and examples display two languages",
+      "ok": true
+    },
+    {
+      "name": "Non-seed multiple meanings load from verified package",
+      "ok": true
+    },
+    {
+      "name": "Existing photo and bilingual caption preserved",
+      "ok": true
+    },
+    {
+      "name": "New search replaces rather than appends old word",
+      "ok": true
+    },
+    {
+      "name": "Selected word and share URL stay synchronized",
+      "ok": true
+    },
+    {
+      "name": "Refreshing restores current query",
+      "ok": true
+    },
+    {
+      "name": "Published cards fit 390 viewport",
+      "ok": true
+    },
+    {
+      "name": "Published cards fit 1365 viewport",
+      "ok": true
+    },
+    {
+      "name": "Cards remain open and no membership prompt",
+      "ok": true
+    },
+    {
+      "name": "Published offline page keeps meanings and exact saved review date",
+      "ok": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "scope": "Isolated browser with test learning state; does not read or overwrite a real user browser."
+}

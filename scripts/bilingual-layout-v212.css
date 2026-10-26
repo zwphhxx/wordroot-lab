@@ -1,0 +1,40 @@
+/* Paired reading: keep the open warm cards, put each translation with its source. */
+#readerV24 .bi-sense-heading{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin:20px 0 10px}
+#readerV24 .bi-sense-heading h3{margin:0;font-size:19px}
+#readerV24 .bi-sense-heading h3 span{display:block;color:#997966;font-size:12px;font-weight:500;margin-top:4px}
+#readerV24 .bi-sense-heading>span{color:#936f59;font-size:12px}
+#readerV24 .bi-sense{padding:19px 0;border-top:1px solid #ebd9c9;min-width:0}
+#readerV24 .bi-sense h4{font-size:17px;margin:9px 0 8px;line-height:1.6}
+#readerV24 .bi-sense h4 span{display:block;font-size:14px;font-weight:500;color:#97765e}
+#readerV24 .bi-sense-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:11px;color:#94745d}
+#readerV24 .bi-index{font-family:Georgia,serif;font-size:18px;color:#b67b55}
+#readerV24 .bi-pair{margin:7px 0;overflow-wrap:anywhere;min-width:0}
+#readerV24 .bi-pair .bi-en{font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.75;margin:5px 0;color:#594535;white-space:normal}
+#readerV24 .bi-pair .bi-zh{font-size:15px;line-height:1.8;margin:5px 0;color:#77543e;white-space:normal}
+#readerV24 .bi-method{display:inline-block;font-size:10px;line-height:1.6;padding:1px 5px;background:#f9f2ea;color:#967c67;border-radius:4px}
+#readerV24 .bi-pending{background:#fff3dd;color:#815a2e}
+#readerV24 .bi-intro-label{font-size:11px;color:#94705a}
+#readerV24 .bi-intro .bi-en{font-size:15px}
+#readerV24 .bi-phrase-title .bi-en{font-size:23px;font-weight:700;color:#795033}
+#readerV24 .bi-phrase-title .bi-zh{font-size:16px;font-weight:650}
+#readerV24 .bi-phrase-gloss .bi-en{font-size:14px}
+#readerV24 .bi-phrase-gloss .bi-zh{font-size:13px}
+#readerV24 .bi-relation-group{margin:18px 0;padding:0;border-top:1px solid #ebd9c9}
+#readerV24 .bi-relation-group h4{font-size:15px;margin:16px 0 5px;color:#80583f}
+#readerV24 .bi-context-en{font-size:13px;line-height:1.7;color:#94745e;margin:4px 0 12px}
+#readerV24 .bi-relation{display:block;text-align:left;width:100%;border:0;border-left:3px solid #e6c5a9;background:#fffaf5;border-radius:0 10px 10px 0;padding:12px 14px;margin:10px 0;color:#6b4b37}
+#readerV24 .bi-relation-title{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+#readerV24 .bi-relation-title b{font-family:Georgia,serif;font-size:22px}
+#readerV24 .bi-relation-title>span{font-size:14px}
+#readerV24 .bi-relation>small{display:block;font-size:11px;color:#a07c61;margin-top:5px}
+#readerV24 .bi-relation .bi-en,#readerV24 .bi-relation .bi-zh{font-size:13px}
+#readerV24 .bi-example .bi-en{font-size:22px;line-height:1.7;margin:10px 0}
+#readerV24 .bi-example .bi-zh{font-size:16px;line-height:1.8;margin:10px 0}
+#readerV24 .bi-example-context{font-size:12px;color:#9b6e4e;font-weight:650;margin:0 0 8px}
+#readerV24 .bi-question{font-family:Georgia,serif;font-size:19px;line-height:1.7}
+#readerV24 .bi-loading{font-size:14px;line-height:1.8;color:#96765f;padding:15px 0}
+#readerV24 .bi-loading span{font-size:12px}
+#readerV24 .lr-next-list .bi-en,#readerV24 .lr-next-list .bi-zh{font-size:13px;line-height:1.75}
+#readerV24 .lr-next-list>button>span small{white-space:normal;overflow-wrap:anywhere}
+#readerV24 .lr-phrase-row .rd-icon{align-self:flex-start}
+@media(max-width:650px){#readerV24 .bi-pair .bi-en{font-size:15px}#readerV24 .bi-pair .bi-zh{font-size:14px}#readerV24 .bi-example .bi-en{font-size:20px}#readerV24 .bi-phrase-title .bi-en{font-size:22px}#readerV24 .bi-sense{padding:15px 0}}

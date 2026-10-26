@@ -1,0 +1,45 @@
+{
+  "carrier": {
+    "summaryZh": "运送者；承运公司；通信运营商；运载工具；携带者等",
+    "summaryEn": "A person, company, vehicle, signal or medium that carries something.",
+    "sources": ["https://en.wiktionary.org/wiki/carrier", "https://dictionary.cambridge.org/dictionary/english/carrier"],
+    "senses": [
+      {"id":"carrier-person","pos":"n","labelZh":"运送者；搬运者","labelEn":"person who carries","domainZh":"日常与物流","domainEn":"Everyday / logistics","en":"A person whose work is to carry or deliver things.","zh":"以搬运、运送或递送物品为工作的人。","sourceIds":["09897696-n"]},
+      {"id":"carrier-company","pos":"n","labelZh":"承运人；运输公司","labelEn":"transport company","domainZh":"运输业务","domainEn":"Transport","en":"A business that transports passengers, goods or messages.","zh":"承接旅客、货物或信息运输业务的个人或公司。","sourceIds":["08057633-n"]},
+      {"id":"carrier-airline","pos":"n","labelZh":"航空公司","labelEn":"airline","domainZh":"航空","domainEn":"Aviation","en":"An airline providing passenger or cargo services.","zh":"提供客运或货运服务的航空公司，如 a low-cost carrier（廉价航空公司）。"},
+      {"id":"carrier-mobile","pos":"n","labelZh":"移动通信运营商","labelEn":"mobile network operator","domainZh":"通信服务","domainEn":"Telecommunications","en":"A company providing mobile phone or other telecommunications services.","zh":"提供手机通话、短信或网络连接等通信服务的公司。"},
+      {"id":"carrier-vehicle","pos":"n","labelZh":"运载车辆；运输工具","labelEn":"carrying vehicle","domainZh":"运输工具","domainEn":"Vehicles","en":"A vehicle designed to carry goods, equipment or people.","zh":"专门运送货物、设备或人员的车辆、船舶等运输工具。","sourceIds":["02970100-n"]},
+      {"id":"carrier-aircraft","pos":"n","labelZh":"航空母舰","labelEn":"aircraft carrier","domainZh":"舰船","domainEn":"Naval vessels","en":"An aircraft carrier, a naval ship on which aircraft can take off and land.","zh":"aircraft carrier 的简称，即可供飞机起飞和降落的航空母舰。","sourceIds":["02687172-n"]},
+      {"id":"carrier-post","pos":"n","labelZh":"邮递员；送报人","labelEn":"mail or newspaper deliverer","domainZh":"递送工作","domainEn":"Delivery work","en":"Someone who delivers letters or newspapers.","zh":"送信或送报的人；通常见于 letter carrier、mail carrier 等表达。","sourceIds":["10283037-n","09897603-n"]},
+      {"id":"carrier-bag","pos":"n","labelZh":"购物袋","labelEn":"shopping bag","domainZh":"英式日常用语","domainEn":"British everyday English","en":"In British usage, a carrier bag used to take purchases home.","zh":"英式英语中可作 carrier bag 的简称，指提拿所购物品的袋子。"},
+      {"id":"carrier-infection","pos":"n","labelZh":"病原体携带者","labelEn":"carrier of an infection","domainZh":"医学","domainEn":"Medicine","en":"A person or animal carrying an infectious agent, sometimes without symptoms.","zh":"携带某种病原体的人或动物，自身可能没有明显症状，也可能传播该病原体。","sourceIds":["09897350-n"]},
+      {"id":"carrier-genetics","pos":"n","labelZh":"遗传携带者","labelEn":"genetic carrier","domainZh":"遗传学","domainEn":"Genetics","en":"An organism carrying a genetic variant that may be passed to offspring without an obvious trait in the carrier.","zh":"携带某种可遗传变异的个体，自身可能不表现对应性状，但可能把变异传给后代。","sourceIds":["01314145-n"]},
+      {"id":"carrier-wave","pos":"n","labelZh":"载波","labelEn":"carrier wave","domainZh":"电子通信","domainEn":"Signals","en":"A wave whose properties are varied to transmit information.","zh":"经过调制以承载信息的波；常见完整表达是 carrier wave。","sourceIds":["11501230-n"]},
+      {"id":"carrier-charge","pos":"n","labelZh":"载流子","labelEn":"charge carrier","domainZh":"物理与电子学","domainEn":"Physics / electronics","en":"A particle or quasiparticle that carries electric charge.","zh":"能够携带并传输电荷的粒子或准粒子，如电子或空穴。"},
+      {"id":"carrier-substance","pos":"n","labelZh":"载体；承载介质","labelEn":"carrier substance or medium","domainZh":"化学与材料","domainEn":"Chemistry / materials","en":"A substance or medium used to hold, transport or help recover another substance.","zh":"用来承载、输送或帮助回收另一种物质的材料或介质；放射性示踪实验中也有专门的载体用法。","sourceIds":["14727153-n"]},
+      {"id":"carrier-rack","pos":"n","labelZh":"行李架；托架","labelEn":"luggage rack","domainZh":"车辆配件","domainEn":"Vehicle equipment","en":"A rack fitted to a vehicle for carrying luggage or equipment.","zh":"安装在车辆上、用于放置行李或设备的架子。","sourceIds":["02969886-n"]},
+      {"id":"carrier-insurance","pos":"n","labelZh":"保险公司；承保机构","labelEn":"insurance carrier","domainZh":"保险业务","domainEn":"Insurance","en":"A company or organization that provides insurance coverage.","zh":"提供保险保障并承担相应保险责任的机构，常见于 insurance carrier。"}
+    ],
+    "phrases": [
+      {"en":"car carrier","zh":"汽车运输车","definition":"A vehicle used to transport cars.","definitionZh":"用于集中运送汽车的车辆。","senseId":"carrier-vehicle"},
+      {"en":"letter carrier","zh":"邮递员","definition":"A person who delivers letters.","definitionZh":"负责投递信件的人。","senseId":"carrier-post"},
+      {"en":"carrier bag","zh":"购物袋；手提袋","definition":"A bag used to carry purchases.","definitionZh":"用来提拿购买物品的袋子。","senseId":"carrier-bag"},
+      {"en":"troop carrier","zh":"运兵车辆；运兵运输工具","definition":"A vehicle used to transport troops.","definitionZh":"用于运送军人的车辆等运输工具。","senseId":"carrier-vehicle"},
+      {"en":"mobile carrier","zh":"移动通信运营商","definition":"A mobile network service provider.","definitionZh":"提供移动通信网络服务的公司。","senseId":"carrier-mobile"},
+      {"en":"aircraft carrier","zh":"航空母舰","definition":"A naval ship equipped to operate aircraft.","definitionZh":"可供舰载机起降和执行飞行任务的军舰。","senseId":"carrier-aircraft"},
+      {"en":"carrier wave","zh":"载波","definition":"A wave used to carry a modulated signal.","definitionZh":"用于承载调制信号的波。","senseId":"carrier-wave"},
+      {"en":"insurance carrier","zh":"保险承保机构","definition":"An organization providing insurance coverage.","definitionZh":"提供保险保障并承担承保责任的机构。","senseId":"carrier-insurance"}
+    ],
+    "examples": [
+      {"en":"The carrier will deliver the package tomorrow.","zh":"承运公司明天会送达这个包裹。","senseId":"carrier-company","kind":"自编学习例句"},
+      {"en":"I switched to a different mobile carrier.","zh":"我换了一家移动通信运营商。","senseId":"carrier-mobile","kind":"自编学习例句"},
+      {"en":"She put the groceries in a carrier bag.","zh":"她把买来的食品杂货放进购物袋里。","senseId":"carrier-bag","kind":"自编学习例句"},
+      {"en":"The aircraft returned to the carrier.","zh":"飞机返回了航空母舰。","senseId":"carrier-aircraft","kind":"自编学习例句"},
+      {"en":"The equipment uses a carrier wave to transmit the signal.","zh":"这套设备利用载波传输信号。","senseId":"carrier-wave","kind":"自编学习例句"},
+      {"en":"A genetic carrier may not show the associated trait.","zh":"遗传携带者可能不表现出相关性状。","senseId":"carrier-genetics","kind":"自编学习例句"},
+      {"en":"refrigerated carriers have revolutionized the grocery business","zh":"冷藏运输车辆让食品杂货业发生了巨大变化。","senseId":"carrier-vehicle","kind":"开放词典例句 · 译文已修订"},
+      {"en":"the bonds were transmitted by carrier","zh":"这些债券文件由递送人员送交。","senseId":"carrier-post","kind":"开放词典例句 · 译文已修订"}
+    ],
+    "quiz":{"q":"在 I switched to a different mobile carrier. 中，carrier 指什么？","qEn":"What does carrier mean in this sentence?","options":["移动通信运营商 — mobile network operator","运输公司 — transport company"],"answer":0,"why":"mobile carrier 在这里指移动通信服务提供商，不是货物承运人。","whyEn":"Here, mobile carrier means the company providing phone and network services."}
+  }
+}
