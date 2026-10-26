@@ -1,0 +1,107 @@
+[
+  {
+    "originalEn": "the rate at which energy is drawn from a source that produces a flow of electricity in a circuit; expressed in volts",
+    "en": "Electric potential difference or electromotive force, measured in volts; one volt equals one joule per coulomb.",
+    "zh": "电势差或电动势，单位为伏特；1伏特等于每库仑1焦耳。",
+    "reason": "旧定义把电压与功率混淆，保留原文审计并纠正物理量。",
+    "sources": [
+      "https://www.nist.gov/pml/owm/si-units-electric-current"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review"
+  },
+  {
+    "originalEn": "the difference in electrical charge between two points in a circuit expressed in volts",
+    "en": "The difference in electric potential between two points in a circuit, measured in volts.",
+    "zh": "电路中两点间的电势差，以伏特为单位。",
+    "reason": "电压是电势差而非电荷差。",
+    "sources": [
+      "https://www.nist.gov/pml/owm/si-units-electric-current"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review"
+  },
+  {
+    "originalEn": "Sharif (m.)",
+    "en": "Sharif, a masculine given name of Arabic origin.",
+    "zh": "沙里夫，一个源于阿拉伯语的男性名字。",
+    "reason": "展开原词典的m.性别缩写，不与sherif的另一种拼写义混淆。",
+    "sources": [
+      "https://www.dictionary.com/browse/sharif"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review"
+  },
+  {
+    "originalEn": "a natural spring of water at a temperature of 70 F or above",
+    "en": "A natural spring that brings geothermally heated groundwater to the surface.",
+    "zh": "将受到地热加热的地下水带到地表的天然泉水。",
+    "reason": "不将某个固定温度阈值当作所有温泉的统一界限。",
+    "sources": [
+      "https://www.nps.gov/subjects/geology/hot-springs.htm"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review"
+  },
+  {
+    "originalEn": "(genetics) a mutation due to an intramolecular reorganization of a gene",
+    "en": "A change in the DNA sequence of a gene.",
+    "zh": "基因DNA序列发生的变化。",
+    "reason": "基因突变不仅包含分子内重排。",
+    "sources": [
+      "https://www.genome.gov/genetics-glossary/Mutation"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review"
+  },
+  {
+    "originalEn": "an atom or group of atoms with at least one unpaired electron; in the body it is usually an oxygen molecule that has lost an electron and will stabilize itself by stealing an electron from a nearby molecule",
+    "en": "A molecular entity, such as an atom or molecule, possessing an unpaired electron.",
+    "zh": "具有未成对电子的分子实体，例如某些原子或分子。",
+    "reason": "采用IUPAC的核心定义，不重复旧来源关于体内氧分子必然失去电子的过度概括。",
+    "sources": [
+      "https://goldbook.iupac.org/terms/view/R05066"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review",
+    "reviewBatch": "independent-holdout-reviewed-v212.json"
+  },
+  {
+    "originalEn": "[Whispering] Barclayka.",
+    "en": "Barclaycard, a Barclays credit card brand.",
+    "zh": "巴克莱信用卡品牌。",
+    "reason": "原中文是信用卡品牌，旧机译将经贸领域标签误译成Whispering。",
+    "sources": [
+      "https://www.barclaycard.co.uk/personal/"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review",
+    "reviewBatch": "independent-holdout-reviewed-v212.json"
+  },
+  {
+    "originalEn": "(Seng) Name; (King) Live; (Cambodia, Myanmar, Lao) Sam",
+    "en": "Seng, a personal name; the source dictionary gives the Chinese transcriptions 生 for Korean contexts and 森 for Cambodian, Burmese and Lao contexts.",
+    "zh": "Seng，一个人名；原词典给出的中文音译为朝鲜语语境的生，以及柬埔寨、缅甸、老挝语境的森。",
+    "reason": "保留原始人名和地区标签，不把朝误译成King、把生误译成Live。",
+    "sources": [
+      "local:ECDICT:seng:original-Chinese-name-entry"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review",
+    "reviewBatch": "independent-holdout-reviewed-v212.json"
+  },
+  {
+    "originalEn": "any very large complex molecule; found only in plants and animals",
+    "en": "A molecule with a high relative molecular mass, typically composed of many repeating structural units.",
+    "zh": "相对分子质量很高、通常由许多重复结构单元构成的分子。",
+    "reason": "大分子不限于动植物；依据IUPAC修正过时来源的排他性表述。",
+    "sources": [
+      "https://goldbook.iupac.org/terms/view/M03667"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review",
+    "reviewBatch": "data/benchmark-tail-reviewed-e-v212.json"
+  },
+  {
+    "originalEn": "a protein manufactured exclusively by the prostate gland; PSA is produced for the ejaculate where it liquifies the semen and allows sperm cells to swim freely; elevated levels of PSA in blood serum are associated with benign prostatic hyperplasia and prostate cancer",
+    "en": "A protein produced by prostate cells that helps liquefy semen; its blood level can rise in both benign prostate conditions and prostate cancer.",
+    "zh": "由前列腺细胞产生、帮助精液液化的蛋白质；血中水平在良性前列腺疾病和前列腺癌中均可能升高。",
+    "reason": "保留词汇概念，不把PSA升高等同于癌症，并删除来源中过度绝对的专属性表述。",
+    "sources": [
+      "https://www.cancer.gov/types/prostate/psa-fact-sheet"
+    ],
+    "reviewerType": "assistant_source_and_linguistic_review",
+    "reviewBatch": "data/benchmark-tail-reviewed-e-v212.json"
+  }
+]

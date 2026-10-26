@@ -8,6 +8,7 @@ from jsonschema import Draft202012Validator
 R=Path(__file__).resolve().parent.parent;REPORT=R/'reports';REPORT.mkdir(exist_ok=True)
 load=lambda p:json.loads(p.read_text('utf8'))
 policy=load(R/'schemas/publish-gates-v212.json');m=load(R/'data/bilingual-v212-manifest.json');schema=load(R/'schemas/dictionary-entry-v212.schema.json');Draft202012Validator.check_schema(schema);validate=Draft202012Validator(schema)
+approved_native_exclusions={(v['word'],v['sourceText']):v for v in load(R/'data/native-source-exclusions-v212.json')['entries']}
 checks=[];counts=collections.Counter();schema_errors=[];broken_hash=[];senses_by_word={};relations=[];native_unmapped=0
 for prefix,pack in m['bundles'].items():
  raw=(R/pack['url'].removeprefix('./')).read_bytes()
@@ -42,10 +43,14 @@ for prefix,pack in m['bundles'].items():
      if not p.get('en') or not p.get('zh'):counts['missingPairs']+=1
      if p.get('reviewStatus') in ('needs_review','rejected'):counts['unreviewedHighRiskPairs']+=1
   native=obj.get('nativeSourceSummary',{});npairs=native.get('pairs') or []
-  if native.get('alignmentStatus')!='independent_bilingual_source_blocks' or len(npairs)!=len(native.get('zh',[])):native_unmapped+=1
+  archived=native.get('archivedSourceErrors',[])
+  accepted=[x for x in archived if x.get('status')=='excluded_confirmed_source_error' and x.get('word')==word and x.get('sourceText') in native.get('zh',[]) and x==approved_native_exclusions.get((word,x.get('sourceText'))) and x.get('sourceTextHash')==hashlib.sha256(x['sourceText'].encode()).hexdigest()]
+  expected=[z for z in native.get('zh',[]) if not any(x['sourceText']==z for x in accepted)]
+  counts['archivedConfirmedSourceErrors']+=len(accepted)
+  if native.get('alignmentStatus')!='independent_bilingual_source_blocks' or len(npairs)!=len(expected) or len(archived)!=len(accepted):native_unmapped+=1
   for i,p in enumerate(npairs):
    counts['nativeSourceBlocks']+=1
-   original=str(native['zh'][i]);normed=re.sub(r'\s+',' ',original).strip()
+   original=str(expected[i]);normed=re.sub(r'\s+',' ',original).strip()
    if p.get('sourceText')!=original or p.get('sourceTextHash')!=hashlib.sha256(normed.encode()).hexdigest():counts['nativeSourceMismatch']+=1
    if not p.get('en') or not p.get('zh'):counts['missingPairs']+=1
    if p.get('reviewStatus') in ('needs_review','rejected'):counts['unreviewedHighRiskPairs']+=1

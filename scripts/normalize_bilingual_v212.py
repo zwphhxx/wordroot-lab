@@ -4,6 +4,8 @@ This is normalization, NOT approval: unresolved mappings and risky translations
 are preserved and counted. A separate release gate decides publication.
 """
 from pathlib import Path
+from native_pairing_v212 import descriptor,clean_english,english_metadata,POLICY
+from source_editorial_v212 import apply as revise_source, revision as source_revision
 import os,json,re,hashlib,collections,zipfile,time
 R=Path(__file__).resolve().parent.parent;RAW=Path(os.environ.get('ROOTLAB_RAW_DIR',str(R.parent/'wordroot-lab-deploy/.v12-work')));W=R/'.work/bilingual-v212';REPORTS=R/'reports'
 compact=lambda x:json.dumps(x,ensure_ascii=False,separators=(',',':'))
@@ -20,11 +22,23 @@ assert len(records)==49426
 source=load(W/'source-records.json');editorial=load(R/'data/bilingual-editorial-v212.json')
 curated_phrases=load(R/'data/usage-curated-v27.json')
 native_candidates={}
-if (W/'native-zh-en-candidates.jsonl').exists():
- for line in (W/'native-zh-en-candidates.jsonl').open():
-  value=json.loads(line);native_candidates[norm(value['zh'])]=value
+native_cache=W/'native-zh-en-contextual-v3.jsonl'
+if native_cache.exists():
+ for line in native_cache.open():
+  value=json.loads(line)
+  if value.get('policy')!=POLICY:continue
+  key=value['cacheKey']
+  if key in native_candidates and native_candidates[key]!=value:raise ValueError('Conflicting contextual native cache '+key)
+  native_candidates[key]=value
+native_editorial={}
+for item in load(R/'data/native-source-editorial-v212.json').get('pairs',[]):
+ word=item['word'];text=norm(item['sourceText'])
+ assert text in [norm(v) for v in source['records'][word]['nativeZh']],('Editorial native source mismatch',word,text)
+ native_editorial[(word,text)]=item
 
 corrections={r['en']:r['zh'] for r in load(R/'data/translation-corrections-v212.json')['pairs']}
+source_review={x['en']:x for x in load(R/'data/source-semantic-review-v212.json').get('items',[]) if x.get('status')!='resolved'} if (R/'data/source-semantic-review-v212.json').exists() else {}
+native_exclusions={(v['word'],v['sourceText']):v for v in load(R/'data/native-source-exclusions-v212.json')['entries']}
 risk={}
 for ln in (REPORTS/'translation_review_queue.jsonl').open():
  item=json.loads(ln);risk[norm(item['en'])]=item
@@ -64,6 +78,7 @@ def mark(item,enkey='en',zhkey='zh',kindkey='translation'):
  if not re.search('[\u3400-\u9fff]',zh):issues.append('no_chinese_in_learning_text')
  if re.search('[\ue000-\uf8ff\ufffd\u2047]',zh):issues.append('corrupt_translation')
  if en in corrections and zh!=corrections[en]:issues.append('approved_correction_not_applied')
+ if en in source_review:issues.append('source_definition_needs_review')
  if issues:review='needs_review'
  item['pairId']=sha(('pair-v1\0'+en+'\0'+zh).encode())[:24]
  item['reviewStatus']=review;item['qualityIssues']=sorted(set(issues));quality_counts[review]+=1
@@ -77,6 +92,7 @@ for word,obj in records.items():
   if s.get('sourceIds'):
    for alias in s['sourceIds']:
     aliases[(word,alias)]=new;s['sourceRefs'].append({'source':'WordNet','version':'3.0','synsetId':alias,'senseKey':keys.get((word,alias))})
+  revise_source(s)
   mark(s)
  unique_senses={}
  for s in obj['senses']:
@@ -107,7 +123,7 @@ for word,obj in records.items():
   p['sourcePhraseSenseIds']=['wn30:'+sid for sid in exact]
   explicit=mapid.get((word,p.get('senseId',''))) or aliases.get((word,p.get('senseId','')))
   phrase_source=None
-  original=next((pair for pair in curated_phrases.get(word,[]) if norm(pair[0])==norm(p['en']) and norm(pair[1])==norm(p['zh'])),None)
+  original=next((pair for pair in curated_phrases.get(word,[]) if norm(pair[0])==norm(p['en']) and norm(pair[1])==norm(p.get('originalSourceZh') or p['zh'])),None)
   if explicit and word in editorial:
    p['senseScope']='headword';p['senseId']=explicit;p['senseIds']=[explicit];p['alignmentStatus']='aligned'
   elif original and not p.get('definition'):
@@ -120,7 +136,7 @@ for word,obj in records.items():
    phrase_source={'id':identity,'lemma':p['en'],'pos':full_syn[sid]['pos'],'definitionEn':full_syn[sid]['en'],'source':'WordNet','version':'3.0','synsetId':sid,'senseKey':sense_key}
    p['senseScope']='phrase';p['senseId']=identity;p['senseIds']=[identity];p['alignmentStatus']='aligned';p['phraseSense']=phrase_source
   else:
-   original=next((pair for pair in curated_phrases.get(word,[]) if norm(pair[0])==norm(p['en']) and norm(pair[1])==norm(p['zh'])),None)
+   original=next((pair for pair in curated_phrases.get(word,[]) if norm(pair[0])==norm(p['en']) and norm(pair[1])==norm(p.get('originalSourceZh') or p['zh'])),None)
    if original and not p.get('definition'):
     identity='editorial-phrase:'+sha(compact({'en':original[0],'zh':original[1]}).encode())[:24]
     p['senseScope']='phrase';p['senseId']=identity;p['senseIds']=[identity];p['alignmentStatus']='aligned'
@@ -129,7 +145,18 @@ for word,obj in records.items():
     p['senseScope']='phrase';p['senseId']='';p['senseIds']=[];p['alignmentStatus']='ambiguous' if len(exact)>1 else 'phrase_scope_unresolved'
   p['id']='phrase:'+word+':'+sha(norm(p['en']).encode())[:18];mark(p)
   if p.get('definition'):
-   v={'en':p['definition'],'zh':p.get('definitionZh',''),'translation':p.get('definitionTranslation')};mark(v);p['definitionPair']=v
+   v={'en':p['definition'],'zh':p.get('definitionZh',''),'translation':p.get('definitionTranslation')}
+   if revise_source(v):
+    p['originalSourceDefinition']=p['definition'];p['definition']=v['en'];p['definitionZh']=v['zh'];p['definitionTranslation']='edited'
+    if p.get('phraseSense'):
+     p['phraseSense']['originalSourceDefinition']=p['phraseSense'].get('definitionEn');p['phraseSense']['definitionEn']=v['en']
+   mark(v);p['definitionPair']=v
+   if p.get('senseScope')=='phrase' and p.get('translation')=='dictionary':
+    # A whole-phrase Chinese gloss can combine senses from another source.
+    # Keep that raw gloss for audit, but display this exact phrase sense's
+    # translated definition instead of assuming list-position equivalence.
+    p['originalChineseSourceGloss']={'text':p['zh'],'source':'ECDICT','alignmentStatus':'word_level_gloss_not_assumed_same_sense'}
+    p['zh']=v['zh'];p['translation']=v['translation'];p['meaningDisplay']='sense_definition';mark(p)
   if p['alignmentStatus']!='aligned':counts['phrases_unresolved']+=1
  for r in obj['relations']:
   src=mapid.get((word,r['senseId'])) or aliases.get((word,r['senseId']))
@@ -139,19 +166,53 @@ for word,obj in records.items():
   r['id']='relation:'+sha((word+'\0'+str(src)+'\0'+str(target)+'\0'+r['label']).encode())[:20]
   if target:
    target_sense=next((s for s in records[r['word']]['senses'] if s['id']==target),None)
-   if target_sense and norm(target_sense['en'])!=norm(r['en']):
+   if target_sense:r['wordZh']=target_sense.get('labelZh') if target_sense.get('source')=='Editorial' and target_sense.get('labelZh') else target_sense['zh']
+   if target_sense and (norm(target_sense['en'])!=norm(r['en']) or norm(target_sense['zh'])!=norm(r['zh'])):
     # Editorial replacement defines the same source sense, use that target definition.
     r['en']=target_sense['en'];r['zh']=target_sense['zh'];r['translation']=target_sense['translation'];mark(r)
   if src and src in local:r['contextEn']=local[src]['en'];r['contextZh']=local[src]['zh']
- # Preserve source summaries separately; they are not assumed to align with WN lists.
- pairs=[]
+ # Preserve the original Chinese source text; counterpart identity includes this word/context.
+ pairs=[];archived=[]
  for text in obj['nativeZh']:
-  original=norm(text);candidate=native_candidates.get(original)
-  pair={'sourceText':text,'sourceTextHash':sha(original.encode()),'id':'native:'+word+':'+sha(original.encode())[:18],'zh':original,'en':norm(candidate.get('en')) if candidate else '', 'translation':'machine-en','sourceRefs':[{'source':'ECDICT','version':'local-frozen-20261026','sourceTextHash':sha(original.encode())}]}
+  archive=native_exclusions.get((word,text))
+  if archive:
+   assert archive['sourceTextHash']==sha(text.encode()) and archive['evidence'] and archive['reason']
+   archived.append(archive);continue
+  original=norm(text);identity=descriptor(word,text,source['records'][word]);candidate=native_candidates.get(identity['cacheKey']);edited=native_editorial.get((word,original))
+  if candidate:
+   assert candidate['sourceHash']==identity['sourceHash'] and candidate['contextHash']==identity['contextHash'] and candidate['word']==word
+  english=clean_english(candidate.get('en')) if candidate else '';kind='machine-en';refs=[];segments=[];extra_issues=[]
+  # Exact COW lexical labels may supply a source-aligned counterpart, never by list order.
+  for part in identity['parts']:
+   hits=[]
+   for sid in source['records'][word]['senseIds']:
+    syn=source['synsets'].get(sid,{})
+    pos=identity['pos'];allowed={'a':'a','adj':'a','s':'a','adv':'r','r':'r','vt':'v','vi':'v','n':'n','v':'v'}.get(pos)
+    if allowed and syn.get('pos')!=allowed:continue
+    if part['text'] in syn.get('zhLabels',[]):hits.append((sid,syn))
+   definitions={norm(v['en']) for _,v in hits}
+   if len(definitions)==1:
+    sid,syn=hits[0];segments.append({'zh':part['text'],'en':(source_revision(syn['en']) or {}).get('en',syn['en']),'originalSourceEn':syn['en'],'sourceSynsetIds':[x[0] for x in hits]})
+   else:segments.append({'zh':part['text'],'en':'','sourceSynsetIds':[x[0] for x in hits]})
+  mapped=bool(segments) and all(x['en'] for x in segments)
+  if mapped and not edited:
+   label=english_metadata(identity);english=(label+': ' if label else '')+'; '.join(x['en'] for x in segments);kind='dictionary'
+   refs=[{'source':'Chinese Open Wordnet + Princeton WordNet','version':'PWN3.0-compatible','synsetId':sid,'chineseLabel':seg['zh']} for seg in segments for sid in seg['sourceSynsetIds']]
+   for seg in segments:
+    if seg['en'] in source_review:extra_issues.append('source_definition_needs_review')
+  if edited:english=edited['en'];kind='edited';extra_issues=[]
+  elif not mapped and candidate:extra_issues+=candidate.get('qualityIssues',[])
+  pair={'sourceText':text,'sourceTextHash':sha(original.encode()),'id':'native:'+word+':'+sha(original.encode())[:18],'zh':edited.get('displayZh',original) if edited else original,'en':english,'translation':kind,'cacheKey':identity['cacheKey'],'contextHash':identity['contextHash'],'counterpartMethod':edited.get('reviewerType','assistant_linguistic_review') if edited else 'exact_cow_label_mapping' if mapped else 'segmented_local_mt' if candidate else 'missing','sourceRefs':[{'source':'ECDICT','version':'local-frozen-20261026','sourceTextHash':sha(original.encode())}]+refs}
+  if edited:
+   pair['reviewReason']=edited['reason']
+   if edited.get('displayZh'):pair['sourceRevision']={'reason':edited['reason'],'reviewerType':edited.get('reviewerType'),'sources':edited.get('sources',[])}
+  if mapped:pair['segmentAlignment']=segments
+  elif candidate:pair['sourceSegments']=candidate['segments']
   mark(pair)
-  if re.search('[\ue000-\uf8ff\ufffd\u2047]',pair['en']):pair['qualityIssues'].append('corrupt_english_translation');pair['reviewStatus']='needs_review'
+  if re.search('[\ue000-\uf8ff\ufffd\u2047]',pair['en']):extra_issues.append('corrupt_english_translation')
+  if extra_issues:pair['qualityIssues']=sorted(set(pair['qualityIssues']+extra_issues));pair['reviewStatus']='needs_review'
   pairs.append(pair)
- obj['nativeSourceSummary']={'zh':obj['nativeZh'],'pairs':pairs,'source':'ECDICT','alignmentStatus':'independent_bilingual_source_blocks' if len(pairs)==len(obj['nativeZh']) and all(v['en'] for v in pairs) else 'native_summary_pending','note':'Each retained source block is independently paired; no positional mapping onto WordNet senses is asserted.'}
+ obj['nativeSourceSummary']={'zh':obj['nativeZh'],'pairs':pairs,'archivedSourceErrors':archived,'source':'ECDICT','alignmentStatus':'independent_bilingual_source_blocks' if len(pairs)+len(archived)==len(obj['nativeZh']) and all(v['en'] for v in pairs) else 'native_summary_pending','note':'Exact source blocks are paired independently with word-bound provenance; no positional WordNet mapping is asserted.'}
 
 # Ledger records every adopted source sense, including aliases to editorial replacements.
 for word,row in source['records'].items():
@@ -160,13 +221,26 @@ for word,row in source['records'].items():
   source_lineage.append({'word':word,'source':'WordNet','version':'3.0','sourceId':sid,'senseKey':keys.get((word,sid)),'targetId':dst,'status':status})
  for text in row['extraEn']:
   if norm(text)=='-':source_lineage.append({'word':word,'source':'ECDICT','sourceText':text,'status':'excluded_with_reason','reason':'source-placeholder-not-a-definition'});continue
-  matches=[s['id'] for s in records[word]['senses'] if norm(s['en']).casefold().rstrip('.')==norm(text).casefold().rstrip('.')]
+  matches=[s['id'] for s in records[word]['senses'] if norm(s.get('originalSourceEn',s['en'])).casefold().rstrip('.')==norm(text).casefold().rstrip('.')]
   exclusion=excluded_sources.get((word,norm(text)))
   source_lineage.append({'word':word,'source':'ECDICT','sourceTextHash':sha(text.encode()),'targetIds':matches,'status':'excluded_confirmed_source_error' if exclusion else ('retained' if matches else 'quarantined'),'reason':exclusion['reason'] if exclusion else None,'evidence':exclusion['evidence'] if exclusion else []})
  # Native Chinese blocks remain preserved, but unknown alignment is not claimed as completed.
  for text in row['nativeZh']:
+  archive=native_exclusions.get((word,text))
+  if archive:
+   source_lineage.append({'word':word,'source':'ECDICT-zh','sourceTextHash':sha(norm(text).encode()),'status':'excluded_confirmed_source_error','reason':archive['reason'],'evidence':archive['evidence']});continue
   target=next((p for p in records[word]['nativeSourceSummary']['pairs'] if p['sourceTextHash']==sha(norm(text).encode())),None)
   source_lineage.append({'word':word,'source':'ECDICT-zh','sourceTextHash':sha(norm(text).encode()),'targetId':target['id'] if target else None,'status':'retained_native_pair' if target and target['en'] else 'quarantined_native_pair','alignmentStatus':'independent_source_block'})
+# Reconcile review-status totals from finalized records, not temporary objects that
+# were subsequently replaced by reviewed source/editorial content.
+quality_counts=collections.Counter()
+for item in records.values():
+ for section in ('senses','examples','phrases','relations'):
+  for pair in item[section]:
+   quality_counts[pair['reviewStatus']]+=1
+   if pair.get('definitionPair'):quality_counts[pair['definitionPair']['reviewStatus']]+=1
+ for pair in item['nativeSourceSummary'].get('pairs',[]):quality_counts[pair['reviewStatus']]+=1
+
 # Stable release identity binds source inputs, corrections and normalizer implementation.
 identity={'sources':load(REPORTS/'sources-lock.json'),'corrections':sha((R/'data/translation-corrections-v212.json').read_bytes()),'normalizer':sha(Path(__file__).read_bytes())}
 identity['sources'].pop('created',None)
@@ -174,7 +248,14 @@ identity['sourceRecords']=sha((W/'source-records.json').read_bytes())
 identity['qualityReviewQueue']=sha((REPORTS/'translation_review_queue.jsonl').read_bytes())
 identity['schemaContract']=sha((R/'schemas/dictionary-entry-v212.schema.json').read_bytes())
 identity['reviewedSourceExclusions']=sha((R/'data/source-exclusions-reviewed-v212.json').read_bytes()) if (R/'data/source-exclusions-reviewed-v212.json').exists() else None
-identity['nativeTranslationCandidates']=sha((W/'native-zh-en-candidates.jsonl').read_bytes()) if (W/'native-zh-en-candidates.jsonl').exists() else None
+identity['nativeTranslationCandidates']=sha(native_cache.read_bytes()) if native_cache.exists() else None
+identity['nativeEditorial']=sha((R/'data/native-source-editorial-v212.json').read_bytes())
+identity['nativeExclusions']=sha((R/'data/native-source-exclusions-v212.json').read_bytes())
+identity['sourceDefinitionRevisions']=sha((R/'data/source-definition-final-revisions-v212.json').read_bytes())
+identity['sourceEditorialCode']=sha((R/'scripts/source_editorial_v212.py').read_bytes())
+identity['releaseSourceRevisions']=sha((R/'data/source-definition-release-v212.json').read_bytes())
+identity['nativePairingPolicy']=sha((R/'scripts/native_pairing_v212.py').read_bytes())
+identity['sourceSemanticReview']=sha((R/'data/source-semantic-review-v212.json').read_bytes()) if (R/'data/source-semantic-review-v212.json').exists() else None
 identity['candidateBundles']={key:meta['sha256'] for key,meta in sorted(oldmanifest['bundles'].items())}
 build='v212-'+sha(compact(identity).encode())[:14]
 folder=R/'data/bilingual-v212'/build;folder.mkdir(exist_ok=True)

@@ -1,12 +1,12 @@
 {
   "counts": {
     "words": 49426,
-    "senses": 110511,
+    "senses": 110241,
     "examples": 75858,
     "phrases": 17152,
     "relations": 84682,
-    "machine_senses": 110343,
-    "machine_examples": 75737,
+    "machine_senses": 107010,
+    "machine_examples": 73932,
     "machine_phrases": 0
   },
   "bundleCount": 522,
@@ -23,5 +23,5 @@
     "ECDICT"
   ],
   "partial": false,
-  "bytes": 101406197
+  "bytes": 101485053
 }

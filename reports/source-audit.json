@@ -1,0 +1,21 @@
+{
+  "words": 49426,
+  "source_sense_occurrences": 87837,
+  "source_sense_unique": 62393,
+  "extra_en_occurrences": 14391,
+  "native_zh_occurrences": 71562,
+  "source_missing_refs": [],
+  "translated_input_counts": {
+    "en_zh": 170700,
+    "zh_en": 7975
+  },
+  "required_input_counts": {
+    "en_zh": 158966,
+    "zh_en": 7975
+  },
+  "missing_inputs": {
+    "en_zh": 0,
+    "zh_en": 0
+  },
+  "all_original_sources_preserved": true
+}

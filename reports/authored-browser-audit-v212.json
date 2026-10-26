@@ -1,0 +1,444 @@
+{
+  "buildId": "v212-d99509bea02c69",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Reviewed authored bundle and decorator loaded",
+      "ok": true
+    },
+    {
+      "name": "Authored counterparts present on example root words",
+      "ok": true,
+      "detail": [
+        {
+          "word": "carrier",
+          "pairs": 7
+        },
+        {
+          "word": "apple",
+          "pairs": 32
+        },
+        {
+          "word": "procedure",
+          "pairs": 40
+        },
+        {
+          "word": "concession",
+          "pairs": 41
+        }
+      ]
+    },
+    {
+      "name": "Authored text has no empty counterpart",
+      "ok": true
+    },
+    {
+      "name": "Repeated renders do not nest translations",
+      "ok": true
+    }
+  ],
+  "wordsTested": 80,
+  "unmatched": [],
+  "samples": [
+    {
+      "word": "carrier",
+      "pairs": 7,
+      "body": 6760
+    },
+    {
+      "word": "bank",
+      "pairs": 5,
+      "body": 6730
+    },
+    {
+      "word": "light",
+      "pairs": 7,
+      "body": 15476
+    },
+    {
+      "word": "charge",
+      "pairs": 7,
+      "body": 11536
+    },
+    {
+      "word": "issue",
+      "pairs": 6,
+      "body": 7519
+    },
+    {
+      "word": "plant",
+      "pairs": 5,
+      "body": 5603
+    },
+    {
+      "word": "cell",
+      "pairs": 7,
+      "body": 4699
+    },
+    {
+      "word": "scale",
+      "pairs": 6,
+      "body": 6904
+    },
+    {
+      "word": "spring",
+      "pairs": 5,
+      "body": 5879
+    },
+    {
+      "word": "interest",
+      "pairs": 8,
+      "body": 6146
+    },
+    {
+      "word": "book",
+      "pairs": 25,
+      "body": 4534
+    },
+    {
+      "word": "water",
+      "pairs": 25,
+      "body": 4110
+    },
+    {
+      "word": "run",
+      "pairs": 5,
+      "body": 16646
+    },
+    {
+      "word": "face",
+      "pairs": 5,
+      "body": 8607
+    },
+    {
+      "word": "watch",
+      "pairs": 5,
+      "body": 5996
+    },
+    {
+      "word": "play",
+      "pairs": 5,
+      "body": 16479
+    },
+    {
+      "word": "set",
+      "pairs": 5,
+      "body": 13702
+    },
+    {
+      "word": "work",
+      "pairs": 5,
+      "body": 14000
+    },
+    {
+      "word": "change",
+      "pairs": 5,
+      "body": 8253
+    },
+    {
+      "word": "sound",
+      "pairs": 5,
+      "body": 8835
+    },
+    {
+      "word": "apple",
+      "pairs": 32,
+      "body": 4067
+    },
+    {
+      "word": "banana",
+      "pairs": 10,
+      "body": 3269
+    },
+    {
+      "word": "andiron",
+      "pairs": 19,
+      "body": 2775
+    },
+    {
+      "word": "dog",
+      "pairs": 8,
+      "body": 4994
+    },
+    {
+      "word": "teapot",
+      "pairs": 1,
+      "body": 1113
+    },
+    {
+      "word": "chair",
+      "pairs": 7,
+      "body": 4807
+    },
+    {
+      "word": "table",
+      "pairs": 7,
+      "body": 5072
+    },
+    {
+      "word": "house",
+      "pairs": 7,
+      "body": 6559
+    },
+    {
+      "word": "flower",
+      "pairs": 8,
+      "body": 4323
+    },
+    {
+      "word": "coffee",
+      "pairs": 8,
+      "body": 3460
+    },
+    {
+      "word": "signal",
+      "pairs": 7,
+      "body": 5267
+    },
+    {
+      "word": "wave",
+      "pairs": 7,
+      "body": 6077
+    },
+    {
+      "word": "current",
+      "pairs": 13,
+      "body": 3710
+    },
+    {
+      "word": "circuit",
+      "pairs": 7,
+      "body": 6178
+    },
+    {
+      "word": "voltage",
+      "pairs": 1,
+      "body": 1008
+    },
+    {
+      "word": "electron",
+      "pairs": 2,
+      "body": 1474
+    },
+    {
+      "word": "gene",
+      "pairs": 12,
+      "body": 2584
+    },
+    {
+      "word": "allele",
+      "pairs": 2,
+      "body": 3067
+    },
+    {
+      "word": "protein",
+      "pairs": 13,
+      "body": 2168
+    },
+    {
+      "word": "organism",
+      "pairs": 5,
+      "body": 2940
+    },
+    {
+      "word": "justice",
+      "pairs": 9,
+      "body": 2777
+    },
+    {
+      "word": "freedom",
+      "pairs": 2,
+      "body": 3009
+    },
+    {
+      "word": "resilience",
+      "pairs": 7,
+      "body": 2714
+    },
+    {
+      "word": "responsibility",
+      "pairs": 7,
+      "body": 3677
+    },
+    {
+      "word": "knowledge",
+      "pairs": 2,
+      "body": 3281
+    },
+    {
+      "word": "evidence",
+      "pairs": 29,
+      "body": 4434
+    },
+    {
+      "word": "risk",
+      "pairs": 8,
+      "body": 4884
+    },
+    {
+      "word": "value",
+      "pairs": 13,
+      "body": 4674
+    },
+    {
+      "word": "equity",
+      "pairs": 19,
+      "body": 3544
+    },
+    {
+      "word": "capital",
+      "pairs": 25,
+      "body": 5870
+    },
+    {
+      "word": "procedure",
+      "pairs": 40,
+      "body": 4459
+    },
+    {
+      "word": "revolution",
+      "pairs": 16,
+      "body": 2894
+    },
+    {
+      "word": "concession",
+      "pairs": 41,
+      "body": 4506
+    },
+    {
+      "word": "successful",
+      "pairs": 29,
+      "body": 3244
+    },
+    {
+      "word": "photograph",
+      "pairs": 32,
+      "body": 3904
+    },
+    {
+      "word": "biology",
+      "pairs": 30,
+      "body": 3123
+    },
+    {
+      "word": "telephone",
+      "pairs": 31,
+      "body": 3953
+    },
+    {
+      "word": "constructive",
+      "pairs": 21,
+      "body": 3353
+    },
+    {
+      "word": "transport",
+      "pairs": 29,
+      "body": 5254
+    },
+    {
+      "word": "microscope",
+      "pairs": 26,
+      "body": 3227
+    },
+    {
+      "word": "letter",
+      "pairs": 5,
+      "body": 4850
+    },
+    {
+      "word": "bag",
+      "pairs": 5,
+      "body": 5361
+    },
+    {
+      "word": "troop",
+      "pairs": 7,
+      "body": 2514
+    },
+    {
+      "word": "bond",
+      "pairs": 7,
+      "body": 7397
+    },
+    {
+      "word": "fly",
+      "pairs": 5,
+      "body": 6343
+    },
+    {
+      "word": "order",
+      "pairs": 13,
+      "body": 7972
+    },
+    {
+      "word": "family",
+      "pairs": 5,
+      "body": 5288
+    },
+    {
+      "word": "paper",
+      "pairs": 5,
+      "body": 5470
+    },
+    {
+      "word": "head",
+      "pairs": 5,
+      "body": 11042
+    },
+    {
+      "word": "foot",
+      "pairs": 5,
+      "body": 5632
+    },
+    {
+      "word": "protasis",
+      "pairs": 0,
+      "body": 1039
+    },
+    {
+      "word": "apodosis",
+      "pairs": 0,
+      "body": 1381
+    },
+    {
+      "word": "sharif",
+      "pairs": 0,
+      "body": 764
+    },
+    {
+      "word": "mouse",
+      "pairs": 8,
+      "body": 4384
+    },
+    {
+      "word": "child",
+      "pairs": 5,
+      "body": 3186
+    },
+    {
+      "word": "go",
+      "pairs": 5,
+      "body": 13010
+    },
+    {
+      "word": "good",
+      "pairs": 5,
+      "body": 11510
+    },
+    {
+      "word": "lie",
+      "pairs": 5,
+      "body": 4812
+    },
+    {
+      "word": "news",
+      "pairs": 4,
+      "body": 4097
+    },
+    {
+      "word": "series",
+      "pairs": 5,
+      "body": 5168
+    }
+  ]
+}

@@ -37,4 +37,11 @@ class ParserTests(unittest.TestCase):
   rows,_=parse_english_definitions('n. a place used as\na room for storage.')
   self.assertEqual(len(rows),1);self.assertIn('as a room',rows[0]['en'])
  def test_empty_input(self):self.assertEqual(parse_english_definitions(''),([],[]))
+ def test_exact_adjective_source_unpunctuated_a(self):
+  raw='s. tough meat\\na consisting of tendons or resembling a tendon'
+  rows,_=parse_english_definitions(raw,{'consisting of tendons or resembling a tendon'})
+  self.assertEqual(len(rows),2);self.assertEqual(rows[1]['pos'],'adj');self.assertEqual(rows[1]['sourceLines'],[1])
+ def test_unknown_a_stays_as_article(self):
+  rows,_=parse_english_definitions('n. a room with\na red door.',{'red in colour'})
+  self.assertEqual(len(rows),1);self.assertIn('a red door.',rows[0]['en'])
 if __name__=='__main__':unittest.main(verbosity=2)

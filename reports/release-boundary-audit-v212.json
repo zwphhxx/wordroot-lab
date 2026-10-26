@@ -1,0 +1,59 @@
+{
+  "buildId": "v212-d99509bea02c69",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "All 313 retained etymology excerpts have reviewed counterparts",
+      "ok": true
+    },
+    {
+      "name": "Retained source excerpts render as visible bilingual pairs",
+      "ok": true
+    },
+    {
+      "name": "Legacy source renderer cannot reintroduce an English-only accordion",
+      "ok": true
+    },
+    {
+      "name": "Chosen bilingual topic requires matching entity and keeps both summaries",
+      "ok": true
+    },
+    {
+      "name": "Chosen Chinese-only topic retains source but does not publish unpaired prose",
+      "ok": true
+    },
+    {
+      "name": "Mismatched entities cannot enter selected-topic cache",
+      "ok": true
+    },
+    {
+      "name": "Exact online source uses its own reviewed bilingual excerpt",
+      "ok": true
+    },
+    {
+      "name": "Unmatched online source never invents or leaks a standalone translation",
+      "ok": true
+    },
+    {
+      "name": "Picture candidates contain bilingual guidance without raw English-only descriptions",
+      "ok": true
+    },
+    {
+      "name": "Known picture alternative text is bilingual",
+      "ok": true
+    },
+    {
+      "name": "All learning modules remain unfolded",
+      "ok": true
+    }
+  ],
+  "codeHashes": {
+    "history-ui-v212.js": "d34559dad9ee21973305b6228a2ff7b0dbe41248283c4ede3f18a364ccecaeb3",
+    "encyclopedia-v212.js": "9735b6dc1b1d6623213d2a7c5a16eae679c60db9ce80343120be3a554236ea6a",
+    "meaning-explainer-v212.js": "ad5b88b2b1482d4e73e12a26a368a783d39b74806847977c72725cc441226059",
+    "authored-ui-v212.js": "9c15d47142599d9a1f7ae0c4bb2140d9aa0cf3853387fadf2537ff2f5c82724a",
+    "bilingual-v212.js": "b21cc06ad50a29f27cabc649500297c69cc65c31d4b703304120bba00b62bfde",
+    "bilingual-seeds-v212.js": "4f57dcf5d555bb34e935073f579b25a7af96ae659419428a6bebd2011193c2e8"
+  },
+  "scope": "Retained historical source excerpts, selected-topic side path, encyclopedia candidate prose and accessibility captions. Missing live translations remain deferred and are not called translated."
+}

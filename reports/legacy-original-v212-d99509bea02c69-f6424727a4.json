@@ -1,0 +1,74 @@
+{
+  "buildId": "v212-d99509bea02c69",
+  "status": "FAIL",
+  "suites": [
+    {
+      "suite": "cards",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": [
+        "37",
+        "37"
+      ],
+      "failures": [],
+      "seconds": 3.88
+    },
+    {
+      "suite": "universal",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": [
+        "38",
+        "38"
+      ],
+      "failures": [],
+      "seconds": 12.51
+    },
+    {
+      "suite": "visual",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": [
+        "31",
+        "31"
+      ],
+      "failures": [],
+      "seconds": 6.3
+    },
+    {
+      "suite": "meanings",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": [
+        "37",
+        "37"
+      ],
+      "failures": [],
+      "seconds": 6.39
+    },
+    {
+      "suite": "repair",
+      "exitCode": 1,
+      "status": "FAIL",
+      "summary": [
+        "35",
+        "36"
+      ],
+      "failures": [
+        "FAIL English-only source is not fabricated into Chinese \"\""
+      ],
+      "seconds": 8.1
+    },
+    {
+      "suite": "async",
+      "exitCode": 1,
+      "status": "FAIL",
+      "summary": null,
+      "failures": [
+        "FAIL Article survives same-word repaint"
+      ],
+      "seconds": 1.57
+    }
+  ],
+  "adaptations": "Only isolated origin, release asset/cache identity and native-scrollbar viewport units. Original content assertions retained."
+}

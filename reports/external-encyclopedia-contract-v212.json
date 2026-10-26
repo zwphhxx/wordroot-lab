@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "buildId": "v212-d99509bea02c69",
+  "codeSha256": "9735b6dc1b1d6623213d2a7c5a16eae679c60db9ce80343120be3a554236ea6a",
+  "checks": [
+    {
+      "name": "Paired summaries have both languages",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Independent summaries not mislabeled literal translation",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Source URLs retained for both language editions",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Evidence says paired and no entity conflict",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Missing translation does not fabricate Chinese summary",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Unpaired English does not leak into learning summary",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Pending notice is bilingual and original link accessible",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Exact missing original remains in source cache",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Missing counterpart remains counted, not coverage success",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Same-word repaint preserves pending source identity",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Empty Chinese body not counted as bilingual",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Different entity does not become Chinese counterpart",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Bilingual result survives hydration during request",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Unpaired result survives hydration without being lost",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Late previous-word response never overwrites next word",
+      "ok": true,
+      "details": ""
+    },
+    {
+      "name": "Learning cards remain fully expanded",
+      "ok": true,
+      "details": ""
+    }
+  ],
+  "evidence": {
+    "buildId": "v212-d99509bea02c69",
+    "observed": 0,
+    "ready": 0,
+    "unpaired": 0,
+    "scope": "observed encyclopedia articles only, not full-site coverage",
+    "records": []
+  },
+  "scope": "encyclopedia article pair boundary and asynchronous request identity only",
+  "notCompleteSiteBilingualCertification": true,
+  "contractChange": {
+    "supersedes": [
+      "English-only source is not fabricated into Chinese",
+      "Article survives same-word repaint"
+    ],
+    "reason": "The newer user requirement forbids standalone English learning prose. Original text remains cached and linked; pending/paired states must both survive repaint."
+  }
+}

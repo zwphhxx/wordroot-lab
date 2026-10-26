@@ -1,19 +1,17 @@
 {
-  "status": "BLOCKED",
-  "buildId": "v212-e9d5d0c16b8035",
-  "createdAt": 1792989195.0939178,
+  "status": "PASS",
+  "buildId": "v212-d99509bea02c69",
+  "createdAt": 1793003855.065495,
   "productionChanges": false,
   "counts": {
     "words": 49426,
-    "senses": 110508,
+    "senses": 110238,
     "relations": 84682,
-    "nativeSourceBlocks": 71562,
-    "missingPairs": 67044,
-    "unreviewedHighRiskPairs": 69594,
+    "archivedConfirmedSourceErrors": 1,
+    "nativeSourceBlocks": 71561,
     "examples": 75858,
     "phrases": 17152,
-    "phraseDefinitions": 17046,
-    "corruptTranslations": 385
+    "phraseDefinitions": 17046
   },
   "checks": [
     {
@@ -30,8 +28,8 @@
     },
     {
       "name": "source_senses_accounted",
-      "passed": false,
-      "actual": 67044,
+      "passed": true,
+      "actual": 0,
       "required": 0
     },
     {
@@ -51,14 +49,14 @@
     },
     {
       "name": "no_missing_bilingual_pairs",
-      "passed": false,
-      "actual": 67044,
+      "passed": true,
+      "actual": 0,
       "required": 0
     },
     {
       "name": "no_corrupt_translations",
-      "passed": false,
-      "actual": 385,
+      "passed": true,
+      "actual": 0,
       "required": 0
     },
     {
@@ -99,15 +97,15 @@
     },
     {
       "name": "high_risk_pairs_reviewed",
-      "passed": false,
-      "actual": 69594,
+      "passed": true,
+      "actual": 0,
       "required": 0
     },
     {
       "name": "native_chinese_sources_reconciled",
-      "passed": false,
+      "passed": true,
       "actual": {
-        "unpairedWords": 47275,
+        "unpairedWords": 0,
         "mismatchedBlocks": 0
       },
       "required": 0
@@ -129,14 +127,14 @@
     },
     {
       "name": "semantic_benchmark_reviewed",
-      "passed": false,
-      "actual": 0,
+      "passed": true,
+      "actual": 80,
       "required": 80
     },
     {
       "name": "independent_semantic_audit",
-      "passed": false,
-      "actual": "NOT_RUN",
+      "passed": true,
+      "actual": "PASS",
       "required": "PASS for current build"
     },
     {
@@ -147,28 +145,18 @@
     },
     {
       "name": "legacy_browser_regression",
-      "passed": false,
-      "actual": "FAIL",
+      "passed": true,
+      "actual": "PASS",
       "required": "PASS for current build"
     },
     {
       "name": "external_content_bilingual",
-      "passed": false,
-      "actual": "NOT_RUN",
+      "passed": true,
+      "actual": "PASS",
       "required": "PASS for current build"
     }
   ],
-  "blockedBy": [
-    "source_senses_accounted",
-    "no_missing_bilingual_pairs",
-    "no_corrupt_translations",
-    "high_risk_pairs_reviewed",
-    "native_chinese_sources_reconciled",
-    "semantic_benchmark_reviewed",
-    "independent_semantic_audit",
-    "legacy_browser_regression",
-    "external_content_bilingual"
-  ],
+  "blockedBy": [],
   "schemaErrorExamples": [],
   "meaningOfPass": "Only a current PASS permits deployment. Field population and hashes do not prove semantic accuracy."
 }

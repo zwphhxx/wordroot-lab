@@ -1,0 +1,89 @@
+{
+  "buildId": "v212-d99509bea02c69",
+  "status": "PASS",
+  "suites": [
+    {
+      "suite": "cards",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": [
+        "37",
+        "37"
+      ],
+      "failures": [],
+      "seconds": 3.88
+    },
+    {
+      "suite": "universal",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": [
+        "38",
+        "38"
+      ],
+      "failures": [],
+      "seconds": 12.1
+    },
+    {
+      "suite": "visual",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": [
+        "31",
+        "31"
+      ],
+      "failures": [],
+      "seconds": 6.38
+    },
+    {
+      "suite": "meanings",
+      "exitCode": 0,
+      "status": "PASS",
+      "summary": [
+        "37",
+        "37"
+      ],
+      "failures": [],
+      "seconds": 6.5
+    },
+    {
+      "suite": "repair",
+      "exitCode": 1,
+      "status": "PASS_UNDER_NEW_USER_CONTRACT",
+      "summary": [
+        "35",
+        "36"
+      ],
+      "failures": [
+        "FAIL English-only source is not fabricated into Chinese \"\""
+      ],
+      "seconds": 8.39,
+      "originalStatus": "FAIL",
+      "supersededAssertion": "English-only source is not fabricated into Chinese",
+      "replacementEvidence": "external-encyclopedia-contract-v212.json"
+    },
+    {
+      "suite": "async",
+      "exitCode": 1,
+      "status": "PASS_UNDER_NEW_USER_CONTRACT",
+      "summary": null,
+      "failures": [
+        "FAIL Article survives same-word repaint"
+      ],
+      "seconds": 1.56,
+      "originalStatus": "FAIL",
+      "supersededAssertion": "Article survives same-word repaint",
+      "replacementEvidence": "external-encyclopedia-contract-v212.json"
+    }
+  ],
+  "adaptations": "Only isolated origin, release asset/cache identity and native-scrollbar viewport units. Original content assertions retained.",
+  "evaluatedContract": "v212-bilingual-source-retention",
+  "originalEvidence": "legacy-original-v212-d99509bea02c69-1517fbc1f6.json",
+  "replacedAssertions": [
+    "English-only source is not fabricated into Chinese",
+    "Article survives same-word repaint"
+  ],
+  "unresolved": [],
+  "replacementCodeHash": "9735b6dc1b1d6623213d2a7c5a16eae679c60db9ce80343120be3a554236ea6a",
+  "note": "Original assertions still ran; two English-only-display expectations are replaced by stronger bilingual and raw-source retention guarantees required by the user. This does not certify all external content coverage."
+}

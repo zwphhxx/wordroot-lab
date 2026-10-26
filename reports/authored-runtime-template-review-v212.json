@@ -1,0 +1,1618 @@
+{
+  "count": 322,
+  "sourceHash": "56502de3f9c3358bf48a131c5e94cde207b72bd2569a0f2dda1fa6ceb95cfc39",
+  "method": "Exact existing Chinese template and reviewed English component meanings; this records no new historical dates or claims.",
+  "reviewer": "assistant_linguistic_review",
+  "templates": [
+    {
+      "word": "inspect",
+      "zhHash": "68b5d37397a2f7740000a43af775e064de25cae4a06bea959dd960d54aa9ca8d",
+      "en": "A memory breakdown of inspect (To inspect; an inspection) is in + spect: prefix in (inward, or negation, depending on the word), root spect (Look; observe). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "inspection",
+      "zhHash": "64733257314b6fc261963f06aada8a2439d84e172401cfd9756ed22f70d39231",
+      "en": "A memory breakdown of inspection (To inspect; an inspection) is in + spect + ion: prefix in (inward, or negation, depending on the word), root spect (Look; observe), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "inspector",
+      "zhHash": "593aace1c9a19085b83392dbc10b58c3446ed68ebe29a272380d5764d693dae6",
+      "en": "A memory breakdown of inspector (Inspector) is in + spect + or: prefix in (inward, or negation, depending on the word), root spect (Look; observe), suffix or (a person or thing). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "spectator",
+      "zhHash": "48a0c30448bf707b9345c717fa0b33458713e6ce1d26e62decde61a0931be032",
+      "en": "A memory breakdown of spectator (Spectator; onlooker) is spect + at + or: root spect (Look; observe), component at (a spelling or stem variant in word formation), suffix or (a person or thing). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "spectacle",
+      "zhHash": "eeb728d11a1bd5a1802c449d85ebb998327d295133c37d51a218469250791df6",
+      "en": "A memory breakdown of spectacle (Spectacle; a striking sight) is spect + acle: root spect (Look; observe), component acle (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "respect",
+      "zhHash": "dc4ae63cccda70a858aca768363ada94eec7b053405df6b2d150eab5bcd27545",
+      "en": "A memory breakdown of respect (Respect; an aspect) is re + spect: prefix re (back; again), root spect (Look; observe). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "respectful",
+      "zhHash": "b84da8eae26dd133083de65491f63732650283ab9989b455c527cad532dec5ea",
+      "en": "A memory breakdown of respectful (Respectful) is re + spect + ful: prefix re (back; again), root spect (Look; observe), suffix ful (full of; having the quality of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "prospect",
+      "zhHash": "54c1d5656a42eac486f24724b8393c8aedede62eba1df70546bde0a36951cc76",
+      "en": "A memory breakdown of prospect (Prospect; possibility) is pro + spect: prefix pro (Forward), root spect (Look; observe). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "prospective",
+      "zhHash": "f95a6bce41e073dbc9fe9b84d7366453329207011b3cc2c1c5534653bfae64db",
+      "en": "A memory breakdown of prospective (Expected; prospective) is pro + spect + ive: prefix pro (Forward), root spect (Look; observe), suffix ive (having the quality or tendency of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "perspective",
+      "zhHash": "107655f5c29b34ce40a81ed1f778982f8dbbf54a3b6fa1c9b839feef294b14df",
+      "en": "A memory breakdown of perspective (Perspective; viewpoint; visual perspective) is per + spect + ive: prefix per (through), root spect (Look; observe), suffix ive (having the quality or tendency of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "retrospect",
+      "zhHash": "578b0264614f920a3ff1c0d47be1da7dcb8bb12abb0926bc2fd7f6b18bfd6fa0",
+      "en": "A memory breakdown of retrospect (Retrospect; looking back) is retro + spect: component retro (a spelling or stem variant in word formation), root spect (Look; observe). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "suspect",
+      "zhHash": "20419fd0ddb78c0b60a2d9d968689c002fc67be1614d73ba320aa5bb89f6f16e",
+      "en": "A memory breakdown of suspect (To suspect; a suspect) is sus + pect: component sus (a spelling or stem variant in word formation), component pect (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "transport",
+      "zhHash": "117cf91ba040624c55a1827ebddea9d9b80a79c6fefa21b4d4e9a712cbae3304",
+      "en": "A memory breakdown of transport (Transport; means of transport) is trans + port: prefix trans (across), root port (Carry; transport). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "transportation",
+      "zhHash": "93eeb4d69f08398e4842edafdb0ba46485596605947ebfb694eb51548c9fe2e8",
+      "en": "A memory breakdown of transportation (Transportation; traffic) is trans + port + ation: prefix trans (across), root port (Carry; transport), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "import",
+      "zhHash": "3d83c67eaccf0f0c80cff509f0bcf08e4863ca219ad91f78a98a28edee657e91",
+      "en": "A memory breakdown of import (To import; imported goods) is im + port: prefix im (inward, or negation, depending on the word), root port (Carry; transport). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "export",
+      "zhHash": "a98dacf0550a4196c6e2b7de6445af3e1a39f4fd2f2a27736a44b3a5ad4e92fb",
+      "en": "A memory breakdown of export (To export; exported goods) is ex + port: prefix ex (outward), root port (Carry; transport). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "portable",
+      "zhHash": "e503d13f726fac7c0fe0ee55994a034ba9e004cff2f3f793c9c1df9e55e75d97",
+      "en": "A memory breakdown of portable (Portable) is port + able: root port (Carry; transport), suffix able (capable of; able to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "support",
+      "zhHash": "0c74ed575cba4dd88844433518fd15646776e3c04eacd98a97e3738709450d03",
+      "en": "A memory breakdown of support (Support; supporting weight) is sup + port: component sup (a spelling or stem variant in word formation), root port (Carry; transport). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "supportive",
+      "zhHash": "73abd14667068e66ffff769794b82712a1ec00a5bb8363bca6500367b13dcd89",
+      "en": "A memory breakdown of supportive (Supportive) is sup + port + ive: component sup (a spelling or stem variant in word formation), root port (Carry; transport), suffix ive (having the quality or tendency of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "report",
+      "zhHash": "4d9ad2422e5bee2dbd2fcafe3817c096938d80fa22644629a0fc5909fb4cbd10",
+      "en": "A memory breakdown of report (To report; a report) is re + port: prefix re (back; again), root port (Carry; transport). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reporter",
+      "zhHash": "6264287b5e187c4135501be823878742a8268b97aaaffe0cfdb01f10361d4786",
+      "en": "A memory breakdown of reporter (Reporter) is re + port + er: prefix re (back; again), root port (Carry; transport), suffix er (a person or tool). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "deport",
+      "zhHash": "4e54cadad1d2e4d2353bd07cf5ac99392fa9b0d148368666a02af7e030d5c962",
+      "en": "A memory breakdown of deport (To deport) is de + port: prefix de (down; away), root port (Carry; transport). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "attract",
+      "zhHash": "8762af5d497bcd557bff1a93d2d8d15f616b91ecd0d64aa0395d406faad44422",
+      "en": "A memory breakdown of attract (To attract) is at + tract: component at (a spelling or stem variant in word formation), root tract (Pull; draw). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "attraction",
+      "zhHash": "ac9501b605b05a274095b6a8834223233e40393df6d31ff2d5c8397c722f9a3a",
+      "en": "A memory breakdown of attraction (Attraction; a place of interest) is at + tract + ion: component at (a spelling or stem variant in word formation), root tract (Pull; draw), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "attractive",
+      "zhHash": "dc1140e8a3209096311825d844b291c383cf8e46049c4ddf9aeec3bd72cf950b",
+      "en": "A memory breakdown of attractive (Attractive) is at + tract + ive: component at (a spelling or stem variant in word formation), root tract (Pull; draw), suffix ive (having the quality or tendency of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "distract",
+      "zhHash": "2662a0eab7cde13979cfff39b662273f55fbb8f3eda75e6a9c7132271e05fc36",
+      "en": "A memory breakdown of distract (To distract) is dis + tract: prefix dis (apart; negation), root tract (Pull; draw). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "distraction",
+      "zhHash": "2362af58ce8f8500b3e4ca3d80f0d926a097f6cd0c4c3e792e3a40ec6c29e606",
+      "en": "A memory breakdown of distraction (A distraction) is dis + tract + ion: prefix dis (apart; negation), root tract (Pull; draw), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "extract",
+      "zhHash": "a4ff4048fdb5af7463469873031fc92725fc5ec30ba423c83ef8d1008ec572b8",
+      "en": "A memory breakdown of extract (To extract; an extract) is ex + tract: prefix ex (outward), root tract (Pull; draw). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "extraction",
+      "zhHash": "d52508a64793ab99c1c61a62e7c80ae73b2b8211397ab939d384d0882840981c",
+      "en": "A memory breakdown of extraction (Extraction; drawing out) is ex + tract + ion: prefix ex (outward), root tract (Pull; draw), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "contract",
+      "zhHash": "c6d9784959079314380eb5ed9e6581852799789b251cabe4daa4ccd551fc4b2a",
+      "en": "A memory breakdown of contract (A contract; to contract; to catch an illness) is con + tract: prefix con (together), root tract (Pull; draw). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "contraction",
+      "zhHash": "65e9d965d20b04a90845687a1cc8be376a92ccf42f495889451fef82ac7a0d81",
+      "en": "A memory breakdown of contraction (Contraction; a shortened form) is con + tract + ion: prefix con (together), root tract (Pull; draw), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "subtract",
+      "zhHash": "901be7bbd65c665ea80e524893c0052af89040978efea07ae39b37ecc846327e",
+      "en": "A memory breakdown of subtract (To subtract) is sub + tract: prefix sub (Under; below), root tract (Pull; draw). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "retract",
+      "zhHash": "35ee7fae314d934c84b9d1a86acb42468b449567740d452c6bf2691b3e49c026",
+      "en": "A memory breakdown of retract (To retract; to draw back) is re + tract: prefix re (back; again), root tract (Pull; draw). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "describe",
+      "zhHash": "1ad828014fdbbc31a3740b11ad7c1b9d47da2acd03bde83fdc9174d7f290511e",
+      "en": "A memory breakdown of describe (Description) is de + scribe: prefix de (down; away), root scribe (Write; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "description",
+      "zhHash": "cf5c0a201657046f728f171e530eee8356ba828d78712b38d14edeccb2b471f0",
+      "en": "A memory breakdown of description (Description; explanation) is de + script + ion: prefix de (down; away), root script (Write; record), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "descriptive",
+      "zhHash": "f7bf9888274ef811acc8f37a01f8a0ac06865d4c8a4e1485eea16712b7eae45b",
+      "en": "A memory breakdown of descriptive (Descriptive) is de + script + ive: prefix de (down; away), root script (Write; record), suffix ive (having the quality or tendency of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "manuscript",
+      "zhHash": "5eda6a4bbc493031e24ced0450b73416032765d7abb65203d4d5808e8f6fc932",
+      "en": "A memory breakdown of manuscript (manuscripts; originals) is manu + script: component manu (a spelling or stem variant in word formation), root script (Write; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "transcript",
+      "zhHash": "7ceca99fe03a47a130f785916e59b8626aecc2960fab2902ea8d2ed876140fa2",
+      "en": "A memory breakdown of transcript (A written record; an academic transcript) is tran + script: prefix tran (a reduced spelling of trans-), root script (Write; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "prescribe",
+      "zhHash": "f88364967256f6e1e3a4e3d7c5c1e2ba1c54d30b309985899ed64ef64a01c18b",
+      "en": "A memory breakdown of prescribe (To prescribe; to lay down a rule) is pre + scribe: prefix pre (Before; in front), root scribe (Write; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "prescription",
+      "zhHash": "8bdce37f8001c4eaf0959c860bdb759eae4e6a49b86c0c745ae0b6e5e2c869a7",
+      "en": "A memory breakdown of prescription (A prescription; a requirement) is pre + script + ion: prefix pre (Before; in front), root script (Write; record), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "subscribe",
+      "zhHash": "c5c288e51a5c132671c6de9cdba7a7567409cf1811c326dba1e5cad991f6e5cc",
+      "en": "A memory breakdown of subscribe (To subscribe; to sign up) is sub + scribe: prefix sub (Under; below), root scribe (Write; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "subscription",
+      "zhHash": "bf5e997be891979c1eeef761cadda57ccf0e2cd118c218bd43072d179ec850ef",
+      "en": "A memory breakdown of subscription (To subscribe; to sign up) is sub + script + ion: prefix sub (Under; below), root script (Write; record), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "inscription",
+      "zhHash": "0fb4905e01b1deac239686fd07693da01b2664d61caefb760e10c0eafe9596bb",
+      "en": "A memory breakdown of inscription (An inscription; a dedication) is in + script + ion: prefix in (inward, or negation, depending on the word), root script (Write; record), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "construct",
+      "zhHash": "62c96a19a753d16a00d590edc4434a01ce0e5c57832abe2bb54af12f19eb10d7",
+      "en": "A memory breakdown of construct (To construct; to build) is con + struct: prefix con (together), root struct (Build; organize). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "construction",
+      "zhHash": "b3a1d23ef8e21e60c47b54154e280c2d9e2bad46c25e318ee02804df6528716f",
+      "en": "A memory breakdown of construction (Construction; a building) is con + struct + ion: prefix con (together), root struct (Build; organize), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "constructive",
+      "zhHash": "b29b27cd85f11ca9bf9f24b0f8bfa08f7d3723b5920f67d5d185baa9090bd7cd",
+      "en": "A memory breakdown of constructive (Constructive) is con + struct + ive: prefix con (together), root struct (Build; organize), suffix ive (having the quality or tendency of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reconstruct",
+      "zhHash": "e66fe8889f4a2674c1b33cfc3ee1e7334b1eefeec52fb17bc4bc050a2318e99c",
+      "en": "A memory breakdown of reconstruct (To reconstruct; to rebuild) is re + con + struct: prefix re (back; again), component con (a spelling or stem variant in word formation), root struct (Build; organize). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "structure",
+      "zhHash": "4eb1379821fa5f74b401da87c2846c753adacd317432d60dd9a482366e470b23",
+      "en": "A memory breakdown of structure (Structure) is struct + ure: root struct (Build; organize), suffix ure (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "structural",
+      "zhHash": "b4623d95a0665940b1a38d9ef8e294d4a39a68d639a4442ac1771415bc3475b9",
+      "en": "A memory breakdown of structural (Structural) is struct + ur + al: root struct (Build; organize), component ur (a spelling or stem variant in word formation), suffix al (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "instruct",
+      "zhHash": "e399197769021a191dc71b6105326acd8b04d54673bc4b9900b84c613d098a96",
+      "en": "A memory breakdown of instruct (To instruct; to teach) is in + struct: prefix in (inward, or negation, depending on the word), root struct (Build; organize). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "instruction",
+      "zhHash": "0bd8b684a513c1d48c48bab13d6bebc8cddaefa5a08a992e14c6f8f28d01324d",
+      "en": "A memory breakdown of instruction (Instructions; a manual; teaching) is in + struct + ion: prefix in (inward, or negation, depending on the word), root struct (Build; organize), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "instructor",
+      "zhHash": "33e7c7bd291005584b3a6b75b8d691671bf4f0744915b06ef3aa482f6dc86de2",
+      "en": "A memory breakdown of instructor (Instructor; teacher) is in + struct + or: prefix in (inward, or negation, depending on the word), root struct (Build; organize), suffix or (a person or thing). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "obstruct",
+      "zhHash": "9c388799c25251cfbf506eba086d5713cdc870691e9f1a879ba6901ffb3616a7",
+      "en": "A memory breakdown of obstruct (To obstruct; to block) is ob + struct: prefix ob (toward; against), root struct (Build; organize). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "obstruction",
+      "zhHash": "1f42df88347bc94078c502a5fdd5a093b33a2ed5ee2c98b4e46fe1048ff8ff06",
+      "en": "A memory breakdown of obstruction (Obstruction; blockage) is ob + struct + ion: prefix ob (toward; against), root struct (Build; organize), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "predict",
+      "zhHash": "444c06f9327f884fa2764ca32920095e42bd9459f86c7a88dbb349d736074995",
+      "en": "A memory breakdown of predict (To predict; to foretell) is pre + dict: prefix pre (Before; in front), root dict (Say; declare). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "prediction",
+      "zhHash": "8208780a3ad5cf4284099c14618b7956f4068847d61997d9cc3ad2b6881b5cf5",
+      "en": "A memory breakdown of prediction (Prediction) is pre + dict + ion: prefix pre (Before; in front), root dict (Say; declare), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "predictable",
+      "zhHash": "d78e6d7dd6a13dd7757ea4c11ede0c9027c1c5d5866352f9c40b0746d10d40e6",
+      "en": "A memory breakdown of predictable (Predictable) is pre + dict + able: prefix pre (Before; in front), root dict (Say; declare), suffix able (capable of; able to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "dictionary",
+      "zhHash": "c4ddd79617e6d8aba3d4bb904eee39d3f17479497bb63fcedf6b686e82ab8af6",
+      "en": "A memory breakdown of dictionary (Dictionary) is dict + ion + ary: root dict (Say; declare), component ion (a spelling or stem variant in word formation), suffix ary (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "diction",
+      "zhHash": "1540bf32705eb28a06a4025ab3b4da303e2be12f507f38c84828100f4afe89c5",
+      "en": "A memory breakdown of diction (Diction; choice of words; manner of pronunciation) is dict + ion: root dict (Say; declare), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "dictate",
+      "zhHash": "13d1ba36eb9021299c737f8badd767f1c849aa3802c8dbf416c6d18c78b0111a",
+      "en": "A memory breakdown of dictate (To dictate; to command; to determine) is dict + ate: root dict (Say; declare), suffix ate (to make or cause to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "dictator",
+      "zhHash": "0a86e0fcf9d7ce744dba44b4665f199d4ba240ac3c893b0ecc13775c9c97b859",
+      "en": "A memory breakdown of dictator (Dictator) is dict + at + or: root dict (Say; declare), component at (a spelling or stem variant in word formation), suffix or (a person or thing). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "contradict",
+      "zhHash": "f222afe281ef81a2454b8bde3539b7a2a0e1945ba8967d467658ac7470f5ec9d",
+      "en": "A memory breakdown of contradict (To contradict; to conflict with) is contra + dict: component contra (a spelling or stem variant in word formation), root dict (Say; declare). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "contradiction",
+      "zhHash": "08bb72c826a2e9349bf58c696783f486723f8297dcf273a4bad00db2a1c06c43",
+      "en": "A memory breakdown of contradiction (Contradiction; a conflicting statement) is contra + dict + ion: component contra (a spelling or stem variant in word formation), root dict (Say; declare), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "verdict",
+      "zhHash": "edbfa48196dd928248ee1d0d414f7334dbbe2165189dec30771dbfd86dd4f3ec",
+      "en": "A memory breakdown of verdict (Verdict; judgement) is ver + dict: component ver (a spelling or stem variant in word formation), root dict (Say; declare). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "visible",
+      "zhHash": "0fe4d9e79e2ababb468051a5a88293114c209020b0b5303d1ebcd56fce1b494b",
+      "en": "A memory breakdown of visible (Visible; evident) is vis + ible: root vis (See; sight), component ible (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "invisible",
+      "zhHash": "63a31d26560b2525bc2e76098a1c03cbaa60fdda5ad33d3c8bf567cf5a91d6c7",
+      "en": "A memory breakdown of invisible (Invisible; not perceptible) is in + vis + ible: prefix in (inward, or negation, depending on the word), root vis (See; sight), component ible (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "vision",
+      "zhHash": "d8a8adda490bd254d79f86c809d2ca070f305bcfc6c1359c72a4905247deb41e",
+      "en": "A memory breakdown of vision (Sight; foresight; a vision) is vis + ion: root vis (See; sight), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "visual",
+      "zhHash": "8cff1e3b921a0be17f47c1ee11a3e6b23deb9300f98d7802e0d580ae98f30587",
+      "en": "A memory breakdown of visual (Visual) is vis + ual: root vis (See; sight), component ual (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "video",
+      "zhHash": "c17fbd299f83aa1c368ae35f6d3625d2040c42c06a9bbd2751af09e1adc15b2d",
+      "en": "A memory breakdown of video (Video; a recording) is vid + eo: root vid (See; sight), component eo (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "revise",
+      "zhHash": "a439fad5e0209259ac2d7c7f26720eceaa1305a31c68f08f7f86c03c846e762a",
+      "en": "A memory breakdown of revise (To revise; to review for study) is re + vis + e: prefix re (back; again), root vis (See; sight), component e (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "revision",
+      "zhHash": "771c2dc7a2333dc59efbe6ded8d7fb93ddc828d605467c5d074849867de78a12",
+      "en": "A memory breakdown of revision (To revise; to review for study) is re + vis + ion: prefix re (back; again), root vis (See; sight), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "supervise",
+      "zhHash": "4e8438fddc69d05480eda7696cb29bb57fe3d4e87657d2badaee3e651ca144d4",
+      "en": "A memory breakdown of supervise (To supervise; to manage) is super + vis + e: prefix super (above; beyond), root vis (See; sight), component e (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "supervisor",
+      "zhHash": "c9cc073b103d46deeac1450017fee187839d2a4a491a93417c86ef8c8c25ac83",
+      "en": "A memory breakdown of supervisor (Supervisor) is super + vis + or: prefix super (above; beyond), root vis (See; sight), suffix or (a person or thing). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "evidence",
+      "zhHash": "07af546f329e8ceec57a50d56b175e78b744a9c98f2c1bde40520ebe98633cda",
+      "en": "A memory breakdown of evidence (Evidence; an indication) is e + vid + ence: prefix e (outward), root vid (See; sight), suffix ence (a quality or state). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "form",
+      "zhHash": "6c6c3b70290ce85729e7b30aa2a5f9cd6f3131390c67df730d4f12d5e0951236",
+      "en": "A memory breakdown of form (A form; a printed form; to form) is : . Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "formal",
+      "zhHash": "d284256a617ac7cfe01ec64713a94188be9889f3a338de07a579a3a4b7a7a374",
+      "en": "A memory breakdown of formal (Formal) is form + al: root form (Shape; form), suffix al (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "formation",
+      "zhHash": "81f5020f96ebff7a668b9ea28dd703da2c6a5a53c23966b743d035688b4f2bbf",
+      "en": "A memory breakdown of formation (Formation; an organized arrangement) is form + ation: root form (Shape; form), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "transform",
+      "zhHash": "b483906ae8970125172c4849de73b4af2403d6def77c90dfbc66280959d8a3dd",
+      "en": "A memory breakdown of transform (To transform; to change) is trans + form: prefix trans (across), root form (Shape; form). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "transformation",
+      "zhHash": "8facb73af55932155b0e6f987ec1539220306149a3100abb453945639d17247d",
+      "en": "A memory breakdown of transformation (Transformation; change) is trans + form + ation: prefix trans (across), root form (Shape; form), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reform",
+      "zhHash": "f82a76c6073959be8b5acf70b2d566d92b5eecb32a23a851149f9fb584559234",
+      "en": "A memory breakdown of reform (To reform; improvement) is re + form: prefix re (back; again), root form (Shape; form). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "inform",
+      "zhHash": "73fca34f5a891afd8f9996aea52841be87eee0298c57ed1f1502cef99e58cd4a",
+      "en": "A memory breakdown of inform (To inform; to notify) is in + form: prefix in (inward, or negation, depending on the word), root form (Shape; form). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "information",
+      "zhHash": "50e8b8e44e343b30c5158a809a518ff1e1fc33260b05a50cdedb1f6f830d3ecc",
+      "en": "A memory breakdown of information (Information; data) is in + form + ation: prefix in (inward, or negation, depending on the word), root form (Shape; form), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "uniform",
+      "zhHash": "dd80ca5a53194240fb5e36490425dea06c9396a40a6076497d210d48f920819c",
+      "en": "A memory breakdown of uniform (A uniform; uniform or consistent) is uni + form: component uni (a spelling or stem variant in word formation), root form (Shape; form). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "conform",
+      "zhHash": "e9ac875e6f0a3d6d7361cb4836f000df806fb04d65954eae6c6539ec9504a6ad",
+      "en": "A memory breakdown of conform (To conform; to comply) is con + form: prefix con (together), root form (Shape; form). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "deform",
+      "zhHash": "41d1e7a71cb739a37098aa3c6b208af7fb7cbcefb77c89c8d181d289267c023c",
+      "en": "A memory breakdown of deform (To deform) is de + form: prefix de (down; away), root form (Shape; form). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "biology",
+      "zhHash": "2d179876584c478bedabab50d5ce1978c4167d479eed59ade27741301e5f4054",
+      "en": "A memory breakdown of biology (Biology) is bio + logy: root bio (Life; living things), component logy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "biological",
+      "zhHash": "68e764df2f2f6fd53a8bd31774e23fe246cf61380e24e4de6d1d1b2f830fff87",
+      "en": "A memory breakdown of biological (Biological) is bio + log + ical: root bio (Life; living things), component log (a spelling or stem variant in word formation), suffix ical (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "biotechnology",
+      "zhHash": "341058ad38cfe4d5805700f22c1ffbfe5bfb4ceaefac04dcc1b36cb25ca4386b",
+      "en": "A memory breakdown of biotechnology (Biotechnology) is bio + techno + logy: root bio (Life; living things), component techno (a spelling or stem variant in word formation), component logy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microbiology",
+      "zhHash": "0d91a901e8a63d2c58daeef71389dd02c280cb62474a2bc60ec8b1175bd5a737",
+      "en": "A memory breakdown of microbiology (Microbiology) is micro + bio + logy: prefix micro (Tiny; very small), root bio (Life; living things), component logy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "biodegradable",
+      "zhHash": "020012b2dc147a501217750d4c1b30eae0e522d083ff606d7fa91f89fa2b10cd",
+      "en": "A memory breakdown of biodegradable (Biodegradable) is bio + de + grad + able: root bio (Life; living things), component de (a spelling or stem variant in word formation), component grad (a spelling or stem variant in word formation), suffix able (capable of; able to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "biography",
+      "zhHash": "67fd3d9d3bc764409d2ce9971496ea40cac08a6bdcb97a410219f4bc808af081",
+      "en": "A memory breakdown of biography (Biography) is bio + graphy: root bio (Life; living things), suffix graphy (a field of study or a method of recording). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "autobiography",
+      "zhHash": "399f0a2ff4bc8de640b041ce3518ab4e2a614ad7245f700a1a96a7937a203c99",
+      "en": "A memory breakdown of autobiography (Autobiography) is auto + bio + graphy: prefix auto (self), root bio (Life; living things), suffix graphy (a field of study or a method of recording). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "biosphere",
+      "zhHash": "a47c1280819cdc24cc505c54a1cd2e7aff8a4650a9cbb86a1c7f4a53fdad8e3a",
+      "en": "A memory breakdown of biosphere (Biosphere) is bio + sphere: root bio (Life; living things), component sphere (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "graph",
+      "zhHash": "af6c385c59a79899f128c946ce210888325df7f7ddd2d499731d582dd9f86972",
+      "en": "A memory breakdown of graph (A graph; a chart) is : . Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "graphic",
+      "zhHash": "3b7848ff62c7743c489a61e32ed428be61859820d075d08669404718d14a7578",
+      "en": "A memory breakdown of graphic (Graphic; vivid) is graph + ic: root graph (Write; draw; record), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photograph",
+      "zhHash": "25da39ba51381e31c5c52315d8c1866d166dc73ed96d8b373c693d14ab79d365",
+      "en": "A memory breakdown of photograph (A photograph; to photograph) is photo + graph: component photo (a spelling or stem variant in word formation), root graph (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photography",
+      "zhHash": "3064a3dcf6fd070ce66af22ce2043650a3c4b2bcdaddbb7066de34b3e93bcc7c",
+      "en": "A memory breakdown of photography (Photography) is photo + graphy: component photo (a spelling or stem variant in word formation), root graphy (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "autograph",
+      "zhHash": "bf530275af7e8c29a7b581730fc22bf84b9fc34780705cebb4714b3fdc85ef6c",
+      "en": "A memory breakdown of autograph (Autograph; a handwritten signature) is auto + graph: prefix auto (self), root graph (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geography",
+      "zhHash": "4550826cc2d199878f28630d6338e3733cb9c1daeb77bbea9c25746fe2cf6afd",
+      "en": "A memory breakdown of geography (Geography) is geo + graphy: prefix geo (earth), root graphy (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geographic",
+      "zhHash": "3313f80afeb96d4b6137e3e3ab5872262ae5b1786822e1ae9e90fcebe4ead42e",
+      "en": "A memory breakdown of geographic (Geographical) is geo + graph + ic: prefix geo (earth), root graph (Write; draw; record), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "biography",
+      "zhHash": "c9d662483ab2f75509e47fb266fd4eb26ff74b27d841cd8b92228afd4fa482b5",
+      "en": "A memory breakdown of biography (Biography) is bio + graphy: root bio (Life; living things), suffix graphy (a field of study or a method of recording). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "paragraph",
+      "zhHash": "93e9eae4bea069063740d65d48f5198d0a7ada74f6bfd6387a98cb2e3026f994",
+      "en": "A memory breakdown of paragraph (Paragraph) is para + graph: component para (a spelling or stem variant in word formation), root graph (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telegraph",
+      "zhHash": "ae4acde030ba1cbc20ecbff025c9221f8dd843b45541ff10e7079153ed63142c",
+      "en": "A memory breakdown of telegraph (A telegraph message; a telegraph machine) is tele + graph: prefix tele (far; at a distance), root graph (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "phone",
+      "zhHash": "2f983dfbe0606b9ab9d85a8747de4f31dc1b3b92b6869e1cfe5aee02357e728e",
+      "en": "A memory breakdown of phone (A telephone; to telephone) is : . Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telephone",
+      "zhHash": "f59aa0504ae8e167a752cc7026986a68aae174e77ff9f51001f8bfef9853b463",
+      "en": "A memory breakdown of telephone (Telephone) is tele + phone: prefix tele (far; at a distance), root phone (Sound; speech sound). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microphone",
+      "zhHash": "2b1f48bfcc068cfbaa1fc132045992328204b5125c79b8a8aeb1a7082efa2841",
+      "en": "A memory breakdown of microphone (Microphone) is micro + phone: prefix micro (Tiny; very small), root phone (Sound; speech sound). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "megaphone",
+      "zhHash": "d667983e13d6292db14498047288a4b3caa1db8c843a63c269af680326ed8738",
+      "en": "A memory breakdown of megaphone (Sound amplifier) is mega + phone: component mega (a spelling or stem variant in word formation), root phone (Sound; speech sound). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "phonetic",
+      "zhHash": "1b254b33e8714aa27b4a70db09fc49fc6c8eba4d9be76fdf06c38ed8ea67c37c",
+      "en": "A memory breakdown of phonetic (Phonetic; relating to speech sounds or phonetic symbols) is phon + et + ic: root phon (Sound; speech sound), component et (a spelling or stem variant in word formation), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "phoneme",
+      "zhHash": "d075e729bb12fc8df5dbe5e9f72c2f9422b154325b64ff5356ebbb85874fefab",
+      "en": "A memory breakdown of phoneme (Phoneme) is phon + eme: root phon (Sound; speech sound), component eme (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "phonology",
+      "zhHash": "e7260055177d78ad8d69d254a77509a345fff8ac9521903074bedae3c67aceba",
+      "en": "A memory breakdown of phonology (Phonology) is phon + ology: root phon (Sound; speech sound), suffix ology (the study of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "homophone",
+      "zhHash": "988cc3ec30ddb3831cf6acd7f5cc30de1156082abed39328211917a9f7a239c7",
+      "en": "A memory breakdown of homophone (Homophone) is homo + phone: component homo (a spelling or stem variant in word formation), root phone (Sound; speech sound). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "symphony",
+      "zhHash": "29e204d2743f79709a8140f0ce7299b2d29dd8c94a484b7c8cf509bafb34bd82",
+      "en": "A memory breakdown of symphony (Symphony) is sym + phon + y: component sym (a spelling or stem variant in word formation), root phon (Sound; speech sound), suffix y (an adjective or noun ending). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "chronology",
+      "zhHash": "59964736e9f9c9f41273921620f7ac86c58665b29de75b27626a2599043af4c5",
+      "en": "A memory breakdown of chronology (Chronology; chronological order) is chrono + logy: root chrono (Time), component logy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "chronological",
+      "zhHash": "2c9eec407955fc3473a77ecc34fe9f17e6ace42e4878d2484d1fad9d34f98c17",
+      "en": "A memory breakdown of chronological (Chronological) is chrono + log + ical: root chrono (Time), component log (a spelling or stem variant in word formation), suffix ical (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "chronicle",
+      "zhHash": "5b2079320d3710d5effb73c44c14f00102daa13056c98f14d073d2d7fdc966eb",
+      "en": "A memory breakdown of chronicle (A chronicle; to record) is chron + icle: root chron (Time), component icle (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "synchronize",
+      "zhHash": "dfc877c2e488b157d6467512e67b91a167a1a9ffe5e27070665ab070ce2f72cc",
+      "en": "A memory breakdown of synchronize (To synchronize) is syn + chron + ize: prefix syn (together), root chron (Time), suffix ize (to make or become). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "synchronized",
+      "zhHash": "b52a0cfce6ac5ee6819bb64fd25a3ce4e332d5b44429ccffcd7a3c054b0280da",
+      "en": "A memory breakdown of synchronized (Synchronized) is syn + chron + ized: prefix syn (together), root chron (Time), component ized (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "asynchronous",
+      "zhHash": "384c6c63227b9a7978f75ab822b94d9cb379a817189e1f2d0f385109471132da",
+      "en": "A memory breakdown of asynchronous (Asynchronous) is a + syn + chron + ous: prefix a (toward), component syn (a spelling or stem variant in word formation), root chron (Time), suffix ous (full of; having the quality of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "chronic",
+      "zhHash": "05427a44ad14a7f7d3bd4ba849a5af9d856359e6a09903b2bc4689aac53a4c38",
+      "en": "A memory breakdown of chronic (Chronic; long term) is chron + ic: root chron (Time), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "anachronism",
+      "zhHash": "f6793efc4d5c04e1cc0dffae20c30b4c03ea1324a00d836430a212b7e7e22013",
+      "en": "A memory breakdown of anachronism (Anachronism; something out of its historical time) is ana + chron + ism: component ana (a spelling or stem variant in word formation), root chron (Time), suffix ism (a doctrine, system, or phenomenon). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "credible",
+      "zhHash": "fcc9955015fb9a2fca2f18613f4872b3deb63dfc6c0ee88cf6580d1cec45dce9",
+      "en": "A memory breakdown of credible (Credible; reliable) is cred + ible: root cred (Believe; trust), component ible (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "incredible",
+      "zhHash": "9362fed68b65cdf95722bff6d65fa9ffc7497b33c6825574660c2742c5e16039",
+      "en": "A memory breakdown of incredible (Incredible; excellent) is in + cred + ible: prefix in (inward, or negation, depending on the word), root cred (Believe; trust), component ible (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "credibility",
+      "zhHash": "065160145f07370c29dfc730843f43f009bf06d9a329a6b593214e1ce0c9361b",
+      "en": "A memory breakdown of credibility (Credibility; public trust) is cred + ibil + ity: root cred (Believe; trust), component ibil (a spelling or stem variant in word formation), suffix ity (a quality or state). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "credulous",
+      "zhHash": "c20b949acbe3badc5c200dbb2c062083d230fc6bec72c3384a5dfcaf74a591eb",
+      "en": "A memory breakdown of credulous (Credulous; easily persuaded to believe) is cred + ul + ous: root cred (Believe; trust), component ul (a spelling or stem variant in word formation), suffix ous (full of; having the quality of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "credit",
+      "zhHash": "2a95c4791c64d7694ff0c1b1aad5685c6fb03d3f1a4e2280ccc1b49463fc2941",
+      "en": "A memory breakdown of credit (Credit; an academic credit; praise) is cred + it: root cred (Believe; trust), component it (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "creditor",
+      "zhHash": "0e4e13eb2be3a09cceffcc9b3d8977bdb2b8b4dda81be7f43e44581ff0fa1aa8",
+      "en": "A memory breakdown of creditor (Creditor) is cred + it + or: root cred (Believe; trust), component it (a spelling or stem variant in word formation), suffix or (a person or thing). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "credential",
+      "zhHash": "3e15b05d35d1b978ea05d5650795ee5599164afd12df04026a6512b2c4d0c55a",
+      "en": "A memory breakdown of credential (Credential; evidence of qualifications) is cred + ent + ial: root cred (Believe; trust), component ent (a spelling or stem variant in word formation), component ial (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "discredit",
+      "zhHash": "1bfcf03be84a33c0795ad151414823cdfacf4e19821825ae429106cf596284ca",
+      "en": "A memory breakdown of discredit (To discredit; to cast doubt on) is dis + cred + it: prefix dis (apart; negation), root cred (Believe; trust), component it (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "creed",
+      "zhHash": "44e93b070264422ce17375c162de844542282fae777b785241356a917f710d5e",
+      "en": "A memory breakdown of creed (Creed; belief) is : . Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "transmit",
+      "zhHash": "b2665436e73e2e3a37724b02036317c00bb33a5531d682aaa10969ced6d1edeb",
+      "en": "A memory breakdown of transmit (To transmit; transmission) is trans + mit: prefix trans (across), root mit (Send; dispatch). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "transmission",
+      "zhHash": "3a2d53771073b0c25798faacf32d5ef5ed7ea19ce0c497a9411c188a3f212282",
+      "en": "A memory breakdown of transmission (To transmit; transmission) is trans + miss + ion: prefix trans (across), root miss (Send; dispatch), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "transmitter",
+      "zhHash": "3c438681afbf6c1a46ca6ae4d5a093fc064d6b5639d2ad01523d9984c5a28d0a",
+      "en": "A memory breakdown of transmitter (Transmitter) is trans + mit + ter: prefix trans (across), root mit (Send; dispatch), component ter (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "submit",
+      "zhHash": "5bb25acb94f6a0d8acc40db984f2f7189b9ec90885b61fe1a8e9c230e8734bf9",
+      "en": "A memory breakdown of submit (To submit; to yield) is sub + mit: prefix sub (Under; below), root mit (Send; dispatch). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "submission",
+      "zhHash": "8e41af3a627e0c5c7b0c642945eea677d1b72d8179b54b2a480f0da53f272971",
+      "en": "A memory breakdown of submission (Submission; yielding) is sub + miss + ion: prefix sub (Under; below), root miss (Send; dispatch), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "permit",
+      "zhHash": "74d1ff09f42583d570dc70c189731001b15ff27df08f6571319ca9aee55f3b7b",
+      "en": "A memory breakdown of permit (To permit; a permit) is per + mit: prefix per (through), root mit (Send; dispatch). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "permission",
+      "zhHash": "12d579c673bc0f8d13d0a249a462ffdd9956f671cb450f8ae02baddc0a0e8c17",
+      "en": "A memory breakdown of permission (Permission) is per + miss + ion: prefix per (through), root miss (Send; dispatch), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "admit",
+      "zhHash": "dce6559eba6131ba2162fc8e32cca520af2b2020d1b66e4c61c9676d319886b5",
+      "en": "A memory breakdown of admit (To admit; to allow entry) is ad + mit: prefix ad (toward), root mit (Send; dispatch). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "admission",
+      "zhHash": "a37f40874551d4491e8a149fad78ec49f3d228171ce565a06ed7b67f4ea2d648",
+      "en": "A memory breakdown of admission (Admission; acknowledgement; an entry fee) is ad + miss + ion: prefix ad (toward), root miss (Send; dispatch), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "dismiss",
+      "zhHash": "bd9473eaa7d67d5e8e608fe8f20a7f098b973677089c68008a4563145baddf5e",
+      "en": "A memory breakdown of dismiss (To dismiss; to reject; to discharge an employee) is dis + miss: prefix dis (apart; negation), root miss (Send; dispatch). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "emission",
+      "zhHash": "e976507640c6e227ece44ecbbbae9d669abf11e0702eeeb07ba186b3b419e541",
+      "en": "A memory breakdown of emission (Emission; discharge) is e + miss + ion: prefix e (outward), root miss (Send; dispatch), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "commit",
+      "zhHash": "81f4785613bbf8ff07fd79d71925240cfe1d77018a5098a51cd6e59d84b8f22c",
+      "en": "A memory breakdown of commit (To commit; to devote; to commit an offence) is com + mit: prefix com (together), root mit (Send; dispatch). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "project",
+      "zhHash": "cb892fac5bf8481c51f45e092c464ce9fd0d9dcddc938b6d747e7ab114ee7609",
+      "en": "A memory breakdown of project (A project; to project; to forecast) is pro + ject: prefix pro (Forward), root ject (Throw; cast). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "projection",
+      "zhHash": "0826dab27caccbf579f0b8bf25f29e1e3432fccab57243d7722d649f10a370b7",
+      "en": "A memory breakdown of projection (Projection; forecast) is pro + ject + ion: prefix pro (Forward), root ject (Throw; cast), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reject",
+      "zhHash": "b40e1a406c3be84f01592cd7e78220b2594448733b17eac389548c0d1ca2c21e",
+      "en": "A memory breakdown of reject (To reject; to refuse) is re + ject: prefix re (back; again), root ject (Throw; cast). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "rejection",
+      "zhHash": "79925f682e3fd3437de866b127b143c94a6d7f10f419e2f3d413b1d8336ab4d3",
+      "en": "A memory breakdown of rejection (To reject; to refuse) is re + ject + ion: prefix re (back; again), root ject (Throw; cast), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "inject",
+      "zhHash": "9a32a2ae2030cfc57746feb9338b6beeb4ae3a3ce4c774f8ae5de7fd2396388d",
+      "en": "A memory breakdown of inject (To inject; injection) is in + ject: prefix in (inward, or negation, depending on the word), root ject (Throw; cast). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "injection",
+      "zhHash": "af380ef52db03e475c636f55abc1c00af0518b2703d35b153d63f3d5f6493af9",
+      "en": "A memory breakdown of injection (To inject; injection) is in + ject + ion: prefix in (inward, or negation, depending on the word), root ject (Throw; cast), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "eject",
+      "zhHash": "918427f327a92eed6aef3d6bc4284a10e2d7b7e96e09337de50c45e4f2297889",
+      "en": "A memory breakdown of eject (To eject; to expel) is e + ject: prefix e (outward), root ject (Throw; cast). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "object",
+      "zhHash": "8364003b2edf67393eb24480179b315c6ab084d7743c6a4f31bf2e1ee68bac9e",
+      "en": "A memory breakdown of object (An object; an aim; to object) is ob + ject: prefix ob (toward; against), root ject (Throw; cast). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "objection",
+      "zhHash": "bbf3a36911c6637cd9022fcb4b472ae8f346c2382eca2137f29e2b234140f12c",
+      "en": "A memory breakdown of objection (Objection; dissent) is ob + ject + ion: prefix ob (toward; against), root ject (Throw; cast), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "subject",
+      "zhHash": "de6d6751344c5c4eef50d2a81896e25aecbb0ce211ef393741e17e965ead1cd5",
+      "en": "A memory breakdown of subject (A subject or topic; a school subject; to subject to) is sub + ject: prefix sub (Under; below), root ject (Throw; cast). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "subjective",
+      "zhHash": "0f1024745c6d43b58ab883b8ca3e63e08639e49c662c9d79b40b119b2e0062a8",
+      "en": "A memory breakdown of subjective (Subjective) is sub + ject + ive: prefix sub (Under; below), root ject (Throw; cast), suffix ive (having the quality or tendency of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "interject",
+      "zhHash": "e9f25e0e1bd36de289be79e7797cc4b27c981d2b1331c142bfb2fb386d006e11",
+      "en": "A memory breakdown of interject (To interject; to insert suddenly) is inter + ject: prefix inter (Between), root ject (Throw; cast). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "interrupt",
+      "zhHash": "76912a22e79509d687981de1fd6bde54b520593f6df8cc71d6b9e6da4d787e43",
+      "en": "A memory breakdown of interrupt (To interrupt; to break off) is inter + rupt: prefix inter (Between), root rupt (Break; rupture). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "interruption",
+      "zhHash": "2a98d06bee3b7b25d8e85f125041b77353e54b5d790be277d5da59c8e27af0f3",
+      "en": "A memory breakdown of interruption (Interruption; disturbance) is inter + rupt + ion: prefix inter (Between), root rupt (Break; rupture), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "disrupt",
+      "zhHash": "0acf18013e51064de3897c85e05879179a9319b5a734d51f1a4e76eac47e62e4",
+      "en": "A memory breakdown of disrupt (To disrupt) is dis + rupt: prefix dis (apart; negation), root rupt (Break; rupture). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "disruption",
+      "zhHash": "d11071f16ec6d9a4859ecc172d908a9880c6c916e09b9d3c0479389d892d5bea",
+      "en": "A memory breakdown of disruption (Disruption; damage) is dis + rupt + ion: prefix dis (apart; negation), root rupt (Break; rupture), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "rupture",
+      "zhHash": "67b5a0c7252ef18d00d1dabad74421c27d16ec5fcddba79cd8bb57339fcd4383",
+      "en": "A memory breakdown of rupture (Rupture; a break in relations) is rupt + ure: root rupt (Break; rupture), suffix ure (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "erupt",
+      "zhHash": "66957c075e25953b052a911409be7e66062e798067ad3033db0a87fd3db51cf7",
+      "en": "A memory breakdown of erupt (To erupt; to break out) is e + rupt: prefix e (outward), root rupt (Break; rupture). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "eruption",
+      "zhHash": "dd8e8059552a9679f566b34bdefdd4adf2e66396d74b8b637f0e82e68e5d9d39",
+      "en": "A memory breakdown of eruption (To erupt; to break out) is e + rupt + ion: prefix e (outward), root rupt (Break; rupture), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "corrupt",
+      "zhHash": "2a89598fac94489a7147c0d1ae72f13f8690a9efccfc984ad31d1858754a0f29",
+      "en": "A memory breakdown of corrupt (Corrupt; to corrupt) is cor + rupt: prefix cor (together), root rupt (Break; rupture). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "corruption",
+      "zhHash": "65302b3fa1431df6b4721c315dc6853561dea09439f5b43c7f9f79a1dfa1b44a",
+      "en": "A memory breakdown of corruption (Corruption; moral decline) is cor + rupt + ion: prefix cor (together), root rupt (Break; rupture), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "bankrupt",
+      "zhHash": "24a2670472e7890f8f865ae171ebd3da17b3d7983390215b70ae8cbaa1b7685b",
+      "en": "A memory breakdown of bankrupt (Bankrupt) is bank + rupt: component bank (a spelling or stem variant in word formation), root rupt (Break; rupture). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "produce",
+      "zhHash": "74f1565b5aa49de10478bd0a30fe20bc0d79ded5839c6e314fc87a22e540b887",
+      "en": "A memory breakdown of produce (To produce; to generate; farm produce) is pro + duce: prefix pro (Forward), root duce (Guide; lead). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "product",
+      "zhHash": "38b9cbe44e160573236ed5de9cf3b028df5a8f09c90d351f4e681cb4a2fcdfe9",
+      "en": "A memory breakdown of product (Product; result) is pro + duct: prefix pro (Forward), root duct (Guide; lead). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "production",
+      "zhHash": "6a4a2e31fd949651053474d2df98dac8b74b4fbf80a1217e39e18ad206d5d63e",
+      "en": "A memory breakdown of production (Production; making) is pro + duct + ion: prefix pro (Forward), root duct (Guide; lead), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "productive",
+      "zhHash": "984b42a982fe9b6d05e329e536d4a0af60c9c7a4071856d2c51ad86418c366e6",
+      "en": "A memory breakdown of productive (Productive; prolific) is pro + duct + ive: prefix pro (Forward), root duct (Guide; lead), suffix ive (having the quality or tendency of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reduce",
+      "zhHash": "29858b410be8a76e67d6255ce58d5192999ed4532e00ceb585308dc9b1e094d8",
+      "en": "A memory breakdown of reduce (To reduce; to lower) is re + duce: prefix re (back; again), root duce (Guide; lead). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reduction",
+      "zhHash": "23b633e6241ee64a2cc32ce7da8506cba92bc81c18bd367f3e97994b237f288a",
+      "en": "A memory breakdown of reduction (Reduction; a cut) is re + duct + ion: prefix re (back; again), root duct (Guide; lead), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "introduce",
+      "zhHash": "680c1dd861d4b54fe0ad071390c519aa381da52e92981918cec4bb909c95a197",
+      "en": "A memory breakdown of introduce (introduction;inclusion) is intro + duce: prefix intro (inward), root duce (Guide; lead). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "introduction",
+      "zhHash": "8155b17b8723dd371d64a020a7225e2ab4d56fa50fa623bc38d73e7ecb1c3f56",
+      "en": "A memory breakdown of introduction (Introduction; Introduction) is intro + duct + ion: prefix intro (inward), root duct (Guide; lead), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "conduct",
+      "zhHash": "c146f1bd721f2e6252f9f4af2ec72891d15503a2ce9bd1c958cbf2d22c8e05d4",
+      "en": "A memory breakdown of conduct (To conduct; conduct; to direct) is con + duct: prefix con (together), root duct (Guide; lead). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "conductor",
+      "zhHash": "8c6d640e9bd3e2470edac43bba9560874341360fdcd5fd11d3e2604615880b72",
+      "en": "A memory breakdown of conductor (Conductor; a material that conducts) is con + duct + or: prefix con (together), root duct (Guide; lead), suffix or (a person or thing). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "deduce",
+      "zhHash": "00ce25a2301db5de4fd731733c29b4e17b12560a177aa4267463bedbd9443e4d",
+      "en": "A memory breakdown of deduce (To deduce; to infer) is de + duce: prefix de (down; away), root duce (Guide; lead). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "deduction",
+      "zhHash": "43fdfa8f4643f7801385a12db85ea2f8c1ffe8c71b520dc113afe43a61e489f9",
+      "en": "A memory breakdown of deduction (Deduction; an inference or subtraction) is de + duct + ion: prefix de (down; away), root duct (Guide; lead), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "audio",
+      "zhHash": "dc4c8d1f86528e8ce83f2ce2580212f83b6726cdd38ec3ae1cfe7d03aed7df16",
+      "en": "A memory breakdown of audio (Audio; relating to sound) is audi + o: root audi (Hear; sound), component o (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "audible",
+      "zhHash": "8164d814a82b95b4f04b800197bae30f5bfeceacba1ba2fc711aa169b2e5e49f",
+      "en": "A memory breakdown of audible (Audible) is aud + ible: root aud (Hear; sound), component ible (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "inaudible",
+      "zhHash": "ab3dd77f0b8b19eccaa0e5326c924770ed63b7c154b01ae394f3bdaaac91469e",
+      "en": "A memory breakdown of inaudible (Inaudible) is in + aud + ible: prefix in (inward, or negation, depending on the word), root aud (Hear; sound), component ible (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "audience",
+      "zhHash": "a6bbefaf04e20cd08d44d892f502829a8d0ca71d6e84d7c0faa8276b682b5555",
+      "en": "A memory breakdown of audience (Audience; listeners) is aud + ience: root aud (Hear; sound), component ience (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "audition",
+      "zhHash": "1d62c2addfee29da4a22de7286361f5caec60aa3b577778c303ee3d9f4dd945b",
+      "en": "A memory breakdown of audition (Audition; a trial performance) is aud + it + ion: root aud (Hear; sound), component it (a spelling or stem variant in word formation), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "auditory",
+      "zhHash": "133f19d850ddfe034cbba2c6ed5eff49d6bdd1b1cc7637589bf391e5d3994a20",
+      "en": "A memory breakdown of auditory (Auditory) is aud + it + ory: root aud (Hear; sound), component it (a spelling or stem variant in word formation), component ory (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "auditorium",
+      "zhHash": "4493747992111d2372d7c87e422490b080dface4f2dc0b5c3ffb6c5d2f2e3811",
+      "en": "A memory breakdown of auditorium (Auditorium; audience seating) is aud + it + orium: root aud (Hear; sound), component it (a spelling or stem variant in word formation), component orium (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "vocal",
+      "zhHash": "fe9ef4f71933ba1e8f8d12b47c2d0a4a10b6d615e6d4f7f53bc0c046bd0bee2d",
+      "en": "A memory breakdown of vocal (Vocal; outspoken) is voc + al: root voc (Call; speak), suffix al (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "vocabulary",
+      "zhHash": "d093ebcf89dcab4d96661868a4f25f9a5c5f2f6cb4cf6a837e3f880a73d9e988",
+      "en": "A memory breakdown of vocabulary (Vocabulary; a person's stock of words) is vocabul + ary: component vocabul (a spelling or stem variant in word formation), suffix ary (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "vocation",
+      "zhHash": "7f4314eb076657475cb5986f8c7654f50a9a66eaf3ba8c626d8ec45438c27267",
+      "en": "A memory breakdown of vocation (Vocation; a calling) is voc + ation: root voc (Call; speak), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "advocate",
+      "zhHash": "2ef5b116e49ce64c424bcb3ca677c123db3656d29b4cc40b8d100d8ac87a1637",
+      "en": "A memory breakdown of advocate (To advocate; an advocate) is ad + voc + ate: prefix ad (toward), root voc (Call; speak), suffix ate (to make or cause to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "invoke",
+      "zhHash": "af787f2113da547d7a6b7d0b7a9b8e423d319fda60b8b05be41a301f210f6d21",
+      "en": "A memory breakdown of invoke (To invoke; to cite; to call upon) is in + vok + e: prefix in (inward, or negation, depending on the word), root vok (Call; speak), component e (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "revoke",
+      "zhHash": "5e55e3cf8ec74af23ec4bef96c64ee9fcd8cba9be808e84ae1f65cbc9b6a6614",
+      "en": "A memory breakdown of revoke (To revoke; to repeal) is re + vok + e: prefix re (back; again), root vok (Call; speak), component e (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "provoke",
+      "zhHash": "0de1cab8f15fc6f214f22fe800e85d920de8fcb24e2442517ca9eb22caba9390",
+      "en": "A memory breakdown of provoke (To provoke; to arouse) is pro + vok + e: prefix pro (Forward), root vok (Call; speak), component e (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "evocative",
+      "zhHash": "7ec99472f9c53dc4ec9b609f307ca304cb877d22681099e0fcbbd7c40a96e6b0",
+      "en": "A memory breakdown of evocative (Evocative; bringing memories to mind) is e + voc + ative: prefix e (outward), root voc (Call; speak), component ative (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "local",
+      "zhHash": "cb58242d7ef20e41b9bf1177bcc7f7bf86ecce9805e5b07037df8b19b8b82b65",
+      "en": "A memory breakdown of local (Local) is loc + al: root loc (Place; put), suffix al (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "location",
+      "zhHash": "2c6d50a5887fd7117fe8249fde9b755ebbc74d232cad851f71ff80138b5b7edf",
+      "en": "A memory breakdown of location (Location; place) is loc + ation: root loc (Place; put), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "locate",
+      "zhHash": "ecaafa8d1259388d1dbe05ea1d8a9f2e52885a443e37d7ec7f146b9b7cfd23fe",
+      "en": "A memory breakdown of locate (To locate; to be situated) is loc + ate: root loc (Place; put), suffix ate (to make or cause to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "relocate",
+      "zhHash": "2a99cb78c10d4b6fe5881d741f06aeba2f76551b0654f146274f564aeab6d846",
+      "en": "A memory breakdown of relocate (To relocate; to resettle) is re + loc + ate: prefix re (back; again), root loc (Place; put), suffix ate (to make or cause to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "relocation",
+      "zhHash": "9a7a713203ce490fe36f9a95a146cf4a518b8704f9e3bdcb96b01d5f9c1c9327",
+      "en": "A memory breakdown of relocation (Relocation; resettlement) is re + loc + ation: prefix re (back; again), root loc (Place; put), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "allocate",
+      "zhHash": "f0bcc1e7372db99240878432454fdc4f2bc8ec810ceeda9ae48a07e19960a305",
+      "en": "A memory breakdown of allocate (To allocate; to assign) is al + loc + ate: component al (a spelling or stem variant in word formation), root loc (Place; put), suffix ate (to make or cause to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "allocation",
+      "zhHash": "d38c034482297818a180d12d48ff9daedbb3f85d70301b8f49152a3d2e46236c",
+      "en": "A memory breakdown of allocation (To allocate; to assign) is al + loc + ation: component al (a spelling or stem variant in word formation), root loc (Place; put), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "dislocate",
+      "zhHash": "f3ec439f7573b890244854144d9e5db3508a5079fb01f2a3f83296996aca0844",
+      "en": "A memory breakdown of dislocate (To dislocate; to disrupt) is dis + loc + ate: prefix dis (apart; negation), root loc (Place; put), suffix ate (to make or cause to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "benefit",
+      "zhHash": "45dd1921fd695219adbc26dfdfcfba82919624ab527fcc648b8f46e07bd97c6f",
+      "en": "A memory breakdown of benefit (A benefit; to benefit) is bene + fit: root bene (Good; well), component fit (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "beneficial",
+      "zhHash": "f6eb14501e610b40bfd677b309ab4eeb5e968a3d21c631cde319ef4090c09891",
+      "en": "A memory breakdown of beneficial (Beneficial) is bene + fic + ial: root bene (Good; well), component fic (a spelling or stem variant in word formation), component ial (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "beneficiary",
+      "zhHash": "db56eac3ca4919dc83c9830904879206593ffd668733775c04f6d45fa4d08e68",
+      "en": "A memory breakdown of beneficiary (Beneficiary) is bene + fici + ary: root bene (Good; well), component fici (a spelling or stem variant in word formation), suffix ary (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "benefactor",
+      "zhHash": "c2af19e25ad78482733bff591869c9bf63e6ff6876365675db68377a7679b61b",
+      "en": "A memory breakdown of benefactor (Benefactor; donor) is bene + fact + or: root bene (Good; well), component fact (a spelling or stem variant in word formation), suffix or (a person or thing). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "benevolent",
+      "zhHash": "9d80abb47d09be6f0874222b2084f1ad57b4f3a329d7f067ddda587c4f731bbd",
+      "en": "A memory breakdown of benevolent (Benevolent; charitable) is bene + vol + ent: root bene (Good; well), component vol (a spelling or stem variant in word formation), suffix ent (a noun or adjective ending). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "benevolence",
+      "zhHash": "da8e833e68b0d1f466c8ca3e0f52e68d62f989c752d96ade085287da36803d1e",
+      "en": "A memory breakdown of benevolence (Benevolence; goodwill) is bene + vol + ence: root bene (Good; well), component vol (a spelling or stem variant in word formation), suffix ence (a quality or state). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "benediction",
+      "zhHash": "1f87928b9830e3f77935100a7e1abf48a6cfd796f5d8ae96fc0bd2cc4c76c86a",
+      "en": "A memory breakdown of benediction (Benediction; blessing) is bene + dict + ion: root bene (Good; well), component dict (a spelling or stem variant in word formation), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telephone",
+      "zhHash": "6c53746aef2a9c4c3eb6e3bd3e5c320820928ec2434edff8cbb0e07f7f601148",
+      "en": "A memory breakdown of telephone (Telephone) is tele + phone: prefix tele (far; at a distance), root phone (Sound; speech sound). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "television",
+      "zhHash": "d718261f7ab565acbe3b51a7a1b9a6e21da3b809feba76b791fa956384009792",
+      "en": "A memory breakdown of television (Television; television programmes) is tele + vis + ion: root tele (Long distance), component vis (a spelling or stem variant in word formation), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telegraph",
+      "zhHash": "c6876f62c8a656a8bc0fe99fef6ca6fb27315e9223b291227ee068fb706dc544",
+      "en": "A memory breakdown of telegraph (A telegraph message; a telegraph machine) is tele + graph: prefix tele (far; at a distance), root graph (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telecommunications",
+      "zhHash": "ab99ca2d250ff18ab7200ef016c6c00ba45a062178f6a6fdd66343a7c44158fc",
+      "en": "A memory breakdown of telecommunications (Telecommunications) is tele + communic + ations: root tele (Long distance), component communic (a spelling or stem variant in word formation), component ations (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telecommute",
+      "zhHash": "0ca2b77a24d22ede00677d4daa1d1dfaa3b2fedecb2d62b5f752c25f40e45818",
+      "en": "A memory breakdown of telecommute (Telecommuting; working remotely) is tele + com + mute: root tele (Long distance), component com (a spelling or stem variant in word formation), component mute (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telescope",
+      "zhHash": "8015d32ceec90fd6ff9d1eb171366f59e86c0f3c20724d722bd8f873f8a029f2",
+      "en": "A memory breakdown of telescope (Telescope) is tele + scope: root tele (Long distance), component scope (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telemetry",
+      "zhHash": "f89f8aaffbb7ad882338aafcad289cda3fa7b6de62f691aeb2be7043778b81c4",
+      "en": "A memory breakdown of telemetry (Telemetry) is tele + metry: root tele (Long distance), component metry (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "telepathy",
+      "zhHash": "551ebfa33b7726bb2b5cfe84d9071cbb83068f23a87f90684988ef858dd3443b",
+      "en": "A memory breakdown of telepathy (Telepathy) is tele + pathy: root tele (Long distance), component pathy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geography",
+      "zhHash": "260d545c51049dd14cb8210cd85416ed96fe5dc11fe568c10eff6b1cb50426d3",
+      "en": "A memory breakdown of geography (Geography) is geo + graphy: prefix geo (earth), root graphy (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geology",
+      "zhHash": "3bb3e868f7122471fdbd02b33d4578d46365d5841400d6a014ef6c199741238b",
+      "en": "A memory breakdown of geology (Geology) is geo + logy: root geo (Earth; land), component logy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geological",
+      "zhHash": "a0caea4f740bb685fd599d9937cbe7657fe13ab4b4b1d37b5f9e59cfc9153d53",
+      "en": "A memory breakdown of geological (Geological) is geo + log + ical: root geo (Earth; land), component log (a spelling or stem variant in word formation), suffix ical (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geometry",
+      "zhHash": "bdb80caa1471edfe5c9c1b9c5d1bf110f6eeff33a52c03181270df695bcc5d59",
+      "en": "A memory breakdown of geometry (Geometry) is geo + metry: root geo (Earth; land), component metry (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geometric",
+      "zhHash": "6c62605550a946cc9a146d4fd513db1f1fecdd2f9c44abba8a5640b3697f3112",
+      "en": "A memory breakdown of geometric (Geometrical) is geo + metr + ic: root geo (Earth; land), component metr (a spelling or stem variant in word formation), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geothermal",
+      "zhHash": "88c6e475846785b91e174c514e8cf370b4f39a6402752b243ce99a264cfe6984",
+      "en": "A memory breakdown of geothermal (Geothermal) is geo + therm + al: root geo (Earth; land), component therm (a spelling or stem variant in word formation), suffix al (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geopolitics",
+      "zhHash": "9948bf5193b94e4b454f59f55cca0e24d3c2f3647bcc9492d4ab41b22e19f0e4",
+      "en": "A memory breakdown of geopolitics (Geopolitics) is geo + politics: root geo (Earth; land), component politics (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geoscience",
+      "zhHash": "c7430755614fa43897756391c82d3c874eab9615ae54ee5f6478d601d3d3ffe5",
+      "en": "A memory breakdown of geoscience (Earth sciences) is geo + science: root geo (Earth; land), component science (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "thermal",
+      "zhHash": "dfc2acfa878da2091ef6566d61ee8cbd423d1e231b9561fa66508fd1006ed124",
+      "en": "A memory breakdown of thermal (Thermal; heat-retaining) is therm + al: root therm (Heat; temperature), suffix al (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "thermometer",
+      "zhHash": "bf6047f24013308e80c9c3cbd64c9664fe65e77a7f25d6aa439496ebc868143e",
+      "en": "A memory breakdown of thermometer (Thermometer) is thermo + meter: root thermo (Heat; temperature), component meter (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "thermostat",
+      "zhHash": "38b6b34f3ceaa0b89542b4814fdd8ada6fa47f16b33b56c96ead8b0487ddfed2",
+      "en": "A memory breakdown of thermostat (Thermostat) is thermo + stat: root thermo (Heat; temperature), component stat (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "geothermal",
+      "zhHash": "331d2d0fbb80c3b434e3d99d051ab32fb679089b8dfa94ad5369aab8f60022b7",
+      "en": "A memory breakdown of geothermal (Geothermal) is geo + therm + al: root geo (Earth; land), component therm (a spelling or stem variant in word formation), suffix al (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "thermodynamics",
+      "zhHash": "ab8909adabaee1df41b17b789cd0f65b2f426d33b22b51bd4c4ff05d7eb9d9ec",
+      "en": "A memory breakdown of thermodynamics (Thermodynamics) is thermo + dynamics: root thermo (Heat; temperature), component dynamics (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "hypothermia",
+      "zhHash": "5926a073a601e398c49fe230723c3bf8358a6b21349332352db3c3e6ec151c07",
+      "en": "A memory breakdown of hypothermia (Hypothermia; abnormally low body temperature) is hypo + therm + ia: prefix hypo (under; below normal), root therm (Heat; temperature), component ia (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "flexible",
+      "zhHash": "356455224c408f1c0caa491a1937730af78a0de30e9ae4073e43bd737e0aac12",
+      "en": "A memory breakdown of flexible (Flexible; easily bent) is flex + ible: root flex (Bend; fold), component ible (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "flexibility",
+      "zhHash": "204f8bcec1b9119a73aa0a821ba0add4f7ca1a920bfd76ab0b9116287142ffeb",
+      "en": "A memory breakdown of flexibility (Flexibility) is flex + ibil + ity: root flex (Bend; fold), component ibil (a spelling or stem variant in word formation), suffix ity (a quality or state). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "inflexible",
+      "zhHash": "c4c1ac9da212b693fde2bd02cc9ccc6de4f52c4e931f7237de40cc1ec4098653",
+      "en": "A memory breakdown of inflexible (Inflexible) is in + flex + ible: prefix in (inward, or negation, depending on the word), root flex (Bend; fold), component ible (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reflex",
+      "zhHash": "244660bad4de99ea6b7da2a92905dbbecc5973e1fb28dded0bda3803c76cace7",
+      "en": "A memory breakdown of reflex (Reflex; an automatic response) is re + flex: prefix re (back; again), root flex (Bend; fold). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reflect",
+      "zhHash": "63e432b93802301254eb422645e743b73a7f1276e6333c13965b610dddcebe25",
+      "en": "A memory breakdown of reflect (To reflect; to show; to think deeply) is re + flect: prefix re (back; again), root flect (Bend; fold). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "reflection",
+      "zhHash": "f69957d5350ab6ce8ca817346cfdc7b5c4d429c71bccf606c3b912ea8e20458b",
+      "en": "A memory breakdown of reflection (Reflection; thoughtful consideration) is re + flect + ion: prefix re (back; again), root flect (Bend; fold), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "deflect",
+      "zhHash": "e8031ed8af9a24f78fb51016bf6a1beb3e2a1087fcfd7a31de4363d40f4b4a9a",
+      "en": "A memory breakdown of deflect (To deflect; to divert) is de + flect: prefix de (down; away), root flect (Bend; fold). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "deflection",
+      "zhHash": "a50f50d747e7ff94326aee20195e43fb242437e50365323d6baf44eb906146b3",
+      "en": "A memory breakdown of deflection (Deflection; diversion) is de + flect + ion: prefix de (down; away), root flect (Bend; fold), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "inflection",
+      "zhHash": "ff4b7b9c3c7aa12f5dd0727cbbf107b9d2bf1a6e2ff408b60fa5727002064e3f",
+      "en": "A memory breakdown of inflection (Inflection; a change of word form or voice pitch) is in + flect + ion: prefix in (inward, or negation, depending on the word), root flect (Bend; fold), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "manual",
+      "zhHash": "3ee3a65253fb77868695b9aa53a284c3d75d951039e42c8a5974e2b251e10df9",
+      "en": "A memory breakdown of manual (Manual; a handbook) is manu + al: root manu (Hand), suffix al (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "manufacture",
+      "zhHash": "5b2f33420bfa420f06a4f61bd1f246a8442a9dbf0cf16878cd72aa7d3e238911",
+      "en": "A memory breakdown of manufacture (To manufacture; manufacturing) is manu + fact + ure: root manu (Hand), component fact (a spelling or stem variant in word formation), suffix ure (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "manufacturer",
+      "zhHash": "665fa58f21972c61eae41e655a4f272077e9bdb0e34e3fcd007a01fc1f9a2f12",
+      "en": "A memory breakdown of manufacturer (Manufacturer) is manu + fact + ur + er: root manu (Hand), component fact (a spelling or stem variant in word formation), component ur (a spelling or stem variant in word formation), suffix er (a person or tool). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "manuscript",
+      "zhHash": "35ab91a04a4197a189258b2f100fb1d620b6d487a57f0b9d9280d96124c19ac3",
+      "en": "A memory breakdown of manuscript (manuscripts; originals) is manu + script: component manu (a spelling or stem variant in word formation), root script (Write; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "manipulate",
+      "zhHash": "ee7e88de63326df59525e8a2c135cd8add82300b6825cdd0f63d6d836e6fd6be",
+      "en": "A memory breakdown of manipulate (To manipulate; to operate skilfully) is mani + pul + ate: component mani (a spelling or stem variant in word formation), component pul (a spelling or stem variant in word formation), suffix ate (to make or cause to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "manicure",
+      "zhHash": "067704049975fd38a6f2bd0ecb347775f549841d37e79020f50c1af2cfc51b27",
+      "en": "A memory breakdown of manicure (A manicure; nail care) is mani + cure: component mani (a spelling or stem variant in word formation), component cure (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "aquarium",
+      "zhHash": "9d2386882a258d3facbf060607661e31e03f8f55a84f87ad61417d3ef26c0b1c",
+      "en": "A memory breakdown of aquarium (Aquarium) is aqua + rium: root aqua (Water), component rium (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "aquatic",
+      "zhHash": "15999d996e61deeb501ce9c545fe6c914c2c8f7dc1cb869767ebfcfd31544736",
+      "en": "A memory breakdown of aquatic (Aquatic) is aqua + tic: root aqua (Water), component tic (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "aquaculture",
+      "zhHash": "22fcc17638a7b5f0a18d90acedcde68cff2e30a6cd2e3e88d5bdf2be2242969d",
+      "en": "A memory breakdown of aquaculture (Aquaculture) is aqua + culture: root aqua (Water), component culture (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "aqueduct",
+      "zhHash": "51ef969b5da3cdd8d07623b4d56aa9c07fc21cb3fbbedaa6f191c3511ea55c6b",
+      "en": "A memory breakdown of aqueduct (Aqueduct; a channel carrying water) is aqua + duct: root aqua (Water), component duct (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "aquifer",
+      "zhHash": "aa7f726b99fdd9e4c094596d1fe16ed9dd15cbb05cbc59469e66e75df8bf001d",
+      "en": "A memory breakdown of aquifer (Aquifer) is aqu + ifer: root aqu (Water), component ifer (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "aquamarine",
+      "zhHash": "a8482ce798a6abe8872b2a228fd40c04fd113a1f7c5d32b665858977f97d6290",
+      "en": "A memory breakdown of aquamarine (Aquamarine; the colour or gemstone) is aqua + marine: root aqua (Water), component marine (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "aqueous",
+      "zhHash": "abadd6a130f0d6b1b2138f301e06f2e080846e73f8e9d52c3e1530b4d58a5583",
+      "en": "A memory breakdown of aqueous (Aqueous; containing water) is aqu + eous: root aqu (Water), component eous (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "subaquatic",
+      "zhHash": "e040332cfb83903cec1d071c198b22bc88bfbee9949e36f2eaf4eba632f14822",
+      "en": "A memory breakdown of subaquatic (Underwater) is sub + aqua + tic: prefix sub (Under; below), root aqua (Water), component tic (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photograph",
+      "zhHash": "1c3505ec81b2afe1456c2ada0c714753ec2c3ee13ceaae6061e3dd8732456a9c",
+      "en": "A memory breakdown of photograph (A photograph; to photograph) is photo + graph: component photo (a spelling or stem variant in word formation), root graph (Write; draw; record). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photographer",
+      "zhHash": "d6f6c8abbba2bb361f6633c9c139a23b3059056d949a4fdcbd74b3fc2c4e8ea6",
+      "en": "A memory breakdown of photographer (Photographer) is photo + graph + er: root photo (Light), component graph (a spelling or stem variant in word formation), suffix er (a person or tool). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photographic",
+      "zhHash": "4904699a8e166162d3f1fab9c8eef201748eee834041e087253a31ac92ae00e8",
+      "en": "A memory breakdown of photographic (Photographic) is photo + graph + ic: root photo (Light), component graph (a spelling or stem variant in word formation), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photocopy",
+      "zhHash": "a0456cfe7b531edad479a054c323f87e572f56f09f1653664c261e731b2b6b26",
+      "en": "A memory breakdown of photocopy (A photocopy; to photocopy) is photo + copy: root photo (Light), component copy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photosynthesis",
+      "zhHash": "8b2bf141994aded1df66efe9f8ef8e6713ec42937da2471a56a6e4db4c34f389",
+      "en": "A memory breakdown of photosynthesis (Photosynthesis) is photo + synthesis: root photo (Light), component synthesis (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photogenic",
+      "zhHash": "66a0173ccccebad4a92a9fd0cbaeddab045831ff5745756d0df01938a7888e78",
+      "en": "A memory breakdown of photogenic (Photogenic) is photo + genic: root photo (Light), component genic (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photon",
+      "zhHash": "623fd3ec8b494b698d39c2138d018c146155e6626524426ca0da627543785d2f",
+      "en": "A memory breakdown of photon (Photon) is phot + on: root phot (Light), component on (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "photoreceptor",
+      "zhHash": "fcd7a1aae2bae3f6a202086c07af95d7fcc44671d06b8fafdd2e00baea8836fc",
+      "en": "A memory breakdown of photoreceptor (Photoreceptor) is photo + receptor: root photo (Light), component receptor (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microscope",
+      "zhHash": "69dd5129e7fa4a73e5f9a331ce99f9f360eb729a849b2a8d780e4bc17557df27",
+      "en": "A memory breakdown of microscope (Microscope) is micro + scope: root micro (Tiny; very small), component scope (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microscopic",
+      "zhHash": "54777b883cbf72e5d2d9864df0fc23744293ce90f9ce9f29862faac0e6125a86",
+      "en": "A memory breakdown of microscopic (Microscopic; extremely small) is micro + scop + ic: root micro (Tiny; very small), component scop (a spelling or stem variant in word formation), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microorganism",
+      "zhHash": "dbef1fd49c7611e4538cfba47a56c17b680e89ed153c0f7f0d774d16992cb354",
+      "en": "A memory breakdown of microorganism (Microorganisms) is micro + organism: root micro (Tiny; very small), component organism (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microplastic",
+      "zhHash": "7db1d6d3dda9fa5a7575fabfad690b79c00e3243ecfcba6fd6117aa4a57c5062",
+      "en": "A memory breakdown of microplastic (Microplastic) is micro + plastic: root micro (Tiny; very small), component plastic (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microwave",
+      "zhHash": "30c195ae3271352406b0e263d81f51d003aeb1c152976a8bdf28a33ae751d479",
+      "en": "A memory breakdown of microwave (Microwaves; a microwave oven) is micro + wave: root micro (Tiny; very small), component wave (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microchip",
+      "zhHash": "03d93fe9eeef5ca0602656cbd9f53fbbc9b4fbf00694c11dd5f32681791db3d8",
+      "en": "A memory breakdown of microchip (Microchips) is micro + chip: root micro (Tiny; very small), component chip (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microeconomics",
+      "zhHash": "e8db0ff32fa3d00e067908341bd4c26ec4a8afa3c03b76ab10da2e658dcad2fc",
+      "en": "A memory breakdown of microeconomics (Microeconomics) is micro + economics: root micro (Tiny; very small), component economics (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "microcosm",
+      "zhHash": "ef6f93ea946ef7c16c4f9bab206436170ed1057a803c7fbeb5ca6eeda4533941",
+      "en": "A memory breakdown of microcosm (Microcosm; a small representative world) is micro + cosm: root micro (Tiny; very small), component cosm (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "multiple",
+      "zhHash": "cf2b79e5770a9e37ce61c074433f88a2a76b986f67b68b8668d0284158ae817e",
+      "en": "A memory breakdown of multiple (Multiple; manifold) is multi + ple: root multi (Multiple; many), component ple (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "multiply",
+      "zhHash": "364af710c31e8cfad94c2fe4146c1ba9d2bf7c6a815780080d1e11162cee1c84",
+      "en": "A memory breakdown of multiply (To multiply; to increase) is multi + ply: root multi (Multiple; many), component ply (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "multiplication",
+      "zhHash": "41af4267595d649845a2997ae481ee99f83c5018fa8867768a6ff157fcca880d",
+      "en": "A memory breakdown of multiplication (Multiplication; increase) is multi + plic + ation: root multi (Multiple; many), component plic (a spelling or stem variant in word formation), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "multifaceted",
+      "zhHash": "e55a908765d06cc072bf13f5794bb24c45e267f9c0723002f7e8f34bf740d178",
+      "en": "A memory breakdown of multifaceted (Multifaceted) is multi + faceted: root multi (Multiple; many), component faceted (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "multicultural",
+      "zhHash": "c27be3bba97a0978820fdd836bb37f9e5a3910f3e9e1dc9446d72458abb07309",
+      "en": "A memory breakdown of multicultural (Multicultural) is multi + cultural: root multi (Multiple; many), component cultural (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "multilingual",
+      "zhHash": "3f99defacbd187239c4449577e1e0156da4c35eb5be219171ed3c7f8a6063c86",
+      "en": "A memory breakdown of multilingual (Multilingual) is multi + lingual: root multi (Multiple; many), component lingual (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "multinational",
+      "zhHash": "d551276396090a005e11e469cdd190ad1388217d944d1bf665f9989089f8242c",
+      "en": "A memory breakdown of multinational (Multinational; a multinational company) is multi + national: root multi (Multiple; many), component national (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "multimedia",
+      "zhHash": "62030b50f61618d949fa724732a3c8098eaaa727b8a040fdc0ae1d1c84f68a49",
+      "en": "A memory breakdown of multimedia (Multimedia) is multi + media: root multi (Multiple; many), component media (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "psychology",
+      "zhHash": "dece831b75cc170a556a3e53b9bff4df6b0562609820d708a1bdcf433094f445",
+      "en": "A memory breakdown of psychology (Psychology) is psych + ology: root psych (Mind; spirit), suffix ology (the study of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "psychologist",
+      "zhHash": "396be62f8cd450d6ed248b765f5ab0507755762315ab12f355bcc07363a4bae0",
+      "en": "A memory breakdown of psychologist (Psychologist) is psych + olog + ist: root psych (Mind; spirit), component olog (a spelling or stem variant in word formation), suffix ist (a person engaged in). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "psychological",
+      "zhHash": "bd0137eb4bb8c2fa368b1ec33767a2cd2634732183fa1278cf43203de923c37d",
+      "en": "A memory breakdown of psychological (Psychological) is psych + olog + ical: root psych (Mind; spirit), component olog (a spelling or stem variant in word formation), suffix ical (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "psychic",
+      "zhHash": "98211e893fbdb90e2d1e5e14e59ba5127e11f9d09bd8c356e3726e4a838b40a1",
+      "en": "A memory breakdown of psychic (Psychic; relating to the mind or claimed extrasensory powers) is psych + ic: root psych (Mind; spirit), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "psychiatry",
+      "zhHash": "cc9475a50cac342a8627da7bf254cb5540ac4c2f15913db9d2745a40f4c0e317",
+      "en": "A memory breakdown of psychiatry (Psychiatry) is psych + iatry: root psych (Mind; spirit), component iatry (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "psychiatrist",
+      "zhHash": "ca13a494d40b18a2c562084a8c98df38716048e16e4de0167f4f3599797b9ab2",
+      "en": "A memory breakdown of psychiatrist (Psychiatrist) is psych + iatr + ist: root psych (Mind; spirit), component iatr (a spelling or stem variant in word formation), suffix ist (a person engaged in). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "psychotherapy",
+      "zhHash": "1d82ad0bcce7aeac19ea4048b562f919f403164a80b1c55c46a642b2e785559c",
+      "en": "A memory breakdown of psychotherapy (Psychotherapy) is psycho + therapy: root psycho (Mind; spirit), component therapy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "psychosomatic",
+      "zhHash": "5c551f79920a1a9df07dd2d542b9c8d1d1e729c21a70c22008a4a092b0be8fef",
+      "en": "A memory breakdown of psychosomatic (Psychosomatic; involving mind and body) is psycho + somatic: root psycho (Mind; spirit), component somatic (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "cycle",
+      "zhHash": "d1baff2e3a68fb3d1f25c9693161769d64363ff9c97ebad121ef0d24b19b8d17",
+      "en": "A memory breakdown of cycle (A cycle; to cycle) is cycl + e: root cycl (Circle; cycle), component e (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "bicycle",
+      "zhHash": "87383473d54d7dbfc9b32555e1d821c94e5d449bf9eceb118ff90ea2f86c36ce",
+      "en": "A memory breakdown of bicycle (Bicycle) is bi + cycle: prefix bi (two; double), root cycle (Circle; cycle). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "motorcycle",
+      "zhHash": "b3011fa0563259ca7b0cbadce683b42c7c2a5476e53aa27f4d45bc171f263a05",
+      "en": "A memory breakdown of motorcycle (Motorcycle) is motor + cycle: component motor (a spelling or stem variant in word formation), root cycle (Circle; cycle). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "cyclist",
+      "zhHash": "f3e57a5e06ac11bf69a2401b53aa78b80d0cd2ee0ef5f2e06c6413eccccdddd8",
+      "en": "A memory breakdown of cyclist (Cyclist) is cycl + ist: root cycl (Circle; cycle), suffix ist (a person engaged in). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "recycle",
+      "zhHash": "07a20a05e260e7da57aa88899bc18acd72b968b63d5eccaf5e1f81a2442d3d97",
+      "en": "A memory breakdown of recycle (To recycle) is re + cycle: prefix re (back; again), root cycle (Circle; cycle). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "recycling",
+      "zhHash": "bba4ca884440b71c49690f36c75da4d51c9a5fb51a44c2fafe776e2cdf5dd425",
+      "en": "A memory breakdown of recycling (To recycle) is re + cycl + ing: prefix re (back; again), root cycl (Circle; cycle), suffix ing (an -ing verb or noun form). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "recyclable",
+      "zhHash": "d87fee95fcd997aaf3aec48f69ae3b108b7abd96a8e32ddf59cf3181a2fa199c",
+      "en": "A memory breakdown of recyclable (Recyclable) is re + cycl + able: prefix re (back; again), root cycl (Circle; cycle), suffix able (capable of; able to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "cyclic",
+      "zhHash": "6f5e89f85b28b89a053e7fe97dea4256bf01aef4ea29817f53683602cd592e40",
+      "en": "A memory breakdown of cyclic (Cyclic; periodic) is cycl + ic: root cycl (Circle; cycle), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "automatic",
+      "zhHash": "97a83601e0fdcdf01342ff3feb0cf5f52fee430e04759cc475ef728bc4e4b82f",
+      "en": "A memory breakdown of automatic (Automatic) is auto + matic: root auto (Self; automatic), component matic (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "automate",
+      "zhHash": "53da4c6787ef27f2b3d7c8c77838688ac1bc842ad2654d8a76e6165ba7d67705",
+      "en": "A memory breakdown of automate (To automate) is auto + mate: root auto (Self; automatic), component mate (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "automation",
+      "zhHash": "97a1fbc4358f383bd23c7da9f486b2c586dfa16acca5084b460a936b7c9d835e",
+      "en": "A memory breakdown of automation (Automation) is auto + mat + ion: root auto (Self; automatic), component mat (a spelling or stem variant in word formation), suffix ion (an action, state, or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "autofocus",
+      "zhHash": "c620a2f62da7597fbfd16220d9f59a277d496de3beb9c28a649ebc5054653c4f",
+      "en": "A memory breakdown of autofocus (Auto Focus) is auto + focus: root auto (Self; automatic), component focus (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "autonomous",
+      "zhHash": "7b8b194223a803ffde100eda28cc492d73675f63f0d65faec0d08ec8c65c1b42",
+      "en": "A memory breakdown of autonomous (Autonomous; self-governing) is auto + nom + ous: root auto (Self; automatic), component nom (a spelling or stem variant in word formation), suffix ous (full of; having the quality of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "automobile",
+      "zhHash": "64dda5ff0d0350c9203c02b5216bf39bf48f75f2d677ba75e6126e3b3958f9c0",
+      "en": "A memory breakdown of automobile (Car) is auto + mobile: root auto (Self; automatic), component mobile (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "autonomy",
+      "zhHash": "69b8f5369856abf4e1cf88adfeabc3b94a4c9bff1535da3cc6cb28ab45c3963b",
+      "en": "A memory breakdown of autonomy (Autonomy; self-government) is auto + nomy: root auto (Self; automatic), component nomy (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "autobiography",
+      "zhHash": "80269b16bff343309057213d1253a0ea3fb79b063d1a77f01ca4c7e56d7a5f79",
+      "en": "A memory breakdown of autobiography (Autobiography) is auto + bio + graphy: prefix auto (self), root bio (Life; living things), suffix graphy (a field of study or a method of recording). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "terrain",
+      "zhHash": "3cf7a0f9b6ab6371cfc91f25e633f6698870b73e0595f506fd39cac58b07995a",
+      "en": "A memory breakdown of terrain (Terrain; topography) is terr + ain: root terr (Land; Earth), component ain (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "territory",
+      "zhHash": "0a7ce1430be241de603c204f92b729a84f8bd436f2fd9ec47442929b6fceb08a",
+      "en": "A memory breakdown of territory (Territory; a field of activity) is terr + itory: root terr (Land; Earth), component itory (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "terrestrial",
+      "zhHash": "a39f57d96fcd7ca06d0c84e977c34039acee27c7d08010272cb55660cae52b6d",
+      "en": "A memory breakdown of terrestrial (Terrestrial; relating to land or Earth) is terr + estrial: root terr (Land; Earth), component estrial (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "terrarium",
+      "zhHash": "0e889aae8844a2da90b0197f484332fb8bba8dcc31eea8debc8757bb4ff3844e",
+      "en": "A memory breakdown of terrarium (Terrarium; a glass enclosure for plants or small animals) is terr + arium: root terr (Land; Earth), component arium (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "extraterrestrial",
+      "zhHash": "1b7c0f31942dec2bce5f0173a309a09fbc1df01e7b33b4217078e423e9b324c1",
+      "en": "A memory breakdown of extraterrestrial (Extraterrestrial; beyond Earth) is extra + terr + estrial: prefix extra (beyond), root terr (Land; Earth), component estrial (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "subterranean",
+      "zhHash": "dc29ef186b25e2bcc7922cf0329737cb446b50f41a22af2329fd58dfdafa9475",
+      "en": "A memory breakdown of subterranean (Underground) is sub + terr + anean: prefix sub (Under; below), root terr (Land; Earth), component anean (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "terraforming",
+      "zhHash": "8e0ad99f5b104c605e591ca32b480eb06656c261e652fd1d67844b337652cb85",
+      "en": "A memory breakdown of terraforming (Terraforming) is terra + form + ing: root terra (Land; Earth), component form (a spelling or stem variant in word formation), suffix ing (an -ing verb or noun form). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "Mediterranean",
+      "zhHash": "e20a3288065c300a66d4f7a9b0eed4d94c4afad1b62bd66bcbb07227d85a01ba",
+      "en": "A memory breakdown of Mediterranean (Mediterranean; the Mediterranean Sea) is medi + terr + anean: component medi (a spelling or stem variant in word formation), root terr (Land; Earth), component anean (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "luminous",
+      "zhHash": "407af2b328e969c68669657f8ff9ae38f9540722671ede8d42b3f71dda87b6c3",
+      "en": "A memory breakdown of luminous (Luminous; bright) is lumin + ous: root lumin (Light; illumination), suffix ous (full of; having the quality of). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "illuminate",
+      "zhHash": "61486cd8782fb103eeafeecf7cf9a507d0cf6861fdbff9b85262c247e84e4609",
+      "en": "A memory breakdown of illuminate (To illuminate; to clarify) is il + lumin + ate: component il (a spelling or stem variant in word formation), root lumin (Light; illumination), suffix ate (to make or cause to be). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "illumination",
+      "zhHash": "2dbb1d8b113a5c9e372e2bd2cb6b21715fa05c4ddbef1c2a6ef0e8eae5e73480",
+      "en": "A memory breakdown of illumination (Illumination; explanation) is il + lumin + ation: component il (a spelling or stem variant in word formation), root lumin (Light; illumination), suffix ation (an action or result). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "luminance",
+      "zhHash": "0c634655ecb00b1746bc96aa17c8a5e87fdeea7b640f29d96726c0ce96c6d9d0",
+      "en": "A memory breakdown of luminance (Brightness) is lumin + ance: root lumin (Light; illumination), suffix ance (Noun suffix). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "luminosity",
+      "zhHash": "c9102a6ba4bdfa05691f10473f5d8a7425f7ec5d273c902b2d88b36080d0e022",
+      "en": "A memory breakdown of luminosity (Luminosity) is lumin + osity: root lumin (Light; illumination), component osity (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "luminescent",
+      "zhHash": "fab87dca2f15145526ca2e3aa5a73b643bd78db5fef4b7a950256c3d67c862b4",
+      "en": "A memory breakdown of luminescent (Luminescent) is lumin + escent: root lumin (Light; illumination), component escent (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "luminary",
+      "zhHash": "6231e79198b6489ba6e715f309286780f97221bc6ab3dfc2d3da73a2c22d144d",
+      "en": "A memory breakdown of luminary (A luminary; an eminent person or a light-giving body) is lumin + ary: root lumin (Light; illumination), suffix ary (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "bioluminescence",
+      "zhHash": "0b6bf62a72b28b1a2b58433cb6eb296ff4d059033fdc1d721183c41a4b7cb59f",
+      "en": "A memory breakdown of bioluminescence (Bioluminescence) is bio + lumin + escence: component bio (a spelling or stem variant in word formation), root lumin (Light; illumination), component escence (a spelling or stem variant in word formation). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "meter",
+      "zhHash": "d37773eefc712f1a335d30426a70d025682821df1862959e144840041382ef39",
+      "en": "A memory breakdown of meter (Metre as a unit; a measuring instrument) is : . Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "metric",
+      "zhHash": "2cd7daea8101196ed18bc369181f3ad999d434f85452b9724b79a62f5e4fa8c2",
+      "en": "A memory breakdown of metric (Metric; a measurement indicator) is metr + ic: root metr (Measure), suffix ic (relating to; having a quality). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "kilometer",
+      "zhHash": "e64d69b298255eb50624833a45266ec708fe70d3f10da200e3631836d513d5a8",
+      "en": "A memory breakdown of kilometer (Kilometres) is kilo + meter: component kilo (a spelling or stem variant in word formation), root meter (Measure). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "centimeter",
+      "zhHash": "487e269856e8af16cd777d916cbe5bc50bf951b1d472508603878ab84c438be7",
+      "en": "A memory breakdown of centimeter (centimetres) is centi + meter: component centi (a spelling or stem variant in word formation), root meter (Measure). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "diameter",
+      "zhHash": "1fcb74f9bba248f4334fe15793274b6132fd2d2e860323785f6dcce770891ddf",
+      "en": "A memory breakdown of diameter (diameter) is dia + meter: component dia (a spelling or stem variant in word formation), root meter (Measure). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "perimeter",
+      "zhHash": "4b0edd6cbbe9c99beb870b5f7a6a88a9a00d7b20af480b8c1f8b16cc104fbb80",
+      "en": "A memory breakdown of perimeter (Perimeter; boundary) is peri + meter: component peri (a spelling or stem variant in word formation), root meter (Measure). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "symmetry",
+      "zhHash": "c651f36d22c5a9fd7a129481446c8b4f6fa789bd09af308f342dd1504f6e6c5d",
+      "en": "A memory breakdown of symmetry (Symmetry) is sym + metr + y: component sym (a spelling or stem variant in word formation), root metr (Measure), suffix y (an adjective or noun ending). Use the components to understand the meaning and use of this word."
+    },
+    {
+      "word": "metrology",
+      "zhHash": "4283564aa6cfd0f6e9e066fbbbbc48e0fcca0254a7ec2afe8b69e3a7e5d6ecbf",
+      "en": "A memory breakdown of metrology (Metrology; the science of measurement) is metr + ology: root metr (Measure), suffix ology (the study of). Use the components to understand the meaning and use of this word."
+    }
+  ]
+}

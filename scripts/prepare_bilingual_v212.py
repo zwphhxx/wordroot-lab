@@ -34,9 +34,10 @@ with zipfile.ZipFile(RAW/'wordnet30.zip') as z:
    if word not in known:continue
    n=int(t[2]);ptr=int(t[3]);offsets=t[6+ptr:6+ptr+n];pos='a' if t[1]=='s' else t[1]
    order.setdefault(word,[]).extend(x+'-'+pos for x in offsets)
+adj_glosses={v['en'].strip().casefold().rstrip('.') for v in wn.values() if v['pos']=='a'}
 with (RAW/'ecdict.csv').open(encoding='utf8',newline='') as f:
  for row in csv.DictReader(f):
-  w=row['word'].lower();zh=lines(row.get('translation'));parsed,excluded=parse_english_definitions(row.get('definition'));en=[x['en'] for x in parsed]
+  w=row['word'].lower();zh=lines(row.get('translation'));parsed,excluded=parse_english_definitions(row.get('definition'),unpunctuated_adjective_glosses=adj_glosses);en=[x['en'] for x in parsed]
   if w in known and (any(x['continuationLinesJoined'] for x in parsed) or excluded):parse_records.append({'word':w,'entries':parsed,'excluded':excluded})
   if zh:srczh.setdefault(w,[strip_pos(x) for x in zh if chinese(x)])
   if w in known and (w not in raw or row['word']==w):raw[w]={'zh':zh,'en':en,'parsed':parsed,'excluded':excluded}

@@ -38,11 +38,23 @@ class Repairs(unittest.TestCase):
     self.assertEqual(p['provenanceRecovery']['method'],'replay-original-builder-source-selection')
 
  def test_native_source_text_not_overwritten(self):
+  approved=json.loads((R/'data/native-source-exclusions-v212.json').read_text())['entries']
+  allowed={(v['word'],v['sourceText']):v for v in approved};seen=[]
   for word,obj in self.words.items():
-   native=obj['nativeSourceSummary'];self.assertEqual(native['zh'],self.source[word]['nativeZh']);self.assertEqual(len(native['pairs']),len(native['zh']))
-   for original,pair in zip(native['zh'],native['pairs']):
+   native=obj['nativeSourceSummary'];self.assertEqual(native['zh'],self.source[word]['nativeZh'])
+   archived=native.get('archivedSourceErrors',[])
+   for item in archived:
+    self.assertEqual(item,allowed[(word,item['sourceText'])]);self.assertTrue(item['evidence'])
+    self.assertEqual(item['status'],'excluded_confirmed_source_error')
+    self.assertEqual(item['sourceTextHash'],hashlib.sha256(item['sourceText'].encode()).hexdigest())
+    self.assertIn(item['sourceText'],native['zh']);seen.append((word,item['sourceText']))
+   expected=[text for text in native['zh'] if not any(item['sourceText']==text for item in archived)]
+   self.assertEqual(len(native['pairs'])+len(archived),len(native['zh']))
+   self.assertEqual(len(native['pairs']),len(expected))
+   for original,pair in zip(expected,native['pairs']):
     self.assertEqual(pair['sourceText'],original);self.assertEqual(pair['sourceTextHash'],hashlib.sha256(re.sub(r'\s+',' ',original).strip().encode()).hexdigest())
     if not pair['en']:self.assertEqual(pair['reviewStatus'],'needs_review')
+  self.assertEqual(set(seen),set(allowed));self.assertEqual(len(seen),len(allowed))
  def test_previous_truncated_gloss_and_examples_restored(self):
   report=json.loads((R/'reports/source-fragment-restoration.json').read_text());self.assertEqual(report['restoredCounts']['phrase_gloss_restored'],104);self.assertEqual(report['restoredCounts']['example_restored'],3)
   for repair in report['changes']:

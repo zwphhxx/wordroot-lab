@@ -1,0 +1,733 @@
+{
+  "buildId": "v212-d99509bea02c69",
+  "status": "PASS",
+  "initialBlindAssessment": "FAILED_WITH_MATERIAL_ERRORS",
+  "independentSelection": true,
+  "repairedThenVerified": true,
+  "originalRevisedCount": 77,
+  "reviewed": 120,
+  "checks": [
+    {
+      "index": 0,
+      "word": "begin",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 1,
+      "word": "racially",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 2,
+      "word": "be",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 3,
+      "word": "affix",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 4,
+      "word": "bridle",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 5,
+      "word": "human",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 6,
+      "word": "caller",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 7,
+      "word": "dirty",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 8,
+      "word": "construct",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 9,
+      "word": "doomed",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 10,
+      "word": "charged",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 11,
+      "word": "domesticity",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 12,
+      "word": "pip",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 13,
+      "word": "sail",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 14,
+      "word": "sorry",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 15,
+      "word": "spoken",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 16,
+      "word": "superficial",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 17,
+      "word": "sturdy",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 18,
+      "word": "standby",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 19,
+      "word": "breathless",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 20,
+      "word": "decemvir",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 21,
+      "word": "wheelwright",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 22,
+      "word": "delphic",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 23,
+      "word": "univalent",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 24,
+      "word": "occupational",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 25,
+      "word": "precipitant",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 26,
+      "word": "apollo",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 27,
+      "word": "euphorbia",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 28,
+      "word": "nourishment",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 29,
+      "word": "aquamarine",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 30,
+      "word": "attrition",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 31,
+      "word": "finish",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 32,
+      "word": "wait",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 33,
+      "word": "end",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 34,
+      "word": "semipermeable",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 35,
+      "word": "sanctuary",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 36,
+      "word": "input",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 37,
+      "word": "mycotoxin",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 38,
+      "word": "listlessly",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 39,
+      "word": "helical",
+      "verified": true,
+      "originalDecision": "revised_native"
+    },
+    {
+      "index": 40,
+      "word": "courtly",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 41,
+      "word": "craft",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 42,
+      "word": "ivory",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 43,
+      "word": "honour",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 44,
+      "word": "beat",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 45,
+      "word": "collection",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 46,
+      "word": "case",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 47,
+      "word": "military",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 48,
+      "word": "adult",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 49,
+      "word": "dung",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 50,
+      "word": "anaerobe",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 51,
+      "word": "against",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 52,
+      "word": "foundation",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 53,
+      "word": "county",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 54,
+      "word": "trucking",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 55,
+      "word": "crustal",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 56,
+      "word": "arm",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 57,
+      "word": "gage",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 58,
+      "word": "air",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 59,
+      "word": "governor",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 60,
+      "word": "campion",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 61,
+      "word": "elephant",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 62,
+      "word": "pile",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 63,
+      "word": "feeling",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 64,
+      "word": "shelter",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 65,
+      "word": "watering",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 66,
+      "word": "lynch",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 67,
+      "word": "salt",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 68,
+      "word": "tear",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 69,
+      "word": "baby",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 70,
+      "word": "fixed",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 71,
+      "word": "spelling",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 72,
+      "word": "plexus",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 73,
+      "word": "shot",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 74,
+      "word": "pirate",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 75,
+      "word": "autonomic",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 76,
+      "word": "cervical",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 77,
+      "word": "lime",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 78,
+      "word": "dollar",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 79,
+      "word": "practice",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 80,
+      "word": "environ",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 81,
+      "word": "atom",
+      "verified": true,
+      "originalDecision": "source_or_generated_english_revised"
+    },
+    {
+      "index": 82,
+      "word": "acoustics",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 83,
+      "word": "flinch",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 84,
+      "word": "provision",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 85,
+      "word": "agent",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 86,
+      "word": "ngo",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 87,
+      "word": "aeolian",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 88,
+      "word": "subculture",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 89,
+      "word": "revere",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 90,
+      "word": "buccaneer",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 91,
+      "word": "altogether",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 92,
+      "word": "airfoil",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 93,
+      "word": "dramatics",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 94,
+      "word": "hostel",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 95,
+      "word": "cheapskate",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 96,
+      "word": "attack",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 97,
+      "word": "centerfold",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 98,
+      "word": "blockade",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 99,
+      "word": "lock",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 100,
+      "word": "maximilian",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 101,
+      "word": "kick",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 102,
+      "word": "elbow",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 103,
+      "word": "midwifery",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 104,
+      "word": "duce",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 105,
+      "word": "circulation",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 106,
+      "word": "recapitalize",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 107,
+      "word": "barclaycard",
+      "verified": true,
+      "originalDecision": "source_or_generated_english_revised"
+    },
+    {
+      "index": 108,
+      "word": "walk",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 109,
+      "word": "rococo",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 110,
+      "word": "anyhow",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 111,
+      "word": "psoriasis",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 112,
+      "word": "weald",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 113,
+      "word": "seng",
+      "verified": true,
+      "originalDecision": "source_or_generated_english_revised"
+    },
+    {
+      "index": 114,
+      "word": "center",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 115,
+      "word": "secretarial",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 116,
+      "word": "mechanised",
+      "verified": true,
+      "originalDecision": "reviewed_no_material_error"
+    },
+    {
+      "index": 117,
+      "word": "homestead",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 118,
+      "word": "busker",
+      "verified": true,
+      "originalDecision": "revised"
+    },
+    {
+      "index": 119,
+      "word": "growling",
+      "verified": true,
+      "originalDecision": "revised"
+    }
+  ],
+  "unresolved": [],
+  "scope": "Independent blind sample was reviewed, failed, and its identified errors repaired. This is NOT a fresh blinded error-free evaluation or a whole-corpus accuracy certification."
+}

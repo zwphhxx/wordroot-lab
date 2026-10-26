@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source": "Chinese Open Wordnet legacy OMW synset-lemma file",
+  "targetVersion": "Princeton WordNet 3.0",
+  "authorityUrl": "https://bond-lab.github.io/cow/",
+  "authorityPageSha256": "a8399f7984e57b589467b30ddb4d41137e714dab3174d6a23b9df857940d062a",
+  "cowFileSha256": "379fd2e41d3e1395f9f27cf23a39c6181849ffb4020c14a07ed2a4d4dd651122",
+  "synsetCount": 42300,
+  "lemmaRows": 79797,
+  "missingSynsets": [],
+  "interpretation": "Confirms ID-space compatibility and source identity, not translation quality. Chinese lemmas are not full definition translations.",
+  "licenseUrl": "https://raw.githubusercontent.com/omwn/omw-data/main/wns/cow/LICENSE"
+}

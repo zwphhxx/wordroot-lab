@@ -8,7 +8,7 @@ const fs=require('node:fs'),path=require('node:path');
  await c.val(`localStorage.setItem('rootlab_visual_auto_v29','off');localStorage.setItem('rootlab_standalone_demo_v3',JSON.stringify({favorites:['success'],review:{success:{step:3,due:'2031-02-03',last:'2026-10-25'}},mistakes:[]}))`);
  await c.call('Page.reload',{});await until('window.RootLabReader?.context?.word==="carrier"&&window.RootLabBilingual?.has("carrier")');
  check('Candidate version and dictionary retained',await c.val(`document.querySelector('meta[name="application-version"]').content==='2.12.0'&&RootLabTest.lexiconCount===49426`));
- check('Preview not mislabeled as published',await c.val(`document.querySelector('.bi-preview-notice')?.textContent.includes('未发布')`));
+ check('Banner agrees with explicit build approval',await c.val(`ROOTLAB_BILINGUAL_META.releaseStatus==='approved'?!document.querySelector('.bi-preview-notice'):document.querySelector('.bi-preview-notice')?.textContent.includes('未发布')`));
  check('15 carrier senses individually identified',await c.val(`RootLabBilingual.get('carrier').senses.length===15&&document.querySelectorAll('#readerV24 .bi-sense').length===15`));
  check('Stable source IDs replace list positions',await c.val(`RootLabBilingual.get('carrier').senses.every(s=>/^(editorial:|wn30:|ecdict:)/.test(s.id)&&s.sourceRefs?.length)`));
  check('Carrier mobile and aircraft senses separately explained',await c.val(`(()=>{const senses=RootLabBilingual.get('carrier').senses;const mobile=senses.find(s=>s.labelZh==='移动通信运营商');const aircraft=senses.find(s=>s.labelZh==='航空母舰');return !!mobile&&!!aircraft&&mobile.id!==aircraft.id&&mobile.en.includes('mobile phone')&&aircraft.en.includes('naval ship');})()`));

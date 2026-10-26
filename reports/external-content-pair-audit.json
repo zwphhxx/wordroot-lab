@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "buildId": "v212-d99509bea02c69",
+  "createdAt": 1793003838.1216729,
+  "checks": [
+    {
+      "name": "external-encyclopedia-contract-v212.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "encyclopedia_code_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "browser-visual-pairs-v212.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "authored-browser-audit-v212.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "authored_prose_coverage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "release-boundary-audit-v212.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "boundary_hash:history-ui-v212.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "boundary_hash:encyclopedia-v212.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "boundary_hash:meaning-explainer-v212.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "boundary_hash:authored-ui-v212.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "boundary_hash:bilingual-v212.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "boundary_hash:bilingual-seeds-v212.js",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_boundary_hashes_present",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "122_source_captions_paired",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_retained_history_excerpt_reviews",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "evidence": {
+    "external-encyclopedia-contract-v212.json": {
+      "sha256": "214087c9c3086c3c48cf490596eba272a852d5359f62139f5e6a067d9cca4b93",
+      "buildId": "v212-d99509bea02c69",
+      "status": "PASS",
+      "checks": 16
+    },
+    "browser-visual-pairs-v212.json": {
+      "sha256": "e33100f95ff52646f25041b7d999f40e7fcaa349e80b82f9665842fefa88e8b9",
+      "buildId": "v212-d99509bea02c69",
+      "status": "PASS",
+      "checks": 10
+    },
+    "authored-browser-audit-v212.json": {
+      "sha256": "33fcff8455da50736f8f9d15d7d7ddf20b9ae62c08aead565fc74683205d2005",
+      "buildId": "v212-d99509bea02c69",
+      "status": "PASS",
+      "checks": 4
+    },
+    "release-boundary-audit-v212.json": {
+      "sha256": "57b8cd2e95ca6b907f3b7ae86df4573b9f3b36a0ab7daa70365136920175173a",
+      "buildId": "v212-d99509bea02c69",
+      "status": "PASS",
+      "checks": 11
+    }
+  },
+  "coverage": {
+    "reviewedImageCaptions": 122,
+    "reviewedHistoryExcerpts": 313,
+    "authoredTextPairs": 2697,
+    "lexicalPairs": "Scanned separately by release_preflight_v212.py"
+  },
+  "externalMissingPolicy": "Live sources lacking an exact counterpart or a same-entity language edition are retained in source cache, linked, and marked deferred. They are never counted as translated or silently invented.",
+  "scope": "Current registered dictionary, authored prose, history, image-caption, encyclopedia article/candidate and selected-topic display paths; not a claim that the entire external web has translations."
+}

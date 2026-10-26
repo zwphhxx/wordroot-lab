@@ -4,6 +4,7 @@ Outputs are candidates, not approved meanings; existing native text is unchanged
 Uses the already installed local model only; checkpointed and bounded batches.
 """
 from pathlib import Path
+from native_pairing_v212 import clean_english
 import os,json,re,hashlib,time,fcntl,argparse
 import ctranslate2,sentencepiece as spm
 R=Path(__file__).resolve().parent.parent;W=R/'.work/bilingual-v212'
@@ -32,7 +33,7 @@ with cache.open('a',encoding='utf8') as f:
   encoded=[sp.encode(s,out_type=str) for s in input_text]
   out=translator.translate_batch(encoded,beam_size=3,max_batch_size=32,max_input_length=0,max_decoding_length=max(128,min(700,max(map(len,encoded))*4)),no_repeat_ngram_size=5,return_scores=True)
   for zh,result in zip(batch,out):
-   en=sp.decode(result.hypotheses[0]).replace('▁','').strip()
+   en=clean_english(sp.decode(result.hypotheses[0]))
    f.write(json.dumps({'zh':zh,'en':en,'sourceHash':hashlib.sha256(zh.encode()).hexdigest(),'translation':'machine-en','reviewStatus':'candidate','model':'Argos-OPUS-MT-zh-en-1.9','score':result.scores[0]},ensure_ascii=False)+'\n')
   f.flush()
   if (at+len(batch))%2048==0 or at+len(batch)==len(remaining):print('PROGRESS',at+len(batch),'/',len(remaining),'SECONDS',round(time.time()-start),flush=True)

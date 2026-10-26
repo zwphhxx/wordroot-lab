@@ -4,6 +4,7 @@ All original senses remain in sources, and every rendered learning item has a
 Chinese and English field. No model, private data or local user state is published.
 """
 from pathlib import Path
+from native_pairing_v212 import clean_english
 import os,json,re,collections,hashlib,argparse
 R=Path(__file__).resolve().parent.parent;RAW=Path(os.environ.get('ROOTLAB_RAW_DIR',str(R.parent/'wordroot-lab-deploy/.v12-work')));W=R/'.work/bilingual-v212'
 a=argparse.ArgumentParser();a.add_argument('--partial',action='store_true');opt=a.parse_args()
@@ -54,7 +55,7 @@ def enpair(text):
  text=norm(strippos(text))
  if re.fullmatch(r'=[A-Za-z]+',text):return 'Alternative spelling of '+text[1:]+'.','source-grammar'
  item=en.get(text)
- if item and re.search('[A-Za-z]',item['en']):return clean(item['en']),'machine-en'
+ if item and re.search('[A-Za-z]',item['en']):return clean_english(item['en']),'machine-en'
  missing['zh_en']+=1;return 'English explanation not yet available.','pending'
 domains={0:('普通形容','General adjective'),1:('与名词相关','Relational adjective'),2:('方式与程度','Manner / degree'),3:('一般动作','General action'),4:('行为与事件','Actions / events'),5:('动物','Animals'),6:('物品与工具','Objects / equipment'),7:('属性','Attributes'),8:('身体','Body'),9:('思维与知识','Cognition'),10:('交流','Communication'),11:('事件','Events'),12:('情绪','Emotion'),13:('食物','Food'),14:('群体与机构','Groups / institutions'),15:('地点','Location'),16:('目的与动机','Motives'),17:('自然物','Natural objects'),18:('人物与角色','People / roles'),19:('自然现象','Phenomena'),20:('植物','Plants'),21:('财产与归属','Possession'),22:('过程','Processes'),23:('数量','Quantity'),24:('关系','Relations'),25:('形状','Shape'),26:('状态','States'),27:('物质','Substances'),28:('时间','Time'),29:('身体动作','Body actions'),30:('变化','Change'),31:('思考','Thinking'),32:('表达与交流','Communication'),33:('接触','Contact'),34:('消耗与使用','Consumption'),35:('创造','Creation'),36:('感情','Emotions'),37:('移动','Motion'),38:('感知','Perception'),39:('拥有','Possession'),40:('竞争','Competition'),41:('社会行为','Social activity'),42:('状态与存在','States / existence'),43:('天气','Weather'),44:('分词形容词','Participial adjective')}
 bySense={}
@@ -81,6 +82,8 @@ for word,row in records.items():
  phrases=[]
  for p in row['phrases']:
   phrase=dict(p);z=strippos(p.get('zh',''));k='dictionary' if z else 'machine'
+  if norm(p['en']) in corrections:
+   phrase['originalSourceZh']=z;z=corrections[norm(p['en'])];k='edited'
   if not z:z,k=zhpair(p['en'])
   dz,dk=zhpair(p.get('definition','')) if p.get('definition') else ('','none')
   phrase.update(zh=z,translation=k,definitionZh=dz,definitionTranslation=dk);phrases.append(phrase)

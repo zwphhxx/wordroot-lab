@@ -1,0 +1,35 @@
+{
+  "created": 1793002883.565574,
+  "files": [
+    {
+      "path": "raw/wordnet30.zip",
+      "bytes": 10775600,
+      "sha256": "cbda5ea6eef7f36a97a43d4a75f85e07fccbb4f23657d27b4ccbc93e2646ab59"
+    },
+    {
+      "path": "raw/ecdict.csv",
+      "bytes": 66009548,
+      "sha256": "d1ecbdf9ee2b920afb6f430ca6b6bb9f559588cf0dff86e04bd255f9390843cc"
+    },
+    {
+      "path": "staging/.work/bilingual-v212/cow.tab",
+      "bytes": 2547318,
+      "sha256": "379fd2e41d3e1395f9f27cf23a39c6181849ffb4020c14a07ed2a4d4dd651122"
+    },
+    {
+      "path": "staging/.work/bilingual-v212/source-records.json",
+      "bytes": 101031252,
+      "sha256": "d0e77fbf913ab4f6a62d8732b4fd8ac60a2331c14fcb7c6b86dbc820d45ca41a"
+    },
+    {
+      "path": "staging/.work/bilingual-v212/en_zh-translations.jsonl",
+      "bytes": 32424261,
+      "sha256": "102b2f3efd9fb289a48127d91933a14f1908ed47139f2511eab7ce50663ad111"
+    },
+    {
+      "path": "staging/.work/bilingual-v212/zh_en-translations.jsonl",
+      "bytes": 1276637,
+      "sha256": "28c2f553ecf1308ea61f87ef792d3eb896ad937b7458a5246cb4771d3ae521b1"
+    }
+  ]
+}

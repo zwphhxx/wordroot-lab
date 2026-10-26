@@ -13,7 +13,7 @@ async function ensure(word){return window.RootLabDictionaryRepository.ensure(wor
 function isMachine(kind){return String(kind||'').startsWith('machine');}
 function badge(kind){return isMachine(kind)?'<span class="bi-method" title="自动翻译的参考文本，可结合原文核对">'+(kind==='machine-en'?'英文机译 · English MT':'中文机译 · Chinese MT')+'</span>':kind==='untranslated'?'<span class="bi-method bi-pending">译名待核对 · Term check needed</span>':'';}
 function pair(en,zh,kind,cls=''){return '<div class="bi-pair '+cls+'" data-bi-pair="true" data-translation="'+esc(kind||'source')+'"><p class="bi-zh" lang="zh-CN">'+esc(zh)+'</p><p class="bi-en" lang="en">'+esc(en)+'</p>'+badge(kind)+'</div>';}
-function senseLabel(s){return s?.labelZh||s?.zh||'';}
+function senseLabel(s){return s?.source==='Editorial'&&s?.labelZh?s.labelZh:s?.zh||'';}
 function coreMeaning(word){return String(heads.get(word)||'').replace(/^(?:n|v|vt|vi|a|adj|adv)\.\s*/,'');}
 function headline(c){const x=get(c.word);return x?.summaryZh?'n. '+x.summaryZh:c.meaning;}
 function enrich(c){const x=get(c.word);if(!x)return c;const d=c.learning||{};d.bilingual=x;d.definitions=x.nativeZh;
@@ -30,7 +30,7 @@ if(!b.generated&&x.word!=='carrier'){
 b.related=x.relations;b.senses=x.senses;d.basic=b;}
 c.learning=d;return c;}
 function senses(c){const x=get(c.word);if(!x)return '<div class="bi-loading" role="status">正在载入逐项中英释义…<br><span lang="en">Loading the complete bilingual meanings…</span></div>';
-return '<div class="bi-sense-heading"><h3>逐项中英释义 <span lang="en">Meanings in context</span></h3><span>'+x.senses.length+' 个义项 · '+x.senses.length+' senses</span></div><div class="bi-sense-list lr-english-senses">'+x.senses.map((s,i)=>'<section class="bi-sense" data-sense-id="'+esc(s.id)+'"><div class="bi-sense-top"><span class="bi-index">'+String(i+1).padStart(2,'0')+'</span><span>'+esc(pos[s.pos]||'词义 sense')+'</span><span>'+esc(s.domainZh||'')+(s.domainEn?' · '+esc(s.domainEn):'')+'</span></div>'+(s.labelZh?'<h4>'+esc(s.labelZh)+(s.labelEn?' <span lang="en">'+esc(s.labelEn)+'</span>':'')+'</h4>':'')+pair(s.en,s.zh,s.translation)+'</section>').join('')+'</div>';
+return '<div class="bi-sense-heading"><h3>逐项中英释义 <span lang="en">Meanings in context</span></h3><span>'+x.senses.length+' 个义项 · '+x.senses.length+' senses</span></div><div class="bi-sense-list lr-english-senses">'+x.senses.map((s,i)=>'<section class="bi-sense" data-sense-id="'+esc(s.id)+'"><div class="bi-sense-top"><span class="bi-index">'+String(i+1).padStart(2,'0')+'</span><span>'+esc(pos[s.pos]||'词义 sense')+'</span><span>'+esc(s.domainZh||'')+(s.domainEn?' · '+esc(s.domainEn):'')+'</span></div>'+(s.source==='Editorial'&&s.labelZh?'<h4>'+esc(s.labelZh)+(s.labelEn?' <span lang="en">'+esc(s.labelEn)+'</span>':'')+'</h4>':'')+pair(s.en,s.zh,s.translation)+'</section>').join('')+'</div>';
 }
 function nativeSummary(c){
  const source=get(c.word)?.nativeSourceSummary,rows=source?.pairs||[];
@@ -45,7 +45,7 @@ function intro(c){const x=get(c.word);if(!x)return '';if(x.summaryEn)return '<se
 const s=x.senses?.[0];return s?'<section class="lr-plain-explanation bi-intro" aria-label="双语词义概览"><span class="bi-intro-label">先理解一个义项 · Start with one meaning</span>'+pair(s.en,s.zh,s.translation)+'</section>':'';}
 function phrases(c){const d=c.learning||{},x=get(c.word),rows=d.basic?.phrases||x?.phrases||[];
 if(!rows.length)return '';
-return '<div class="lr-collocations bi-collocations">'+rows.map(p=>'<section class="lr-phrase-row"><div>'+pair(p.en,p.zh,p.translation||'edited','bi-phrase-title')+(p.definition&&p.definitionZh?pair(p.definition,p.definitionZh,p.definitionTranslation,'bi-phrase-gloss'):'')+'</div><button class="rd-icon" data-reader="speak-line" data-text="'+esc(p.en)+'" aria-label="朗读 '+esc(p.en)+'">🔊</button></section>').join('')+'</div>';
+return '<div class="lr-collocations bi-collocations">'+rows.map(p=>'<section class="lr-phrase-row"><div>'+(p.meaningDisplay==='sense_definition'?'<h4 class="bi-phrase-title" lang="en">'+esc(p.en)+'</h4>':pair(p.en,p.zh,p.translation||'edited','bi-phrase-title'))+(p.definition&&p.definitionZh?pair(p.definition,p.definitionZh,p.definitionTranslation,'bi-phrase-gloss'):'')+'</div><button class="rd-icon" data-reader="speak-line" data-text="'+esc(p.en)+'" aria-label="朗读 '+esc(p.en)+'">🔊</button></section>').join('')+'</div>';
 }
 function relations(c){const x=get(c.word);if(!x?.relations?.length)return '';const grouped=new Map();for(const r of x.relations){if(!grouped.has(r.senseId))grouped.set(r.senseId,[]);grouped.get(r.senseId).push(r);}
 return '<div class="bi-relations">'+[...grouped].map(([id,rows])=>{const s=x.senses.find(s=>s.id===id);return '<section class="bi-relation-group"><h4>'+esc(s?senseLabel(s):rows[0].contextZh)+'</h4><p class="bi-context-en" lang="en">'+esc(s?.en||rows[0].contextEn)+'</p>'+rows.map(r=>'<button class="bi-relation" data-reader="next" data-word="'+esc(r.word)+'" data-source-sense="'+esc(r.senseId)+'" data-target-sense="'+esc(r.targetSenseId)+'"><span class="bi-relation-title"><b lang="en">'+esc(r.word)+'</b><span>'+esc(r.wordZh)+'</span></span><small>'+esc(r.label)+' · '+esc(r.labelEn)+'</small>'+pair(r.en,r.zh,r.translation)+'</button>').join('')+'</section>';}).join('')+'</div>';}
@@ -53,7 +53,7 @@ function recommendations(c){const x=get(c.word),seen=new Set([c.word]),out=[];
 for(const r of x?.relations||[]){if(seen.has(r.word))continue;seen.add(r.word);out.push({word:r.word,meaning:r.wordZh,label:r.label,labelEn:r.labelEn,reason:r.zh,reasonEn:r.en,translation:r.translation});if(out.length===3)break;}return out;}
 function example(c,e,i){const word=c.word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');let en=esc(e.en);try{const rx=new RegExp('\\b('+word+'(?:s|es)?)\\b','ig');en=en.replace(rx,'<mark>$1</mark>');}catch(_){}
 const sense=get(c.word)?.senses.find(s=>s.id===e.senseId);
-return '<div class="lr-example bi-example" data-stage="example-'+i+'" data-sense-id="'+esc(e.senseId||'')+'" data-bi-pair="true">'+(sense?'<div class="bi-example-context">'+esc(sense.labelZh||sense.domainZh)+' · '+esc(sense.labelEn||sense.domainEn)+'</div>':'')+'<p class="bi-en" lang="en">'+en+'</p><p class="lr-example-zh bi-zh" lang="zh-CN">'+esc(e.zh||'中文译文尚未就绪')+'</p><div>'+badge(e.translation)+'<span>'+esc(e.kind||'双语学习例句')+'</span><button class="rd-text" data-reader="speak-line" data-text="'+esc(e.en)+'">听例句 · Listen</button></div></div>';}
+return '<div class="lr-example bi-example" data-stage="example-'+i+'" data-sense-id="'+esc(e.senseId||'')+'" data-bi-pair="true">'+(sense?'<div class="bi-example-context">'+esc(sense.source==='Editorial'&&sense.labelZh?sense.labelZh:sense.domainZh)+' · '+esc(sense.labelEn||sense.domainEn)+'</div>':'')+'<p class="bi-en" lang="en">'+en+'</p><p class="lr-example-zh bi-zh" lang="zh-CN">'+esc(e.zh||'中文译文尚未就绪')+'</p><div>'+badge(e.translation)+'<span>'+esc(e.kind||'双语学习例句')+'</span><button class="rd-text" data-reader="speak-line" data-text="'+esc(e.en)+'">听例句 · Listen</button></div></div>';}
 function quiz(c){
  const x=get(c.word);
  // Only explicitly authored, context-bound items are used. Machine candidate

@@ -708,3 +708,6 @@ body.cards-v26 #readerV24 .lr-word-card,body.cards-v26 #readerV24 .lr-card{overf
 .bi-sense-list.lr-english-senses{margin:0;padding:0;background:none;border:0}
 
 .bi-recommendation-type{font-size:12px;line-height:1.6;color:#92735d;margin:8px 0}
+
+/* Exact-source bilingual prose, all content remains expanded. */
+.authored-en{display:block;font-size:.9em;line-height:1.7;color:#78685b;margin-top:5px;overflow-wrap:anywhere;font-weight:400}.authored-zh{display:inline}.rd-answers .authored-en{font-size:12px}.lr-part .authored-en{font-size:11px}.lr-history-step .authored-en{font-size:12px}

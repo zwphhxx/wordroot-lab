@@ -1,0 +1,122 @@
+(function(){
+'use strict';
+const cache=new Map();
+const record=word=>(window.ROOTLAB_WORD_HISTORY||{})[String(word||'').toLowerCase()]||(window.ROOTLAB_CURATED_ETYM||{})[String(word||'').toLowerCase()]||null;
+const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const safeLink=url=>typeof url==='string'&&/^https:\/\//.test(url);
+function morphDescription(word,part){
+ const obj=record(word);if(!obj)return '';
+ const segment=String(part||'').replace(/^-|-$/g,'').toLowerCase();
+ const item=(obj.components||[]).find(x=>String(x.part||'').replace(/^-|-$/g,'').toLowerCase()===segment);
+ return item?.meaning||'';
+}
+function morphology(word){
+ const obj=record(word);if(!obj?.components?.length)return '';
+ let blocks=obj.components.map(item=>'<div class="morph-piece">'+
+  '<span>'+esc(item.role)+'</span><b>'+esc(item.part)+'</b><small>'+esc(item.meaning)+'</small></div>');
+ let details=obj.components.map(item=>'<p><b>'+esc(item.part)+'</b> · '+esc(item.detail||item.meaning)+'</p>').join('');
+ return '<div class="morph-sequence">'+blocks.join('<div class="morph-plus">+</div>')+'</div><div class="historical-components">'+details+'</div>';
+}
+function guide(){
+ return '<section class="morph-primer"><h4>前缀、词根、后缀 · Prefixes, roots and suffixes</h4>'+
+ '<div class="morph-primer-grid">'+
+ '<div><b>前缀 prefix</b><p>出现在词根前，常改变方向、范围或语气；在不同历史词中含义可能不同。</p></div>'+
+ '<div><b>词根 root</b><p>承载词族的核心线索。例如 ced / cess 与“行进、退让”有关。</p></div>'+
+ '<div><b>后缀 suffix</b><p>位于词根后，常帮助形成名词、形容词等形式，如 -ion 常用于构成名词。</p></div>'+
+ '</div></section>';
+}
+function timeline(obj){
+ const kind=obj.status||'manual';
+ const formation=kind==='source_formation'||kind==='teaching_formation';
+ const rows=(obj.timeline||[]).map(item=>'<div class="history-step"><div class="history-era">'+esc(item.era)+'</div>'+
+ '<div class="history-content"><b>'+esc(item.term)+'</b><p>'+esc(item.note)+'</p></div></div>').join('');
+ const tag=kind==='source_path'?'历史词形记录':formation?'构词关系':kind==='source_excerpt'?'词源原文线索':'词义演变';
+ const story='<div class="history-summary">'+esc(obj.summary||'')+'</div>';
+ const stage=kind==='source_path'
+  ?'<div class="historical-forms-grid">'+(obj.timeline||[]).map(item=>'<div class="historical-form-card"><span>'+esc(item.era)+'</span><b>'+esc(item.term)+'</b><small>'+esc(item.note)+'</small></div>').join('')+'</div>'
+  :(rows?'<div class="history-timeline">'+rows+'</div>':'');
+ const matched=obj.excerpt&&Object.values(window.ROOTLAB_BILINGUAL_HISTORY||{}).find(x=>x.en===obj.excerpt&&x.zh);
+ const excerpt=matched&&window.RootLabBilingual?'<section class="etym-source-excerpt"><h4>词源摘录 · Source excerpt</h4>'+window.RootLabBilingual.pair(matched.en,matched.zh,matched.translation)+'</section>':'';
+ const notice='';
+ return '<div class="etym-stage-label">'+tag+'</div>'+story+stage+excerpt+notice;
+}
+function sources(obj){
+ const seen=new Set(),items=Array.isArray(obj.sources)?obj.sources:[];
+ if(obj.sourceUrl)items.push({url:obj.sourceUrl,label:'Wiktionary'});
+ const links=items.filter(x=>safeLink(x.url)&&!seen.has(x.url)&&seen.add(x.url));
+ if(!links.length)return '';
+ const notice=obj.sourceUrl?'<span class="license-cc">Wiktionary 贡献者 · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></span>':'';
+ return '<div class="history-sources"><span>参考资料</span>'+
+ links.map(x=>'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">'+esc(x.label||'词源资料')+' ↗</a>').join('')+notice+'</div>';
+}
+function render(word,style){
+ const name=String(word||'').toLowerCase(),obj=record(name),u=encodeURIComponent(name);
+ const direct=obj?timeline(obj)+sources(obj):'<p class="dictionary-hint">详细的历史词形记录，可通过下方入口继续查阅。</p>';
+ const heading=obj?.status==='source_formation'||obj?.status==='teaching_formation'?'构词关系 · 词义理解':obj?.status==='source_path'?'词源路径 · 词形来源':'历史渊源 · 词义演变';
+ const external='<div class="historical-source-action">'+
+ '<button class="outline-btn" data-action="wiktionary-etymology" data-word="'+esc(name)+'">查看开放词源原文 ↗</button>'+
+ '<div id="wiktionaryEtymology" class="wiktionary-source-result hidden" data-word="'+esc(name)+'" aria-live="polite"></div>'+
+ '</div><div class="historical-reference">'+
+ '<a target="_blank" rel="noopener noreferrer" href="https://en.wiktionary.org/wiki/'+u+'#English">Wiktionary 词源</a>'+
+ '<span> · </span><a target="_blank" rel="noopener noreferrer" href="https://www.etymonline.com/word/'+u+'">在线词源辞典</a>'+
+ '</div>';
+ if(style==='dictionary'){
+  return '<div class="dictionary-section"><div class="dictionary-section-heading"><span class="dictionary-icon">04</span>'+
+  '<h3>'+esc(heading)+'</h3></div>'+direct+external+'</div>';
+ }
+ return '<section class="history-inline"><h3>'+esc(heading)+'</h3>'+direct+external+'</section>';
+}
+function safeText(raw){
+ const tree=new DOMParser().parseFromString(String(raw||''),'text/html');
+ tree.querySelectorAll('.mw-editsection,script,style,sup,.reference,.mw-heading').forEach(node=>node.remove());
+ return (tree.body?.textContent||'').replace(/\[[0-9]+\]/g,'').replace(/\s+/g,' ').trim().slice(0,1050);
+}
+const pairAudit=[];
+function sourcePair(word,value,footer,fallback){
+ const p=window.ROOTLAB_BILINGUAL_HISTORY?.[word],n=x=>String(x||'').replace(/\s+/g,' ').trim();
+ if(p&&n(p.en)===n(value)&&p.zh){pairAudit.push({word,status:'paired_exact_source'});return window.RootLabBilingual.pair(p.en,p.zh,p.translation,'bi-history-source')+footer;}
+ pairAudit.push({word,status:'external_source_deferred',rawRetained:true,reason:'No verified Chinese counterpart for this exact public source text'});
+ return '<section class="history-source-deferred" data-source-pair-status="deferred"><p lang="zh-CN">已找到词源原文。本站尚无这段原文的对应译文，请通过来源链接阅读；上方已整理的中英内容仍可使用。</p><p lang="en">The etymology source was found. Read the original through the source link; the bilingual explanations already provided above remain available.</p>'+fallback+'</section>';
+}
+async function fetchRemote(word,targetNode){
+ const name=String(word||'').trim().toLowerCase(),node=targetNode||document.querySelector('#learnLayout.dictionary-mode #lexiconDetail #wiktionaryEtymology')||document.querySelector('#learningSections #wiktionaryEtymology');
+ if(!/^[a-z-]{2,35}$/.test(name)||!node||node.dataset.word!==name)return;
+ const base='https://en.wiktionary.org/wiki/'+encodeURIComponent(name)+'#English';
+ const footer='<div class="historical-attribution">内容：<a href="'+esc(base)+'" target="_blank" rel="noopener noreferrer">Wiktionary 贡献者</a> · '+
+  '<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>。保留英文原文及对应中文 · English source with its Chinese counterpart.</div>';
+ node.classList.remove('hidden');
+ node.innerHTML='<p lang="zh-CN">正在查询词源记录…</p><p lang="en">Looking up the etymology source…</p>';
+ const fallback='<a target="_blank" rel="noopener noreferrer" href="'+esc(base)+'">打开原始词条 ↗</a>';
+ if(cache.has(name)){
+  const value=cache.get(name);
+  node.innerHTML=value?sourcePair(name,value,footer,fallback):'<p lang="zh-CN">没有独立的英语词源小节。</p><p lang="en">No separate English etymology section was found.</p>'+fallback;
+  return;
+ }
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),9000);
+ const url='https://en.wiktionary.org/w/api.php?origin=*&action=parse&page='+encodeURIComponent(name)+'&format=json&prop=';
+ try{
+  const response=await fetch(url+'sections',{signal:controller.signal});
+  if(!response.ok)throw Error('暂时无法连接词源服务');
+  const payload=await response.json(),sections=payload?.parse?.sections||[];
+  let inEnglish=false,sectionId=null;
+  for(const section of sections){
+   const heading=String(section.line||'').replace(/<[^>]*>/g,'').trim();
+   if(String(section.level)==='2'){inEnglish=heading==='English';continue;}
+   if(inEnglish&&/^Etymology(?:\s+\d+)?$/i.test(heading)){sectionId=section.index;break;}
+  }
+  if(!sectionId){cache.set(name,'');throw Error('未找到这个词的独立英语词源条目');}
+  const sectionResponse=await fetch(url+'text&section='+encodeURIComponent(sectionId),{signal:controller.signal});
+  if(!sectionResponse.ok)throw Error('词源内容暂时无法读取');
+  const section=await sectionResponse.json(),value=safeText(section?.parse?.text?.['*']);
+  if(!value)throw Error('词源资料未提供可显示的文本');
+  cache.set(name,value);
+  if(!node.isConnected||node.dataset.word!==name)return;
+  node.innerHTML=sourcePair(name,value,footer,fallback);
+ }catch(err){
+  if(!node.isConnected||node.dataset.word!==name)return;
+  const message=err.name==='AbortError'?'请求超时，请查看原始词条':(err.message||'暂时无法查询');
+  node.innerHTML='<p lang="zh-CN">'+esc(message)+'</p><p lang="en">The source could not be loaded. Please use the original entry link.</p>'+fallback;
+ }finally{clearTimeout(timer);}
+}
+window.RootLabHistoryUI={record,morphology,morphDescription,guide,render,fetchRemote,get pairAudit(){return pairAudit.slice();}};
+})();
