@@ -1,0 +1,23 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"urn:rootlab:dictionary-entry:3",
+  "title":"RootLab sense-aligned bilingual candidate entry",
+  "type":"object",
+  "required":["word","wordId","senses","examples","phrases","relations","nativeSourceSummary"],
+  "properties":{
+    "word":{"type":"string","pattern":"^[a-z]{2,30}$"},
+    "wordId":{"type":"string","pattern":"^en:[a-z]{2,30}$"},
+    "senses":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/sense"}},
+    "examples":{"type":"array","items":{"$ref":"#/$defs/example"}},
+    "phrases":{"type":"array","items":{"$ref":"#/$defs/phrase"}},
+    "relations":{"type":"array","items":{"$ref":"#/$defs/relation"}},
+    "nativeSourceSummary":{"type":"object","required":["zh","source","alignmentStatus"]}
+  },
+  "$defs":{
+    "pair":{"type":"object","required":["en","zh","pairId","reviewStatus","qualityIssues"],"properties":{"en":{"type":"string","minLength":1},"zh":{"type":"string","minLength":1},"pairId":{"type":"string","pattern":"^[a-f0-9]{24}$"},"reviewStatus":{"enum":["source_bilingual","editorial","machine_screened","needs_review","rejected"]},"qualityIssues":{"type":"array","items":{"type":"string"}}}},
+    "sense":{"allOf":[{"$ref":"#/$defs/pair"},{"type":"object","required":["id","pos","sourceRefs"],"properties":{"id":{"type":"string","pattern":"^(wn30:|ecdict:|editorial:)"},"sourceRefs":{"type":"array","minItems":1}}}]},
+    "example":{"allOf":[{"$ref":"#/$defs/pair"},{"type":"object","required":["id","senseIds","alignmentStatus"],"properties":{"alignmentStatus":{"enum":["aligned","ambiguous","unresolved"]},"senseIds":{"type":"array","items":{"type":"string"}}}}]},
+    "phrase":{"allOf":[{"$ref":"#/$defs/pair"},{"type":"object","required":["id","senseIds","sourcePhraseSenseIds","alignmentStatus"],"properties":{"alignmentStatus":{"enum":["aligned","ambiguous","phrase_scope_unresolved"]}}}]},
+    "relation":{"allOf":[{"$ref":"#/$defs/pair"},{"type":"object","required":["id","fromSenseId","toSenseId","word","label","labelEn"],"properties":{"fromSenseId":{"type":"string","minLength":1},"toSenseId":{"type":"string","minLength":1}}}]}
+  }
+}
