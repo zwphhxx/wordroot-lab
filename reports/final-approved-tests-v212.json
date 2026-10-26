@@ -1,0 +1,42 @@
+[
+  {
+    "suite": "approved-smoke",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/final-approved-smoke.log"
+  },
+  {
+    "suite": "approved-browser",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/final-approved-browser.log"
+  },
+  {
+    "suite": "approved-boundary",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/final-approved-boundary.log"
+  },
+  {
+    "suite": "approved-authored",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/final-approved-authored.log"
+  },
+  {
+    "suite": "approved-external",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/final-approved-external.log"
+  },
+  {
+    "suite": "approved-visual",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/final-approved-visual.log"
+  },
+  {
+    "suite": "approved-external-coverage",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/final-approved-external-coverage.log"
+  },
+  {
+    "suite": "approved-gate",
+    "exitCode": 0,
+    "log": ".work/bilingual-v212/final-approved-gate.log"
+  }
+]
