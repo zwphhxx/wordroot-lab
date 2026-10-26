@@ -5,8 +5,8 @@
     "examples": 75858,
     "phrases": 17152,
     "relations": 84682,
-    "machine_senses": 107010,
-    "machine_examples": 73932,
+    "machine_senses": 106995,
+    "machine_examples": 73923,
     "machine_phrases": 0
   },
   "bundleCount": 522,
@@ -23,5 +23,5 @@
     "ECDICT"
   ],
   "partial": false,
-  "bytes": 101485053
+  "bytes": 101485795
 }

@@ -36840,6 +36840,186 @@
       "reviewBatch": "data/history-excerpts-reviewed-c-v212.json",
       "reviewerType": "assistant_linguistic_review",
       "contextWord": "vocation"
+    },
+    {
+      "en": "soften, make mellow",
+      "zh": "使柔和；使变得温和。",
+      "reason": "mellow 在使役语境中指柔和、温和，不是音译的人名。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "become more relaxed, easygoing, or genial",
+      "zh": "变得更加放松、随和或亲切。",
+      "reason": "genial 是亲切、和蔼，不是 genius（天才）。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "make or grow (more) mellow",
+      "zh": "使变得或变得更加醇和、熟软。",
+      "reason": "保留使役与状态变化两种用法。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "unhurried and relaxed",
+      "zh": "从容不迫而放松的。",
+      "reason": "形容状态，不写成祈使句。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "having a full and pleasing flavor through proper aging",
+      "zh": "经过适当熟化或陈酿而味道醇厚、怡人的。",
+      "reason": "aging 在此是熟化、陈酿，不是人的衰老。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "having attained to kindliness or gentleness through age and experience",
+      "zh": "随着年岁和阅历增长而变得仁厚或温和的。",
+      "reason": "保留年龄、经验与性情变化之间的关系。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "slightly and pleasantly intoxicated from alcohol or a drug (especially marijuana)",
+      "zh": "因酒精或药物（尤指大麻）而略有醉意、感觉愉悦的。",
+      "reason": "intoxicated 此处是轻度醉意或陶然状态，不是急性中毒。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "(obsolete) in a mellow manner",
+      "zh": "（旧用法）醇和地；柔和地。",
+      "reason": "保留副词及旧用法标签。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "Age and experience mellowed him over the years",
+      "zh": "多年来，年龄的增长和人生经历使他的性情变得温和。",
+      "reason": "表达性情改变，不误译为长期受到安慰。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "With age, he mellowed",
+      "zh": "随着年龄增长，他变得温和随和了。",
+      "reason": "mellowed 指变得温和，不是喜欢。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "The sun mellowed the fruit",
+      "zh": "阳光使果实变得熟软。",
+      "reason": "句中动词包含使果实成熟变软的结果。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "a mellow conversation",
+      "zh": "一场轻松从容的交谈。",
+      "reason": "unhurried and relaxed 义项的例句。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "a mellow port",
+      "zh": "醇厚的波特酒。",
+      "reason": "风味语境中的 port 是酒，而不是港口或计算机端口。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "mellowed fruit",
+      "zh": "已经熟软的水果。",
+      "reason": "熟化后的果实，不是结实坚硬。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "mellow wisdom",
+      "zh": "历经岁月磨炼而成熟温厚的智慧。",
+      "reason": "与年龄、经验和温厚相关的 mellow 义。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "the peace of mellow age",
+      "zh": "成熟温厚的年岁所带来的宁静。",
+      "reason": "age 指人生年龄阶段，不是美乐时代。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "make soft or softer",
+      "zh": "使变软或更加柔软。",
+      "reason": "区分使役 make 与自发变化 become。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
+    },
+    {
+      "en": "become soft or softer",
+      "zh": "变软或变得更加柔软。",
+      "reason": "区分状态变化与使役。",
+      "reviewerType": "assistant_linguistic_review",
+      "reviewBatch": "final-prepush-mellow-v212",
+      "sourceEvidence": [
+        "local:WordNet-3.0-adopted-gloss-and-sense-context"
+      ]
     }
   ]
 }

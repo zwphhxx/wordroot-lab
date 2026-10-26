@@ -1,0 +1,92 @@
+[
+  {
+    "suite": "source-parser",
+    "exitCode": 0,
+    "seconds": 0.07,
+    "log": ".work/bilingual-v212/prepush-source-parser.log"
+  },
+  {
+    "suite": "native-pairs",
+    "exitCode": 0,
+    "seconds": 0.04,
+    "log": ".work/bilingual-v212/prepush-native-pairs.log"
+  },
+  {
+    "suite": "source-repairs",
+    "exitCode": 0,
+    "seconds": 9.31,
+    "log": ".work/bilingual-v212/prepush-source-repairs.log"
+  },
+  {
+    "suite": "prepush-corrections",
+    "exitCode": 0,
+    "seconds": 3.83,
+    "log": ".work/bilingual-v212/prepush-prepush-corrections.log"
+  },
+  {
+    "suite": "repository",
+    "exitCode": 0,
+    "seconds": 0.12,
+    "log": ".work/bilingual-v212/prepush-repository.log"
+  },
+  {
+    "suite": "memory",
+    "exitCode": 0,
+    "seconds": 0.05,
+    "log": ".work/bilingual-v212/prepush-memory.log"
+  },
+  {
+    "suite": "browser",
+    "exitCode": 0,
+    "seconds": 1.54,
+    "log": ".work/bilingual-v212/prepush-browser.log"
+  },
+  {
+    "suite": "boundary",
+    "exitCode": 0,
+    "seconds": 1.44,
+    "log": ".work/bilingual-v212/prepush-boundary.log"
+  },
+  {
+    "suite": "authored",
+    "exitCode": 0,
+    "seconds": 9.73,
+    "log": ".work/bilingual-v212/prepush-authored.log"
+  },
+  {
+    "suite": "external",
+    "exitCode": 0,
+    "seconds": 0.79,
+    "log": ".work/bilingual-v212/prepush-external.log"
+  },
+  {
+    "suite": "visual",
+    "exitCode": 0,
+    "seconds": 0.89,
+    "log": ".work/bilingual-v212/prepush-visual.log"
+  },
+  {
+    "suite": "legacy",
+    "exitCode": 0,
+    "seconds": 39.04,
+    "log": ".work/bilingual-v212/prepush-legacy.log"
+  },
+  {
+    "suite": "external-contract",
+    "exitCode": 0,
+    "seconds": 0.04,
+    "log": ".work/bilingual-v212/prepush-external-contract.log"
+  },
+  {
+    "suite": "external-coverage",
+    "exitCode": 0,
+    "seconds": 0.03,
+    "log": ".work/bilingual-v212/prepush-external-coverage.log"
+  },
+  {
+    "suite": "gate",
+    "exitCode": 0,
+    "seconds": 14.29,
+    "log": ".work/bilingual-v212/prepush-gate.log"
+  }
+]

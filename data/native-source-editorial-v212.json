@@ -24418,6 +24418,18 @@
       "reason": "This original native block is the term label, not a translation of the full WordNet definition. Use its exact English term.",
       "reviewerType": "assistant_linguistic_review",
       "reviewBatch": "current-build-final-native-label-review"
+    },
+    {
+      "word": "mellow",
+      "sourceText": "a. 成熟的, 醇的, 熟练的",
+      "en": "adjective: mature; mellow or full-flavored; skilled.",
+      "reason": "按形容词词性对齐三个原中文短释义，不能把醇误译为tan。"
+    },
+    {
+      "word": "siting",
+      "sourceText": "n. 建设地点的决定, 道路定线",
+      "en": "noun: selection of a construction site; road alignment.",
+      "reason": "道路定线指选定道路的线位，不是路面标线。"
     }
   ]
 }

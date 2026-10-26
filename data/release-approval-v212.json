@@ -1,9 +1,9 @@
 {
   "status": "approved",
   "datasetVersion": "2.12.0",
-  "buildId": "v212-d99509bea02c69",
-  "gateSha256": "4b8afcd3c7a7e7db76383fb0766d4d0871faf8623c5c5e7a5a21e669fcfc600e",
-  "approvedAt": 1793003723.6371021,
+  "buildId": "v212-20dbabd4241ad0",
+  "gateSha256": "ea44259bea6882766007cf1f5ce49e676eaaa837ec8a8de384aecd868b832331",
+  "approvedAt": 1793005670.117731,
   "gateChecks": 22,
   "entryCount": 49426,
   "semanticReviewScope": "80 benchmark words and a separately selected 120-text sample whose identified errors were repaired and rechecked. Remaining machine translations are rule-screened, explicitly labeled, and not claimed manually verified.",

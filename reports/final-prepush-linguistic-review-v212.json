@@ -1,0 +1,130 @@
+{
+  "sourceBuild": "v212-d99509bea02c69",
+  "scope": "18 exact English-source corrections plus 2 word-bound native Chinese blocks, inspected in the final pre-push review. Not a whole-corpus quality claim.",
+  "reviewerType": "assistant_linguistic_review",
+  "pairs": [
+    {
+      "en": "soften, make mellow",
+      "afterZh": "使柔和；使变得温和。",
+      "priorOverride": null,
+      "reason": "mellow 在使役语境中指柔和、温和，不是音译的人名。"
+    },
+    {
+      "en": "become more relaxed, easygoing, or genial",
+      "afterZh": "变得更加放松、随和或亲切。",
+      "priorOverride": null,
+      "reason": "genial 是亲切、和蔼，不是 genius（天才）。"
+    },
+    {
+      "en": "make or grow (more) mellow",
+      "afterZh": "使变得或变得更加醇和、熟软。",
+      "priorOverride": null,
+      "reason": "保留使役与状态变化两种用法。"
+    },
+    {
+      "en": "unhurried and relaxed",
+      "afterZh": "从容不迫而放松的。",
+      "priorOverride": null,
+      "reason": "形容状态，不写成祈使句。"
+    },
+    {
+      "en": "having a full and pleasing flavor through proper aging",
+      "afterZh": "经过适当熟化或陈酿而味道醇厚、怡人的。",
+      "priorOverride": null,
+      "reason": "aging 在此是熟化、陈酿，不是人的衰老。"
+    },
+    {
+      "en": "having attained to kindliness or gentleness through age and experience",
+      "afterZh": "随着年岁和阅历增长而变得仁厚或温和的。",
+      "priorOverride": null,
+      "reason": "保留年龄、经验与性情变化之间的关系。"
+    },
+    {
+      "en": "slightly and pleasantly intoxicated from alcohol or a drug (especially marijuana)",
+      "afterZh": "因酒精或药物（尤指大麻）而略有醉意、感觉愉悦的。",
+      "priorOverride": null,
+      "reason": "intoxicated 此处是轻度醉意或陶然状态，不是急性中毒。"
+    },
+    {
+      "en": "(obsolete) in a mellow manner",
+      "afterZh": "（旧用法）醇和地；柔和地。",
+      "priorOverride": null,
+      "reason": "保留副词及旧用法标签。"
+    },
+    {
+      "en": "Age and experience mellowed him over the years",
+      "afterZh": "多年来，年龄的增长和人生经历使他的性情变得温和。",
+      "priorOverride": null,
+      "reason": "表达性情改变，不误译为长期受到安慰。"
+    },
+    {
+      "en": "With age, he mellowed",
+      "afterZh": "随着年龄增长，他变得温和随和了。",
+      "priorOverride": null,
+      "reason": "mellowed 指变得温和，不是喜欢。"
+    },
+    {
+      "en": "The sun mellowed the fruit",
+      "afterZh": "阳光使果实变得熟软。",
+      "priorOverride": null,
+      "reason": "句中动词包含使果实成熟变软的结果。"
+    },
+    {
+      "en": "a mellow conversation",
+      "afterZh": "一场轻松从容的交谈。",
+      "priorOverride": null,
+      "reason": "unhurried and relaxed 义项的例句。"
+    },
+    {
+      "en": "a mellow port",
+      "afterZh": "醇厚的波特酒。",
+      "priorOverride": null,
+      "reason": "风味语境中的 port 是酒，而不是港口或计算机端口。"
+    },
+    {
+      "en": "mellowed fruit",
+      "afterZh": "已经熟软的水果。",
+      "priorOverride": null,
+      "reason": "熟化后的果实，不是结实坚硬。"
+    },
+    {
+      "en": "mellow wisdom",
+      "afterZh": "历经岁月磨炼而成熟温厚的智慧。",
+      "priorOverride": null,
+      "reason": "与年龄、经验和温厚相关的 mellow 义。"
+    },
+    {
+      "en": "the peace of mellow age",
+      "afterZh": "成熟温厚的年岁所带来的宁静。",
+      "priorOverride": null,
+      "reason": "age 指人生年龄阶段，不是美乐时代。"
+    },
+    {
+      "en": "make soft or softer",
+      "afterZh": "使变软或更加柔软。",
+      "priorOverride": null,
+      "reason": "区分使役 make 与自发变化 become。"
+    },
+    {
+      "en": "become soft or softer",
+      "afterZh": "变软或变得更加柔软。",
+      "priorOverride": null,
+      "reason": "区分状态变化与使役。"
+    }
+  ],
+  "nativePairs": [
+    {
+      "word": "mellow",
+      "sourceText": "a. 成熟的, 醇的, 熟练的",
+      "en": "adjective: mature; mellow or full-flavored; skilled.",
+      "reason": "按形容词词性对齐三个原中文短释义，不能把醇误译为tan。"
+    },
+    {
+      "word": "siting",
+      "sourceText": "n. 建设地点的决定, 道路定线",
+      "en": "noun: selection of a construction site; road alignment.",
+      "reason": "道路定线指选定道路的线位，不是路面标线。"
+    }
+  ],
+  "createdAt": 1793005454.131433
+}

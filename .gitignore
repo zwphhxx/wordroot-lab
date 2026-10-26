@@ -6,3 +6,8 @@ __pycache__/
 .venv/
 reports/screenshots/
 qa_*.html
+
+# Retain historical/intermediate candidate packages locally, publish only the accepted build.
+/data/bilingual-v212/*.json
+/data/bilingual-v212/v212-*/
+!/data/bilingual-v212/v212-20dbabd4241ad0/
