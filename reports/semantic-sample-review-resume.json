@@ -1,0 +1,2321 @@
+{
+  "sampleSize": 120,
+  "revised": 78,
+  "sourceReviewPending": 6,
+  "checkedNoMaterialError": 36,
+  "reviewerType": "assistant_linguistic_review",
+  "approvalScope": "Only these exact source pairs, not the corpus and not a full word-level benchmark.",
+  "status": "BLOCKED_SOURCE_ISSUES",
+  "rows": [
+    {
+      "index": 0,
+      "sourceText": "nervous disorder of late childhood and early adulthood; characterized by ataxic gait and hesitating or explosive speech and nystagmus",
+      "originalTranslation": "儿时晚期和成年早期的神经紊乱;其特点是步态迟钝、犹豫不决或言语爆炸和性病。",
+      "contexts": [
+        {
+          "word": "ataxia",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        },
+        {
+          "word": "cerebellar",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        },
+        {
+          "word": "hereditary",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "发生于儿童后期和成年早期的一种神经系统疾病，以共济失调步态、迟疑或爆发性言语以及眼球震颤为特征。",
+      "issue": "nystagmus 为眼球震颤，不是性病；ataxic 为共济失调。",
+      "sourcePairHash": "7c0ac4e2a05254f679f5fcc477601c77f136f01a04091acf48557134b0d6925a"
+    },
+    {
+      "index": 1,
+      "sourceText": "Please focus the image; we cannot enjoy the movie",
+      "originalTranslation": "请把画面集中,我们无法欣赏电影",
+      "contexts": [
+        {
+          "word": "focus",
+          "sense": "00314272-v",
+          "pos": "v",
+          "domain": 30,
+          "kind": "example"
+        },
+        {
+          "word": "sharpen",
+          "sense": "00314272-v",
+          "pos": "v",
+          "domain": 30,
+          "kind": "example"
+        },
+        {
+          "word": "sharpen",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "请把画面调清晰；我们没法好好看电影。",
+      "issue": "focus 在成像语境中是调焦。",
+      "sourcePairHash": "cb12ac44f813cc2b37b74341d41b6cff7c683f745915a291f12f996ea5aeefbd"
+    },
+    {
+      "index": 2,
+      "sourceText": "v make reference to",
+      "originalTranslation": "五. 提及",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "提及；说到。",
+      "issue": "v 是词性标记，不是罗马数字五。",
+      "sourcePairHash": "2790844894586b7e7785de656ae7eea80e4d378fb813ce531e5185b64e29b442"
+    },
+    {
+      "index": 3,
+      "sourceText": "These apples need to mellow a bit more",
+      "originalTranslation": "这些苹果需要多点美感",
+      "contexts": [
+        {
+          "word": "mellow",
+          "sense": "00254298-v",
+          "pos": "v",
+          "domain": 30,
+          "kind": "example"
+        },
+        {
+          "word": "mellow",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "这些苹果还需要再熟软一点。",
+      "issue": "mellow 在水果语境中指成熟变软，不是增加美感。",
+      "sourcePairHash": "f34e5cfc16b2c5371880bccebb9f30d2653dfc34f7dd7c05b73189cea3db9044"
+    },
+    {
+      "index": 4,
+      "sourceText": "have a distinctive or characteristic taste",
+      "originalTranslation": "品味独特或特质",
+      "contexts": [
+        {
+          "word": "smack",
+          "sense": "02194495-v",
+          "pos": "v",
+          "domain": 39,
+          "kind": "definition"
+        },
+        {
+          "word": "taste",
+          "sense": "02194495-v",
+          "pos": "v",
+          "domain": 39,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "具有独特或明显的味道。",
+      "issue": "taste 是食物味道，不是审美品味。",
+      "sourcePairHash": "58b4c4b7235a364f566209d80e46f761b20a0b291027ee6d9900090ea631afab"
+    },
+    {
+      "index": 5,
+      "sourceText": "tolerance for alcohol",
+      "originalTranslation": "对酒精的容忍",
+      "contexts": [
+        {
+          "word": "capacity",
+          "sense": "05033569-n",
+          "pos": "n",
+          "domain": 7,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "对酒精的耐受能力。",
+      "issue": "tolerance 是生理耐受，不是态度上的容忍。",
+      "sourcePairHash": "fc831cb57df5325605bfc2f8597597e2a5dcad7778e6058e86ba2fbc2afc24c1"
+    },
+    {
+      "index": 6,
+      "sourceText": "a not reassuring; tending to cause anxiety",
+      "originalTranslation": "不让人放心;容易引起焦虑",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "不能使人放心的；容易引起焦虑的。",
+      "issue": "保持否定，移除源词性标记。",
+      "sourcePairHash": "f50bc02bf0f390b548c21f99d19b6c021b0571b5e13b72a212898eebd2cb67a1"
+    },
+    {
+      "index": 7,
+      "sourceText": "a shed for storing firewood or garden tools",
+      "originalTranslation": "用来储存木柴或花园工具的棚屋;",
+      "contexts": [
+        {
+          "word": "woodshed",
+          "sense": "04598318-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "e06280addc61ecbaba7aa23d2ed4ead3382e7da0b2d4b92506498e33b81782c5"
+    },
+    {
+      "index": 8,
+      "sourceText": "She took a chill",
+      "originalTranslation": "她很冷静",
+      "contexts": [
+        {
+          "word": "contract",
+          "sense": "00087736-v",
+          "pos": "v",
+          "domain": 29,
+          "kind": "example"
+        },
+        {
+          "word": "contract",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        },
+        {
+          "word": "get",
+          "sense": "00087736-v",
+          "pos": "v",
+          "domain": 29,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "她受了凉。",
+      "issue": "take a chill 表示受凉，与冷静无关。",
+      "sourcePairHash": "f23d1324e8b6e0d5ee5911e7ae74af62114b23861b4d80ed3d474887d8c6450f"
+    },
+    {
+      "index": 9,
+      "sourceText": "get or gather together",
+      "originalTranslation": "获得或聚集在一起",
+      "contexts": [
+        {
+          "word": "accumulate",
+          "sense": "02304982-v",
+          "pos": "v",
+          "domain": 40,
+          "kind": "definition"
+        },
+        {
+          "word": "amass",
+          "sense": "02304982-v",
+          "pos": "v",
+          "domain": 40,
+          "kind": "definition"
+        },
+        {
+          "word": "collect",
+          "sense": "02304982-v",
+          "pos": "v",
+          "domain": 40,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "收集或聚集起来。",
+      "issue": "get together 指收集，不逐字解成获得。",
+      "sourcePairHash": "2e2209c220124e73aa9be3350a40c1fdf47c865a2b5628d9342d194d548c178d"
+    },
+    {
+      "index": 10,
+      "sourceText": "a young woman who is thought to have sex appeal",
+      "originalTranslation": "一个被认为有性吸引力的年轻女性",
+      "contexts": [
+        {
+          "word": "sexpot",
+          "sense": "10584729-n",
+          "pos": "n",
+          "domain": 18,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "deba635ec6525537e36af9cc1408b21a4d9635526ecbf8cfa8399bb951945d20"
+    },
+    {
+      "index": 11,
+      "sourceText": "the metal or paper medium of exchange that is presently used",
+      "originalTranslation": "目前使用的金属或纸质交换媒介",
+      "contexts": [
+        {
+          "word": "currency",
+          "sense": "13385913-n",
+          "pos": "n",
+          "domain": 21,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "21262deffc63c5fc37dac915e79923b12d2dad664de5b792f48c0836f9f0f56e"
+    },
+    {
+      "index": 12,
+      "sourceText": "hunt for turtles, especially as an occupation",
+      "originalTranslation": "猎杀海龟,特别是作为职业",
+      "contexts": [
+        {
+          "word": "turtle",
+          "sense": "01142363-v",
+          "pos": "v",
+          "domain": 33,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "捕猎龟类，尤指以此为业。",
+      "issue": "turtles 不局限于海龟，也不必然强调杀死。",
+      "sourcePairHash": "6ef1532cb2e33bc916226fb63464e59d31e5e319aaff2b7f78213bbc40107b22"
+    },
+    {
+      "index": 13,
+      "sourceText": "a person who drinks alcohol to excess habitually",
+      "originalTranslation": "饮酒过量的人;",
+      "contexts": [
+        {
+          "word": "alcoholic",
+          "sense": "09782167-n",
+          "pos": "n",
+          "domain": 18,
+          "kind": "definition"
+        },
+        {
+          "word": "boozer",
+          "sense": "09782167-n",
+          "pos": "n",
+          "domain": 18,
+          "kind": "definition"
+        },
+        {
+          "word": "lush",
+          "sense": "09782167-n",
+          "pos": "n",
+          "domain": 18,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "习惯性过量饮酒的人。",
+      "issue": "保留 habitually 的习惯性限定。",
+      "sourcePairHash": "9b3b73ff8832392f9b358b79bd5f67bdca3087e0e35da2566ceed44ae279f987"
+    },
+    {
+      "index": 14,
+      "sourceText": "a darkened house",
+      "originalTranslation": "一个黑暗的房子",
+      "contexts": [
+        {
+          "word": "darkened",
+          "sense": "00274698-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        },
+        {
+          "word": "darkened",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "暗下来的房子。",
+      "issue": "darkened 为变暗状态，不额外断言停电或熄灯。",
+      "sourcePairHash": "4bcd17b78e1759f28a2e6bb11fe94c9632081a1bb6e6aaa6aeced0f33c6db957"
+    },
+    {
+      "index": 15,
+      "sourceText": "play it straight with no shtik",
+      "originalTranslation": "直说吧,不要乱说",
+      "contexts": [
+        {
+          "word": "schtick",
+          "sense": "00550545-n",
+          "pos": "n",
+          "domain": 4,
+          "kind": "example"
+        },
+        {
+          "word": "shtick",
+          "sense": "00550545-n",
+          "pos": "n",
+          "domain": 4,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "正正经经地表演，不耍噱头。",
+      "issue": "shtik 是表演噱头，不能泛化为胡说。",
+      "sourcePairHash": "a8b15bfdecbc202f853a7f9b056216601e94fd77dfe4ad36fe87189d4f894da6"
+    },
+    {
+      "index": 16,
+      "sourceText": "force or drive (a fluid or gas) into by piercing",
+      "originalTranslation": "通过穿孔使(液体或气体)进入",
+      "contexts": [
+        {
+          "word": "inject",
+          "sense": "01585523-v",
+          "pos": "v",
+          "domain": 35,
+          "kind": "definition"
+        },
+        {
+          "word": "shoot",
+          "sense": "01585523-v",
+          "pos": "v",
+          "domain": 35,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "914160ec04bcbd1c6aff160b6b2d3cdc91532a349dc8ba407ed7dc1b7d2a22ee"
+    },
+    {
+      "index": 17,
+      "sourceText": "n surgical removal of a body part or tissue",
+      "originalTranslation": "n 手术切除身体部分或组织",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "通过外科手术切除身体的某个部分或组织。",
+      "issue": "n 为源词性标记，不属于中文释义。",
+      "sourcePairHash": "b73eae61649920893517b1efcd3b18d0de63170da88cfc3d9d4c94a559ae0c12"
+    },
+    {
+      "index": 18,
+      "sourceText": "a French policeman",
+      "originalTranslation": "法国警察",
+      "contexts": [
+        {
+          "word": "gendarme",
+          "sense": "10123122-n",
+          "pos": "n",
+          "domain": 18,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "bd334808c9093b57c73ba07a490fc589964380b2ed777e48381915e9ba470949"
+    },
+    {
+      "index": 19,
+      "sourceText": "he felt a kind of religious zeal",
+      "originalTranslation": "他感到一种宗教狂热",
+      "contexts": [
+        {
+          "word": "ardor",
+          "sense": "07555402-n",
+          "pos": "n",
+          "domain": 12,
+          "kind": "example"
+        },
+        {
+          "word": "ardour",
+          "sense": "07555402-n",
+          "pos": "n",
+          "domain": 12,
+          "kind": "example"
+        },
+        {
+          "word": "elan",
+          "sense": "07555402-n",
+          "pos": "n",
+          "domain": 12,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "13d1a3899b3c3c4724235a2ca982ab5da8999e9add01bb6a885750e2c08c355d"
+    },
+    {
+      "index": 20,
+      "sourceText": "She never eats a full meal--she just nibbles",
+      "originalTranslation": "她从来不吃一顿饱餐她只是吃泡菜",
+      "contexts": [
+        {
+          "word": "nibble",
+          "sense": "01174294-v",
+          "pos": "v",
+          "domain": 34,
+          "kind": "example"
+        },
+        {
+          "word": "nibble",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        },
+        {
+          "word": "pick",
+          "sense": "01174294-v",
+          "pos": "v",
+          "domain": 34,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "她从不吃一顿完整的正餐，只是零零星星地吃几口。",
+      "issue": "nibble 是少量吃，不是吃泡菜。",
+      "sourcePairHash": "7f07a311735e0595d40c3d315883ee5280b6ae977f72be1d9156f76bd00616fc"
+    },
+    {
+      "index": 21,
+      "sourceText": "a small room (or recess) or cabinet used for storage space",
+      "originalTranslation": "用于存储空间的小型房间(或休息室)或柜子",
+      "contexts": [
+        {
+          "word": "closet",
+          "sense": "03148324-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "definition"
+        },
+        {
+          "word": "cupboard",
+          "sense": "03148324-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "用于储物的小房间、壁龛或柜子。",
+      "issue": "recess 是凹入空间，不是休息室。",
+      "sourcePairHash": "c60dd2f77fc9424140bf0a8ea55c3e5f8c471188eb39e33201e58bd27c9bfbdb"
+    },
+    {
+      "index": 22,
+      "sourceText": "I want to see whether she speaks French",
+      "originalTranslation": "我想看看她会不会说法语",
+      "contexts": [
+        {
+          "word": "ascertain",
+          "sense": "00920336-v",
+          "pos": "v",
+          "domain": 32,
+          "kind": "example"
+        },
+        {
+          "word": "check",
+          "sense": "00920336-v",
+          "pos": "v",
+          "domain": 32,
+          "kind": "example"
+        },
+        {
+          "word": "determine",
+          "sense": "00920336-v",
+          "pos": "v",
+          "domain": 32,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "eedfd5fa7a1c392c56061fd056f262cbb8835d014527e11b702bf8a21751ce87"
+    },
+    {
+      "index": 23,
+      "sourceText": "snugly laced shoes",
+      "originalTranslation": "紧紧的皮鞋",
+      "contexts": [
+        {
+          "word": "tied",
+          "sense": "00254516-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "鞋带系得紧实贴脚的鞋子。",
+      "issue": "laced 指鞋带，不意味着皮鞋。",
+      "sourcePairHash": "dfa066cd1856187f59af382ff18a5a709e0353110f1638349e709ee201f1dec6"
+    },
+    {
+      "index": 24,
+      "sourceText": "forbidden by law",
+      "originalTranslation": "法律禁止",
+      "contexts": [
+        {
+          "word": "banned",
+          "sense": "01402498-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        },
+        {
+          "word": "prohibited",
+          "sense": "01402498-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "20233a7de238ccb448435fc8a1d76851f2c658a7624344ca7627d9e6d3d30d01"
+    },
+    {
+      "index": 25,
+      "sourceText": "The leaves clog our drains in the Fall",
+      "originalTranslation": "叶子堵住了秋天的排水沟",
+      "contexts": [
+        {
+          "word": "choke",
+          "sense": "01478603-v",
+          "pos": "v",
+          "domain": 35,
+          "kind": "example"
+        },
+        {
+          "word": "clog",
+          "sense": "01478603-v",
+          "pos": "v",
+          "domain": 35,
+          "kind": "example"
+        },
+        {
+          "word": "congest",
+          "sense": "01478603-v",
+          "pos": "v",
+          "domain": 35,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "秋天，落叶会堵塞我们的排水沟。",
+      "issue": "in the Fall 修饰时间，不修饰排水沟。",
+      "sourcePairHash": "10443af1d96c565468d4552898e93dec768397dc7542b8889b7e092ab61d5359"
+    },
+    {
+      "index": 26,
+      "sourceText": "exaggerated feeling of well-being or elation",
+      "originalTranslation": "夸张的幸福感或喜悦感",
+      "contexts": [
+        {
+          "word": "euphoric",
+          "sense": "00908929-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "过度强烈的幸福感或兴奋感。",
+      "issue": "exaggerated 表示程度过强，非修辞夸张。",
+      "sourcePairHash": "5a2253adfb9f54f98a7fcec53c02329aa0f572e6564072c26071e2111493b8c7"
+    },
+    {
+      "index": 27,
+      "sourceText": "an all-fours game in which the first card led is a trump",
+      "originalTranslation": "首张牌的全四局游戏是比比比",
+      "contexts": [
+        {
+          "word": "auction",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        },
+        {
+          "word": "pitch",
+          "sense": "00498558-n",
+          "pos": "n",
+          "domain": 4,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "一种 all-fours 纸牌游戏，首先打出的牌是王牌。",
+      "issue": "保留游戏名称；trump 是王牌，不是重复无意义音节。",
+      "sourcePairHash": "7b804f2c65716cd9828f61e65fd8aa7fe05bb8f9a3ff55671ce8cb053ebb5c96"
+    },
+    {
+      "index": 28,
+      "sourceText": "in a sporadic manner",
+      "originalTranslation": "以零星方式",
+      "contexts": [
+        {
+          "word": "periodically",
+          "sense": "00212974-r",
+          "pos": "r",
+          "domain": 2,
+          "kind": "definition"
+        },
+        {
+          "word": "sporadically",
+          "sense": "00212974-r",
+          "pos": "r",
+          "domain": 2,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "6092d55ce96acdc157ace2c3e2058cd2c1462574927425a76c5ec6c10c49f7b7"
+    },
+    {
+      "index": 29,
+      "sourceText": "lacking order or methodical arrangement or function",
+      "originalTranslation": "缺乏秩序或方法性安排或功能",
+      "contexts": [
+        {
+          "word": "disorganised",
+          "sense": "01668858-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        },
+        {
+          "word": "disorganized",
+          "sense": "01668858-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "缺乏秩序、有条理的安排或正常组织运行的。",
+      "issue": "保持不同限定，并改善中文语法。",
+      "sourcePairHash": "82c02dc21c876bed13a769110ed2c44103d9a4ae36e9f60668b71f464ce27ca8"
+    },
+    {
+      "index": 30,
+      "sourceText": "v express approval of",
+      "originalTranslation": "五. 明示核准",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "对某事表示赞同。",
+      "issue": "approval 在此为赞同；v 不译作五。",
+      "sourcePairHash": "c27de4f17c6b792d102322449fc258dddcb6c5007d76286ff49da0d8d9e58f08"
+    },
+    {
+      "index": 31,
+      "sourceText": "the editor of a newspaper",
+      "originalTranslation": "报纸的编辑",
+      "contexts": [],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "08608b644f36caa44b014414f687135cdafff2e72761963ecede0ec8f6f70c24"
+    },
+    {
+      "index": 32,
+      "sourceText": "ships with square sails sail fairly efficiently with the wind abaft",
+      "originalTranslation": "平方帆船在风波中航行效率相当高",
+      "contexts": [
+        {
+          "word": "aft",
+          "sense": "00275409-r",
+          "pos": "r",
+          "domain": 2,
+          "kind": "example"
+        },
+        {
+          "word": "aft",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        },
+        {
+          "word": "astern",
+          "sense": "00275409-r",
+          "pos": "r",
+          "domain": 2,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "装有横帆的船在风从船尾吹来时航行效率相当高。",
+      "issue": "square sails 为横帆；abaft 指后方。",
+      "sourcePairHash": "a2869579c4d613444ce906a6d8a897e809aea837ae81696d0730ba5a3c5dc18c"
+    },
+    {
+      "index": 33,
+      "sourceText": "give birth to a litter of animals",
+      "originalTranslation": "(a) 生一窝动物;",
+      "contexts": [
+        {
+          "word": "litter",
+          "sense": "00058401-v",
+          "pos": "v",
+          "domain": 29,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "产下一窝幼兽。",
+      "issue": "原文没有项目编号或括号，litter 是一窝。",
+      "sourcePairHash": "5602d012537d415ec6f45185943bd985006f98e21d172c8fb3b4b47c75e644dd"
+    },
+    {
+      "index": 34,
+      "sourceText": "(of the surface) having a rough, riblike texture",
+      "originalTranslation": "有粗糙的肋骨纹理,",
+      "contexts": [
+        {
+          "word": "ribbed",
+          "sense": "02240379-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "（表面）具有粗糙的棱状纹理的。",
+      "issue": "riblike 是棱条状纹理，不是实际肋骨。",
+      "sourcePairHash": "6baf7507d5e1022a2ce245fd2b262a0ecd69661884b91941a1d6605d4462428c"
+    },
+    {
+      "index": 35,
+      "sourceText": "there is seating for 40 students in this classroom",
+      "originalTranslation": "这个教室里有40个学生的座位",
+      "contexts": [
+        {
+          "word": "seating",
+          "sense": "04162998-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "example"
+        },
+        {
+          "word": "seating",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        },
+        {
+          "word": "seats",
+          "sense": "04162998-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "cc46f377b1a5f771a20c70ec2e20999608ff0cc7851680e389252ee908987a06"
+    },
+    {
+      "index": 36,
+      "sourceText": "the occurrence of a uniting of separate parts",
+      "originalTranslation": "单部分合并的发生情况",
+      "contexts": [
+        {
+          "word": "union",
+          "sense": "07373277-n",
+          "pos": "n",
+          "domain": 11,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "原本分开的各部分结合起来这一事件或过程。",
+      "issue": "separate parts 是分开的部分，不是单一部分。",
+      "sourcePairHash": "822c6cbaa88cdf5e3f40335b8d2026448bf4d357b5fc4f81629b2f166aa9a986"
+    },
+    {
+      "index": 37,
+      "sourceText": "worthless or oversimplified ideas",
+      "originalTranslation": "毫无价值或过于简单化的想法",
+      "contexts": [
+        {
+          "word": "pap",
+          "sense": "06612174-n",
+          "pos": "n",
+          "domain": 10,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "d4c0a55cedf91f0e5c2aea3bca78302c60776d1fdd4f2ca3da6ab11732e0e3c7"
+    },
+    {
+      "index": 38,
+      "sourceText": "v make repairs, renovations, revisions or adjustments to v become technologically advanced",
+      "originalTranslation": "五. 进行修理、翻新、修订或调整,以达到技术先进程度",
+      "contexts": [
+        {
+          "word": "modernizing",
+          "sense": "unmapped",
+          "kind": "extra-definition"
+        }
+      ],
+      "status": "source_review_required",
+      "revisedTranslation": null,
+      "issue": "原始数据将两个未带点的v义项连接；应先修复词性行解析。",
+      "sourcePairHash": "7a461648c2c3cbdf8564b6ce84492e9889283e9fd6bf4218d86109e6760ec49d"
+    },
+    {
+      "index": 39,
+      "sourceText": "a smooth hair style with the ends of the hair curled inward",
+      "originalTranslation": "头发的端部向内卷曲的光滑发型",
+      "contexts": [
+        {
+          "word": "pageboy",
+          "sense": "05260127-n",
+          "pos": "n",
+          "domain": 8,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "一种梳理平顺、发梢向内卷曲的发型。",
+      "issue": "描述发型而非物体表面光滑。",
+      "sourcePairHash": "a55cb5b4d85abab740c0ad933e807accc941d3300c9e84e34193dd5a216aabcc"
+    },
+    {
+      "index": 40,
+      "sourceText": "crack and acquire the appearance of alligator hide, as from weathering or improper application; of paint and varnishes",
+      "originalTranslation": "裂开并获得鳄鱼藏的外观,如风化或不当施用;涂料和清漆",
+      "contexts": [
+        {
+          "word": "alligator",
+          "sense": "00337700-v",
+          "pos": "v",
+          "domain": 30,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "（油漆或清漆）因风化或涂刷不当等原因龟裂，呈现鳄鱼皮般的纹路。",
+      "issue": "hide 是兽皮，不是隐藏。",
+      "sourcePairHash": "467c7db73b9328bb1bc8daf93831e6280f1c30fd7da5b846a0c0597d285973f7"
+    },
+    {
+      "index": 41,
+      "sourceText": "took perverse satisfaction in foiling her plans",
+      "originalTranslation": "以不正当的满足来挫败她的计划",
+      "contexts": [
+        {
+          "word": "perverse",
+          "sense": "01818820-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "居然从挫败她的计划中获得一种反常的满足感。",
+      "issue": "满足来自挫败计划，不是用满足感去挫败计划。",
+      "sourcePairHash": "a9b341c067197551309e5d2efafa6f6466c2bddd59e43df383cf9a2f66f8c623"
+    },
+    {
+      "index": 42,
+      "sourceText": "Since; seeing.",
+      "originalTranslation": "自;见.",
+      "contexts": [
+        {
+          "word": "syne",
+          "sense": "unmapped",
+          "kind": "extra-definition"
+        }
+      ],
+      "status": "source_review_required",
+      "revisedTranslation": null,
+      "issue": "古语syne的词性与since/seeing的连接词义需要源词条复核。",
+      "sourcePairHash": "63bdc018830275be87a67cdc0039b12802e47c5de95ac94f80d717d32ecb6d92"
+    },
+    {
+      "index": 43,
+      "sourceText": "a fish of the Pacific coast of North America",
+      "originalTranslation": "北美太平洋海岸的鱼类",
+      "contexts": [],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "cd82128032574a4eb9a03f279f7b8f728688aba7458a9bf4cb9580e3d908aecb"
+    },
+    {
+      "index": 44,
+      "sourceText": "an unshaded meadow",
+      "originalTranslation": "一个未遮蔽的草地",
+      "contexts": [
+        {
+          "word": "unshaded",
+          "sense": "00277183-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        },
+        {
+          "word": "unshaded",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "dc8eb1a9d91f9d637611e7ff538c66a3ea685e92650312787074fc7b5c954b7a"
+    },
+    {
+      "index": 45,
+      "sourceText": "v assign a location to v be seated v be around, often idly or without specific purpose v take a seat v be in session v assume a posture as for artistic purposes v sit and travel on the back of animal, usually while controlling its motions v be located or situated somewhere v work or act as a baby-sitter; I have too much homework to do\" v show to a seat; assign a seat for v serve in a specific professional capacity",
+      "originalTranslation": "v 指定一个位置,请坐 v在周围, 经常不在场或没有特定目的 v坐 v在会场 v 假设一个姿势为艺术目的 坐在和旅行在动物的背面, 通常同时控制其动议 v 被定位或定位于某处  v 工作或做保姆;我做太多功课\" v 显示在座位上;为v 指定一个座位, 以特定专业身份服务.",
+      "contexts": [
+        {
+          "word": "siting",
+          "sense": "unmapped",
+          "kind": "extra-definition"
+        }
+      ],
+      "status": "source_review_required",
+      "revisedTranslation": null,
+      "issue": "源词siting混入sit的多条义项；不应把整理后的整段翻译当作正确词义。",
+      "sourcePairHash": "1ca1bfbef40cfc9c515bbd8b84ed6d55b67a9fde7ca5b487d95c04098605e8a7"
+    },
+    {
+      "index": 46,
+      "sourceText": "v take back what one has said",
+      "originalTranslation": "V拿回我说过的话",
+      "contexts": [
+        {
+          "word": "unsay",
+          "sense": "unmapped",
+          "kind": "extra-definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "收回自己说过的话。",
+      "issue": "take back 是撤回言论，不是拿回物体。",
+      "sourcePairHash": "5572f2896af0c914fc67f96323ba3eacad644ae4c540fbbab71d469f965d8bcc"
+    },
+    {
+      "index": 47,
+      "sourceText": "the quantity that can be held in the mouth",
+      "originalTranslation": "口中可持有的数量",
+      "contexts": [
+        {
+          "word": "mouthful",
+          "sense": "13768343-n",
+          "pos": "n",
+          "domain": 23,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "嘴里一次所能容纳的量。",
+      "issue": "mouthful 的容量义。",
+      "sourcePairHash": "6ed17a7431342dd829b3b8a159593db6d95e1595a11c8af7d47b5f0af9c78b40"
+    },
+    {
+      "index": 48,
+      "sourceText": "The plants straddle the entire state",
+      "originalTranslation": "植物横跨整个国家",
+      "contexts": [
+        {
+          "word": "range",
+          "sense": "02690384-v",
+          "pos": "v",
+          "domain": 42,
+          "kind": "example"
+        },
+        {
+          "word": "straddle",
+          "sense": "02690384-v",
+          "pos": "v",
+          "domain": 42,
+          "kind": "example"
+        },
+        {
+          "word": "straddle",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "这些植物分布遍及整个州。",
+      "issue": "state 是州，不是国家；straddle 在分布语境中理解。",
+      "sourcePairHash": "1b63fb3bb6fa9e75bd548239e47fbb8fb168fd3aff36ef8519aedffcae2893f6"
+    },
+    {
+      "index": 49,
+      "sourceText": "She broke the match",
+      "originalTranslation": "她把比赛弄坏了",
+      "contexts": [
+        {
+          "word": "break",
+          "sense": "00334996-v",
+          "pos": "v",
+          "domain": 30,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "她折断了那根火柴。",
+      "issue": "match 在 break 的该例中指火柴，不是比赛。",
+      "sourcePairHash": "d3803790a213e13086d0f7847cfd5404a857bcf4901b892b103129390a749c84"
+    },
+    {
+      "index": 50,
+      "sourceText": "a crib for storing and drying ears of corn",
+      "originalTranslation": "储存和烘干玉米耳的婴儿床;",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "用于存放和晾干玉米穗的仓棚。",
+      "issue": "corn crib 为仓棚，ears 为玉米穗。",
+      "sourcePairHash": "66489e582a4fc7d035a987aac2dad8fef2f898798b528243646eaa5a7d4d833c"
+    },
+    {
+      "index": 51,
+      "sourceText": "continually recurring to the mind",
+      "originalTranslation": "脑海中不断重复",
+      "contexts": [
+        {
+          "word": "haunting",
+          "sense": "01040544-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        },
+        {
+          "word": "persistent",
+          "sense": "01040544-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "5f77c1342801e27e1bac564499d82c625345aaa543b88dbfec86e4513e32052d"
+    },
+    {
+      "index": 52,
+      "sourceText": "capital of the state of Wisconsin; located in the southern part of state; site of the main branch of the University of Wisconsin",
+      "originalTranslation": "威斯康辛州首府;位于州南部;威斯康辛大学主要分校所在地.",
+      "contexts": [
+        {
+          "word": "madison",
+          "sense": "09158024-n",
+          "pos": "n",
+          "domain": 15,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "美国威斯康辛州的首府，位于该州南部，是威斯康辛大学主要校区所在地。",
+      "issue": "main branch 在大学语境中不宜称主要分校。",
+      "sourcePairHash": "977bdab7181f84771e548a7b6a5007f42b587d2ee7c614075bb91a93f4f960ed"
+    },
+    {
+      "index": 53,
+      "sourceText": "taking care or paying attention",
+      "originalTranslation": "照顾或关注",
+      "contexts": [
+        {
+          "word": "carefully",
+          "sense": "00153568-r",
+          "pos": "r",
+          "domain": 2,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "仔细留心或给予注意。",
+      "issue": "taking care 在 carefully 语境中不是照料他人。",
+      "sourcePairHash": "179c9e41016a72f149cfd7914314ba8d99e2571ebf9fd3224c1d4ab1fcdceb75"
+    },
+    {
+      "index": 54,
+      "sourceText": "an aggressive attempt to compel acquiescence by the concentration or manipulation of power",
+      "originalTranslation": "通过集中或操纵权力迫使默许的侵略性企图",
+      "contexts": [
+        {
+          "word": "squeeze",
+          "sense": "00788097-n",
+          "pos": "n",
+          "domain": 4,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "通过集中或操纵权力，强迫对方屈从的强硬行动。",
+      "issue": "acquiescence 在强迫语境中为屈从，不是正式批准。",
+      "sourcePairHash": "b9cc619a1c20f7f71b6856754b70e63a9be9ea0e407e4a0ad992007005d518e4"
+    },
+    {
+      "index": 55,
+      "sourceText": "v turn in as payment or part payment for a purchase",
+      "originalTranslation": "v作为购买的付款或部分付款而提交",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "交出某物作为购买时的全部或部分付款。",
+      "issue": "去掉源词性标记，保留抵付关系。",
+      "sourcePairHash": "a1d3fd1d719c0e3a4034ab94867cc21512295c422f10f758177de46ecc729e13"
+    },
+    {
+      "index": 56,
+      "sourceText": "n a rich and spectacular ceremony n an elaborate representation of scenes from history etc; usually involves a parade with rich costumes",
+      "originalTranslation": "丰富而壮观的仪式 精心描绘历史的场景等等 通常包括穿着丰富服装的游行",
+      "contexts": [
+        {
+          "word": "pageantry",
+          "sense": "unmapped",
+          "kind": "extra-definition"
+        }
+      ],
+      "status": "source_review_required",
+      "revisedTranslation": null,
+      "issue": "原始数据将两条未带点的n义项连成一条。",
+      "sourcePairHash": "c24c78026f191dd74226d225be23d28bd396eb9f252d7dc7dd0dfb01f4e5fe15"
+    },
+    {
+      "index": 57,
+      "sourceText": "an American plant of the genus Malvastrum",
+      "originalTranslation": "⁇ (学名:Genus Malvastrum)为 ⁇ 科 ⁇ 属的植物.",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "Malvastrum 属的一种美洲植物。",
+      "issue": "保留拉丁属名，避免编造中文物种分类。",
+      "sourcePairHash": "54683b7f6de80ca06723299dfa103fde0d7a3e39eb46fdbd139d0b5dc6eb5fcf"
+    },
+    {
+      "index": 58,
+      "sourceText": "family of brightly colored voracious eels of warm coastal waters; generally nonaggressive to humans but larger species are dangerous if provoked",
+      "originalTranslation": "温暖的沿海水域的明亮的彩色贪婪的鳗鱼群; 通常对人类不具有攻击性,但如受到挑衅,更大的物种是危险的。",
+      "contexts": [
+        {
+          "word": "moray",
+          "sense": "02527271-n",
+          "pos": "n",
+          "domain": 5,
+          "kind": "definition"
+        },
+        {
+          "word": "moray",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "生活在温暖沿海水域的一科鳗形鱼，色彩鲜艳且贪食；通常不会主动攻击人，但较大的种类受到挑衅时可能危险。",
+      "issue": "family 为分类学的科，非临时鱼群。",
+      "sourcePairHash": "38af58e652c0ffc68bc4f8efb1a1f81656dd23ea5f901db98b120d169d84a96f"
+    },
+    {
+      "index": 59,
+      "sourceText": "branched green undeveloped flower heads",
+      "originalTranslation": "枝叶绿色未发育的花头",
+      "contexts": [
+        {
+          "word": "broccoli",
+          "sense": "07714990-n",
+          "pos": "n",
+          "domain": 13,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "分枝的绿色未开放花序。",
+      "issue": "flower heads 为花序；undeveloped 不等于无叶。",
+      "sourcePairHash": "8fd2bb2b0f970639c91e6170dcef0dc18e5ec6f4f62313e69ab73add2600ba0c"
+    },
+    {
+      "index": 60,
+      "sourceText": "did a clumsy job",
+      "originalTranslation": "做了个笨手笨脚的工作",
+      "contexts": [
+        {
+          "word": "bungling",
+          "sense": "02229324-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        },
+        {
+          "word": "clumsy",
+          "sense": "02229324-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        },
+        {
+          "word": "fumbling",
+          "sense": "02229324-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "把事情做得笨拙而不熟练。",
+      "issue": "描述做事方式，不是工作本身有手脚。",
+      "sourcePairHash": "eb6960d1b13b8672872bf763508cb4c7b48364860a3f8176931ed8e285857aed"
+    },
+    {
+      "index": 61,
+      "sourceText": "any of various hard colored rocks (especially rocks consisting of chert or basalt)",
+      "originalTranslation": "各种硬色岩石(特别是由 ⁇ 或玄武岩组成的岩石)",
+      "contexts": [
+        {
+          "word": "whin",
+          "sense": "09478210-n",
+          "pos": "n",
+          "domain": 17,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "多种坚硬有色岩石中的任一种，尤指由燧石或玄武岩组成的岩石。",
+      "issue": "chert 为燧石，修复乱码。",
+      "sourcePairHash": "da0b877357ca5c0ac9e207e97199a0de00df6439ed8ed786892fce053091785d"
+    },
+    {
+      "index": 62,
+      "sourceText": "a major drainage channel from the caudal part of the body",
+      "originalTranslation": "身体阴部的一条主要排水通道",
+      "contexts": [
+        {
+          "word": "posterior",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "来自身体尾侧部分的一条主要引流通道。",
+      "issue": "caudal 是尾侧，不是阴部；不额外猜测具体血管。",
+      "sourcePairHash": "8695bcdbd46dbd5c7e5e6c775fc5fb52931ce61fb45a91396f3f96af6b2a268d"
+    },
+    {
+      "index": 63,
+      "sourceText": "the smallest administrative district of several European countries",
+      "originalTranslation": "几个欧洲国家最小的行政区",
+      "contexts": [
+        {
+          "word": "commune",
+          "sense": "08541609-n",
+          "pos": "n",
+          "domain": 15,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "2f64b3183524fcfb3adb13a1ef3698f1a2214ec66477ecdd83f338b9e6a6ca36"
+    },
+    {
+      "index": 64,
+      "sourceText": "converted into a gas or vapor",
+      "originalTranslation": "转化为气体或蒸汽",
+      "contexts": [
+        {
+          "word": "vaporized",
+          "sense": "02263270-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "c16dc3040bec0b49d3962e7f556be13e63e2a6d3363182076eea8f42717f2c1b"
+    },
+    {
+      "index": 65,
+      "sourceText": "early-ripening apple popular in the northeastern United States; primarily eaten raw but suitable for applesauce",
+      "originalTranslation": "早熟苹果在美国东北部流行;主要吃生但适合苹果酱",
+      "contexts": [
+        {
+          "word": "mcintosh",
+          "sense": "07740954-n",
+          "pos": "n",
+          "domain": 13,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "一种在美国东北部很受欢迎的早熟苹果，主要生吃，也适合做苹果酱。",
+      "issue": "将并列限定表达为完整自然中文。",
+      "sourcePairHash": "109412b3c1f5d5858aa08bf18756d170eec51de72791c3060b7783b0689bab75"
+    },
+    {
+      "index": 66,
+      "sourceText": "a person who dislikes or avoids new technology",
+      "originalTranslation": "不喜欢或回避新技术的人;",
+      "contexts": [],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "d86003730bbf0170071f47f4f814a3a045668e631c508a72c11101db6ed4e54e"
+    },
+    {
+      "index": 67,
+      "sourceText": "clattering dishes",
+      "originalTranslation": "盘子打碎",
+      "contexts": [
+        {
+          "word": "clack",
+          "sense": "02172127-v",
+          "pos": "v",
+          "domain": 39,
+          "kind": "example"
+        },
+        {
+          "word": "clack",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        },
+        {
+          "word": "clatter",
+          "sense": "02172127-v",
+          "pos": "v",
+          "domain": 39,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "碗碟碰得叮当作响。",
+      "issue": "clattering 只表示碰响，不表示打碎。",
+      "sourcePairHash": "5a42bae82c8e063c0a5a4b5a672ea6397f8ae5bec679980573de68f9a1d68bd9"
+    },
+    {
+      "index": 68,
+      "sourceText": "(of a chemical reaction or compound) occurring or formed with the liberation of heat",
+      "originalTranslation": "(化学反应或化合物)在释放热量时发生或形成的",
+      "contexts": [
+        {
+          "word": "exothermic",
+          "sense": "00872906-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "a890d309443df25651c877747b7f1aca99973ab13a430b6b59dfd3b9989bcac6"
+    },
+    {
+      "index": 69,
+      "sourceText": "Inherited from Middle English crede, from Old English crēda, borrowed from Latin crēdō (“to believe”), from Proto-Italic *kresdō, from Proto-Indo-European *ḱréddʰeh₁ti (“to believe,",
+      "originalTranslation": "继承自中英信德,老英信德,借自拉丁信德,借于普罗托-意大利语*kresd ⁇ ,借于普洛托-印度-欧洲语* ⁇ rédheh1ti (\"要相信,",
+      "contexts": [],
+      "status": "source_review_required",
+      "revisedTranslation": null,
+      "issue": "词源摘录被截断且含历史重构词形，需按原文核对，不猜译残句。",
+      "sourcePairHash": "838e57c03c0ae13873b6272cb1421b7c49071dbfa02b9c17adf9cccb3ef3f985"
+    },
+    {
+      "index": 70,
+      "sourceText": "an estimate of the combined influence of two or more variables on the observed (dependent) variable",
+      "originalTranslation": "估计两个或两个以上变量对观测到(依赖)变量的综合影响",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "对两个或更多变量共同影响所观察因变量的程度作出的估计。",
+      "issue": "dependent variable 为因变量。",
+      "sourcePairHash": "5c281ea5d7ed159ec358f8085246516760ba865359a9a95484ec961095695910"
+    },
+    {
+      "index": 71,
+      "sourceText": "n a skeletal muscle whose contraction extends or stretches a body part",
+      "originalTranslation": "骨骼肌肉,其收缩延伸或伸展身体部位",
+      "contexts": [
+        {
+          "word": "extensor",
+          "sense": "unmapped",
+          "kind": "extra-definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "收缩时能够使身体某个部位伸展的骨骼肌。",
+      "issue": "保留收缩与伸展的关系；移除源词性标签。",
+      "sourcePairHash": "6edd3ac4bc152b78550b24632ca98f5f13b0718bb48168b39960bfba0a0ade0c"
+    },
+    {
+      "index": 72,
+      "sourceText": "v make a logical or causal connection v keep company with; hang out with v bring or come into association or action",
+      "originalTranslation": "v 建立逻辑或因果关系 v 保持公司关系; 与 v 保持联系或参与或行动",
+      "contexts": [
+        {
+          "word": "associated",
+          "sense": "unmapped",
+          "kind": "extra-definition"
+        }
+      ],
+      "status": "source_review_required",
+      "revisedTranslation": null,
+      "issue": "原始数据将三个v义项连成一条，先修复词性行解析。",
+      "sourcePairHash": "56f28d1e3be8cd11173e4b3281ed749cf33efbe65d4fb4afa104844dc0d9892d"
+    },
+    {
+      "index": 73,
+      "sourceText": "edible leaves of the common dandelion collected from the wild; used in salads and in making wine",
+      "originalTranslation": "从野外收集的普通丹德利翁的可食叶;用于沙拉和酿酒",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "从野外采集的普通蒲公英的可食用叶子，用于沙拉和酿酒。",
+      "issue": "dandelion 为蒲公英，不用不明音译。",
+      "sourcePairHash": "dcf69257d4696387eeaaa9890652b3f25db68c3a4b3da614b30c75407f7ea754"
+    },
+    {
+      "index": 74,
+      "sourceText": "a tree of the genus Sapindus whose fruit is rich in saponin",
+      "originalTranslation": "果实富含沙波宁的萨平杜斯树",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "无患子属（Sapindus）的一种树，其果实富含皂苷。",
+      "issue": "saponin 为皂苷，保留植物属名。",
+      "sourcePairHash": "ae517faa5fed591c646aeb73fe5a11aee9207211ad2a22a46eeac50cf9eca4d9"
+    },
+    {
+      "index": 75,
+      "sourceText": "He eked out a living as a painter",
+      "originalTranslation": "他以画家的身份谋生",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "他靠画画勉强维持生计。",
+      "issue": "eke out 保留艰难维生的语气。",
+      "sourcePairHash": "11f6e181bc3e07784adf6f4450b5ce5ae76c243e7a9577ec7b1903500805c806"
+    },
+    {
+      "index": 76,
+      "sourceText": "a person suffering a nervous breakdown",
+      "originalTranslation": "神经衰弱者",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "正在经历精神崩溃的人。",
+      "issue": "nervous breakdown 不是特指神经衰弱诊断。",
+      "sourcePairHash": "cd59a1a6c0515d81caa2d2a1adbd52ae04f0d924625f73aec562f004bf73770c"
+    },
+    {
+      "index": 77,
+      "sourceText": "he had an intuition that something had gone wrong",
+      "originalTranslation": "他有直觉说出了问题",
+      "contexts": [
+        {
+          "word": "hunch",
+          "sense": "05919034-n",
+          "pos": "n",
+          "domain": 9,
+          "kind": "example"
+        },
+        {
+          "word": "hunch",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        },
+        {
+          "word": "intuition",
+          "sense": "05919034-n",
+          "pos": "n",
+          "domain": 9,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "他直觉感到事情出了问题。",
+      "issue": "intuition 的感觉主体和内容。",
+      "sourcePairHash": "9b7ff123e92902fee323ed7d57b2594de2af3d286d0aff90d2f952ab956a9df2"
+    },
+    {
+      "index": 78,
+      "sourceText": "yellow-flowered primrose native to Alps; commonly cultivated",
+      "originalTranslation": "原生于阿尔卑斯山;通常种植",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "原产阿尔卑斯山、开黄花的一种报春花，常被栽培。",
+      "issue": "补回被漏译的植物名称和花色。",
+      "sourcePairHash": "5253b89e8fcc44e80682cd88f947fc36d909dd569ab507281f909d182dae5a2f"
+    },
+    {
+      "index": 79,
+      "sourceText": "stop that god-awful racket",
+      "originalTranslation": "停止那该死的吵闹",
+      "contexts": [
+        {
+          "word": "beastly",
+          "sense": "01802774-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        },
+        {
+          "word": "hellish",
+          "sense": "01802774-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "54ae2461a11d8d654eb57e4b4617112d5ab1448333311b15695ab405b71cb2ca"
+    },
+    {
+      "index": 80,
+      "sourceText": "unrealistic expectations",
+      "originalTranslation": "不切实际的期望",
+      "contexts": [
+        {
+          "word": "unrealistic",
+          "sense": "01941999-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "example"
+        },
+        {
+          "word": "unrealistic",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "2cd04c6bb5d56b766666e2f8579e346fa0665f35905179724cb7a10e232ebb3f"
+    },
+    {
+      "index": 81,
+      "sourceText": "someone left in charge of pets while their owners are away from home",
+      "originalTranslation": "有人在养宠物时 离开家门",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "宠物主人离家期间受托照料宠物的人。",
+      "issue": "离家的主体是主人，不是照料者。",
+      "sourcePairHash": "a03f6010422cf540d814a8ec1e70fa4057f8fe864903048347fe83b38cf50e2b"
+    },
+    {
+      "index": 82,
+      "sourceText": "n something or someone that causes anxiety; a source of unhappiness",
+      "originalTranslation": "引起焦虑的事物或人;不幸福的根源",
+      "contexts": [],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "7c21d9803d41a20e0d7d200a9726ee2243a74f1bb9f4c9be07c1ef33d0d50692"
+    },
+    {
+      "index": 83,
+      "sourceText": "United States physician and suffragist (1847-1919)",
+      "originalTranslation": "美国医生和窒息症患者(1847-1919)",
+      "contexts": [
+        {
+          "word": "shaw",
+          "sense": "11296139-n",
+          "pos": "n",
+          "domain": 18,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "美国医生、妇女参政权倡导者（1847—1919）。",
+      "issue": "suffragist 为争取投票权者，不是窒息症患者。",
+      "sourcePairHash": "4eb5d2c3b3517c3ed81e9da93b8fae7b3ad071fa29e1018a73a5e5991cd3bf58"
+    },
+    {
+      "index": 84,
+      "sourceText": "the unpleasant situation (or position) of having to choose between two evils",
+      "originalTranslation": "不得不在两种邪恶之间作出选择的不愉快情况(或立场)",
+      "contexts": [
+        {
+          "word": "position",
+          "sense": "13925752-n",
+          "pos": "n",
+          "domain": 26,
+          "kind": "example"
+        },
+        {
+          "word": "situation",
+          "sense": "13925752-n",
+          "pos": "n",
+          "domain": 26,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "不得不在两种不利选择之间作决定的困境。",
+      "issue": "two evils 在此为两种坏选择。",
+      "sourcePairHash": "2e1f2803d9c96064ac6068e7c9dab58fc5b6f1483d887c4c6079e577bc989bf0"
+    },
+    {
+      "index": 85,
+      "sourceText": "pizza with lots of cheese",
+      "originalTranslation": "披萨加很多奶酪",
+      "contexts": [
+        {
+          "word": "pizza",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "9e92d362f2864b89d5357fedc56c121bdc6b7e97ec3d5478d85e62428c3ca3f0"
+    },
+    {
+      "index": 86,
+      "sourceText": "The French family was naturalized last year",
+      "originalTranslation": "法国家庭去年入籍了",
+      "contexts": [
+        {
+          "word": "naturalise",
+          "sense": "00412292-v",
+          "pos": "v",
+          "domain": 30,
+          "kind": "example"
+        },
+        {
+          "word": "naturalize",
+          "sense": "00412292-v",
+          "pos": "v",
+          "domain": 30,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "87c3fab23ea4c25b2a6b1a8c317bcc27acaf6c63ae9c7fbf1429314bcd4e5d3b"
+    },
+    {
+      "index": 87,
+      "sourceText": "a lack of caution in practical affairs",
+      "originalTranslation": "在实际事务中缺乏谨慎",
+      "contexts": [],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "97a263cef82b5494382d6cf4aab699cc997a211196e63d352fdcc3e4a6e75795"
+    },
+    {
+      "index": 88,
+      "sourceText": "a showy often-cultivated plant with tawny yellow often purple-spotted flowers",
+      "originalTranslation": "常开花的植物 黄褐色的 常是紫色的花",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "一种常被栽培的艳丽植物，花呈黄褐色，常带紫色斑点。",
+      "issue": "区分花色和斑点，恢复often-cultivated。",
+      "sourcePairHash": "e1b0ceb61a0b1a8415ed14f196a12832b759348f10b89ccb7241e1c76310fcdd"
+    },
+    {
+      "index": 89,
+      "sourceText": "not officially established",
+      "originalTranslation": "未正式设立",
+      "contexts": [
+        {
+          "word": "unofficial",
+          "sense": "01635018-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "38d829bdc3dbf855aa3c88b9aa07937b2037154220a306e9945beb8424810a18"
+    },
+    {
+      "index": 90,
+      "sourceText": "broadcast again, as of a film",
+      "originalTranslation": "从电影开始再播一次",
+      "contexts": [
+        {
+          "word": "rebroadcast",
+          "sense": "00973888-v",
+          "pos": "v",
+          "domain": 32,
+          "kind": "definition"
+        },
+        {
+          "word": "rerun",
+          "sense": "00973888-v",
+          "pos": "v",
+          "domain": 32,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "再次播出，例如重播一部电影。",
+      "issue": "as of 表举例，不是从电影开始。",
+      "sourcePairHash": "8f6ecc51456903eb4bb3e446b36a56be07a454a00673a8ceae85c0e06bd70cef"
+    },
+    {
+      "index": 91,
+      "sourceText": "murdered by surprise attack for political reasons",
+      "originalTranslation": "因政治原因被突然袭击杀害",
+      "contexts": [
+        {
+          "word": "assassinated",
+          "sense": "00096072-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "6fc80a1279a21c19ca17ce71d6c2ba74ce97a5b561d4fd4cfeb72c891314732c"
+    },
+    {
+      "index": 92,
+      "sourceText": "a bribe given to a disc jockey to induce him to promote a particular record",
+      "originalTranslation": "贿赂一个盘子骑师 诱导他宣传某个唱片",
+      "contexts": [
+        {
+          "word": "payola",
+          "sense": "13284973-n",
+          "pos": "n",
+          "domain": 21,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "给唱片节目主持人的贿赂，用来诱使其推广某张唱片。",
+      "issue": "disc jockey 是节目主持人，不是骑师。",
+      "sourcePairHash": "a4c41d0bab88f6484d649901222f77492faef6105aefa60aab82de0534816042"
+    },
+    {
+      "index": 93,
+      "sourceText": "the hero of William Shakespeare's tragedy who hoped to avenge the murder of his father",
+      "originalTranslation": "威廉·莎士比亚悲剧的英雄希望为父亲的谋杀案报仇",
+      "contexts": [
+        {
+          "word": "hamlet",
+          "sense": "09599891-n",
+          "pos": "n",
+          "domain": 18,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "莎士比亚悲剧中希望为被谋杀的父亲报仇的主人公。",
+      "issue": "hero 为作品主人公，明确父亲是被害者。",
+      "sourcePairHash": "55ff1fbb1fcae8023c09f1570473bc2a2734837c5f4c7cd2374e50bc84652b6c"
+    },
+    {
+      "index": 94,
+      "sourceText": "a furnace that burns gas",
+      "originalTranslation": "燃烧气体的炉子",
+      "contexts": [],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "16fd5142efa96636ee3e818ccddd398ab1003414725bf769441f2971149adb0d"
+    },
+    {
+      "index": 95,
+      "sourceText": "fortification consisting of a low wall",
+      "originalTranslation": "由低墙组成的防御工事",
+      "contexts": [
+        {
+          "word": "breastwork",
+          "sense": "03889503-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "definition"
+        },
+        {
+          "word": "parapet",
+          "sense": "03889503-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "583ef646bcf14f647384e5e891c89635c48983bcaabfcb1ca9de40908e58dfac"
+    },
+    {
+      "index": 96,
+      "sourceText": "he was led astray",
+      "originalTranslation": "他确是迷误的,",
+      "contexts": [
+        {
+          "word": "astray",
+          "sense": "00206386-r",
+          "pos": "r",
+          "domain": 2,
+          "kind": "example"
+        },
+        {
+          "word": "astray",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "他被引入了歧途。",
+      "issue": "保留被他人误导的被动关系。",
+      "sourcePairHash": "74337ed1ee4e77e8a2168eebd40f556ef7d2939f829bee72e5dfadb802076c4d"
+    },
+    {
+      "index": 97,
+      "sourceText": "n the activity of supplying or providing something",
+      "originalTranslation": "N. 供应或提供物品的活动",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "供应或提供某种事物的活动。",
+      "issue": "移除词性字母。",
+      "sourcePairHash": "5277de2b0f9e33c4595934d0d8b20990784e675ed5b6e9960b369db85ca2326e"
+    },
+    {
+      "index": 98,
+      "sourceText": "an aromatic flavorful vegetable",
+      "originalTranslation": "一种香味的蔬菜",
+      "contexts": [
+        {
+          "word": "onion",
+          "sense": "07722217-n",
+          "pos": "n",
+          "domain": 13,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "10dfc1f054c47d0d00092866321b9ba93d71b3c20df58d57a8ebab102808a9d5"
+    },
+    {
+      "index": 99,
+      "sourceText": "do you have a light?",
+      "originalTranslation": "你有火吗?",
+      "contexts": [
+        {
+          "word": "igniter",
+          "sense": "03666591-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "example"
+        },
+        {
+          "word": "igniter",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        },
+        {
+          "word": "light",
+          "sense": "03666591-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "001ad1ff45b6d5726a4a04ce7aa023240bc5c971fe2632b10a23f363eec726c5"
+    },
+    {
+      "index": 100,
+      "sourceText": "a congenial disposition",
+      "originalTranslation": "混合处置",
+      "contexts": [
+        {
+          "word": "congeniality",
+          "sense": "04655829-n",
+          "pos": "n",
+          "domain": 7,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "随和、容易相处的性情。",
+      "issue": "disposition 为性情，congenial 非混合。",
+      "sourcePairHash": "990bb82c481db0dacfa1b4615be3d745b2220416cc0e6e2a9c8503414fe25b31"
+    },
+    {
+      "index": 101,
+      "sourceText": "n 100 grams",
+      "originalTranslation": "零 100克(千米)",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "100克。",
+      "issue": "n 为名词标记，不是零；原文没有千米。",
+      "sourcePairHash": "0bd654f9d2c024e0371168b501f46ad979763c1dbb0b30ab273e5cc7a0fd8418"
+    },
+    {
+      "index": 102,
+      "sourceText": "the arithmetic mean of the maximum and minimum distances of a celestial body (satellite or secondary star) from its primary",
+      "originalTranslation": "天体(卫星或二级恒星)与原星的最大和最小距离的算术平均值",
+      "contexts": [
+        {
+          "word": "distance",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        },
+        {
+          "word": "mean",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "5918b06b5e060b1bb36b48db083633d90736652f7d340eebf62de2f67d6f81e4"
+    },
+    {
+      "index": 103,
+      "sourceText": "someone who does a morris dance",
+      "originalTranslation": "跳摩里斯舞的人 跳摩里斯舞会的人",
+      "contexts": [
+        {
+          "word": "morris",
+          "sense": "unmapped",
+          "kind": "phrase-definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "跳莫里斯舞的人。",
+      "issue": "删除重复输出。",
+      "sourcePairHash": "028279a5b91fe04e52904b149e8b2240861e8ddf6eb6fed596aed21f0e772cf1"
+    },
+    {
+      "index": 104,
+      "sourceText": "the patient was desensitized to the allergen",
+      "originalTranslation": "病人对过敏性免疫",
+      "contexts": [
+        {
+          "word": "desensitization",
+          "sense": "13463255-n",
+          "pos": "n",
+          "domain": 22,
+          "kind": "example"
+        },
+        {
+          "word": "desensitization",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "患者对该过敏原的敏感性已通过脱敏处理降低。",
+      "issue": "desensitized 为脱敏，不是获得全面免疫。",
+      "sourcePairHash": "7b8b0ca497b927c4332380848f6a172926589f1d8f2aef582661dea35d5dcfa7"
+    },
+    {
+      "index": 105,
+      "sourceText": "(military) the relative capacity for delivering fire on a target",
+      "originalTranslation": "(军事)向目标开火的相对能力",
+      "contexts": [
+        {
+          "word": "firepower",
+          "sense": "05204004-n",
+          "pos": "n",
+          "domain": 7,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "1b84ea0f09bc7451ff3cfd165db470d118d7f6821b8645de7790183cff949d63"
+    },
+    {
+      "index": 106,
+      "sourceText": "She signed the letter and sent it off",
+      "originalTranslation": "她签了信就寄了出来",
+      "contexts": [
+        {
+          "word": "sign",
+          "sense": "00996485-v",
+          "pos": "v",
+          "domain": 32,
+          "kind": "example"
+        },
+        {
+          "word": "subscribe",
+          "sense": "00996485-v",
+          "pos": "v",
+          "domain": 32,
+          "kind": "example"
+        },
+        {
+          "word": "subscribe",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "b33d1ff19a6134a48f1c5bf8ed1f7f07ece76b6c7fd233123ac97d214352f48f"
+    },
+    {
+      "index": 107,
+      "sourceText": "He had vastly overestimated his resources",
+      "originalTranslation": "他高估了自己的资源",
+      "contexts": [
+        {
+          "word": "immensely",
+          "sense": "00005779-r",
+          "pos": "r",
+          "domain": 2,
+          "kind": "example"
+        },
+        {
+          "word": "immensely",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        },
+        {
+          "word": "vastly",
+          "sense": "00005779-r",
+          "pos": "r",
+          "domain": 2,
+          "kind": "example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "他大大高估了自己可用的资源。",
+      "issue": "保留 vastly 的强程度。",
+      "sourcePairHash": "03192be3fff079dce0efe4ece90c301a5e14f6a27fbb14079a1ed5853b1f981f"
+    },
+    {
+      "index": 108,
+      "sourceText": "v take away a part from; diminish",
+      "originalTranslation": "五. 取消一部分;减少",
+      "contexts": [
+        {
+          "word": "detract",
+          "sense": "unmapped",
+          "kind": "extra-definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "从中减去一部分；削减。",
+      "issue": "移除词性字母并保留减除义。",
+      "sourcePairHash": "e84501174a59ee065f747af6cdbe9654bbd8045042bcc311f4bfa0eb28269400"
+    },
+    {
+      "index": 109,
+      "sourceText": "(botany) a usually terminal tuft of bracts (as in the pineapple) or tuft of hairs (especially on certain seeds)",
+      "originalTranslation": "(botany)通常是一种终极毛条(如菠萝)或毛条(尤其是某些种子上).",
+      "contexts": [
+        {
+          "word": "coma",
+          "sense": "13090395-n",
+          "pos": "n",
+          "domain": 20,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "（植物学）通常位于顶端的一簇苞片（如菠萝的顶冠），或一簇毛（尤指某些种子上的毛簇）。",
+      "issue": "terminal 是顶端；bracts 为苞片。",
+      "sourcePairHash": "b83ebe94828f9e0b6edadf7f7b70f14e84c33093ab73e56ee4563b400b79a14c"
+    },
+    {
+      "index": 110,
+      "sourceText": "(biology) a taxonomic group ranking above an order and below a class or subclass",
+      "originalTranslation": "(生物学)一个分类学组位列顺序以上,一个类或子类以下",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "（生物学）高于目、低于纲或亚纲的分类单元。",
+      "issue": "order、class 在此是分类学阶元。",
+      "sourcePairHash": "7c05b7522456d4b9fd2cb2173d196699983006d7d3e04fc825fd835145d6c172"
+    },
+    {
+      "index": 111,
+      "sourceText": "not making concessions",
+      "originalTranslation": "不作出让步",
+      "contexts": [
+        {
+          "word": "inflexible",
+          "sense": "01025913-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        },
+        {
+          "word": "sturdy",
+          "sense": "01025913-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        },
+        {
+          "word": "uncompromising",
+          "sense": "01025913-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "2956ef0448e98ced74610f24728731fead36126ba1873a24855d147a409dc5b5"
+    },
+    {
+      "index": 112,
+      "sourceText": "it vanished into the night",
+      "originalTranslation": "它消失在黑夜里 消失在黑夜里",
+      "contexts": [
+        {
+          "word": "night",
+          "sense": "13983717-n",
+          "pos": "n",
+          "domain": 26,
+          "kind": "example"
+        },
+        {
+          "word": "night",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "它消失在夜色中。",
+      "issue": "删除重复句子。",
+      "sourcePairHash": "f9407e03370a5e3d69f0c039f5555e76b8ef081abed61d1c5471dda755772a5d"
+    },
+    {
+      "index": 113,
+      "sourceText": "a green to black mineral of the amphibole group; consists of silicates of calcium and sodium and magnesium and iron",
+      "originalTranslation": "由钙、钠、镁和铁的硅酸盐组成。",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "角闪石类的一种绿至黑色矿物，由钙、钠、镁和铁的硅酸盐组成。",
+      "issue": "补回原译漏掉的颜色和矿物类别。",
+      "sourcePairHash": "d890905c4a4b8f332a1c8bd4d767536291f2c7b7678d2b7cccdc0da644af6598"
+    },
+    {
+      "index": 114,
+      "sourceText": "involving three parties",
+      "originalTranslation": "B. 涉及三个当事方",
+      "contexts": [
+        {
+          "word": "trilateral",
+          "sense": "01946167-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "涉及三个参与方的。",
+      "issue": "移除无依据项目编号。",
+      "sourcePairHash": "dfc13eb92a4d26bc7223098eec2d47f48d3bf448854bf6f5e26a97c9ab3b5b10"
+    },
+    {
+      "index": 115,
+      "sourceText": "having a curiously intricate quality",
+      "originalTranslation": "质量复杂奇异",
+      "contexts": [
+        {
+          "word": "fanciful",
+          "sense": "01796304-a",
+          "pos": "a",
+          "domain": 0,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "具有奇特而错综复杂的特点的。",
+      "issue": "quality 为特点或性质，不是产品质量。",
+      "sourcePairHash": "3ac35cfb3a414211c928dad79afb4c7d6635a168792f619b68860feffa0ceef8"
+    },
+    {
+      "index": 116,
+      "sourceText": "abnormal narrowing of the opening into the pulmonary artery from the right ventricle",
+      "originalTranslation": "从右心室向肺动脉的开口 异常的缩小",
+      "contexts": [],
+      "status": "assistant_checked_no_material_error",
+      "revisedTranslation": null,
+      "issue": "",
+      "sourcePairHash": "42c164e46abb5e54e7c32ccd6829ad6690f75af83e074965ad578f902d8de791"
+    },
+    {
+      "index": 117,
+      "sourceText": "v choose and follow; as of theories, ideas, policies, strategies or plans",
+      "originalTranslation": "(五) 选择和遵循;作为理论、思想、政策、战略或计划",
+      "contexts": [],
+      "status": "assistant_revised",
+      "revisedTranslation": "选择并遵循某种理论、观念、政策、策略或计划。",
+      "issue": "移除词性v，按as of的举例结构解释。",
+      "sourcePairHash": "1055a3fc028e31346d568e93af1098538bd972b6b969baa37fbda616686eac99"
+    },
+    {
+      "index": 118,
+      "sourceText": "an opening (in a wall or ship or armored vehicle) for firing through",
+      "originalTranslation": "(在墙上、船只或装甲车辆内)发射的开口;",
+      "contexts": [
+        {
+          "word": "embrasure",
+          "sense": "03984908-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "definition"
+        },
+        {
+          "word": "port",
+          "sense": "03984908-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "definition"
+        },
+        {
+          "word": "porthole",
+          "sense": "03984908-n",
+          "pos": "n",
+          "domain": 6,
+          "kind": "definition"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "墙体、船体或装甲车辆上供射击的开口。",
+      "issue": "保留射击孔的用途，不是普通发射口。",
+      "sourcePairHash": "7d0996ee1bfd164f8dcaa08f313dd07122a89fd9487a6068a84b8dd329f21d9f"
+    },
+    {
+      "index": 119,
+      "sourceText": "they checked everyone's badge before letting them in",
+      "originalTranslation": "他们检查了每个人的警徽,然后才让他们进来",
+      "contexts": [
+        {
+          "word": "badge",
+          "sense": "06882561-n",
+          "pos": "n",
+          "domain": 10,
+          "kind": "example"
+        },
+        {
+          "word": "badge",
+          "sense": "unmapped",
+          "kind": "legacy-example"
+        }
+      ],
+      "status": "assistant_revised",
+      "revisedTranslation": "他们检查了每个人的身份徽章后才准许进入。",
+      "issue": "badge 不限于警徽，保留准入语境。",
+      "sourcePairHash": "86b5f310a46f6bae29160416b8f81916380da258f86c21543da4ca5bddd7fd37"
+    }
+  ]
+}

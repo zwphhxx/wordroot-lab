@@ -1,0 +1,174 @@
+{
+  "status": "BLOCKED",
+  "buildId": "v212-e9d5d0c16b8035",
+  "createdAt": 1792989195.0939178,
+  "productionChanges": false,
+  "counts": {
+    "words": 49426,
+    "senses": 110508,
+    "relations": 84682,
+    "nativeSourceBlocks": 71562,
+    "missingPairs": 67044,
+    "unreviewedHighRiskPairs": 69594,
+    "examples": 75858,
+    "phrases": 17152,
+    "phraseDefinitions": 17046,
+    "corruptTranslations": 385
+  },
+  "checks": [
+    {
+      "name": "preserved_word_count",
+      "passed": true,
+      "actual": 49426,
+      "required": 49426
+    },
+    {
+      "name": "schema_valid",
+      "passed": true,
+      "actual": 0,
+      "required": 0
+    },
+    {
+      "name": "source_senses_accounted",
+      "passed": false,
+      "actual": 67044,
+      "required": 0
+    },
+    {
+      "name": "unique_stable_ids",
+      "passed": true,
+      "actual": 0,
+      "required": 0
+    },
+    {
+      "name": "packages_match_current_build",
+      "passed": true,
+      "actual": {
+        "hashErrors": [],
+        "mixedBuild": 0
+      },
+      "required": 0
+    },
+    {
+      "name": "no_missing_bilingual_pairs",
+      "passed": false,
+      "actual": 67044,
+      "required": 0
+    },
+    {
+      "name": "no_corrupt_translations",
+      "passed": false,
+      "actual": 385,
+      "required": 0
+    },
+    {
+      "name": "no_orphan_relations",
+      "passed": true,
+      "actual": 0,
+      "required": 0
+    },
+    {
+      "name": "no_orphan_examples",
+      "passed": true,
+      "actual": 0,
+      "required": 0
+    },
+    {
+      "name": "correct_target_definitions",
+      "passed": true,
+      "actual": 0,
+      "required": 0
+    },
+    {
+      "name": "correct_relation_context",
+      "passed": true,
+      "actual": 0,
+      "required": 0
+    },
+    {
+      "name": "examples_aligned",
+      "passed": true,
+      "actual": 0,
+      "required": 0
+    },
+    {
+      "name": "phrases_aligned",
+      "passed": true,
+      "actual": 0,
+      "required": 0
+    },
+    {
+      "name": "high_risk_pairs_reviewed",
+      "passed": false,
+      "actual": 69594,
+      "required": 0
+    },
+    {
+      "name": "native_chinese_sources_reconciled",
+      "passed": false,
+      "actual": {
+        "unpairedWords": 47275,
+        "mismatchedBlocks": 0
+      },
+      "required": 0
+    },
+    {
+      "name": "phrase_scope_identity_valid",
+      "passed": true,
+      "actual": {
+        "orphans": 0,
+        "definitionMismatch": 0
+      },
+      "required": 0
+    },
+    {
+      "name": "source_versions_mapping_verified",
+      "passed": true,
+      "actual": "PASS",
+      "required": "PASS"
+    },
+    {
+      "name": "semantic_benchmark_reviewed",
+      "passed": false,
+      "actual": 0,
+      "required": 80
+    },
+    {
+      "name": "independent_semantic_audit",
+      "passed": false,
+      "actual": "NOT_RUN",
+      "required": "PASS for current build"
+    },
+    {
+      "name": "targeted_browser_checks",
+      "passed": true,
+      "actual": "PASS",
+      "required": "PASS for current build"
+    },
+    {
+      "name": "legacy_browser_regression",
+      "passed": false,
+      "actual": "FAIL",
+      "required": "PASS for current build"
+    },
+    {
+      "name": "external_content_bilingual",
+      "passed": false,
+      "actual": "NOT_RUN",
+      "required": "PASS for current build"
+    }
+  ],
+  "blockedBy": [
+    "source_senses_accounted",
+    "no_missing_bilingual_pairs",
+    "no_corrupt_translations",
+    "high_risk_pairs_reviewed",
+    "native_chinese_sources_reconciled",
+    "semantic_benchmark_reviewed",
+    "independent_semantic_audit",
+    "legacy_browser_regression",
+    "external_content_bilingual"
+  ],
+  "schemaErrorExamples": [],
+  "meaningOfPass": "Only a current PASS permits deployment. Field population and hashes do not prove semantic accuracy."
+}

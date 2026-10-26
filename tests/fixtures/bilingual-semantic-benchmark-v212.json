@@ -1,0 +1,1447 @@
+{
+  "schema": 1,
+  "expectedCount": 80,
+  "purpose": "Unreviewed benchmark inventory, not a passing gold set. Populate evidence and independent expected meanings before approval.",
+  "items": [
+    {
+      "word": "carrier",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "bank",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "light",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "charge",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "issue",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "plant",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "cell",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "scale",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "spring",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "interest",
+      "category": "multiple_senses",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "book",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "water",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "run",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "face",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "watch",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "play",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "set",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "work",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "change",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "sound",
+      "category": "cross_pos",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "apple",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "banana",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "andiron",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "dog",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "teapot",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "chair",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "table",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "house",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "flower",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "coffee",
+      "category": "ordinary_objects",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "signal",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "wave",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "current",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "circuit",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "voltage",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "electron",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "gene",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "allele",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "protein",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "organism",
+      "category": "scientific_technical",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "justice",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "freedom",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "resilience",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "responsibility",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "knowledge",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "evidence",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "risk",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "value",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "equity",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "capital",
+      "category": "abstract",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "procedure",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "revolution",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "concession",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "successful",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "photograph",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "biology",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "telephone",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "constructive",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "transport",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "microscope",
+      "category": "morphology",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "letter",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "bag",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "troop",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "bond",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "fly",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "order",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "family",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "paper",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "head",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "foot",
+      "category": "phrases_context",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "protasis",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "apodosis",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "sharif",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "mouse",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "child",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "go",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "good",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "lie",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "news",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    },
+    {
+      "word": "series",
+      "category": "forms_and_rare",
+      "status": "pending_semantic_review",
+      "requiredChecks": [
+        "source_senses_retained",
+        "zh_en_same_sense",
+        "examples_in_context",
+        "related_target_definition",
+        "no_cross_pos_mix"
+      ],
+      "sourcePointers": [
+        "local:wordnet-3.0",
+        "local:ecdict-frozen"
+      ],
+      "reviewer": null,
+      "evidence": []
+    }
+  ]
+}

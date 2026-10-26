@@ -1,0 +1,1259 @@
+{
+  "schema": 1,
+  "reviewerType": "assistant_linguistic_review",
+  "note": "Exact-source corrections; no broad token substitution and no claim of human review. These records do not approve the rest of the model output.",
+  "pairs": [
+    {
+      "en": "of or relating to the philosophical study of ethics",
+      "zh": "伦理学哲学研究的；与这种研究有关的。",
+      "reason": "表达自然化"
+    },
+    {
+      "en": "showing approval",
+      "zh": "表示赞同的。",
+      "reason": "approval 这里是赞同而非行政批准"
+    },
+    {
+      "en": "n artifact consisting of soft or resilient material used to fill or give shape or protect or add comfort",
+      "zh": "用柔软或有弹性的材料制成的填充物，用于填满空间、塑形、保护或增加舒适度。",
+      "reason": "artifact 是人造物而非考古文物；n 属于原始词性格式残留"
+    },
+    {
+      "en": "make inconspicuous",
+      "zh": "使不显眼；使不引人注意。",
+      "reason": "使役结构"
+    },
+    {
+      "en": "repeat an earlier theme of a composition",
+      "zh": "再次呈现作品中先前出现的主题。",
+      "reason": "composition 在此是作品，不是组成成分"
+    },
+    {
+      "en": "(of structures or institutions) having lost stability; failing or on the point of collapse",
+      "zh": "（结构或机构）已失去稳定性，正在衰败或濒临崩溃的。",
+      "reason": "修复语法与濒临状态"
+    },
+    {
+      "en": "a feeling of deep longing",
+      "zh": "深切渴望的感觉。",
+      "reason": "longing 指渴望"
+    },
+    {
+      "en": "in an indiscriminate manner",
+      "zh": "不加区分地；不加选择地。",
+      "reason": "原机译无依据增添了暴力含义"
+    },
+    {
+      "en": "Fall weather often overcasts our beaches",
+      "zh": "秋季的天气常使我们的海滩笼罩在阴云之下。",
+      "reason": "overcast 在此不是淹没"
+    },
+    {
+      "en": "The fishermen tied their flies",
+      "zh": "渔民们扎制了他们的飞蝇钓饵。",
+      "reason": "flies 在钓鱼语境是仿昆虫钓饵"
+    },
+    {
+      "en": "the Air Force will keep fighters on strip alert at bases around the country",
+      "zh": "空军将让战斗机在全国各地的基地保持跑道待命状态。",
+      "reason": "fighters 为战斗机，strip alert 是机场跑道警戒待命"
+    },
+    {
+      "en": "propel or give impetus to",
+      "zh": "推动；给予动力。",
+      "reason": "删除同义重复"
+    },
+    {
+      "en": "any of several mites of the order Acarina",
+      "zh": "蜱螨类（Acarina）中的若干种螨之一。",
+      "reason": "order 为分类学类别，不是命令；mites 为螨类"
+    },
+    {
+      "en": "a posthumous book",
+      "zh": "作者去世后出版的书。",
+      "reason": "posthumous 不等于后面的"
+    },
+    {
+      "en": "he wanted some stills for a magazine ad",
+      "zh": "他想要几张静态照片，用在杂志广告中。",
+      "reason": "stills 指照片，不是静物"
+    },
+    {
+      "en": "water directly from the spigot",
+      "zh": "直接从水龙头流出的水。",
+      "reason": "spigot 指水龙头，不是烟雾"
+    },
+    {
+      "en": "frowzy white hair",
+      "zh": "凌乱不整的白发。",
+      "reason": "frowzy 与细腻相反"
+    },
+    {
+      "en": "full-bodied wines",
+      "zh": "酒体醇厚的葡萄酒。",
+      "reason": "full-bodied 指酒体，不是装满"
+    },
+    {
+      "en": "it is well that no one saw you",
+      "zh": "幸好没有人看见你。",
+      "reason": "修复乱码并保留否定"
+    },
+    {
+      "en": "shingly.",
+      "zh": "铺满卵石的。",
+      "reason": "修复无法识别词形的候选译文"
+    },
+    {
+      "en": "r. as sharing a common genus",
+      "zh": "从属于同一个属的角度而言。",
+      "reason": "r. 为副词标签，genus 为类别"
+    },
+    {
+      "en": "a bag made of paper or plastic for holding customer's purchases",
+      "zh": "用纸或塑料制成、用于盛放顾客所购物品的袋子。",
+      "reason": "修复材料、用途和所属关系"
+    },
+    {
+      "en": "a man who delivers the mail",
+      "zh": "投递信件和邮件的人。",
+      "reason": "采用中性中文称谓"
+    },
+    {
+      "en": "a trailer that can be loaded with new cars for delivery to sales agencies",
+      "zh": "可装载新车并将其运送至销售网点的拖车。",
+      "reason": "解释汽车运输拖车的用途"
+    },
+    {
+      "en": "any land or sea or air vehicle designed to carry troops",
+      "zh": "用于运送军人的陆上、海上或空中运输工具。",
+      "reason": "troops 指部队人员"
+    },
+    {
+      "en": "babbling brooks",
+      "zh": "潺潺的溪流。",
+      "reason": "babbling 描写溪流声，保留流水语境。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "transparent chiffon",
+      "zh": "透明的雪纺织物。",
+      "reason": "chiffon 为织物，不是鱼类。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "I cannot say `zip wire'",
+      "zh": "我说不出“zip wire”这个短语。",
+      "reason": "被引号引用的短语保留原文，避免把发音对象改成另一个中文词；它不是专有名词。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "the gilded and perfumed but inwardly rotten nobility",
+      "zh": "外表华丽、香气袭人，内里却腐朽的贵族阶层。",
+      "reason": "gilded/perfumed 的外表与 inwardly rotten 内在形成对照，保留转折。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "marinade herring",
+      "zh": "用腌汁腌制鲱鱼。",
+      "reason": "保留 marinade 的动词用法。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "Norwegian herring",
+      "zh": "挪威鲱鱼。",
+      "reason": "保留产地和鱼类名称。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "some odd dollars left",
+      "zh": "还剩一些零散的美元。",
+      "reason": "保留美元单位，不泛化为任何货币的零钱。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "a plague of grasshoppers",
+      "zh": "一场蝗灾。",
+      "reason": "plague of grasshoppers 为害虫大规模侵袭的灾害，不直译为瘟疫。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "Jade.",
+      "zh": "玉；玉石。",
+      "reason": "jade 为玉石名称，删除乱码。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Tenfold.",
+      "zh": "十倍的；十倍地。",
+      "reason": "保留 tenfold 的数量含义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Mountain.",
+      "zh": "山；山岳。",
+      "reason": "还原名词含义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "very funny",
+      "zh": "非常滑稽；非常好笑。",
+      "reason": "上下文为 killing、sidesplitting 的形容词义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "thick gruel",
+      "zh": "稠粥。",
+      "reason": "thick 修饰粥的稠度。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "The magpie.",
+      "zh": "喜鹊。",
+      "reason": "恢复鸟类名称。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "what gives?",
+      "zh": "这是怎么回事？",
+      "reason": "按口语表达理解，不逐字译 gives。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "the dull thud",
+      "zh": "沉闷的砰声。",
+      "reason": "thud 为撞击声，dull 描述声音沉闷。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "a quick temper",
+      "zh": "容易发怒的脾气。",
+      "reason": "quick temper 指易怒，不是速度快。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "indigo flowers",
+      "zh": "靛蓝色的花。",
+      "reason": "indigo 在该例中描述颜色。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "like a coquette",
+      "zh": "像卖弄风情的人那样。",
+      "reason": "保留人物行为类比，不把 coquette 错译为器具。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "turn into curds",
+      "zh": "凝结成乳块。",
+      "reason": "curds 指乳凝块。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Sourly; tartly.",
+      "zh": "尖酸地；刻薄地。",
+      "reason": "acidly 的副词语气义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "having no gills",
+      "zh": "没有鳃的。",
+      "reason": "保留否定和生物器官。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "with mouth agape",
+      "zh": "张着嘴。",
+      "reason": "agape 描述嘴张开的状态。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "-ing form of koon",
+      "zh": "koon 的 -ing 形式。",
+      "reason": "这里只解释词形，不推断原词义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "An herb; a plant.",
+      "zh": "草本植物；植物。",
+      "reason": "herb 在该定义中不是调味香草。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "The earth; earth.",
+      "zh": "大地；土地。",
+      "reason": "恢复 terra 的土地含义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Resembling a bird.",
+      "zh": "像鸟的；与鸟相似的。",
+      "reason": "保留相似性而不是认定为鸟类。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "The letter h or H.",
+      "zh": "字母 h 或 H。",
+      "reason": "字母本身保留原文。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "affectedly genteel",
+      "zh": "故作高雅的；装出上流风度的。",
+      "reason": "affectedly 指做作，而非受污染。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "like twilight; dim",
+      "zh": "像暮色般昏暗的；光线暗淡的。",
+      "reason": "保留 twilight 的光照意象。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "pluck with tweezers",
+      "zh": "用镊子拔取。",
+      "reason": "tweezers 是镊子，pluck 为拔取动作。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "she led a low spade",
+      "zh": "她先打出了一张小黑桃。",
+      "reason": "纸牌语境，led 为率先出牌，spade 为黑桃。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "The bank of a brook.",
+      "zh": "小溪的岸边。",
+      "reason": "bank 此处为河岸，不是银行。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "v cover with shingles",
+      "zh": "用木瓦或薄屋面瓦覆盖。",
+      "reason": "v 是旧词性标记，shingles 指屋面瓦。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "`slumbery' is archaic",
+      "zh": "slumbery 是古旧用词。",
+      "reason": "保留被讨论的英文词形。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "A penthouse or awning.",
+      "zh": "附建的遮棚或遮篷。",
+      "reason": "与 awning 并列的旧义 penthouse 为遮棚，不强套现代顶层住宅义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Full of rods or twigs.",
+      "zh": "长满或布满枝条的。",
+      "reason": "保留枝条密布含义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "green around the gills",
+      "zh": "脸色发青，看起来不舒服。",
+      "reason": "习语描述脸色，不指真实的鱼鳃。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "hurl as if with a sling",
+      "zh": "像用投石索那样猛掷。",
+      "reason": "sling 是投掷工具，保留动作类比。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "refill my glass, please",
+      "zh": "请把我的杯子再倒满。",
+      "reason": "保留请求语气与再次倒满。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "she likes funky clothes",
+      "zh": "她喜欢时髦而别致的衣服。",
+      "reason": "funky 的服装风格义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "a boat on a twilit river",
+      "zh": "暮色中的河面上有一条船。",
+      "reason": "twilit 修饰暮光下的河流。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "with a short hollow thud",
+      "zh": "发出短促、空洞的砰声。",
+      "reason": "描述声音的长度和质感。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "A forest; a woody place.",
+      "zh": "森林；林木茂密的地方。",
+      "reason": "woody 在此为长有树木。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "salted and smoked herring",
+      "zh": "经过盐腌和烟熏的鲱鱼。",
+      "reason": "同时保留盐腌、烟熏两种处理。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "She was pleading insanity",
+      "zh": "她以精神失常为由进行辩护。",
+      "reason": "法律语境下 plead insanity。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Slightly green; greenish.",
+      "zh": "略带绿色的；微绿的。",
+      "reason": "保留颜色程度。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "inflammation of the ileum",
+      "zh": "回肠的炎症。",
+      "reason": "ileum 为回肠，不与 ilium 混淆。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "One who horns or cuckolds.",
+      "zh": "使别人的配偶不忠、给人戴绿帽子的人。",
+      "reason": "按旧词典 horns/cuckolds 的婚姻不忠义解释。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "She minced down the street",
+      "zh": "她扭捏地迈着小步沿街走去。",
+      "reason": "mince 在此是步态，不是切碎。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "he used pliers as a bender",
+      "zh": "他把钳子当作弯曲工具来用。",
+      "reason": "bender 指用于弯曲的工具。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Silver gilt or gilt bronze.",
+      "zh": "镀金银器或镀金青铜。",
+      "reason": "gilt 表示镀金，不是金色材料本体。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "`moo-cow' is a child's term",
+      "zh": "moo-cow 是儿童对奶牛的叫法。",
+      "reason": "被解释的儿童用语保留原文。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "of or relating to the ilium",
+      "zh": "髂骨的；与髂骨有关的。",
+      "reason": "ilium 为髂骨，不与回肠混淆。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "the wrong way to shuck clams",
+      "zh": "给蛤蜊去壳的错误方法。",
+      "reason": "shuck 指去壳，保留错误评价。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "she was working deliberately",
+      "zh": "她在不慌不忙地工作。",
+      "reason": "deliberately 此处为从容、有条不紊地。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "hold or catch as if in a trap",
+      "zh": "像用陷阱一样困住或捕获。",
+      "reason": "保留比喻和两个动作。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "a plant of the genus Trifolium",
+      "zh": "车轴草属（Trifolium）的一种植物。",
+      "reason": "genus 为分类学的属，保留拉丁名称。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "the persistent gills of fishes",
+      "zh": "鱼类持续保留的鳃。",
+      "reason": "persistent 在生物语境中指不脱落或保留。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "as much as a thimble will hold",
+      "zh": "一个顶针所能容纳的量。",
+      "reason": "thimble 此处作容量比喻。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "flesh of either quail or grouse",
+      "zh": "鹌鹑或松鸡的肉。",
+      "reason": "flesh 为食用肉。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "of or relating to the hyoid bone",
+      "zh": "舌骨的；与舌骨有关的。",
+      "reason": "恢复解剖名称。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "valium has a tranquilizing effect",
+      "zh": "Valium 具有镇静作用。",
+      "reason": "保留药物品牌原文，仅翻译例句而不增加用药建议。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "An outcry; a loud call; a clamor.",
+      "zh": "叫喊声；大声呼叫；喧嚷。",
+      "reason": "区分声音词的同义表达。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Covered with a mitten or mittens.",
+      "zh": "戴着连指手套的。",
+      "reason": "mitten 是连指手套。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "The fork of the legs; the crotch.",
+      "zh": "两腿分叉处；胯部。",
+      "reason": "恢复中性身体部位描述。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "A heap or pile; as, a bing of wood.",
+      "zh": "一堆；例如 a bing of wood 表示一堆木头。",
+      "reason": "保留示例词形与数量含义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "Same as Esophagus, Esophageal, etc.",
+      "zh": "分别与 esophagus（食管）、esophageal（食管的）等词同义。",
+      "reason": "这是词形参照，不是重复的音译。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "he tested for the presence of radon",
+      "zh": "他检测是否存在氡。",
+      "reason": "radon 为氡，presence 为存在。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "most amphibians have caducous gills",
+      "zh": "大多数两栖动物的鳃会在发育过程中脱落。",
+      "reason": "caducous 为会脱落的，不是诱导的。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "shrub bearing round-fruited kumquats",
+      "zh": "一种结圆形金橘果实的灌木。",
+      "reason": "保留果实形状与灌木特征。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "The cocoon or chrysalis of an insect.",
+      "zh": "昆虫的茧或蛹。",
+      "reason": "cocoon 与 chrysalis 分别为茧与蛹。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "prong on a fork or pitchfork or antler",
+      "zh": "叉子或草叉上的尖齿，或鹿角上的分枝尖端。",
+      "reason": "分别对应三种实物中的尖端。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "small herring processed like a sardine",
+      "zh": "像沙丁鱼那样加工的小鲱鱼。",
+      "reason": "保留加工方式的类比，不说两种鱼是同一种。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "the whitish root of cultivated parsnip",
+      "zh": "栽培欧洲防风的浅白色根部。",
+      "reason": "parsnip 是根菜，不是树木。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "encysted saclike larva of the tapeworm",
+      "zh": "绦虫包囊中的囊状幼虫。",
+      "reason": "encysted 是包囊状态，不是内分泌。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "he always greeted me with a new zinger",
+      "zh": "他每次见我，总会来一句新的俏皮话。",
+      "reason": "zinger 在问候语境中指机智、尖锐的话语。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "the use of radium in radiation therapy",
+      "zh": "在放射治疗中使用镭。",
+      "reason": "radium 为镭，仅保留原定义的用途描述。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "catfish common in eastern United States",
+      "zh": "一种常见于美国东部的鲶鱼。",
+      "reason": "恢复鱼类名称及地理限定。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "resume-20261026"
+    },
+    {
+      "en": "nervous disorder of late childhood and early adulthood; characterized by ataxic gait and hesitating or explosive speech and nystagmus",
+      "zh": "发生于儿童后期和成年早期的一种神经系统疾病，以共济失调步态、迟疑或爆发性言语以及眼球震颤为特征。",
+      "reason": "nystagmus 为眼球震颤，不是性病；ataxic 为共济失调。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "Please focus the image; we cannot enjoy the movie",
+      "zh": "请把画面调清晰；我们没法好好看电影。",
+      "reason": "focus 在成像语境中是调焦。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "v make reference to",
+      "zh": "提及；说到。",
+      "reason": "v 是词性标记，不是罗马数字五。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "These apples need to mellow a bit more",
+      "zh": "这些苹果还需要再熟软一点。",
+      "reason": "mellow 在水果语境中指成熟变软，不是增加美感。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "have a distinctive or characteristic taste",
+      "zh": "具有独特或明显的味道。",
+      "reason": "taste 是食物味道，不是审美品味。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "tolerance for alcohol",
+      "zh": "对酒精的耐受能力。",
+      "reason": "tolerance 是生理耐受，不是态度上的容忍。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a not reassuring; tending to cause anxiety",
+      "zh": "不能使人放心的；容易引起焦虑的。",
+      "reason": "保持否定，移除源词性标记。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "She took a chill",
+      "zh": "她受了凉。",
+      "reason": "take a chill 表示受凉，与冷静无关。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "get or gather together",
+      "zh": "收集或聚集起来。",
+      "reason": "get together 指收集，不逐字解成获得。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "hunt for turtles, especially as an occupation",
+      "zh": "捕猎龟类，尤指以此为业。",
+      "reason": "turtles 不局限于海龟，也不必然强调杀死。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a person who drinks alcohol to excess habitually",
+      "zh": "习惯性过量饮酒的人。",
+      "reason": "保留 habitually 的习惯性限定。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a darkened house",
+      "zh": "暗下来的房子。",
+      "reason": "darkened 为变暗状态，不额外断言停电或熄灯。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "play it straight with no shtik",
+      "zh": "正正经经地表演，不耍噱头。",
+      "reason": "shtik 是表演噱头，不能泛化为胡说。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "n surgical removal of a body part or tissue",
+      "zh": "通过外科手术切除身体的某个部分或组织。",
+      "reason": "n 为源词性标记，不属于中文释义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "She never eats a full meal--she just nibbles",
+      "zh": "她从不吃一顿完整的正餐，只是零零星星地吃几口。",
+      "reason": "nibble 是少量吃，不是吃泡菜。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a small room (or recess) or cabinet used for storage space",
+      "zh": "用于储物的小房间、壁龛或柜子。",
+      "reason": "recess 是凹入空间，不是休息室。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "snugly laced shoes",
+      "zh": "鞋带系得紧实贴脚的鞋子。",
+      "reason": "laced 指鞋带，不意味着皮鞋。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "The leaves clog our drains in the Fall",
+      "zh": "秋天，落叶会堵塞我们的排水沟。",
+      "reason": "in the Fall 修饰时间，不修饰排水沟。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "exaggerated feeling of well-being or elation",
+      "zh": "过度强烈的幸福感或兴奋感。",
+      "reason": "exaggerated 表示程度过强，非修辞夸张。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "an all-fours game in which the first card led is a trump",
+      "zh": "一种 all-fours 纸牌游戏，首先打出的牌是王牌。",
+      "reason": "保留游戏名称；trump 是王牌，不是重复无意义音节。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "lacking order or methodical arrangement or function",
+      "zh": "缺乏秩序、有条理的安排或正常组织运行的。",
+      "reason": "保持不同限定，并改善中文语法。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "v express approval of",
+      "zh": "对某事表示赞同。",
+      "reason": "approval 在此为赞同；v 不译作五。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "ships with square sails sail fairly efficiently with the wind abaft",
+      "zh": "装有横帆的船在风从船尾吹来时航行效率相当高。",
+      "reason": "square sails 为横帆；abaft 指后方。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "give birth to a litter of animals",
+      "zh": "产下一窝幼兽。",
+      "reason": "原文没有项目编号或括号，litter 是一窝。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "(of the surface) having a rough, riblike texture",
+      "zh": "（表面）具有粗糙的棱状纹理的。",
+      "reason": "riblike 是棱条状纹理，不是实际肋骨。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "the occurrence of a uniting of separate parts",
+      "zh": "原本分开的各部分结合起来这一事件或过程。",
+      "reason": "separate parts 是分开的部分，不是单一部分。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a smooth hair style with the ends of the hair curled inward",
+      "zh": "一种梳理平顺、发梢向内卷曲的发型。",
+      "reason": "描述发型而非物体表面光滑。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "crack and acquire the appearance of alligator hide, as from weathering or improper application; of paint and varnishes",
+      "zh": "（油漆或清漆）因风化或涂刷不当等原因龟裂，呈现鳄鱼皮般的纹路。",
+      "reason": "hide 是兽皮，不是隐藏。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "took perverse satisfaction in foiling her plans",
+      "zh": "居然从挫败她的计划中获得一种反常的满足感。",
+      "reason": "满足来自挫败计划，不是用满足感去挫败计划。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "v take back what one has said",
+      "zh": "收回自己说过的话。",
+      "reason": "take back 是撤回言论，不是拿回物体。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "the quantity that can be held in the mouth",
+      "zh": "嘴里一次所能容纳的量。",
+      "reason": "mouthful 的容量义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "The plants straddle the entire state",
+      "zh": "这些植物分布遍及整个州。",
+      "reason": "state 是州，不是国家；straddle 在分布语境中理解。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "She broke the match",
+      "zh": "她折断了那根火柴。",
+      "reason": "match 在 break 的该例中指火柴，不是比赛。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a crib for storing and drying ears of corn",
+      "zh": "用于存放和晾干玉米穗的仓棚。",
+      "reason": "corn crib 为仓棚，ears 为玉米穗。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "capital of the state of Wisconsin; located in the southern part of state; site of the main branch of the University of Wisconsin",
+      "zh": "美国威斯康辛州的首府，位于该州南部，是威斯康辛大学主要校区所在地。",
+      "reason": "main branch 在大学语境中不宜称主要分校。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "taking care or paying attention",
+      "zh": "仔细留心或给予注意。",
+      "reason": "taking care 在 carefully 语境中不是照料他人。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "an aggressive attempt to compel acquiescence by the concentration or manipulation of power",
+      "zh": "通过集中或操纵权力，强迫对方屈从的强硬行动。",
+      "reason": "acquiescence 在强迫语境中为屈从，不是正式批准。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "v turn in as payment or part payment for a purchase",
+      "zh": "交出某物作为购买时的全部或部分付款。",
+      "reason": "去掉源词性标记，保留抵付关系。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "an American plant of the genus Malvastrum",
+      "zh": "Malvastrum 属的一种美洲植物。",
+      "reason": "保留拉丁属名，避免编造中文物种分类。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "family of brightly colored voracious eels of warm coastal waters; generally nonaggressive to humans but larger species are dangerous if provoked",
+      "zh": "生活在温暖沿海水域的一科鳗形鱼，色彩鲜艳且贪食；通常不会主动攻击人，但较大的种类受到挑衅时可能危险。",
+      "reason": "family 为分类学的科，非临时鱼群。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "branched green undeveloped flower heads",
+      "zh": "分枝的绿色未开放花序。",
+      "reason": "flower heads 为花序；undeveloped 不等于无叶。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "did a clumsy job",
+      "zh": "把事情做得笨拙而不熟练。",
+      "reason": "描述做事方式，不是工作本身有手脚。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "any of various hard colored rocks (especially rocks consisting of chert or basalt)",
+      "zh": "多种坚硬有色岩石中的任一种，尤指由燧石或玄武岩组成的岩石。",
+      "reason": "chert 为燧石，修复乱码。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a major drainage channel from the caudal part of the body",
+      "zh": "来自身体尾侧部分的一条主要引流通道。",
+      "reason": "caudal 是尾侧，不是阴部；不额外猜测具体血管。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "early-ripening apple popular in the northeastern United States; primarily eaten raw but suitable for applesauce",
+      "zh": "一种在美国东北部很受欢迎的早熟苹果，主要生吃，也适合做苹果酱。",
+      "reason": "将并列限定表达为完整自然中文。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "clattering dishes",
+      "zh": "碗碟碰得叮当作响。",
+      "reason": "clattering 只表示碰响，不表示打碎。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "an estimate of the combined influence of two or more variables on the observed (dependent) variable",
+      "zh": "对两个或更多变量共同影响所观察因变量的程度作出的估计。",
+      "reason": "dependent variable 为因变量。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "n a skeletal muscle whose contraction extends or stretches a body part",
+      "zh": "收缩时能够使身体某个部位伸展的骨骼肌。",
+      "reason": "保留收缩与伸展的关系；移除源词性标签。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "edible leaves of the common dandelion collected from the wild; used in salads and in making wine",
+      "zh": "从野外采集的普通蒲公英的可食用叶子，用于沙拉和酿酒。",
+      "reason": "dandelion 为蒲公英，不用不明音译。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a tree of the genus Sapindus whose fruit is rich in saponin",
+      "zh": "无患子属（Sapindus）的一种树，其果实富含皂苷。",
+      "reason": "saponin 为皂苷，保留植物属名。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "He eked out a living as a painter",
+      "zh": "他靠画画勉强维持生计。",
+      "reason": "eke out 保留艰难维生的语气。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a person suffering a nervous breakdown",
+      "zh": "正在经历精神崩溃的人。",
+      "reason": "nervous breakdown 不是特指神经衰弱诊断。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "he had an intuition that something had gone wrong",
+      "zh": "他直觉感到事情出了问题。",
+      "reason": "intuition 的感觉主体和内容。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "yellow-flowered primrose native to Alps; commonly cultivated",
+      "zh": "原产阿尔卑斯山、开黄花的一种报春花，常被栽培。",
+      "reason": "补回被漏译的植物名称和花色。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "someone left in charge of pets while their owners are away from home",
+      "zh": "宠物主人离家期间受托照料宠物的人。",
+      "reason": "离家的主体是主人，不是照料者。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "United States physician and suffragist (1847-1919)",
+      "zh": "美国医生、妇女参政权倡导者（1847—1919）。",
+      "reason": "suffragist 为争取投票权者，不是窒息症患者。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "the unpleasant situation (or position) of having to choose between two evils",
+      "zh": "不得不在两种不利选择之间作决定的困境。",
+      "reason": "two evils 在此为两种坏选择。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a showy often-cultivated plant with tawny yellow often purple-spotted flowers",
+      "zh": "一种常被栽培的艳丽植物，花呈黄褐色，常带紫色斑点。",
+      "reason": "区分花色和斑点，恢复often-cultivated。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "broadcast again, as of a film",
+      "zh": "再次播出，例如重播一部电影。",
+      "reason": "as of 表举例，不是从电影开始。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a bribe given to a disc jockey to induce him to promote a particular record",
+      "zh": "给唱片节目主持人的贿赂，用来诱使其推广某张唱片。",
+      "reason": "disc jockey 是节目主持人，不是骑师。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "the hero of William Shakespeare's tragedy who hoped to avenge the murder of his father",
+      "zh": "莎士比亚悲剧中希望为被谋杀的父亲报仇的主人公。",
+      "reason": "hero 为作品主人公，明确父亲是被害者。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "he was led astray",
+      "zh": "他被引入了歧途。",
+      "reason": "保留被他人误导的被动关系。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "n the activity of supplying or providing something",
+      "zh": "供应或提供某种事物的活动。",
+      "reason": "移除词性字母。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a congenial disposition",
+      "zh": "随和、容易相处的性情。",
+      "reason": "disposition 为性情，congenial 非混合。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "n 100 grams",
+      "zh": "100克。",
+      "reason": "n 为名词标记，不是零；原文没有千米。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "someone who does a morris dance",
+      "zh": "跳莫里斯舞的人。",
+      "reason": "删除重复输出。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "the patient was desensitized to the allergen",
+      "zh": "患者对该过敏原的敏感性已通过脱敏处理降低。",
+      "reason": "desensitized 为脱敏，不是获得全面免疫。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "He had vastly overestimated his resources",
+      "zh": "他大大高估了自己可用的资源。",
+      "reason": "保留 vastly 的强程度。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "v take away a part from; diminish",
+      "zh": "从中减去一部分；削减。",
+      "reason": "移除词性字母并保留减除义。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "(botany) a usually terminal tuft of bracts (as in the pineapple) or tuft of hairs (especially on certain seeds)",
+      "zh": "（植物学）通常位于顶端的一簇苞片（如菠萝的顶冠），或一簇毛（尤指某些种子上的毛簇）。",
+      "reason": "terminal 是顶端；bracts 为苞片。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "(biology) a taxonomic group ranking above an order and below a class or subclass",
+      "zh": "（生物学）高于目、低于纲或亚纲的分类单元。",
+      "reason": "order、class 在此是分类学阶元。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "it vanished into the night",
+      "zh": "它消失在夜色中。",
+      "reason": "删除重复句子。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "a green to black mineral of the amphibole group; consists of silicates of calcium and sodium and magnesium and iron",
+      "zh": "角闪石类的一种绿至黑色矿物，由钙、钠、镁和铁的硅酸盐组成。",
+      "reason": "补回原译漏掉的颜色和矿物类别。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "involving three parties",
+      "zh": "涉及三个参与方的。",
+      "reason": "移除无依据项目编号。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "having a curiously intricate quality",
+      "zh": "具有奇特而错综复杂的特点的。",
+      "reason": "quality 为特点或性质，不是产品质量。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "v choose and follow; as of theories, ideas, policies, strategies or plans",
+      "zh": "选择并遵循某种理论、观念、政策、策略或计划。",
+      "reason": "移除词性v，按as of的举例结构解释。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "an opening (in a wall or ship or armored vehicle) for firing through",
+      "zh": "墙体、船体或装甲车辆上供射击的开口。",
+      "reason": "保留射击孔的用途，不是普通发射口。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "they checked everyone's badge before letting them in",
+      "zh": "他们检查了每个人的身份徽章后才准许进入。",
+      "reason": "badge 不限于警徽，保留准入语境。",
+      "reviewerType": "assistant_linguistic_review",
+      "batch": "semantic-sample-120"
+    },
+    {
+      "en": "(usually in the plural) trousers made of flannel or gabardine or tweed or white cloth",
+      "zh": "（通常用复数）用法兰绒、华达呢、粗花呢或白布做成的裤子。",
+      "reason": "逐项核对织物名称和复数用法。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "European grass spreading rapidly by creeping rhizomes; naturalized in North America as a weed",
+      "zh": "一种通过匍匐根状茎迅速蔓延的欧洲禾草，已在北美归化为杂草。",
+      "reason": "植物 creeping 译匍匐，rhizome 为根状茎。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "one of the three sections of the hipbone; together these two bones form the front of the pelvis",
+      "zh": "髋骨的三个组成部分之一；左右两块这样的骨共同构成骨盆前部。",
+      "reason": "保留髋骨组成部分与成对骨结构的区别。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    },
+    {
+      "en": "any of various deciduous trees of the genus Tilia with heart-shaped leaves and drooping cymose clusters of yellowish often fragrant flowers; several yield valuable timber",
+      "zh": "椴树属（Tilia）的多种落叶树之一，叶片呈心形，淡黄色且常有香气的花组成下垂的聚伞花序；其中几种可提供有价值的木材。",
+      "reason": "模型候选把 yellowish 改为黄褐色不正确；应为偏黄色，核对叶片、花序及木材。",
+      "reviewerType": "assistant_linguistic_review",
+      "candidateOrigin": "local_model_candidate_then_assistant_review"
+    }
+  ]
+}

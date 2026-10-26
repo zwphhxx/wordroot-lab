@@ -111,3 +111,7 @@ All images and metadata were checked against the per-file Commons records; unsup
 The 138 Chinese explanatory notes and bilingual learning examples are independently authored. They do not replace the original dictionary entries. The banana reference includes Cambridge Dictionary; other references are linked per entry. Explicitly selected Chinese Wikipedia topic extracts retain their page and CC BY-SA 4.0 attribution and remain topic-scoped.
 
 New Commons pictures and derivative scene mappings are listed in visual-extra-v210.js. Each retains file description URL, original author, license, and license URL; no unsupported-license file is included. Files are display-sized copies, with no transfer of ownership claimed.
+
+## V2.12 候选双语资料
+
+中文概念标签部分采用 Chinese Open Wordnet（Francis Bond、Shan Wang），以PWN 3.0同义词集合编号连接。中文lemma并非逐句释义译文。完整许可见 `data/licenses/COW-LICENSE.txt`。补译候选使用本机 Argos/OPUS-MT，原模型为CC BY 4.0，见 `data/licenses/OPUS-MT-README.txt`。机器译文不能视为原词典作者核准，词典页面保留相应标记；本候选版本未通过发布门禁。

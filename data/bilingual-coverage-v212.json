@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "words": 49426,
+    "senses": 110511,
+    "examples": 75858,
+    "phrases": 17152,
+    "relations": 84682,
+    "machine_senses": 110343,
+    "machine_examples": 75737,
+    "machine_phrases": 0
+  },
+  "bundleCount": 522,
+  "missingTranslations": {},
+  "scriptWarnings": 0,
+  "warningTexts": [],
+  "model": "Argos OPUS-MT en_zh 1.9 and zh_en 1.9",
+  "editorialWords": [
+    "carrier"
+  ],
+  "sources": [
+    "Princeton WordNet 3.0",
+    "Chinese Open Wordnet",
+    "ECDICT"
+  ],
+  "partial": false,
+  "bytes": 101406197
+}

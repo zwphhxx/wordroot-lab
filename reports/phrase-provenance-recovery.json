@@ -1,0 +1,122 @@
+{
+  "status": "EXACT_SOURCE_RECOVERED",
+  "records": [
+    {
+      "word": "push",
+      "phrase": "push up",
+      "selectedSource": {
+        "synsetId": "01873530-v",
+        "pos": "v",
+        "definition": "push upward",
+        "member": "wordnet/data.verb",
+        "sourceLine": 9324,
+        "lineSha256": "93fa0e47e290855a803cdc699f4835b83f9c9de94fdda847cf44a2a403a03c94"
+      },
+      "allCandidateRecords": [
+        {
+          "synsetId": "01873530-v",
+          "pos": "v",
+          "definition": "push upward",
+          "member": "wordnet/data.verb",
+          "sourceLine": 9324,
+          "lineSha256": "93fa0e47e290855a803cdc699f4835b83f9c9de94fdda847cf44a2a403a03c94"
+        },
+        {
+          "synsetId": "02713852-v",
+          "pos": "v",
+          "definition": "push upward",
+          "member": "wordnet/data.verb",
+          "sourceLine": 13483,
+          "lineSha256": "62635ad68734e6d7af15f1267cd81e7c1ffd1e6e4006b784e84f4a221b684440"
+        }
+      ],
+      "basis": {
+        "method": "replay-original-builder-source-selection",
+        "legacyBuilderHash": "24dbdf4eb39d1ec7ecb86d32125c0a17ac3ae540e571432e04b7cf15e55346d7",
+        "member": "wordnet/data.verb",
+        "sourceLine": 9324,
+        "sourceLineHash": "93fa0e47e290855a803cdc699f4835b83f9c9de94fdda847cf44a2a403a03c94"
+      },
+      "noSemanticMerge": true,
+      "note": "The chosen source is the exact original record used by the legacy builder; this does not certify the phrase translation or claim other meanings do not exist."
+    },
+    {
+      "word": "shake",
+      "phrase": "shake off",
+      "selectedSource": {
+        "synsetId": "01513430-v",
+        "pos": "v",
+        "definition": "get rid of",
+        "member": "wordnet/data.verb",
+        "sourceLine": 7541,
+        "lineSha256": "8fa8ad5a215c4aa994e6c8036d205c5f1d71e866d7a0016aab3482cbcba8671b"
+      },
+      "allCandidateRecords": [
+        {
+          "synsetId": "01513430-v",
+          "pos": "v",
+          "definition": "get rid of",
+          "member": "wordnet/data.verb",
+          "sourceLine": 7541,
+          "lineSha256": "8fa8ad5a215c4aa994e6c8036d205c5f1d71e866d7a0016aab3482cbcba8671b"
+        },
+        {
+          "synsetId": "02073545-v",
+          "pos": "v",
+          "definition": "get rid of",
+          "member": "wordnet/data.verb",
+          "sourceLine": 10367,
+          "lineSha256": "cf4f51b0ed71a4ad7a2376cef79e313fa6745991510e3f735aa8597c495a1575"
+        }
+      ],
+      "basis": {
+        "method": "replay-original-builder-source-selection",
+        "legacyBuilderHash": "24dbdf4eb39d1ec7ecb86d32125c0a17ac3ae540e571432e04b7cf15e55346d7",
+        "member": "wordnet/data.verb",
+        "sourceLine": 7541,
+        "sourceLineHash": "8fa8ad5a215c4aa994e6c8036d205c5f1d71e866d7a0016aab3482cbcba8671b"
+      },
+      "noSemanticMerge": true,
+      "note": "The chosen source is the exact original record used by the legacy builder; this does not certify the phrase translation or claim other meanings do not exist."
+    },
+    {
+      "word": "throw",
+      "phrase": "throw off",
+      "selectedSource": {
+        "synsetId": "01513430-v",
+        "pos": "v",
+        "definition": "get rid of",
+        "member": "wordnet/data.verb",
+        "sourceLine": 7541,
+        "lineSha256": "8fa8ad5a215c4aa994e6c8036d205c5f1d71e866d7a0016aab3482cbcba8671b"
+      },
+      "allCandidateRecords": [
+        {
+          "synsetId": "01513430-v",
+          "pos": "v",
+          "definition": "get rid of",
+          "member": "wordnet/data.verb",
+          "sourceLine": 7541,
+          "lineSha256": "8fa8ad5a215c4aa994e6c8036d205c5f1d71e866d7a0016aab3482cbcba8671b"
+        },
+        {
+          "synsetId": "02073545-v",
+          "pos": "v",
+          "definition": "get rid of",
+          "member": "wordnet/data.verb",
+          "sourceLine": 10367,
+          "lineSha256": "cf4f51b0ed71a4ad7a2376cef79e313fa6745991510e3f735aa8597c495a1575"
+        }
+      ],
+      "basis": {
+        "method": "replay-original-builder-source-selection",
+        "legacyBuilderHash": "24dbdf4eb39d1ec7ecb86d32125c0a17ac3ae540e571432e04b7cf15e55346d7",
+        "member": "wordnet/data.verb",
+        "sourceLine": 7541,
+        "sourceLineHash": "8fa8ad5a215c4aa994e6c8036d205c5f1d71e866d7a0016aab3482cbcba8671b"
+      },
+      "noSemanticMerge": true,
+      "note": "The chosen source is the exact original record used by the legacy builder; this does not certify the phrase translation or claim other meanings do not exist."
+    }
+  ]
+}

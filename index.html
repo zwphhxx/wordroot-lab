@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#fffdfa" />
-  <meta name="application-version" content="2.11.0" />
+  <meta name="application-version" content="2.12.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="./manifest.webmanifest" />
@@ -337,7 +337,7 @@
 .historical-form-card small{font-size:11px;color:#99806d}
 @media(max-width:600px){.historical-forms-grid{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="./reader-v211.css" />
+<link rel="stylesheet" href="./reader-v212.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -417,11 +417,14 @@
   <script src="./visual-extra-v210.js"></script>
   <script src="./meaning-notes-v210.js"></script>
   <script src="./meaning-explainer-v211.js"></script>
-  <script src="./encyclopedia-v211.js"></script>
+  <script src="./encyclopedia-v212.js"></script>
   <script src="./whole-word-v27.js"></script>
 <script src="./search-control-v27.js"></script>
-<script src="./navigation-v211.js"></script>
-<script src="./reader-v211.js"></script>
+<script src="./navigation-v212.js"></script>
+<script src="./bilingual-seeds-v212.js"></script>
+  <script src="./dictionary-repository-v212.js"></script>
+  <script src="./bilingual-v212.js"></script>
+  <script src="./reader-v212.js"></script>
   <script>
 /* Root Lab · educational, offline-ready vocabulary explorer.
  * Data is independently authored. Example sentences are illustrative, not exam quotations.
@@ -1056,19 +1059,19 @@ async function ensureReaderLexDetails(word){const letter=String(word||'').toLowe
  }finally{clearTimeout(timer);}})();DETAIL_PROMISES.set(letter,task);try{await task;}catch(err){DETAIL_PROMISES.delete(letter);throw err;}
 }
 const USAGE_MAP=new Map(),USAGE_BUNDLES=new Set(),USAGE_PROMISES=new Map();
-function readerDetailsLoaded(word){return readerLexDetailsLoaded(word)&&(Boolean(window.ROOTLAB_BASIC_CARDS?.[word])||USAGE_BUNDLES.has(word[0]));}
+function readerDetailsLoaded(word){return readerLexDetailsLoaded(word)&&(Boolean(window.ROOTLAB_BASIC_CARDS?.[word])||USAGE_BUNDLES.has(word[0]))&&Boolean(window.RootLabBilingual?.has(word));}
 async function loadUsage(word){const letter=word[0];if(window.ROOTLAB_BASIC_CARDS?.[word]||USAGE_BUNDLES.has(letter))return;if(USAGE_PROMISES.has(letter))return USAGE_PROMISES.get(letter);
  const task=(async()=>{const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),14000);try{const r=await fetch('./data/usage-v27/'+letter+'.json',{signal:ctrl.signal});if(!r.ok)throw Error('Usage data unavailable');const data=await r.json();if(data.schema!==1||data.letter!==letter||!data.words||Array.isArray(data.words))throw Error('Invalid usage data');for(const [name,value] of Object.entries(data.words))if(knownWord(name))USAGE_MAP.set(name,value);USAGE_BUNDLES.add(letter);}finally{clearTimeout(timer);}})();
  USAGE_PROMISES.set(letter,task);try{await task;}catch(err){USAGE_PROMISES.delete(letter);throw err;}
 }
-async function ensureReaderDetails(word){await Promise.all([ensureReaderLexDetails(word),loadUsage(word)]);}
+async function ensureReaderDetails(word){await Promise.all([ensureReaderLexDetails(word),loadUsage(word),window.RootLabBilingual.ensure(word)]);}
 function readerRelated(word){const items=[],seen=new Set([word]);
  const source=window.RootLabHistoryUI?.record(word);const formula=source?.status==='source_formation'?source.timeline?.[0]?.term:'';
  for(const part of String(formula||'').split(/\s*\+\s*/)){if(/^[a-z]{3,}$/.test(part)&&knownWord(part)&&!seen.has(part)){items.push({word:part,label:'构词关系',reason:'公开词源记录中的组成词，比较它与 '+word+' 的词性和用法。'});seen.add(part);}}
  const ids=[...(RELATED_WORD_ROOTS.get(word)||[])];for(const id of ids){const root=ROOT_BY_ID.get(id)||REF_BY_ID.get(id);if(!root||root.kind==='prefix'||root.kind==='suffix')continue;
  const words=(root.examples||root.groups?.flatMap(g=>g.entries.map(e=>e.word))||[]).map(x=>x.toLowerCase()).filter(knownWord).sort((a,b)=>(LEX_MAP.get(a)?.[4]||99999)-(LEX_MAP.get(b)?.[4]||99999));
  for(const w of words){if(!seen.has(w)){items.push({word:w,label:'词根例词关联',reason:'同见于 '+(root.label||root.key)+' 词根资料，比较意思怎样分开。'});seen.add(w);}if(items.length>=6)break;}if(items.length>=6)break;}
- for(const rel of USAGE_MAP.get(word)?.related||[]){if(knownWord(rel.word)&&!seen.has(rel.word)){items.push({word:rel.word,label:rel.label,reason:'相关词义：'+rel.sense});seen.add(rel.word);}if(items.length>=6)break;}
+ for(const rel of window.RootLabBilingual?.get(word)?.relations||[]){if(knownWord(rel.word)&&!seen.has(rel.word)){items.push({word:rel.word,label:rel.label,reason:rel.zh,reasonEn:rel.en,meaning:rel.wordZh});seen.add(rel.word);}if(items.length>=6)break;}
  if(items.length<3)for(const w of WORDNET_MAP.get(word)?.[2]||[]){if(knownWord(w)&&!seen.has(w)){items.push({word:w,label:'近义词参考',reason:'比较近似含义在不同句子中的用法，不直接当作同根词。'});seen.add(w);}if(items.length>=3)break;}
  return window.RootLabSenseGuard?window.RootLabSenseGuard.filter(word,items):items;
 }
@@ -1113,10 +1116,10 @@ function readerContext(){const word=String(currentLexicon?.[0]||current.word).to
  const example=custom?.example|| (w?.example?[w.example,w.translation]:WORDNET_MAP.get(word)?.[1]?.[0]?[WORDNET_MAP.get(word)[1][0],'']:[]);
  const advanced=currentLexicon?$('lexiconDetail'):$('learningSections');const cloned=advanced.cloneNode(true);cloned.querySelectorAll('.word-head,.dictionary-head,.mini-label,.side-actions,.dictionary-main-meaning').forEach(n=>n.remove());
  const wrong=UNIQUE.find(x=>x.word!==word&&short(x.meaning)!==short(item?.meaning));
- return {word,curated:!!w,meaning:custom?.meaning|| (Array.isArray(row?.[2])?row[2][0]:short(item?.meaning)),phonetic:window.ROOTLAB_BASIC_CARDS?.[word]?.phonetic||(row?.[1]?'/ '+phoneticHint(row[1])+' /':''),example:example[0]||'',translation:example[1]||'',favorite:isFavorite(word),planned:!!state.review[word],notes:w?wordSpecificNotes(w):null,related:readerRelated(word),learning:readerCardData(word),fullHtml:cloned.innerHTML,distractor:wrong?short(wrong.meaning):null};
+ return window.RootLabBilingual.enrich({word,curated:!!w,meaning:custom?.meaning|| (Array.isArray(row?.[2])?row[2][0]:short(item?.meaning)),phonetic:window.ROOTLAB_BASIC_CARDS?.[word]?.phonetic||(row?.[1]?'/ '+phoneticHint(row[1])+' /':''),example:example[0]||'',translation:example[1]||'',favorite:isFavorite(word),planned:!!state.review[word],notes:w?wordSpecificNotes(w):null,related:readerRelated(word),learning:readerCardData(word),fullHtml:cloned.innerHTML,distractor:null});
 }
-async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const metas=await Promise.all(['./data/reader-v24-manifest.json','./data/usage-v27-manifest.json'].map(async url=>{const r=await fetch(url,{signal});if(!r.ok)throw Error('Manifest unavailable');return r.json();}));
- const pictures=[...new Set(Object.values(window.ROOTLAB_VISUAL_SEEDS||{}).map(r=>r.image.src))].map(url=>({url}));const items=[...metas.flatMap(m=>Object.values(m.bundles||{})),...pictures],cache=await caches.open('rootlab-offline-20261026-v2110-state-final');let done=0;
+async function downloadReaderOffline(signal,onProgress){if(!('caches' in window))throw Error('Offline storage unavailable');const metas=await Promise.all(['./data/reader-v24-manifest.json','./data/usage-v27-manifest.json','./data/bilingual-v212/'+window.ROOTLAB_BILINGUAL_META.buildId+'/manifest.json'].map(async url=>{const r=await fetch(url,{signal});if(!r.ok)throw Error('Manifest unavailable');return r.json();}));
+ const pictures=[...new Set(Object.values(window.ROOTLAB_VISUAL_SEEDS||{}).map(r=>r.image.src))].map(url=>({url}));const items=[...metas.flatMap(m=>Object.values(m.bundles||{})),...pictures],cache=await caches.open('rootlab-offline-20261026-v2120-e9d5d0c16b8035');let done=0;
  for(const item of items){if(signal.aborted)throw new DOMException('Cancelled','AbortError');const url=new URL(item.url,location.href).href;let saved=await cache.match(url);if(!saved){const r=await fetch(url,{signal});if(!r.ok)throw Error('Bundle unavailable');await cache.put(url,r.clone());}onProgress(++done,items.length);}}
 
 window.RootLabReaderBridge={navigate,lookup:lookupOnline,home:()=>{setOnlineMode(false);navigate('learn');},downloadAll:downloadReaderOffline,current:readerContext,known:knownWord,open:openAnyWord,speak,favorite:toggleFavorite,plan:addPlan,toast,refresh:renderCurrent,hydrate:ensureReaderDetails,loaded:readerDetailsLoaded,related:readerRelated,search:directMatches};
