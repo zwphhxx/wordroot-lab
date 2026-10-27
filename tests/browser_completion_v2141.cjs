@@ -1,0 +1,33 @@
+/* Regression for late hydration replacing a completed route. Isolated test profile only. */
+const fs=require('node:fs'),path=require('node:path');
+(async()=>{
+ const c=await require('./cdp_helper.cjs')(Number(process.env.CDP_PORT||9358)),origin=(process.env.ROOTLAB_TEST_ORIGIN||'http://localhost:8826/').replace(/\/?$/,'/'),checks=[];
+ const check=(name,ok,detail)=>{checks.push({name,ok:!!ok,detail});console.log((ok?'PASS ':'FAIL ')+name+' '+JSON.stringify(detail??''));};
+ const until=async e=>{for(let i=0;i<150;i++){try{if(await c.val(e))return;}catch(_){}await c.wait(100);}throw Error('Timeout '+e);};
+ await c.call('Network.emulateNetworkConditions',{offline:false,latency:0,downloadThroughput:-1,uploadThroughput:-1});
+ await c.call('Network.setBypassServiceWorker',{bypass:false});
+ await c.call('Page.navigate',{url:origin+'?word=carrier&v=2.14.1'});await until('window.RootLabReader?.plan?.loaded');
+ const finish=async()=>{await c.val("RootLabReader.startRoute('give-way')");for(const w of ['concede','concession','recede','recession']){await until(`RootLabReader.context.word===${JSON.stringify(w)}&&!!document.querySelector('[data-reader=advance]')`);await c.val("document.querySelector('[data-reader=advance]').click()");}await until("!!document.querySelector('.rd-complete')");};
+ const completed=await c.val('RootLabReader.state.counts.completed');
+ await finish();check('Four-word route completes exactly once',await c.val(`RootLabReader.state.route.done&&RootLabReader.state.counts.completed===${completed+1}`));
+ await c.val('RootLabReaderBridge.refresh()');await c.wait(250);
+ check('Same-word hydration cannot overwrite completion',await c.val("!!document.querySelector('.rd-complete')&&!!document.querySelector('[data-reader=save-route]')&&!!document.querySelector('[data-reader=finish-home]')"));
+ await c.val("setTimeout(()=>RootLabReaderBridge.refresh(),70);setTimeout(()=>RootLabReaderBridge.refresh(),190)");await c.wait(400);
+ check('Delayed repeated repaint preserves completion and count',await c.val(`!!document.querySelector('.rd-complete')&&RootLabReader.state.counts.completed===${completed+1}`));
+ await c.val("RootLabTest.state.review.concede={step:3,due:'2031-02-03',last:'2026-10-25'}");
+ await c.val("document.querySelector('[data-reader=save-route]').click()");
+ check('Save-group remains on completion with a return action',await c.val("!!document.querySelector('.rd-complete')&&!!document.querySelector('[data-reader=finish-home]')"));
+ check('All four words enrolled without changing existing due date',await c.val("['concede','concession','recede','recession'].every(w=>!!RootLabTest.state.review[w])&&RootLabTest.state.review.concede.due==='2031-02-03'"));
+ await c.val("document.querySelector('[data-reader=save-route]').click();RootLabReaderBridge.refresh()");
+ check('Repeated save does not recount the route',await c.val(`RootLabReader.state.counts.completed===${completed+1}&&!!document.querySelector('.rd-complete')`));
+ await c.val("document.querySelector('[data-reader=finish-home]').click()");
+ check('Return to search exits summary normally',await c.val("RootLabReader.isHome&&!new URL(location.href).searchParams.has('word')"));
+ await c.val("RootLabReaderBridge.open('recession')");await until("RootLabReader.context.word==='recession'&&RootLabReader.plan.loaded");
+ check('Reopening final word shows its dictionary, not stale summary',await c.val("!document.querySelector('.rd-complete')&&document.querySelectorAll('.bi-sense').length>0"));
+ await finish();await c.val("RootLabReaderBridge.open('bank')");await until("RootLabReader.context.word==='bank'&&RootLabReader.plan.loaded");
+ check('Explicit new search exits completed-route mode',await c.val("!document.querySelector('.rd-complete')&&document.querySelector('#readerV24 h1').textContent==='bank'"));
+ check('Second completed route counted only once',await c.val(`RootLabReader.state.counts.completed===${completed+2}`));
+ const errors=c.events.filter(e=>e.method==='Runtime.exceptionThrown');check('No route completion exceptions',errors.length===0,errors);
+ const report={status:checks.every(x=>x.ok)?'PASS':'FAIL',origin,checkedAt:new Date().toISOString(),checks,scope:'Synthetic progress in isolated browser; completion is held through same-word and delayed refreshes, released by explicit navigation.'};
+ const dest=process.env.COMPLETION_REPORT||path.join(__dirname,'../.work/reading-v2141/completion.json');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,JSON.stringify(report,null,2));console.log('SUMMARY',checks.filter(x=>x.ok).length,'/',checks.length);c.close();if(report.status!=='PASS')process.exitCode=1;
+})().catch(e=>{console.error(e);process.exit(2)});
