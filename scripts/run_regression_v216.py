@@ -21,11 +21,19 @@ for name in suites:
  for name2 in ['encyclopedia-v215.js','visual-caption-v212.js']:
   s=s.replace("path.join(__dirname,'../"+name2+"')",json.dumps(str(R/name2)))
  s=s.replace("path.join(__dirname,'..',f)",'path.join('+json.dumps(str(R))+',f)')
+ # Old local-only suites used fixed startup sleeps. Wait for the same app to finish loading instead.
+ if name in ['browser_release_boundaries_v212.cjs','browser_authored_pairs_v212.cjs']:
+  old_wait='await c.wait(900);' if name=='browser_release_boundaries_v212.cjs' else 'await c.wait(700);'
+  target_word='inspect' if name=='browser_release_boundaries_v212.cjs' else 'carrier'
+  ready="document.readyState==='complete'&&window.RootLabEncyclopedia&&window.RootLabAuthored&&window.RootLabReader?.plan?.loaded&&RootLabReader.context.word==="+json.dumps(target_word)
+  new_wait='await (async()=>{for(let i=0;i<450;i++){try{if(await c.val('+json.dumps(ready)+'))return;}catch(_){}await c.wait(100);}throw Error("Application did not become ready before the test");})();'
+  assert s.count(old_wait)==1
+  s=s.replace(old_wait,new_wait)
  target=tests/name;target.write_text(s);start=time.time();print('RUN',name,flush=True)
  try:p=subprocess.run(['node',str(target)],cwd=R,env=env,text=True,capture_output=True,timeout=100);rc=p.returncode;log=p.stdout+'\n'+p.stderr
  except subprocess.TimeoutExpired as e:rc=124;log=(e.stdout.decode() if isinstance(e.stdout,bytes) else e.stdout or '')+'\nTIMEOUT'
  (T/(name+'.log')).write_text(log)
  failed=[line for line in log.splitlines() if line.startswith('FAIL') or line.startswith('Error:')];summary=re.findall(r'(?:SUMMARY|RESULT PASS)\s+(\d+)(?:\s*/\s*(\d+))?',log)
  row={'suite':name,'status':'PASS' if rc==0 and not failed else 'FAIL','exitCode':rc,'summary':summary[-1] if summary else None,'failures':failed,'seconds':round(time.time()-start,2),'originalSha256':hashlib.sha256(original.encode()).hexdigest(),'adaptedSha256':hashlib.sha256(s.encode()).hexdigest()};records.append(row);print(json.dumps(row,ensure_ascii=False),flush=True)
-result={'status':'PASS' if all(x['status']=='PASS' for x in records) else 'REVIEW_REQUIRED','suites':records,'adaptation':'Environment, UI/cache version and active asset paths; caption inventory rises from 122 to 124 with two audited additions. Source content assertions preserved.'}
+result={'status':'PASS' if all(x['status']=='PASS' for x in records) else 'REVIEW_REQUIRED','suites':records,'adaptation':'Environment, UI/cache version and active asset paths; two fixed local startup sleeps replaced by app-readiness checks without changing assertions; caption inventory rises from 122 to 124 with two audited additions. Source content assertions preserved.'}
 (T/'results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print('RESULT',result['status'],flush=True)
