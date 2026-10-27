@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "version": "2.14.1",
+  "checkedAt": "2026-10-27T02:46:46.912891+00:00",
+  "baseline": "46cc213f7732cf12fde4ea6a9ea13cac9732d7e3",
+  "dataBuild": "v212-20dbabd4241ad0",
+  "dataChanged": false,
+  "sourcePreservation": {
+    "words": 49426,
+    "senses": 110238,
+    "examples": 75858,
+    "phrases": 17152,
+    "relations": 84682,
+    "native": 71561,
+    "packages": 3662
+  },
+  "tests": {
+    "completion": {
+      "passed": 11,
+      "total": 11
+    },
+    "reading": {
+      "passed": 26,
+      "total": 26
+    },
+    "composition": {
+      "passed": 27,
+      "total": 27
+    }
+  },
+  "codeSha256": {
+    "reader-v2141.js": "4ca66b2218b9e9075e2e979a4c4d84aa3cf301d21a5101ac83327fe3c2433d86",
+    "navigation-v2141.js": "ca42558cd718ec9b35049ded2a18fb4869ee16b155bb67d25301460b8150237f",
+    "index.html": "6e1457d5c9082ef64190fcf06735bff61503747ad931561ce7edce17379cbe41",
+    "sw.js": "683168eda0d2d5f69efc1a71c6893cf188d7935a2c46dafa89237f586a6124c9",
+    "tests/browser_completion_v2141.cjs": "fcbb50bda8787301098bd70ebbd190167c4533650d7de0d2e50a31dd19c409fe",
+    "tests/browser_reading_v214.cjs": "82c16783ba9d41c1b551df2ca36affea679ab0516462995608a2b650e32c41ea",
+    "tests/browser_composition_v214.cjs": "7eb1618b77d94f0460a8602f2a16883419d60ac13b88784a033e775574f9ce87"
+  },
+  "regressionEvidence": {
+    "before": "V2.14 route-completion DOM was replaced by a late same-word hydration; public composition suite failed at save-group/return controls. Original failure log retained in runtime/v214-reconfirm-20261027/browser_composition_v214.log.",
+    "failureLogSha256": "be872d26d57eae5db2c8c16fa3f14b51aa0c2ae81f4c128196e1f169ef468904",
+    "fix": "Explicit transient completion view remains during same-word repaint; pending request epoch is invalidated; deliberate navigation exits completion mode."
+  },
+  "scope": "Isolated Chromium profiles and synthetic learner records. No new full-corpus translation audit and no claim of real Safari verification.",
+  "deployment": "Pending push and fresh public verification."
+}
