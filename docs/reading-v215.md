@@ -27,3 +27,6 @@
 
 ## 发布与恢复
 门禁通过后正常合并 main、推送、验证 Pages 与公网资源哈希。回滚基线 cb1514b2051fe68759088a1fd04eb3795df18ac7；以正常 git revert 回滚，不 force push、不清除学习记录。
+
+## 公网重试检查的时序修正
+首次公网检查在图片尺寸可读但完整文件未加载时读取状态，记录为失败并保留。诊断确认 naturalWidth=500 时 complete=false、状态仍为 loading；完整加载后状态为 ready。测试改为等待 complete、naturalWidth 和 ready 三项并执行 decode()，原断言保留，连续两次公网8项检查通过。生产业务代码未因该测试修正而变化。

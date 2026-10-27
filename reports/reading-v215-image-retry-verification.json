@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "version": "2.15.0",
+  "checkedAt": "2026-10-27T10:44:34.889876+00:00",
+  "productionCodeChanged": false,
+  "rootCause": "Dimensions become available before image load completion. The prior test observed loading with naturalWidth=500 and complete=false; the image subsequently emitted load and state became ready.",
+  "testChange": "Wait for complete, positive naturalWidth and ready state, then await decode(). Original checks retained.",
+  "checks": 8,
+  "consecutivePublicRuns": 2,
+  "initialFailurePreservedSha256": "83860084fd2b9b7d5d35962f6f465d7af486b2e2044ad6351a57aa65fad64f04",
+  "diagnosticLogSha256": "9566b4de3a5522d5982a1ffa754bb262138c6a1d24dcbeab39162867b0db43a3",
+  "finalTestSha256": "366b82b1eaa20b8e868fef11900319e48e24b87e8d3990a8b9789fe4bce6b584"
+}
