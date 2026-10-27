@@ -1,0 +1,46 @@
+{
+  "productionAssetsChanged": false,
+  "initialFailures": [
+    {
+      "suite": "browser_release_boundaries_v212.cjs",
+      "status": "FAIL",
+      "exitCode": 2,
+      "summary": null,
+      "failures": [
+        "Error: {\"exceptionId\":1,\"text\":\"Uncaught\",\"lineNumber\":0,\"columnNumber\":0,\"scriptId\":\"732\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"732\",\"url\":\"\",\"lineNumber\":0,\"columnNumber\":0}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"ReferenceError\",\"description\":\"ReferenceError: RootLabEncyclopedia is not defined\\n    at <anonymous>:1:1\",\"objectId\":\"-7437669747181565883.20.2\"}}"
+      ],
+      "seconds": 1.28,
+      "originalSha256": "15a886c1bfc9b2ef125dcca835279c33d40230146a2a46ce0c2acc1f5af92186",
+      "adaptedSha256": "189084ceefabfddb7faade80f5162babdc8ce2249de4f4173b1281f4a556f231"
+    },
+    {
+      "suite": "browser_authored_pairs_v212.cjs",
+      "status": "FAIL",
+      "exitCode": 124,
+      "summary": null,
+      "failures": [
+        "FAIL Reviewed authored bundle and decorator loaded \"\""
+      ],
+      "seconds": 100.04,
+      "originalSha256": "31403249acda35cfe92843d69692ca74365e0b4c04f8a13d3909040d9b9a1a3e",
+      "adaptedSha256": "9295789c19a9f97963b13454a7c48968442c01079a01c38d45e03d45b601c1ec"
+    }
+  ],
+  "cause": "Both old localhost tests evaluated globals after a fixed 700/900ms, before the remote document finished loading.",
+  "change": "Wait for document completion and the current word, reader plan, encyclopedia and authored modules. All content assertions are unchanged.",
+  "originalLogs": {
+    "browser_release_boundaries_v212.cjs": "3ccf7436226ea994097db2c72096927984f4f7a1dc638303329d5ee987af758d",
+    "browser_authored_pairs_v212.cjs": "2611c50a85eb910ca340d16590da41da12efa24dff17923c93aac3ead1bd26fd"
+  },
+  "rechecks": {
+    "sourceBoundary": {
+      "status": "PASS",
+      "checks": 11
+    },
+    "authoredPairs": {
+      "status": "PASS",
+      "words": 80,
+      "unmatched": 0
+    }
+  }
+}
