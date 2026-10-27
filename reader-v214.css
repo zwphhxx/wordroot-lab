@@ -1,0 +1,23 @@
+/* Shared V2.13 tokens/components, one V2.14 composition system, no word-type themes. */
+@import url('./reader-v213.css');
+.ui-v214 .rp-meaning,.ui-v214 .rp-module,[data-plan-module]{min-width:0}
+.ui-v214 #readerV24 .rp-prose{margin:12px 0}
+.ui-v214 #readerV24 .rp-prose p{font:400 16px/1.75 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;margin:5px 0;color:#3d322b;overflow-wrap:anywhere}
+.ui-v214 #readerV24 .rp-prose [lang=en]{color:#665447}
+.ui-v214 #readerV24 .rp-subtitle{margin:22px 0 12px;font-size:18px;line-height:1.55}
+.ui-v214 #readerV24 .rp-subtitle small,.ui-v214 #readerV24 .lr-card-head small{display:block;font-size:13px;color:#665447;font-weight:400;line-height:1.7}
+.ui-v214 #readerV24 [data-module=meaning] [data-v214-media=primary]:empty,.ui-v214 #readerV24 .rp-resource-area:empty{display:none}
+.ui-v214 #readerV24 .rp-module{margin:0}
+.ui-v214 #readerV24 .rp-module+[data-plan-module]{margin-top:20px}
+.ui-v214 #readerV24 [data-sense-id],.ui-v214 [data-plan-module],.ui-v214 .rp-example-record{scroll-margin-top:70px}
+.ui-v214 #readerV24 .rp-resource-area{margin:22px 0}
+.ui-v214 #readerV24 .rp-meaning .visual-learning{margin-top:18px}
+.ui-v214 #readerV24 .rp-meaning .visual-zoom img{max-height:250px}
+.ui-v214 #readerV24 .rp-example-record{border:0}
+.ui-v214 #readerV24 .rp-example-record>.bi-example{margin-top:0}
+.ui-v214 #readerV24 .rp-forms{border:0;padding-top:0}
+.ui-v214 #readerV24 .lr-usage-item{margin:16px 0}
+.ui-v214 #readerV24 .reading-map{grid-template-columns:repeat(auto-fit,minmax(64px,1fr))}
+.ui-v214 #readerV24 .lr-card:focus{outline-offset:4px}
+@media(min-width:1160px){.ui-v214 #readerV24 .reading-map{display:flex;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.ui-v214 *{scroll-behavior:auto!important}}
