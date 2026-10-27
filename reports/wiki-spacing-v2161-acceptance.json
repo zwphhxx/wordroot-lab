@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "version": "2.16.1",
+  "baseline": "31d49d3a2920126df26a47a5c75f210f075cea84",
+  "checkedAt": "2026-10-27T11:43:46.845812+00:00",
+  "rootCause": "The later .wiki-language-block nested-content reset zeroed padding, margin and border on standalone .wiki-card elements. Existing outer-edge checks did not catch this.",
+  "baselineLive": {
+    "version": "2.16.0",
+    "topic": "Mobile network operator",
+    "cards": [
+      {
+        "language": "zh-CN",
+        "padding": "0px",
+        "margin": "0px",
+        "border": "0px",
+        "innerTextInset": 0,
+        "gapToPrevious": null,
+        "height": 202.546875
+      },
+      {
+        "language": "zh-CN",
+        "padding": "0px",
+        "margin": "0px",
+        "border": "0px",
+        "innerTextInset": 0,
+        "gapToPrevious": 0,
+        "height": 146.546875
+      },
+      {
+        "language": "en",
+        "padding": "0px",
+        "margin": "0px",
+        "border": "0px",
+        "innerTextInset": 0,
+        "gapToPrevious": 0,
+        "height": 230.546875
+      }
+    ],
+    "sources": 3
+  },
+  "spacingChecks": 25,
+  "regressionGroups": 12,
+  "migrationChecks": 11,
+  "sourcePreservation": {
+    "words": 49426,
+    "senses": 110238,
+    "examples": 75858,
+    "phrases": 17152,
+    "relations": 84682,
+    "native": 71561,
+    "packages": 3662,
+    "cards": 290934,
+    "correctedEntries": 7
+  },
+  "lexicalMediaCorrectionsChanged": false,
+  "codeSha256": {
+    "index.html": "b47f9f74dc4626d6b4f17b1cf34a2c84fc4b3362b8d9efd8ed03d64680b6a4a2",
+    "sw.js": "2ff4d778f4a42dfc9e41e0baad043cebeae02ff73126e27514a3e10851fda4be",
+    "reader-v2161.css": "248d1d8d1f6de12bb1d1ea78a6b270b8fa15e0783ade347222846ecc3a4edfa5",
+    "navigation-v2161.js": "f509b791f8eaef4e8c2a1118a4e470a83f476a61ba725f37f75c12c6bcc8b25c",
+    "reader-plan-v2161.js": "03d971c917015d9f3ecb40f41410e23ec0a88aa0b64399bfb2e297a0c261e6d8",
+    "reader-cards-v2161.js": "caa92e17ef4de79e89ade95685d8be309bfb89ff03af09b590cbff4d019676d1",
+    "tests/browser_wiki_spacing_v2161.cjs": "be9a053e58902b9ad23bc51c124ae1407e8078e7450fa5dd60b2d558a349e192",
+    "tests/browser_migration_v2161.cjs": "2fcada7c27e53e6619bcf383e389bdfc2287c1d037096a86daee21d900be4322",
+    "tests/check_cards_v2161.cjs": "17cb5a7ce1cd082998e17c2046d8fdff9f893439359bfd6880faf9426ca6b780",
+    "scripts/run_regression_v2161.py": "b9b3248d974469ca881f67bc64139a6fcf05ff8b51e9b22bb91644e10466e135"
+  },
+  "initialHarnessIssue": "Screenshot path missing; first log preserved, output directory creation added before all assertions were rerun.",
+  "scope": "Real selected Wikipedia articles in isolated Chromium, five CSS viewport widths, source/text preservation and simulated cache migration; not all-device testing."
+}

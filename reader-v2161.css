@@ -1,0 +1,37 @@
+/* V2.16.1: restore the card shell for language blocks used as standalone cards.
+ * The older nested-language reset must not zero a .wiki-card's padding/border.
+ * No prose, translations, images or study records are changed by this hotfix. */
+@import url('./reader-v216.css');
+body.ui-v216 #readerV24 .wiki-article .wiki-languages {
+  display:flex;
+  flex-direction:column;
+  gap:var(--reading-gap);
+  min-width:0;
+  padding:0;
+  margin:0 0 var(--reading-gap);
+}
+body.ui-v216 #readerV24 .wiki-card.wiki-language-block {
+  box-sizing:border-box;
+  width:100%;
+  min-width:0;
+  padding:var(--reading-pad);
+  margin:0;
+  border:1px solid var(--hierarchy-line);
+  border-radius:20px;
+  background:#fffefd;
+  overflow:visible;
+}
+body.ui-v216 #readerV24 .wiki-card.wiki-language-block .wiki-language-label {
+  margin:0 0 12px;
+  line-height:1.6;
+}
+body.ui-v216 #readerV24 .wiki-card.wiki-language-block .wiki-summary {
+  margin:0 0 12px;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+body.ui-v216 #readerV24 .wiki-article > .wiki-attribution {
+  box-sizing:border-box;
+  padding-left:calc(var(--reading-pad) + 1px);
+  padding-right:calc(var(--reading-pad) + 1px);
+}
