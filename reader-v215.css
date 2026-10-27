@@ -1,0 +1,90 @@
+/* V2.15: stages organize reading; short cards carry atomic bilingual content. */
+@import url('./reader-v214.css');
+body.ui-v215{--reading-pad:22px;--reading-gap:18px;--reading-ink:#3d322b;--reading-muted:#665447}
+body.ui-v215 #readerV24 .rp-stage{border:0;background:transparent;border-radius:0;padding:0;box-shadow:none;margin:0;min-width:0}
+body.ui-v215 #readerV24 .lr-stream{display:block}
+body.ui-v215 #readerV24 .rp-stage+.rp-stage{margin-top:30px}
+body.ui-v215 #readerV24 .rp-stage-head{display:block;padding:0 var(--reading-pad);margin:28px 0 16px;border:0}
+body.ui-v215 #readerV24 .rp-stage-number{display:block;font-size:12px;line-height:1.4;font-weight:650;color:var(--reading-muted);margin-bottom:3px}
+body.ui-v215 #readerV24 .rp-stage-head h2{display:flex;align-items:baseline;flex-wrap:wrap;gap:9px;margin:0;font:700 22px/1.4 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:var(--reading-ink)}
+body.ui-v215 #readerV24 .rp-stage-head h2 small{font-size:13px;line-height:1.6;font-weight:400;color:var(--reading-muted)}
+body.ui-v215 #readerV24 .lr-word-card,body.ui-v215 #readerV24 .rp-card,body.ui-v215 #readerV24 .wiki-card{box-sizing:border-box;width:100%;padding:var(--reading-pad);margin:0 0 var(--reading-gap);border:1px solid #e7d5c5;border-radius:18px;background:#fffefd;box-shadow:none;min-width:0;overflow:visible}
+body.ui-v215 #readerV24 .rp-card-head{display:flex;align-items:baseline;gap:12px;justify-content:space-between;margin:0 0 16px;padding:0;border:0}
+body.ui-v215 #readerV24 .rp-card-head h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:5px 9px;margin:0;font:650 18px/1.5 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:var(--reading-ink)}
+body.ui-v215 #readerV24 .rp-card-head small{display:inline;font-size:12px;line-height:1.6;font-weight:400;color:var(--reading-muted)}
+body.ui-v215 #readerV24 .rp-part{font-size:12px;color:var(--reading-muted)}
+body.ui-v215 #readerV24 .rp-module{margin:0!important;min-width:0}
+body.ui-v215 #readerV24 .rp-section-links{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0 var(--reading-pad)}
+body.ui-v215 #readerV24 .rp-section-links a{display:flex;align-items:baseline;gap:4px;color:#754b32;text-decoration:none;min-height:40px;padding:8px 10px;border:1px solid #e7d5c5;border-radius:9px;background:#fffdf9;font-size:14px}
+body.ui-v215 #readerV24 .rp-section-links a small{font-size:11px;color:var(--reading-muted)}
+body.ui-v215 #readerV24 .rp-levels{padding:0 var(--reading-pad);margin:0 0 16px}
+body.ui-v215 #readerV24 .bi-group-jumps{margin:0 0 14px;padding:0 var(--reading-pad)}
+body.ui-v215 #readerV24 .rp-group-anchor{height:0;scroll-margin-top:68px}
+body.ui-v215 #readerV24 .bi-sense-list{margin:0;padding:0;border:0;background:transparent}
+body.ui-v215 #readerV24 .bi-sense:first-child{border-top:0;padding-top:0}
+body.ui-v215 #readerV24 .bi-sense:last-child{padding-bottom:0}
+body.ui-v215 #readerV24 .bi-sense h4{margin:8px 0 7px}
+body.ui-v215 #readerV24 .bi-sense-top{line-height:1.6;gap:6px;font-size:12px}
+body.ui-v215 #readerV24 .bi-native-source,body.ui-v215 #readerV24 .bi-native-block{border:0;margin:0;padding:0}
+body.ui-v215 #readerV24 .bi-native-block+.bi-native-block{border-top:1px solid #eadbd0;margin-top:14px;padding-top:14px}
+body.ui-v215 #readerV24 .lr-collocations,body.ui-v215 #readerV24 .lr-forms,body.ui-v215 #readerV24 .bi-relations{margin:0;padding:0;border:0}
+body.ui-v215 #readerV24 .lr-phrase-row{padding:13px 0;gap:12px}
+body.ui-v215 #readerV24 .lr-phrase-row:first-child{border-top:0;padding-top:0}
+body.ui-v215 #readerV24 .lr-phrase-row:last-child{padding-bottom:0;border-bottom:0}
+body.ui-v215 #readerV24 .rp-example-record .bi-example{margin:0;padding:12px 0;border:0}
+body.ui-v215 #readerV24 .rp-example-record:first-of-type .bi-example{padding-top:0}
+body.ui-v215 #readerV24 .rp-example-record+.rp-example-record{border-top:1px solid #eadbd0;padding-top:14px;margin-top:14px}
+body.ui-v215 #readerV24 .bi-relation-group{border:0;margin:0;padding:0}
+body.ui-v215 #readerV24 .bi-relation-group h4{margin:0 0 5px}
+body.ui-v215 #readerV24 .bi-relation{border:0;border-top:1px solid #eadbd0;border-radius:0;background:transparent;padding:14px 0;margin:8px 0 0}
+body.ui-v215 #readerV24 .lr-plain-explanation{margin:0;padding:0;border:0;background:transparent;border-radius:0}
+body.ui-v215 #readerV24 .lr-meaning-additional{margin:0;padding:0;border:0}
+body.ui-v215 #readerV24 .lr-history{margin:0;padding:0;border:0}
+body.ui-v215 #readerV24 .lr-history-step{grid-template-columns:1fr;gap:6px;margin:0 0 18px;padding:0;border-left:0}
+body.ui-v215 #readerV24 .lr-history-step:last-child{margin-bottom:0}
+body.ui-v215 #readerV24 .lr-history-step>span{font-size:13px;color:var(--reading-muted)}
+body.ui-v215 #readerV24 .lr-history-step p{font-size:16px;line-height:1.75}
+body.ui-v215 #readerV24 .lr-history-forms,body.ui-v215 #readerV24 .lr-timeline{padding:0;border:0}
+body.ui-v215 #readerV24 .lr-parts{margin-top:0}
+body.ui-v215 #readerV24 .lr-semantic-groups{display:block}
+body.ui-v215 #readerV24 .lr-semantic-group{padding:0;margin:0;background:none;border:0;border-radius:0}
+body.ui-v215 #readerV24 .lr-group-row{display:grid;grid-template-columns:minmax(0,1fr);width:100%;padding:12px 0!important;min-width:0;background:transparent}
+body.ui-v215 #readerV24 .lr-group-row.is-current{border-left:0;color:#954e2e}
+body.ui-v215 #readerV24 .lr-root-anchor{padding:0;margin:0 0 14px;border:0;background:transparent}
+body.ui-v215 #readerV24 .lr-recall{border:0;padding:0;margin:0}
+body.ui-v215 #readerV24 .rp-card-quiz>.rp-card-head{margin-bottom:8px}
+body.ui-v215 #readerV24 .rp-card-quiz .lr-recall>h3{display:none}
+body.ui-v215 #readerV24 [data-reading-card][id],body.ui-v215 #readerV24 [data-reading-stage],body.ui-v215 #readerV24 [data-plan-module]{scroll-margin-top:68px}
+body.ui-v215 #readerV24 .rp-resource-area,body.ui-v215 #readerV24 .rp-media-slot{padding:0;margin:0}
+body.ui-v215 #readerV24 .visual-learning{margin:0 0 18px!important;padding:0;border:0}
+body.ui-v215 #readerV24 .wiki-card .visual-figure{border:0;border-radius:10px;margin:0;background:transparent}
+body.ui-v215 #readerV24 .wiki-card .visual-zoom{padding:0;background:transparent}
+body.ui-v215 #readerV24 .wiki-card .visual-figure figcaption{padding:12px 0 0;margin:0}
+body.ui-v215 #readerV24 .wiki-card .visual-zoom img{max-height:310px;width:100%;height:auto;object-fit:contain}
+body.ui-v215 #readerV24 .wiki-card .visual-figure.is-diagram .visual-zoom img{max-height:none;width:auto;max-width:100%;height:430px;margin:auto;object-fit:contain}
+body.ui-v215 #readerV24 .wiki-card .wiki-heading{margin-bottom:14px}
+body.ui-v215 #readerV24 .wiki-card h3{margin:0 0 10px;font-size:18px;line-height:1.5}
+body.ui-v215 #readerV24 .wiki-languages{display:block;margin:0}
+body.ui-v215 #readerV24 .wiki-language-block{border:0;margin:0;padding:0}
+body.ui-v215 #readerV24 .wiki-summary{font:400 16px/1.75 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:var(--reading-ink);margin:0 0 10px}
+body.ui-v215 #readerV24 .wiki-summary[lang=en]{color:var(--reading-muted)}
+body.ui-v215 #readerV24 .wiki-attribution,body.ui-v215 #readerV24 .visual-links{padding:0 var(--reading-pad);margin:10px 0 18px}
+body.ui-v215 #readerV24 .wiki-card .wiki-attribution,body.ui-v215 #readerV24 .wiki-card .visual-links{padding:0}
+body.ui-v215 #readerV24 .visual-compact{background:#fffefd;border:1px solid #e7d5c5;border-radius:18px;padding:var(--reading-pad)}
+body.ui-v215 #readerV24 .visual-compact .visual-placeholder{min-height:95px;margin:0 0 12px}
+body.ui-v215 #readerV24 .visual-candidates{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+body.ui-v215 #readerV24 .visual-candidate .visual-placeholder{min-height:100px;padding:12px}
+body.ui-v215 #readerV24 .v215-topic-identity{font-size:14px;line-height:1.7;color:var(--reading-muted);margin:0 0 14px}
+body.ui-v215 #readerV24 .v215-topic-identity p{margin:5px 0}
+body.ui-v215 #readerV24 .v215-image-state{display:flex;flex-direction:column;gap:4px;font-size:14px;line-height:1.7;color:var(--reading-muted)}
+body.ui-v215 #readerV24 .v215-media-entry{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;margin:0 0 12px;padding:0 var(--reading-pad)}
+body.ui-v215 #readerV24 .v215-media-entry a{color:#754b32;text-decoration:none;font-size:14px;min-height:44px;display:flex;align-items:center}
+body.ui-v215 #readerV24 .rp-profile-sources,body.ui-v215 #readerV24 .lr-sources{padding-left:var(--reading-pad);padding-right:var(--reading-pad)}
+body.ui-v215 #readerV24 .rp-sense-note{border-left:2px solid #d9b79a;padding-left:12px;margin:12px 0 0}
+body.ui-v215 #readerV24 .rp-sense-note p{font-size:14px}
+@media(max-width:720px){body.ui-v215{--reading-pad:20px;--reading-gap:16px}body.ui-v215 #readerV24 .rp-stage+.rp-stage{margin-top:26px}body.ui-v215 #readerV24 .rp-stage-head h2{font-size:21px}body.ui-v215 #readerV24 .wiki-card .visual-figure.is-diagram .visual-zoom img{height:390px}body.ui-v215 #readerV24 .lr-semantic-groups{display:block}}
+@media(max-width:360px){body.ui-v215{--reading-pad:16px}body.ui-v215 #readerV24 .rp-card-head h3{font-size:17px}body.ui-v215 #readerV24 .visual-candidates{grid-template-columns:minmax(0,1fr)}body.ui-v215 #readerV24 .wiki-card .visual-figure.is-diagram .visual-zoom img{height:350px}}
+@media(prefers-reduced-motion:reduce){body.ui-v215 *{scroll-behavior:auto!important}}
+
+/* Taxonomy diagrams retain legible natural proportions instead of thumbnail-height cropping. */
+body.ui-v215 #readerV24 .wiki-card .visual-figure.is-diagram .visual-zoom img{width:min(240px,100%);height:auto;max-height:none}

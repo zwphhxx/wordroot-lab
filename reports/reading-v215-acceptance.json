@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "uiVersion": "2.15.0",
+  "baselineCommit": "cb1514b2051fe68759088a1fd04eb3795df18ac7",
+  "lexicalBuild": "v212-20dbabd4241ad0",
+  "checkedAt": "2026-10-27T10:40:12.233804+00:00",
+  "codeSha256": {
+    "index.html": "f76b266fee29dade5b45931c44eaa7d6e2af619baff6eeabc272e9d1e67d7f23",
+    "sw.js": "07f928ce4d5d0179b2595ba60d1c9679b7751ea630d11a6c1a31b2699d23be0a",
+    "credits.html": "394d25abdc3b1f39dc3c52ddd120946be5d0ec659cf004f290449a590cc2d0ad",
+    "data/visual-reviewed-v215.json": "ed2ef522886ea714eef012847db856c8d7fef0f58625667ad5d253c27e749f38",
+    "reader-components-v215.js": "f9809d85900276b5ecfdabd62d98827daca82a7c2bcd98bdd6c9b3d7cba77d8f",
+    "reader-plan-v215.js": "7855ecb599c4387975131a1a9069db047533739472728e351e61ca5abdb76a47",
+    "navigation-v215.js": "ebcf0b7bd64a9f8f52c654dad8b651fd29f746e91ee028931898c8ceb74c6b28",
+    "encyclopedia-v215.js": "0eed12bd07da72fa91dea9c3a1e408f4bc4f618d06d0d418f69968deb45bfcb9",
+    "dictionary-corrections-v215.js": "bd743a608206ff72fd864cb527be0cb5e225e47efbf65a0c91862c8a71ea999f",
+    "reading-ui-v215.js": "4c1567b4e6ba67d46b784f396c0278adad063b19c0ba616220e1af07c2b94b05",
+    "reader-cards-v215.js": "064b4de4a5d07eba35faa5cc85004459c593bb5de44f5b8409150906b994710e",
+    "authored-ui-v215.js": "0174b47a9044eceed47c18276ba5ebf36df9d8053ad105d1d5bf4e56aafff2ec",
+    "bilingual-v215.js": "eb9b925668b6d78c8b08ac307acab67d38bcee25d71da4464e77077c094187a1",
+    "visual-reviewed-v215.js": "346cbf13db24fd3d19faa8bb45dd8b6c5e54d8dce7fbc149a261f30ef1227375",
+    "reader-v215.js": "74f9902760a5cf2fba69f628b6c65c73ad94fbe9f4fb550ce3aa0be2bd92bd52",
+    "reader-v215.css": "9ef497aa30a5c4879933c036769c44166251be32d324e6a07dc995aab4a2299b"
+  },
+  "dataPreservation": {
+    "words": 49426,
+    "senses": 110238,
+    "examples": 75858,
+    "phrases": 17152,
+    "relations": 84682,
+    "native": 71561,
+    "packages": 3662,
+    "cards": 290934,
+    "correctedEntries": 7
+  },
+  "basePayloadChanged": false,
+  "editorialLayer": "dictionary-corrections-v215.js",
+  "browserTests": {
+    "cards": 32,
+    "media": 16,
+    "recovery": 8
+  },
+  "migrationChecks": 11,
+  "regression": {
+    "status": "PASS",
+    "suites": [
+      {
+        "suite": "browser_completion_v2141.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "11",
+          "11"
+        ],
+        "failures": [],
+        "seconds": 2.3,
+        "originalSha256": "fcbb50bda8787301098bd70ebbd190167c4533650d7de0d2e50a31dd19c409fe",
+        "adaptedSha256": "eb9fdcd527c66f8560247ac3402204ded4b0f793f93bd0339c7ae7963c315630"
+      },
+      {
+        "suite": "browser_reading_v214.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "26",
+          ""
+        ],
+        "failures": [],
+        "seconds": 5.88,
+        "originalSha256": "82c16783ba9d41c1b551df2ca36affea679ab0516462995608a2b650e32c41ea",
+        "adaptedSha256": "d19389c07cf5107edd76999ff999c3aa57492925a7cb01732f4ff2e6cb6f7305"
+      },
+      {
+        "suite": "browser_composition_v214.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "27",
+          "27"
+        ],
+        "failures": [],
+        "seconds": 5.8,
+        "originalSha256": "7eb1618b77d94f0460a8602f2a16883419d60ac13b88784a033e775574f9ce87",
+        "adaptedSha256": "4730a44429028edd8a9c66f88d66f62f465a9e7c9306f2af368071c1b45a3a2c"
+      },
+      {
+        "suite": "browser_bilingual_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "25",
+          "25"
+        ],
+        "failures": [],
+        "seconds": 1.76,
+        "originalSha256": "a0d8a34bd07cd7e15d65bbdbfc514f7b6b38c6f02c5a1b46bf70ff97cf96e4d5",
+        "adaptedSha256": "be924b03bc35608e1e0391b1e170fbb6ad3502e3e5aaad2ee20ff3506d77c1c0"
+      },
+      {
+        "suite": "browser_release_boundaries_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "11",
+          "11"
+        ],
+        "failures": [],
+        "seconds": 1.56,
+        "originalSha256": "15a886c1bfc9b2ef125dcca835279c33d40230146a2a46ce0c2acc1f5af92186",
+        "adaptedSha256": "9e081005214db0c8895750dbf6c34f470ac07aba47be1b2bb6d91ba3df2c1123"
+      },
+      {
+        "suite": "browser_authored_pairs_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": null,
+        "failures": [],
+        "seconds": 16.61,
+        "originalSha256": "31403249acda35cfe92843d69692ca74365e0b4c04f8a13d3909040d9b9a1a3e",
+        "adaptedSha256": "204701bf5aa7f0a96459ac6fb39895f96cc63c370b5ec122e292565fbde19eb7"
+      },
+      {
+        "suite": "browser_external_bilingual_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "16",
+          "16"
+        ],
+        "failures": [],
+        "seconds": 1.2,
+        "originalSha256": "cf00b593f282be0ef287c9f873ba50d4bd25d41dbca6aeef1bb32048194cf450",
+        "adaptedSha256": "e3ec87da471a4d92cab3610711b46439545ee9344da5aee7e9f461c70ab5c7e1"
+      },
+      {
+        "suite": "browser_visual_pairs_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "10",
+          "10"
+        ],
+        "failures": [],
+        "seconds": 1.29,
+        "originalSha256": "42e1a4c109b7d8278d57e87cb3669ad215851c0d67c007d43a7876de5cf5a1cb",
+        "adaptedSha256": "2d8eb8ea6e646e4942871115a7a447d7911594cc618c34640736169e9436f9a4"
+      }
+    ],
+    "adaptation": "Environment, UI/cache version and active asset paths; caption inventory rises from 122 to 124 with two audited additions. Source content assertions preserved."
+  },
+  "unitTests": {
+    "memory": 11,
+    "repository": 10
+  },
+  "evidence": {
+    "final/cards.json": "cb9ad9c18e2bbd07242c2089c1ad1c6dfc05dddafe3a8c0e1beb362a63ec2b0e",
+    "final/media.json": "05ea3bcd55c89841bafd71e76bd657da72616bb6b5788a2e0fecf88447a11262",
+    "final/recovery.json": "93ce9a41b0598d8fdf1cee1eb4505b037feb85d67ca7e3d6615f6dd0f25624ba",
+    "final/migration-results.json": "9a14b302b077605f2b98f03a1e72098f2d11c0887b93adf272f3fe747aa9738a",
+    "final/cards-integrity.json": "1f9b1a26160443151926567b09a5b6c190514cb8decde68d1854729681512bde",
+    "final/test-execution.json": "64f1810d1a80bcbdb8c8ec7c7c406b4dfa9f95af42b8750c2bd24a11b2ffbe0a",
+    "regression/results.json": "abbf1e7cd34044fb076e2de82a3315623b0b5db0aa55a5a8fd675b29ab7601f2"
+  },
+  "mediaScope": "Deterministic fixtures exercise fallback and failures; real Commons files, real Cornus lookup and image blocking/recovery also verified. Fixtures are never shipped as learning content.",
+  "reviewScope": "Finite exact-text editorial corrections, not a new full-corpus manual review. Independent Chromium profiles, synthetic progress, no personal browser data.",
+  "notYetDeployed": true
+}
