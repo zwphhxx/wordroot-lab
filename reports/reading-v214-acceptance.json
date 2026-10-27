@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "uiVersion": "2.14.0",
+  "baselineCommit": "5866ec87b30a91ec5863a87dba45f1206d9a80af",
+  "lexicalBuild": "v212-20dbabd4241ad0",
+  "checkedAt": "2026-10-27T01:55:15.484811+00:00",
+  "dataPreservation": {
+    "words": 49426,
+    "senses": 110238,
+    "examples": 75858,
+    "phrases": 17152,
+    "relations": 84682,
+    "native": 71561,
+    "packages": 3662
+  },
+  "dataChanged": false,
+  "codeSha256": {
+    "index.html": "64d478339d12f34d1761a3acd0b2eeb2ec528b911769ddedfd231a0e25669412",
+    "sw.js": "fd4e7b7e4664173ba636782d1274f6213c8949857fc0cc1ca87a4e290f8272df",
+    "authored-ui-v214.js": "52eb5146a340cb3a4ce924bfb5918d66e6b280b3693fef421b511c9eb42936ed",
+    "encyclopedia-v214.js": "a375ae246408e79ff76aaeac6bb35b0bbc07acb3d54b99ee18607c6b782184ae",
+    "navigation-v214.js": "41fbe375800beaf4f6cc70e28ca9edbfc798ca8e44cb6966e80ea8858e0ac108",
+    "reader-adapters-v214.js": "f290cf73bd82a992f02c1055b04c9c4dc80a8849f54376d4bc373e5ad2f0b15b",
+    "reader-components-v214.js": "16e2d0e94ed4f527e753897aa239dc1c892e80412e6f8696cdc6e8223e717a31",
+    "reader-plan-v214.js": "381fb890493cd1e791ef1b781d3b20724b50de015fe8391eaedea408813b6484",
+    "reader-v214.css": "de9308f0cb933cc6d06b80e8ca661ab9084d994c38e7e9814ef12d6e242b0604",
+    "reader-v214.js": "61f86532a08c63d99ca4df88ff36dd95c6b72a4682781f7e304396ad20ccc129",
+    "reading-ui-v214.js": "12ea0829d379188165b4e3cf3eaaf42f6364f5bacb1030afd7c5578d6ff32e93"
+  },
+  "tests": {
+    "realOriginReading": 26,
+    "composition": 27,
+    "cacheUpgrade": 10,
+    "searchContract": 38,
+    "memory": 11,
+    "repository": 10,
+    "preserved": [
+      {
+        "suite": "browser_bilingual_v212.cjs",
+        "exitCode": 0,
+        "status": "PASS",
+        "summary": [
+          "25",
+          "25"
+        ],
+        "failures": [],
+        "seconds": 1.9
+      },
+      {
+        "suite": "browser_release_boundaries_v212.cjs",
+        "exitCode": 0,
+        "status": "PASS",
+        "summary": [
+          "11",
+          "11"
+        ],
+        "failures": [],
+        "seconds": 2.33
+      },
+      {
+        "suite": "browser_authored_pairs_v212.cjs",
+        "exitCode": 0,
+        "status": "PASS",
+        "summary": null,
+        "failures": [],
+        "seconds": 10.44
+      },
+      {
+        "suite": "browser_external_bilingual_v212.cjs",
+        "exitCode": 0,
+        "status": "PASS",
+        "summary": [
+          "16",
+          "16"
+        ],
+        "failures": [],
+        "seconds": 0.99
+      },
+      {
+        "suite": "browser_visual_pairs_v212.cjs",
+        "exitCode": 0,
+        "status": "PASS",
+        "summary": [
+          "10",
+          "10"
+        ],
+        "failures": [],
+        "seconds": 1.2
+      }
+    ]
+  },
+  "realEncyclopedia": {
+    "word": "revolution",
+    "title": "革命",
+    "en": true,
+    "zh": true,
+    "sourceLinks": 2,
+    "image": true
+  },
+  "intentionalContractChanges": {
+    "oldResults": [
+      {
+        "suite": "browser_universal_v211.cjs",
+        "originalLogSha256": "ace29cd13661f48c61267e75e18d426ed0edfb17e5ec239046cce6c25abacfaa",
+        "failureLines": [
+          "FAIL Reviewed apple profile unchanged \"\"",
+          "Error: {\"exceptionId\":1,\"text\":\"Uncaught\",\"lineNumber\":0,\"columnNumber\":59,\"scriptId\":\"495\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"495\",\"url\":\"\",\"lineNumber\":0,\"columnNumber\":59}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"TypeError\",\"description\":\"TypeError: Cannot read properties of null (reading 'scrollIntoView')\\n    at <anonymous>:1:60\",\"objectId\":\"-4304772264166306029.10.2\"}}"
+        ]
+      },
+      {
+        "suite": "browser_visual_v211.cjs",
+        "originalLogSha256": "d324d506959150f1b64ba5089c11001b94690938bcf519ba5acb1b4d57e5e375",
+        "failureLines": [
+          "FAIL All known words mount a visual entry without external calls \"\"",
+          "FAIL Concrete object offers illustrated topic choices automatically \"\"",
+          "FAIL No first-hit assumption or false automatic meaning \"\"",
+          "Error: {\"exceptionId\":2,\"text\":\"Uncaught\",\"lineNumber\":0,\"columnNumber\":46,\"scriptId\":\"550\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"550\",\"url\":\"\",\"lineNumber\":0,\"columnNumber\":46}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"TypeError\",\"description\":\"TypeError: Cannot read properties of null (reading 'textContent')\\n    at <anonymous>:1:47\",\"objectId\":\"-4304772264166306029.12.2\"}}"
+        ]
+      },
+      {
+        "suite": "browser_meanings_v211.cjs",
+        "originalLogSha256": "96fd0403f36db9798613fb67bec96f4b00935492402352eb8f04c7d81e2a7d9c",
+        "failureLines": [
+          "FAIL Banana definition before its picture \"\""
+        ]
+      },
+      {
+        "suite": "browser_cards_v211.cjs",
+        "originalLogSha256": "326fd6e59fd1bd5acc78e9ef9d044534baa0120bf1909c651a0fcbc9de2f4e4f",
+        "failureLines": [
+          "FAIL Four original learning functions directly visible \"\"",
+          "Error: {\"exceptionId\":3,\"text\":\"Uncaught\",\"lineNumber\":0,\"columnNumber\":52,\"scriptId\":\"658\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"658\",\"url\":\"\",\"lineNumber\":0,\"columnNumber\":52}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"TypeError\",\"description\":\"TypeError: Cannot read properties of null (reading 'textContent')\\n    at <anonymous>:1:53\",\"objectId\":\"-4304772264166306029.16.2\"}}"
+        ]
+      }
+    ],
+    "replacement": "New source-record accounting and actual DOM tests replace fixed origin/family/meanings/applications selector assumptions. Apple keeps all manual phrases and adds source expressions, rather than requiring exactly six rows. Verified pictures remain ahead of detailed explanations. Original test files unchanged."
+  },
+  "scope": "UI/data composition release; immutable lexical packages unchanged. No claim of new full-corpus manual translation review or real Safari testing.",
+  "notYetDeployed": true
+}
