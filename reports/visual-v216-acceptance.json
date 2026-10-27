@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "version": "2.16.0",
+  "baseline": "4b24a84cb7802b99666baccf63073bdf771105cc",
+  "dataBuild": "v212-20dbabd4241ad0",
+  "sourcePayloadChanged": false,
+  "counts": {
+    "words": 49426,
+    "senses": 110238,
+    "examples": 75858,
+    "phrases": 17152,
+    "relations": 84682,
+    "native": 71561,
+    "packages": 3662,
+    "cards": 290934,
+    "correctedEntries": 7
+  },
+  "hierarchyChecks": 29,
+  "migrationChecks": 11,
+  "preservedRegression": {
+    "status": "PASS",
+    "suites": [
+      {
+        "suite": "browser_shortcards_v215.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "32",
+          "32"
+        ],
+        "failures": [],
+        "seconds": 6.04,
+        "originalSha256": "2c7678fcac7204b9aaae38fb5bf816cc7c1e3e87c2364ba2987eb6851c6dd072",
+        "adaptedSha256": "2247bd5c987d58c9ad3b654a6c5f0265778b7f898f27a8e068557b7f15cb9ebc"
+      },
+      {
+        "suite": "browser_media_v215.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "16",
+          "16"
+        ],
+        "failures": [],
+        "seconds": 5.35,
+        "originalSha256": "5ec796c5b09b9304e46d0fcc1502b379a73bde6421b4aa9ffaf192e5309e3a08",
+        "adaptedSha256": "9ce2915f46edb82d13e881ceca90f9e4c435cb98e12915a3ec8f5d46fd859af1"
+      },
+      {
+        "suite": "browser_image_recovery_v215.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "8",
+          "8"
+        ],
+        "failures": [],
+        "seconds": 1.82,
+        "originalSha256": "366b82b1eaa20b8e868fef11900319e48e24b87e8d3990a8b9789fe4bce6b584",
+        "adaptedSha256": "70026b4ed47de49562d4ecf085c3ce5ecf571b36b1a1bbba701797c5027600e2"
+      },
+      {
+        "suite": "browser_completion_v2141.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "11",
+          "11"
+        ],
+        "failures": [],
+        "seconds": 1.3,
+        "originalSha256": "fcbb50bda8787301098bd70ebbd190167c4533650d7de0d2e50a31dd19c409fe",
+        "adaptedSha256": "f799c517164e3765395e2b8d67fdec6ea3c22a40ab5754a75de140be1cdfae8a"
+      },
+      {
+        "suite": "browser_reading_v214.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "26",
+          ""
+        ],
+        "failures": [],
+        "seconds": 6.12,
+        "originalSha256": "82c16783ba9d41c1b551df2ca36affea679ab0516462995608a2b650e32c41ea",
+        "adaptedSha256": "a4b1bb77bf85a7287c43d7280d08a52b3a0f2764f906baf65854dd74adff7671"
+      },
+      {
+        "suite": "browser_composition_v214.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "27",
+          "27"
+        ],
+        "failures": [],
+        "seconds": 5.46,
+        "originalSha256": "7eb1618b77d94f0460a8602f2a16883419d60ac13b88784a033e775574f9ce87",
+        "adaptedSha256": "b1cb3c3133b9af2fedc02f6ac0d29fee95ce917310aa9cd60310532cd1a764a0"
+      },
+      {
+        "suite": "browser_bilingual_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "25",
+          "25"
+        ],
+        "failures": [],
+        "seconds": 1.79,
+        "originalSha256": "a0d8a34bd07cd7e15d65bbdbfc514f7b6b38c6f02c5a1b46bf70ff97cf96e4d5",
+        "adaptedSha256": "dbd8643e92ded88c69f943ac9cb4812e30579e63c5354720469a30248c0a82d3"
+      },
+      {
+        "suite": "browser_release_boundaries_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "11",
+          "11"
+        ],
+        "failures": [],
+        "seconds": 1.98,
+        "originalSha256": "15a886c1bfc9b2ef125dcca835279c33d40230146a2a46ce0c2acc1f5af92186",
+        "adaptedSha256": "f0bd883dcf3b717432441fe84eae3c6ed9f019d0d7bc7fe15b22d755f1c8fcab"
+      },
+      {
+        "suite": "browser_authored_pairs_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": null,
+        "failures": [],
+        "seconds": 12.04,
+        "originalSha256": "31403249acda35cfe92843d69692ca74365e0b4c04f8a13d3909040d9b9a1a3e",
+        "adaptedSha256": "01de92ec39b1a07c9a81e37c7a28bab03e7631e0567e28ea6cb7c067adf105ac"
+      },
+      {
+        "suite": "browser_external_bilingual_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "16",
+          "16"
+        ],
+        "failures": [],
+        "seconds": 1.02,
+        "originalSha256": "cf00b593f282be0ef287c9f873ba50d4bd25d41dbca6aeef1bb32048194cf450",
+        "adaptedSha256": "dd41be2855d3d05a546778894e1fa614e994bf03252ce41e2f4775087253b135"
+      },
+      {
+        "suite": "browser_visual_pairs_v212.cjs",
+        "status": "PASS",
+        "exitCode": 0,
+        "summary": [
+          "10",
+          "10"
+        ],
+        "failures": [],
+        "seconds": 1.08,
+        "originalSha256": "42e1a4c109b7d8278d57e87cb3669ad215851c0d67c007d43a7876de5cf5a1cb",
+        "adaptedSha256": "f48ba5a636be4b57d189e0e28b5941a8fda916f8d191dd78b078f87ae19dd244"
+      }
+    ],
+    "adaptation": "Environment, UI/cache version and active asset paths; caption inventory rises from 122 to 124 with two audited additions. Source content assertions preserved."
+  },
+  "comparison": {
+    "before": {
+      "390": {
+        "version": "2.15.0",
+        "beforeFirstCard": 399.25,
+        "nav": 5,
+        "scope": 5,
+        "domains": 3,
+        "bodyFont": "16px"
+      },
+      "1365": {
+        "version": "2.15.0",
+        "beforeFirstCard": 228.625,
+        "nav": 5,
+        "scope": 5,
+        "domains": 3,
+        "bodyFont": "16px"
+      }
+    },
+    "after": {
+      "390": {
+        "version": "2.16.0",
+        "beforeFirstCard": 132,
+        "nav": 3,
+        "scope": 0,
+        "domains": 0,
+        "bodyFont": "16px"
+      },
+      "1365": {
+        "version": "2.16.0",
+        "beforeFirstCard": 145.390625,
+        "nav": 3,
+        "scope": 0,
+        "domains": 0,
+        "bodyFont": "16px"
+      }
+    }
+  },
+  "hashes": {
+    "index.html": "20261c61dfc9ad174a125dd4f459511d2a141fd5ccdf7e17a74f1109d7e55643",
+    "sw.js": "6bf073cac866db960e463de7093ceec4c215f03433ae3215bd6da98c53b988c4",
+    "reader-v216.css": "a4d5bfb3941ab568c77a9a0905831ceab37f694e7fe39d1a55958e7c07c5d98b",
+    "reader-v216.js": "baf70221776cc7e4737fe04442a4198a0144525d170c87ce909bbd3b6d6d757c",
+    "reading-ui-v216.js": "a26b6af1600bb81e677a8ad401a01a502ce6e256f4eb7dca1c9831fccd791809",
+    "reader-cards-v216.js": "2a0dc07e6f36bf4e319373d80c9e45fcc36bbc90658a9f660b114e6172d26c0f",
+    "navigation-v216.js": "318d26d92e0717f3c62bb3324967d208c6af429a3c1cabd3d3937541019e561d",
+    "reader-components-v216.js": "faf023a5957b580b5338f88b7a9cc436f0108f4c4c4d1c760c5496eb1865d209",
+    "reader-plan-v216.js": "676264015df23f5a54648834af691be802aca620c2f9d4605dbd8340a9c93e40"
+  },
+  "checkedAt": "2026-10-27T11:10:31.740546+00:00",
+  "scope": "Visual hierarchy and navigation release. Independent Chromium profiles, mobile-size simulation and synthetic learning records; not new lexical review or all-Safari certification.",
+  "narrowScreenFix": "Initial 320px link wrap retained in runtime/hierarchy-first-run.json; corrected to one three-column bilingual navigation row. Final 29/29 pass."
+}
