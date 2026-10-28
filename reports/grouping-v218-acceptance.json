@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "version": "2.18.0",
+  "baseline": "6361a4effef3ccb0f17d9f43e242b7f51e8d5f3a",
+  "checkedAt": "2026-10-28T09:30:02.369792+00:00",
+  "codeSha256": {
+    "index.html": "8bf1f96bb6723d676bc5d2db70d6cd383ca0525e77782f7e73eb2f5a65f43c76",
+    "sw.js": "2aa1676b82fc1b54134ec102addddf04702609919f8ab82cda3a8e2c0a2e2369",
+    "reader-layout-v218.js": "fb30034e9cf6580b4dd43665f384c04e1705d093eb39f900e552d9df3ad0188c",
+    "reader-cards-v218.js": "b60520e5e61e3159dc3436ffb1cc2e8d363797faae99e4c4f7b3d15b19564978",
+    "reader-components-v218.js": "bdb0d1c2bd0e256edcb702416c8169a2a1cdcff0c981195d82ad3de982e1fd4a",
+    "reader-plan-v218.js": "42d76d1053239f9782af27c08f7756495b56083dc616eaabc9308ecf0651a638",
+    "reader-v218.js": "ee25d2b616b3228a9c4706f98bb97fd354baa69e63645c0ac40bf95e4484dac9",
+    "reading-ui-v218.js": "336423194ee4efdf75e4e2d78beec8f018b75e56efbe61dc15c8056842ab8b96",
+    "navigation-v218.js": "72d5e768beafca50c9a1c91587321e5b52f298f29a59ccf615d0af9213253278",
+    "reader-v218.css": "1852f75d57aea5477a1c2ac67922d282f14b2698e4608af078515c9282a3a5f3"
+  },
+  "fullCorpus": {
+    "words": 49426,
+    "senses": 110238,
+    "examples": 75858,
+    "phrases": 17152,
+    "relations": 84682,
+    "native": 71561,
+    "packages": 3662,
+    "cards": 274595,
+    "correctedEntries": 7,
+    "displayMeanings": 179833,
+    "mergedNative": 1968,
+    "integratedNative": 69593,
+    "reviewedNative": 4,
+    "exactNative": 1955,
+    "alignedNative": 9
+  },
+  "browserChecks": 28,
+  "layoutUnitChecks": 15,
+  "semanticUnitChecks": 12,
+  "regressionGroups": 14,
+  "migrationChecks": 12,
+  "sourcePayloadChanged": false,
+  "scope": "All retained source records and deterministic card ownership checked. Bank has twenty guarded sense-to-topic mappings; other entries use original source categories or conservative POS fallback. Source categories do not assert semantic equivalence. Not full-corpus human linguistic review or physical Safari-device testing.",
+  "fixes": [
+    "No fixed count packing for senses, examples, word families, history or relationships.",
+    "One heading per logical content group; no repeated continued badges.",
+    "Semantic bank grouping precedes reading-length layout.",
+    "Sense bookmarks resolve to lexical records, not earlier examples with the same sense ID."
+  ],
+  "testContractChanges": [
+    "Group title alignment uses its new external heading location.",
+    "Banana directory must equal current semantic groups, not a hard-coded zero.",
+    "Continuation badge assertion now requires zero repeated badges; all source and short-card size checks retained."
+  ],
+  "retainedFailures": [
+    "Initial new browser check exposed a real sense/example anchor collision; code fixed, unchanged check passed.",
+    "First inherited layout checks exposed two long sample cards; length budgets adjusted, same size checks passed."
+  ]
+}

@@ -1,0 +1,16 @@
+/* One title per semantic group; short physical cards are not separate lessons. */
+@import url('./reader-v2171.css');
+body.ui-v218 #readerV24 .rp-semantic-section{display:block;min-width:0;border:0;background:transparent;padding:0;margin:0 0 26px;box-shadow:none}
+body.ui-v218 #readerV24 .rp-group-title{padding:0 calc(var(--reading-pad) + 1px);margin:20px 0 13px}
+body.ui-v218 #readerV24 .rp-group-title h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin:0;font:750 20px/1.5 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:var(--hierarchy-ink)}
+body.ui-v218 #readerV24 .rp-group-title small{font:400 13px/1.6 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:#756052}
+body.ui-v218 #readerV24 .rp-semantic-section .rp-card{margin-bottom:12px}
+body.ui-v218 #readerV24 .rp-semantic-section .rp-card:last-child{margin-bottom:0}
+body.ui-v218 #readerV24 .rp-semantic-section .bi-sense-list>section:first-child{padding-top:0;border-top:0}
+body.ui-v218 #readerV24 .rp-semantic-section .bi-sense-list>section:last-child{padding-bottom:0}
+body.ui-v218 #readerV24 .rp-module>.rp-module-title{margin-top:24px}
+body.ui-v218 #readerV24 .rp-semantic-section .rp-example-record{margin:0}
+body.ui-v218 #readerV24 .rp-semantic-section .rp-example-record+.rp-example-record{margin-top:14px}
+body.ui-v218 #readerV24 .rp-semantic-section .lr-history{margin:0;padding:0}
+@media(max-width:720px){body.ui-v218 #readerV24 .rp-group-title h3{font-size:19px}body.ui-v218 #readerV24 .rp-group-title{margin-top:18px;margin-bottom:12px}}
+@media(prefers-reduced-motion:reduce){body.ui-v218 *{scroll-behavior:auto!important}}
