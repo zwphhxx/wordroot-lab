@@ -1,0 +1,24 @@
+/* Meaning-led expressions; preserve the established warm-card and wiki styles. */
+@import url('./reader-v2161.css');
+body.ui-v2171 #readerV24 .lr-collocations{display:block;grid-template-columns:none;column-count:auto;gap:0;min-width:0}
+body.ui-v2171 #readerV24 .lr-collocations .lr-phrase-row{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:start;align-content:start;gap:16px;width:100%;min-width:0;min-height:0;height:auto;margin:0;padding:18px 0;border:0;border-top:1px solid var(--hierarchy-line)}
+body.ui-v2171 #readerV24 .lr-collocations .lr-phrase-row:first-child{border-top:0;padding-top:0}
+body.ui-v2171 #readerV24 .lr-collocations .lr-phrase-row:last-child{padding-bottom:0}
+body.ui-v2171 #readerV24 .lr-phrase-row>div{align-self:start;min-width:0;margin:0}
+body.ui-v2171 #readerV24 .lr-phrase-row .rd-icon{align-self:start;justify-self:end;position:static;margin:0;min-width:44px;min-height:44px}
+body.ui-v2171 #readerV24 .lr-phrase-row h4.bi-phrase-title{font:700 20px/1.45 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;margin:0 0 10px;color:var(--hierarchy-ink);overflow-wrap:anywhere}
+body.ui-v2171 #readerV24 .lr-phrase-row .bi-pair{margin:0}
+body.ui-v2171 #readerV24 .lr-phrase-row .bi-phrase-title p:first-child{margin-top:0}
+body.ui-v2171 #readerV24 .lr-phrase-row .bi-zh,body.ui-v2171 #readerV24 .lr-phrase-row .bi-en{font-size:16px;line-height:1.75}
+body.ui-v2171 #readerV24 .rp-module-title{padding:0 calc(var(--reading-pad) + 1px);margin:22px 0 14px}
+body.ui-v2171 #readerV24 .rp-module-title h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;font-size:21px;line-height:1.5;margin:0;color:var(--hierarchy-ink)}
+body.ui-v2171 #readerV24 .rp-module-title small{font-size:13px;font-weight:400;color:#756052}
+body.ui-v2171 #readerV24 .rp-integrated-meaning{display:block;border:0;border-top:1px solid var(--hierarchy-line);border-radius:0;margin:0;padding:13px 0;background:transparent;min-width:0}
+body.ui-v2171 #readerV24 .rp-integrated-meaning:first-child{padding-top:0;border-top:0}
+body.ui-v2171 #readerV24 .rp-integrated-meaning:last-child{padding-bottom:0}
+body.ui-v2171 #readerV24 .rp-integrated-meaning h4{margin:8px 0 7px;font-size:17px;line-height:1.6;color:var(--hierarchy-ink)}
+body.ui-v2171 #readerV24 .rp-integrated-meaning h4 [lang=en]{display:block;font-size:15px;color:var(--reading-muted)}
+body.ui-v2171 #readerV24 [data-meaning-id]{scroll-margin-top:68px}
+body.ui-v2171 #readerV24 #module-usage-phrases{display:flow-root;scroll-margin-top:78px}
+@media(max-width:720px){body.ui-v2171 #readerV24 .lr-collocations .lr-phrase-row{gap:12px;padding:15px 0}body.ui-v2171 #readerV24 .lr-phrase-row h4.bi-phrase-title{font-size:19px}body.ui-v2171 #readerV24 .rp-module-title h3{font-size:20px}}
+@media(max-width:360px){body.ui-v2171 #readerV24 .lr-collocations .lr-phrase-row{grid-template-columns:minmax(0,1fr) 44px;gap:8px}}
