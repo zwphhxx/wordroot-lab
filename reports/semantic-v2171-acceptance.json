@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "version": "2.17.1",
+  "baseline": "c65a97400cad16c7b9d657aca6d822fdd0c609a2",
+  "checkedAt": "2026-10-28T07:57:58.914002+00:00",
+  "codeSha256": {
+    "index.html": "ee6dc2780bf2703907645e1b20444b97f7bde2fe64bf491db8e037f8a2e5f5f0",
+    "sw.js": "7dedb8808e490976c8cbe31013510e21b769c97ff399065f98421d9349ff5451",
+    "reader-components-v2171.js": "ce8225f6e804926b20aaf89bae55f8749645152d44cd89b49d169aff8fa32b4f",
+    "navigation-v2171.js": "75e17cb04338fb6f92ea29a71d4c9cf1a9a3afb307fdb99404a19efc53b8cbfd",
+    "reader-v2171.js": "2b413a6950f01d26f62d4af44109727f9bd681d3f9a49ce6b838b1a4b7b8ea4b",
+    "reader-cards-v2171.js": "19b198d2b5b5d439a3d47029d3c2fbfe449fbc2be012717631edf883195359b7",
+    "reading-ui-v2171.js": "336423194ee4efdf75e4e2d78beec8f018b75e56efbe61dc15c8056842ab8b96",
+    "reader-semantics-v2171.js": "d501cf1d87dc0366d03d177eb0a564405f31c4c696c1a84eba4ddabdb8f730ae",
+    "reader-adapters-v2171.js": "8c0646d04b67be004705a49387a9c5cdde86558c0bbc603d5514618a5b3f826e",
+    "reader-plan-v2171.js": "1b72301b5a2a946a8e93d46bf764bab7f99faad4042af65b2b05a8443230d401",
+    "reader-v2171.css": "532a94b54d0a0d60215aeb5c1a20d29f5805dce5435617f1f0881acae4220e16"
+  },
+  "unitChecks": 12,
+  "browserChecks": 30,
+  "regressionGroups": 13,
+  "migrationChecks": 11,
+  "sourcePreservation": {
+    "words": 49426,
+    "senses": 110238,
+    "examples": 75858,
+    "phrases": 17152,
+    "relations": 84682,
+    "native": 71561,
+    "packages": 3662,
+    "cards": 261456,
+    "correctedEntries": 7,
+    "displayMeanings": 179833,
+    "mergedNative": 1968,
+    "integratedNative": 69593,
+    "reviewedNative": 4,
+    "exactNative": 1955,
+    "alignedNative": 9
+  },
+  "basePayloadChanged": false,
+  "nativeDisposition": {
+    "exactBilingualMerged": 1955,
+    "reviewedSegmentMerged": 9,
+    "explicitReviewedMerged": 2,
+    "reviewedExpandedOrSplit": 2,
+    "unresolvedPreserved": 69593
+  },
+  "scope": "Normal meanings integrate source glosses without deleting unknown overlaps. Phrase grouping uses explicit or reviewed links; unknown topics remain unassigned. Pure presentation change plus two independently worded bank source explanations. Not all-word manual review or real Safari certification.",
+  "contractChanges": "Native-source ownership now checked in ordinary meanings rather than a standalone card; directory must omit the retired native section. All other assertions preserved. Environment, UI/cache version and active asset paths; two fixed local startup sleeps replaced by app-readiness checks without changing assertions; caption inventory rises from 122 to 124 with two audited additions. Source content assertions preserved.",
+  "priorIssues": "Initial label audit failures corrected by explicit bilingual UI-metadata marking; initial upstream wiki timeout retained, unchanged full suite rerun passed. Concurrent other draft preserved outside this release worktree."
+}
