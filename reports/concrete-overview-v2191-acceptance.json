@@ -1,0 +1,45 @@
+{
+  "version": "2.19.1",
+  "status": "LOCAL_PASS",
+  "date": "2026-10-29",
+  "change": "Concrete meanings, not lexicographer taxonomy labels, in the overview. Five exact source-backed links; reviewed reason explanations guarded by sense ID and original English.",
+  "source_data_modified": false,
+  "tests": {
+    "fullCorpus": {
+      "status": "PASS",
+      "words": 49426,
+      "packages": 3662,
+      "previews": 113312,
+      "failures": 0
+    },
+    "browser": {
+      "passed": 21,
+      "total": 21
+    },
+    "overviewUnit": {
+      "passed": 9,
+      "total": 9
+    },
+    "previousLayoutUnit": {
+      "passed": 15,
+      "total": 15
+    },
+    "previousSemanticUnit": {
+      "passed": 12,
+      "total": 12
+    },
+    "bilingualAudit": {
+      "words": 80,
+      "unmatched": 0,
+      "status": "PASS"
+    },
+    "offlineUpgrade": {
+      "passed": 9,
+      "total": 9
+    }
+  },
+  "limitations": [
+    "Source translations were not comprehensively human-edited.",
+    "Chrome simulated widths; not real-device Safari certification."
+  ]
+}
