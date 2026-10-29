@@ -1,0 +1,51 @@
+{
+  "version": "2.19.0",
+  "checkDate": "2026-10-29",
+  "status": "LOCAL_PASS",
+  "results": {
+    "browserV219": {
+      "passed": 23,
+      "total": 23
+    },
+    "semanticUnit": {
+      "passed": 12,
+      "total": 12
+    },
+    "layoutUnit": {
+      "passed": 15,
+      "total": 15
+    },
+    "authoredBilingualAudit": {
+      "wordsChecked": 80,
+      "unmatched": 0,
+      "status": "PASS"
+    },
+    "upgradeOffline": {
+      "passed": 12,
+      "total": 12
+    },
+    "fullCorpus": {
+      "status": "PASS",
+      "words": 49426,
+      "packages": 3662,
+      "sourceSenses": 110238,
+      "sourceExamples": 75858,
+      "sourcePhrases": 17152,
+      "physicalCards": 290361,
+      "failures": 0
+    },
+    "stressWord": {
+      "word": "light",
+      "meanings": 51,
+      "examples": 94,
+      "mobileWidth": 320,
+      "maxCardHeightPx": 1542,
+      "horizontalOverflow": false
+    }
+  },
+  "limitations": [
+    "Legacy UI-specific V2.14–V2.16 regression assertions are not valid for the revised V2.19 DOM; historical REVIEW_REQUIRED log retained.",
+    "Not a complete human linguistic review or real-device Safari certification."
+  ],
+  "sourceDataModified": false
+}

@@ -1,0 +1,52 @@
+/* V2.19: every meaning remains expanded and contains its source-linked learning material. */
+@import url('./reader-v218.css');
+body.ui-v219 #readerV24 .unit-overview,body.ui-v219 #readerV24 .unit-entry-search{box-sizing:border-box;margin:13px 0 18px;padding:18px var(--reading-pad);border:1px solid var(--hierarchy-line);border-radius:18px;background:#fffefd;min-width:0}
+body.ui-v219 #readerV24 .unit-overview h2{margin:0 0 12px;font-size:18px;line-height:1.4;color:var(--hierarchy-ink)}
+body.ui-v219 #readerV24 .unit-overview h2 small,body.ui-v219 #readerV24 .unit-entry-search label small{font-size:12px;font-weight:400;color:#806b5a}
+body.ui-v219 #readerV24 .unit-overview-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr));gap:9px}
+body.ui-v219 #readerV24 .unit-overview-links a{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:55px;padding:9px 12px;border:1px solid #eadccd;border-radius:9px;color:var(--hierarchy-ink);text-decoration:none;background:#fffcf8}
+body.ui-v219 #readerV24 .unit-overview-links strong{font-size:15px;line-height:1.4}
+body.ui-v219 #readerV24 .unit-overview-links small{font-size:12px;color:#746052;line-height:1.4}
+body.ui-v219 #readerV24 .unit-all-meanings{border:0;background:transparent;color:#945131;text-align:left;padding:10px 0 0;cursor:pointer;font-size:13px}
+body.ui-v219 #readerV24 .unit-entry-search{margin-top:0;background:transparent;border:0;padding:4px 0 8px}
+body.ui-v219 #readerV24 .unit-entry-search label{display:block;margin-bottom:9px;color:var(--hierarchy-ink);font-size:15px;font-weight:700}
+body.ui-v219 #readerV24 #entrySearchInput{box-sizing:border-box;width:100%;min-height:46px;padding:12px 14px;border-radius:10px;border:1px solid #deccb9;background:#fffefd;color:var(--hierarchy-ink);font:400 15px/1.4 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif}
+body.ui-v219 #readerV24 .unit-search-results{max-height:350px;overflow-y:auto;margin-top:9px;padding:8px 12px;background:#fffefd;border:1px solid #e5d5c5;border-radius:10px;overscroll-behavior:contain}
+body.ui-v219 #readerV24 .unit-search-results[hidden]{display:none}
+body.ui-v219 #readerV24 .unit-result-count{margin:4px 0 7px;color:#806b5a;font-size:12px}
+body.ui-v219 #readerV24 .unit-search-results a{display:grid;gap:2px;min-height:44px;padding:10px 2px;border-top:1px solid #f0e6da;color:#49382d;text-decoration:none}
+body.ui-v219 #readerV24 .unit-search-results a small{font-size:11px;color:#9b4c2b}
+body.ui-v219 #readerV24 .unit-search-results a strong{font-size:14px}
+body.ui-v219 #readerV24 .unit-search-results a span{font-size:13px;color:#735e50;overflow-wrap:anywhere}
+body.ui-v219 #readerV24 .unit-meaning{scroll-margin-top:84px}
+body.ui-v219 #readerV24 .unit-heading{display:flex;flex-wrap:wrap;gap:5px 12px;align-items:baseline;margin:10px 0 8px!important;color:#402e25;font-size:19px;line-height:1.5}
+body.ui-v219 #readerV24 .unit-heading small{font-size:14px;font-weight:400;color:#6f5848}
+body.ui-v219 #readerV24 .unit-definition .bi-pair{margin:0}
+body.ui-v219 #readerV24 .unit-see-example{display:inline-block;margin:8px 0;color:#9b4c2b;font-size:13px;text-decoration:underline;text-underline-offset:3px}
+body.ui-v219 #readerV24 .unit-see-example small{font-size:12px}
+body.ui-v219 #readerV24 .unit-context,body.ui-v219 #readerV24 .unit-related-phrases{margin:15px 0 0;padding:14px 15px;border:1px solid #efe2d5;border-radius:10px;background:#fcf8f2}
+body.ui-v219 #readerV24 .unit-context h5,body.ui-v219 #readerV24 .unit-related-phrases h5{display:flex;gap:9px;align-items:baseline;margin:0 0 8px;font-size:14px;color:#6c3c29}
+body.ui-v219 #readerV24 .unit-context h5 small,body.ui-v219 #readerV24 .unit-related-phrases h5 small{font-size:12px;font-weight:400;color:#816d5b}
+body.ui-v219 #readerV24 .unit-example+.unit-example{border-top:1px solid #eadccc;margin-top:13px;padding-top:13px}
+body.ui-v219 #readerV24 .unit-context .bi-example{margin:0;padding:0;border:0;background:transparent;box-shadow:none}
+body.ui-v219 #readerV24 .unit-contextual{display:block;margin-bottom:7px;color:#806b5a}
+body.ui-v219 #readerV24 .unit-related-phrases .lr-phrase-row{padding:12px 0;border-top:1px solid #ede0d4}
+body.ui-v219 #readerV24 .unit-related-phrases .lr-phrase-row:first-child{border-top:0}
+body.ui-v219 #readerV24 .unit-link-index{padding:0 calc(var(--reading-pad) + 1px);margin-bottom:15px}
+body.ui-v219 #readerV24 .unit-link-index p{font-size:13px;color:#796454}
+body.ui-v219 #readerV24 .unit-link-index p small{display:block;font-size:12px}
+body.ui-v219 #readerV24 .unit-link-index a{display:flex;flex-wrap:wrap;gap:6px 12px;min-height:44px;align-items:center;border-bottom:1px solid #ecdfd2;text-decoration:none;color:#63432e;font-size:14px}
+body.ui-v219 #readerV24 .unit-link-index a span[lang=zh-CN]{color:#8c715f}
+body.ui-v219 #readerV24 .unit-targeted{outline:2px solid #c78e5e;outline-offset:5px;border-radius:5px;background-color:#fff9f0!important;scroll-margin-top:90px}
+body.ui-v219 .contents-links .contents-sense{margin-left:42px;border-left:1px solid #e9dacc;font-size:13px}
+body.ui-v219 #readerV24 .rp-meaning .rp-media-slot{margin-top:14px}
+@media(max-width:720px){body.ui-v219 #readerV24 .unit-overview{padding:16px}body.ui-v219 #readerV24 .unit-overview-links{grid-template-columns:repeat(2,minmax(0,1fr))}body.ui-v219 #readerV24 .unit-context,body.ui-v219 #readerV24 .unit-related-phrases{padding:12px;margin-top:12px}body.ui-v219 .contents-links .contents-sense{margin-left:20px}}
+@media(max-width:360px){body.ui-v219 #readerV24 .unit-overview-links{grid-template-columns:1fr}}
+
+/* Keep semantic topic headings unique while making each physical card manageable. */
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses{margin:0!important;border-radius:0;box-shadow:none}
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses+ .rp-card-senses{border-top:0}
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:first-of-type{border-radius:14px 14px 0 0}
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:last-of-type{border-radius:0 0 14px 14px;margin-bottom:0!important}
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:only-of-type{border-radius:14px}
+body.ui-v219 #readerV24 .rp-section-links button{display:inline-flex;align-items:baseline;gap:5px;border:0;background:transparent;color:inherit;cursor:pointer;font:inherit;padding:8px}
