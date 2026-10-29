@@ -1,0 +1,87 @@
+/* V2.19.2: the full article uses readable individual meanings, not taxonomy headings.
+ * Keep every source bilingual record and all linked examples visible. */
+@import url('./reader-v2191.css');
+
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section{
+  margin-bottom:12px;padding:0;
+}
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses,
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:first-of-type,
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:last-of-type,
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:only-of-type{
+  border:1px solid #ecd8c8; border-radius:16px; padding:22px 25px;
+  margin:0 0 12px!important; box-shadow:0 4px 18px rgba(99,69,46,.035);
+}
+body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:last-child{margin-bottom:0!important}
+body.ui-v219 #readerV24 #module-usage-senses .bi-sense,
+body.ui-v219 #readerV24 #module-usage-senses .bi-native-block.unit-meaning{border:0;padding:0}
+body.ui-v219 #readerV24 #module-usage-senses .bi-sense-top{
+ display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+ font-size:13px;line-height:1.45;color:#886c58;margin:0 0 12px;
+}
+body.ui-v219 #readerV24 #module-usage-senses .bi-sense-top .bi-index{
+ font-size:16px;color:#935539;font-weight:750;line-height:1.4;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-heading{
+ font:750 22px/1.5 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;
+ letter-spacing:0;color:#402c24;margin:0 0 7px!important;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-short-explanation{
+ font:400 15px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;
+ color:#745848;margin:0 0 11px;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-definition{margin:2px 0 0}
+body.ui-v219 #readerV24 #module-usage-senses .unit-definition .bi-pair{
+ display:flex;flex-direction:column;align-items:flex-start;gap:3px;margin:0;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-definition .bi-pair .bi-en{
+ order:1;font:400 15px/1.65 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;
+ color:#6f5c4c;margin:0;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-definition .bi-pair .bi-zh{
+ order:0;font:400 14px/1.6 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;
+ color:#8b7566;margin:0;
+}
+body.ui-v219 #readerV24 #module-usage-senses .source-is-title .unit-definition .bi-pair .bi-zh{
+ font-size:20px;line-height:1.5;font-weight:700;color:#402c24;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-definition .bi-pair .bi-method{
+ order:2;margin:3px 0 0;font-size:11px;background:#fbf3e9;color:#917b68;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-context,
+body.ui-v219 #readerV24 #module-usage-senses .unit-related-phrases{
+ margin-top:17px; padding:15px 17px; border-radius:12px;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-context h5,
+body.ui-v219 #readerV24 #module-usage-senses .unit-related-phrases h5{
+ font-size:15px;letter-spacing:0;margin:0 0 7px;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-context .bi-example .bi-en{
+ font-size:19px;line-height:1.6;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-context .bi-example .bi-zh{
+ font-size:16px;line-height:1.6;
+}
+body.ui-v219 #readerV24 #module-usage-senses .rp-module-title h3{font-size:21px}
+@media(max-width:720px){
+ body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses,
+ body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:first-of-type,
+ body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:last-of-type,
+ body.ui-v219 #readerV24 #module-usage-senses .rp-semantic-section .rp-card-senses:only-of-type{
+   padding:17px 16px; margin-bottom:10px!important; border-radius:13px;
+ }
+ body.ui-v219 #readerV24 #module-usage-senses .unit-heading{font-size:20px}
+ body.ui-v219 #readerV24 #module-usage-senses .unit-context,
+ body.ui-v219 #readerV24 #module-usage-senses .unit-related-phrases{padding:12px}
+}
+
+/* Reviewed short labels lead; the machine-translated source stays visible but secondary. */
+body.ui-v219 #readerV24 #module-usage-senses .unit-source-caption{
+ display:flex;gap:10px;align-items:baseline;margin:12px 0 5px;
+ font-size:12px;line-height:1.5;color:#907a69;
+}
+body.ui-v219 #readerV24 #module-usage-senses .unit-source-caption small{font-size:11px;color:#9a8572}
+body.ui-v219 #readerV24 #module-usage-senses .has-short-title .unit-definition .bi-pair .bi-en{order:0}
+body.ui-v219 #readerV24 #module-usage-senses .has-short-title .unit-definition .bi-pair .bi-zh{
+ order:1;font-size:13px;color:#927c6a;
+}

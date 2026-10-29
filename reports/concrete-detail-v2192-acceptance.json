@@ -1,0 +1,46 @@
+{
+  "version": "2.19.2",
+  "date": "2026-10-29",
+  "status": "LOCAL_PASS",
+  "change": "Concrete and source-backed detailed meaning cards; remove taxonomy titles, redundant bilingual title copy and duplicate example CTAs; display-only reviewed corrections for five reason examples.",
+  "dictionarySourceModified": false,
+  "tests": {
+    "browser": {
+      "passed": 23,
+      "total": 23
+    },
+    "detailLabelUnit": {
+      "passed": 10,
+      "total": 10
+    },
+    "legacyLayoutUnit": {
+      "passed": 15,
+      "total": 15
+    },
+    "legacySemanticsUnit": {
+      "passed": 12,
+      "total": 12
+    },
+    "authoredBilingualAudit": {
+      "words": 80,
+      "unmatched": 0,
+      "status": "PASS"
+    },
+    "offlineUpgrade": {
+      "passed": 9,
+      "total": 9
+    },
+    "fullCorpus": {
+      "status": "PASS",
+      "words": 49426,
+      "packages": 3662,
+      "concretePreviews": 113312,
+      "cards": 290361,
+      "failures": 0
+    }
+  },
+  "limitations": [
+    "No comprehensive human semantic audit of all dictionary translations.",
+    "Simulated Chromium viewports, not certification on actual Safari hardware."
+  ]
+}
