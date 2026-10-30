@@ -1,0 +1,68 @@
+{
+  "version": "2.20.0",
+  "date": "2026-10-30",
+  "status": "LOCAL_PASS",
+  "approval": "Final Analysis output 1: single merged meanings module, no supplemental meaning cards",
+  "dictionaryDataModified": false,
+  "tests": {
+    "browser": {
+      "status": "PASS",
+      "passed": 35,
+      "total": 35
+    },
+    "upgrade": {
+      "status": "PASS",
+      "passed": 11,
+      "total": 11
+    },
+    "authored": {
+      "status": "PASS",
+      "passed": 4,
+      "total": 4,
+      "words": 80,
+      "unmatched": 0
+    },
+    "completion": {
+      "status": "PASS",
+      "passed": 11,
+      "total": 11
+    },
+    "corpus": {
+      "status": "PASS",
+      "counts": {
+        "exactDuplicateSourceRows": 4,
+        "unifiedMeanings": 110244,
+        "provenanceGlosses": 69585,
+        "concretePreviews": 113312,
+        "words": 49426,
+        "senses": 110238,
+        "examples": 75858,
+        "phrases": 17152,
+        "relations": 84682,
+        "native": 71561,
+        "packages": 3662,
+        "cards": 290361,
+        "correctedEntries": 7,
+        "displayMeanings": 179833,
+        "mergedNative": 1968,
+        "integratedNative": 69593,
+        "reviewedNative": 4,
+        "exactNative": 1955,
+        "alignedNative": 9
+      },
+      "failures": 0
+    }
+  },
+  "unitTests": {
+    "newPresentation": 11,
+    "existingLabels": 10,
+    "existingLayout": 15,
+    "existingSemantics": 12,
+    "memoryEngine": 11
+  },
+  "limits": [
+    "Record preservation is not full-corpus human linguistic validation.",
+    "Viewport tests use isolated Chromium, not physical Safari devices.",
+    "Encyclopedia availability varies by topic; ambiguous topics remain selectable."
+  ]
+}

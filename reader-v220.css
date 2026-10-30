@@ -1,0 +1,124 @@
+/* Approved merged-meanings layout, V2.20. Source content is not clipped. */
+@import url('./reader-v2192.css');
+body.ui-v220 #readerV24{max-width:960px;width:100%;margin:0 auto;color:#3d2c24;position:relative}
+body.ui-v220 #readerV24 [hidden]{display:none!important}
+body.ui-v220 #readerV24 .lr-word-card{border:0;box-shadow:none;background:transparent;padding:12px 4px 18px;margin:0}
+body.ui-v220 #readerV24 .rd-word-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+body.ui-v220 #readerV24 .rd-word-row h1{font-size:44px;margin:0;line-height:1.25}
+body.ui-v220 #readerV24 .rd-word-buttons{display:flex;gap:10px;align-items:center}
+body.ui-v220 #readerV24 .unified-section{box-sizing:border-box;background:#fff;border:1px solid #ead8c9;border-radius:16px;padding:22px;margin:0 0 18px;min-width:0;scroll-margin-top:90px;box-shadow:none}
+body.ui-v220 #readerV24 .unified-section>h2{font:750 22px/1.4 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;margin:0 0 12px;color:#3e2a21}
+body.ui-v220 #readerV24 .unified-section h2 small{font-size:13px;font-weight:400;color:#88715f;margin-left:8px}
+body.ui-v220 #readerV24 .section-hint{font-size:14px;color:#8b7665;margin:0 0 14px;line-height:1.6}
+body.ui-v220 #readerV24 .section-hint small{font-size:12px}
+body.ui-v220 #readerV24 .meaning-chips{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:0 0 14px}
+body.ui-v220 #readerV24 .meaning-chip{display:flex;flex-direction:column;text-align:left;gap:6px;min-height:82px;min-width:0;border:1px solid #e9d6c4;border-radius:9px;background:#fffcf8;padding:11px 12px;color:#4b3427;cursor:pointer;font:inherit}
+body.ui-v220 #readerV24 .meaning-chip .chip-meta{font-size:13px;color:#946444}
+body.ui-v220 #readerV24 .meaning-chip strong{font-size:15px;line-height:1.45;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .meaning-chip.is-selected{border-color:#ae5935;background:#fbf0e4;box-shadow:inset 0 0 0 1px #ae5935}
+body.ui-v220 #readerV24 .meaning-panel{border:1px solid #ebd9c9;border-radius:10px;padding:0;margin:0 0 9px;scroll-margin-top:92px;min-width:0}
+body.ui-v220 #readerV24 .meaning-panel[open]{border-color:#bc7852;background:#fffdfa}
+body.ui-v220 #readerV24 .meaning-panel>summary{display:grid;grid-template-columns:32px auto minmax(0,1fr) 20px;align-items:baseline;gap:10px;padding:13px 15px;cursor:pointer;list-style:none;min-height:48px;color:#452e22}
+body.ui-v220 #readerV24 .meaning-panel>summary::-webkit-details-marker{display:none}
+body.ui-v220 #readerV24 .meaning-number{font-size:18px;line-height:1.4;font-weight:750;color:#aa4f2c;background:#fbefe2;border-radius:4px;text-align:center;padding:1px 3px}
+body.ui-v220 #readerV24 .meaning-pos{font-size:16px;font-weight:650;color:#925b3e}
+body.ui-v220 #readerV24 .meaning-panel>summary strong{font-size:19px;font-weight:700;line-height:1.5;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .meaning-chevron{font-size:18px;text-align:right;color:#a15d3e}
+body.ui-v220 #readerV24 .meaning-panel[open] .meaning-chevron{transform:rotate(180deg)}
+body.ui-v220 #readerV24 .meaning-content{padding:0 16px 13px}
+body.ui-v220 #readerV24 .meaning-definition p{font:400 16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;margin:0 0 6px;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .meaning-definition .bi-en{color:#806750;font-size:15px}
+body.ui-v220 #readerV24 .meaning-examples h4,body.ui-v220 #readerV24 .meaning-phrases h4{font-size:15px;margin:16px 0 6px;color:#975032}
+body.ui-v220 #readerV24 .meaning-examples h4 small,body.ui-v220 #readerV24 .meaning-phrases h4 small{font-size:12px;color:#957c67;font-weight:400;margin-left:8px}
+body.ui-v220 #readerV24 .unified-example{display:grid;grid-template-columns:minmax(0,1fr) 38px;gap:13px;padding:11px 0;border-top:1px solid #f0e0d1;align-items:start;scroll-margin-top:95px}
+body.ui-v220 #readerV24 .unified-example:first-of-type{border-top:0}
+body.ui-v220 #readerV24 .unified-example .bi-en{font:600 18px/1.6 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:#423027;margin:0 0 4px;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .unified-example .bi-zh{font:400 15px/1.6 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:#8b715d;margin:0;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .unified-example mark{background:#fff0cc;color:#9b4c2a;padding:0 3px;border-radius:3px}
+body.ui-v220 #readerV24 .example-audio{width:38px;height:38px;min-width:38px;margin:0;border:0;background:transparent;color:#aa5430}
+body.ui-v220 #readerV24 .rd-icon svg{width:20px;height:20px}
+body.ui-v220 #readerV24 .show-all-meanings{border:1px solid #e6cfbb;background:#fffaf4;border-radius:7px;min-height:42px;padding:9px 13px;color:#a65731;font:500 14px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;cursor:pointer;margin-top:6px}
+body.ui-v220 #readerV24 .show-all-meanings small{font-size:12px;color:#96765c;margin-left:7px}
+body.ui-v220 #readerV24 .origin-sources,body.ui-v220 #readerV24 .meaning-sources,body.ui-v220 #readerV24 .unassigned-examples{margin-top:10px;border:0;background:transparent;color:#8e7660;font-size:12px}
+body.ui-v220 #readerV24 .origin-sources>summary,body.ui-v220 #readerV24 .meaning-sources>summary,body.ui-v220 #readerV24 .unassigned-examples>summary{cursor:pointer;min-height:30px;padding:6px 0;line-height:1.5}
+body.ui-v220 #readerV24 .meaning-sources p,body.ui-v220 #readerV24 .meaning-sources small{font-size:12px;line-height:1.6;margin:6px 0}
+body.ui-v220 #readerV24 .example-origin small{display:block}
+body.ui-v220 #readerV24 .source-record{padding:10px 0;border-top:1px solid #ecdfd4}
+body.ui-v220 #readerV24 .source-record p{font-size:14px}
+body.ui-v220 #readerV24 .unified-entry-search{margin:0 0 18px}
+body.ui-v220 #readerV24 .unified-entry-search label{display:block;margin-bottom:7px;font-size:14px;color:#765a45}
+body.ui-v220 #readerV24 .unified-entry-search label small{font-size:12px;margin-left:8px}
+body.ui-v220 #readerV24 #entrySearchInput{width:100%;box-sizing:border-box;padding:12px 14px;min-height:45px;border:1px solid #dfc6b0;border-radius:9px;font:400 15px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;background:#fff}
+body.ui-v220 #readerV24 .unit-search-results a{display:grid;gap:3px;border-bottom:1px solid #ecdccc;padding:10px 0;text-decoration:none;color:inherit}
+body.ui-v220 #readerV24 .unit-search-results{padding:8px 14px;background:#fff;max-height:350px;overflow:auto;border:1px solid #e9d7c5;border-radius:9px}
+body.ui-v220 #readerV24 .unified-forms{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));margin:0;border:1px solid #ead6c4;border-radius:9px;overflow:hidden}
+body.ui-v220 #readerV24 .unified-forms>div{text-align:center;border-right:1px solid #ead6c4;min-width:0}
+body.ui-v220 #readerV24 .unified-forms>div:last-child{border-right:0}
+body.ui-v220 #readerV24 .unified-forms dt{padding:10px 6px;min-height:54px;display:flex;flex-direction:column;justify-content:center;gap:4px;background:#fcf6ef;font-size:14px;font-weight:650;border-bottom:1px solid #ead6c4;box-sizing:content-box}
+body.ui-v220 #readerV24 .unified-forms dt small{font-size:11px;color:#937960;font-weight:400;line-height:1.3}
+body.ui-v220 #readerV24 .unified-forms dd{margin:0;padding:11px 6px;overflow-wrap:anywhere;font-size:18px;font-weight:650}
+body.ui-v220 #readerV24 .unified-forms button{font:inherit;border:0;background:transparent;color:#7f482e;text-decoration:underline;text-underline-offset:4px;cursor:pointer;max-width:100%;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .linked-phrase-chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-bottom:12px}
+body.ui-v220 #readerV24 .linked-phrase-chips a{display:flex;flex-direction:column;gap:4px;padding:10px 12px;background:#fbf2e8;color:#62452e;text-decoration:none;border-radius:7px;min-width:0}
+body.ui-v220 #readerV24 .linked-phrase-chips b{font-size:15px;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .linked-phrase-chips span{font-size:12px;line-height:1.5}
+body.ui-v220 #readerV24 .meaning-phrases .bi-collocations{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+body.ui-v220 #readerV24 .meaning-phrases .lr-phrase-row{padding:8px 10px;background:#fcf3e8;border:0;border-radius:6px;min-width:0;display:flex;gap:10px;align-items:flex-start}
+body.ui-v220 #readerV24 .meaning-phrases .bi-phrase-title .bi-en{font-size:16px}
+body.ui-v220 #readerV24 .meaning-phrases .bi-phrase-title .bi-zh{font-size:14px}
+body.ui-v220 #readerV24 .relation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+body.ui-v220 #readerV24 .relation-tile{border:1px solid #ead7c5;border-radius:9px;padding:13px;min-width:0;background:#fffdf9}
+body.ui-v220 #readerV24 .relation-top{display:flex;flex-wrap:wrap;align-items:center;gap:5px 12px}
+body.ui-v220 #readerV24 .relation-word{background:transparent;border:0;padding:0;color:#68422d;font-family:Georgia,serif;font-size:22px;font-weight:700;cursor:pointer;overflow-wrap:anywhere;text-align:left}
+body.ui-v220 #readerV24 .relation-top>span{font-size:11px;color:#98724e}
+body.ui-v220 #readerV24 .relation-scope{font-size:12px;line-height:1.6;color:#967451;margin:8px 0}
+body.ui-v220 #readerV24 .relation-scope small,body.ui-v220 #readerV24 .relation-warning small{display:block;font-size:11px}
+body.ui-v220 #readerV24 .relation-definition .bi-en,body.ui-v220 #readerV24 .relation-definition .bi-zh{font-size:14px;line-height:1.6}
+body.ui-v220 #readerV24 .relation-warning{font-size:11px;line-height:1.5;color:#a4876d;margin-bottom:0}
+body.ui-v220 #readerV24 .more-relations{margin-top:12px;font-size:14px;color:#8d5a37}
+body.ui-v220 #readerV24 .more-relations summary{padding:9px 0;cursor:pointer}
+body.ui-v220 #readerV24 .encyclopedia-grid{display:grid;grid-template-columns:175px minmax(0,1fr);gap:20px;align-items:start}
+body.ui-v220 #readerV24 .encyclopedia-grid.text-only{grid-template-columns:1fr}
+body.ui-v220 #readerV24 .wiki-article,body.ui-v220 #readerV24 .wiki-enrichment,body.ui-v220 #readerV24 .wiki-card,body.ui-v220 #readerV24 .wiki-photo-card{border:0;box-shadow:none;padding:0;margin:0;background:transparent}
+body.ui-v220 #readerV24 .wiki-photo-card img{max-height:185px;width:100%;object-fit:contain;border-radius:7px}
+body.ui-v220 #readerV24 .wiki-photo-card figure{margin:0}
+body.ui-v220 #readerV24 .wiki-photo-card .visual-zoom{padding:0;border:0;background:#fbf7f1;max-width:100%}
+body.ui-v220 #readerV24 .wiki-photo-card .visual-zoom>span{display:none}
+body.ui-v220 #readerV24 .wiki-photo-card .visual-caption-pair{display:none}
+body.ui-v220 #readerV24 .wiki-photo-card figcaption small{font-size:10px;line-height:1.5;display:block;color:#8f745d;margin-top:5px}
+body.ui-v220 #readerV24 .encyclopedia-copy h3{font-size:19px;margin:0 0 9px;line-height:1.4}
+body.ui-v220 #readerV24 .encyclopedia-copy h3 small{font-size:14px;color:#8b6c51;margin-left:8px;font-weight:400}
+body.ui-v220 #readerV24 .wiki-languages{display:block}
+body.ui-v220 #readerV24 .wiki-language-block{border:0;background:transparent;padding:0;margin:0 0 10px;box-shadow:none}
+body.ui-v220 #readerV24 .wiki-summary{font:400 15px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;margin:0;color:#5b4535}
+body.ui-v220 #readerV24 .wiki-language-source{font-size:11px;color:#a57952}
+body.ui-v220 #readerV24 .wiki-scope{font-size:12px;line-height:1.5;color:#92735a;margin:0 0 10px}
+body.ui-v220 #readerV24 .wiki-scope small{display:block;font-size:11px}
+body.ui-v220 #readerV24 .wiki-provenance{font-size:11px;color:#937e6b;margin:8px 0 0}
+body.ui-v220 #readerV24 .wiki-provenance summary{cursor:pointer;padding:4px 0}
+body.ui-v220 #readerV24 .wiki-change-topic{font-size:12px;margin-top:6px;padding:4px 0}
+body.ui-v220 #readerV24 .topic-text-choice{padding:8px;display:grid;gap:4px;font-size:14px;background:#fbf3e8;border-radius:6px}
+body.ui-v220 #readerV24 .visual-candidates{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+body.ui-v220 #readerV24 .visual-candidate{min-width:0}
+body.ui-v220 #readerV24 .unified-toc{display:none}
+body.ui-v220 #readerV24 .mobile-contents{border:1px solid #e8d6c6;background:#fffdf9;padding:10px 13px;border-radius:8px;margin-bottom:14px;scroll-margin-top:90px}
+body.ui-v220 #readerV24 .mobile-contents summary{cursor:pointer;font-size:14px;font-weight:600}
+body.ui-v220 #readerV24 .mobile-contents summary small{font-size:12px;font-weight:400;margin-left:7px}
+body.ui-v220 #readerV24 .mobile-contents nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:8px}
+body.ui-v220 #readerV24 .mobile-contents a{text-decoration:none;font-size:13px;padding:8px;color:#7a5339}
+body.ui-v220 #readerV24 .mobile-contents a small{display:block;font-size:11px;color:#a1866d}
+body.ui-v220 #readerV24 button:focus-visible,body.ui-v220 #readerV24 summary:focus-visible,body.ui-v220 #readerV24 a:focus-visible{outline:2px solid #aa5d38;outline-offset:3px}
+body.ui-v220 #readerV24 .unit-targeted{outline:2px solid #c89165;outline-offset:3px}
+@media(min-width:1300px){body.ui-v220 #readerV24{max-width:1180px;padding-right:200px}body.ui-v220 #readerV24 .unified-toc{display:block;position:fixed;top:115px;left:calc(50% + 430px);width:160px;max-height:74vh;overflow:auto;right:auto;padding:14px 12px;border:1px solid #ead8c9;border-radius:12px;background:#fffcf8;box-sizing:border-box}body.ui-v220 #readerV24 .unified-toc h2{font-size:16px;line-height:1.4;margin:0 0 12px}body.ui-v220 #readerV24 .unified-toc h2 small{font-size:11px;font-weight:400;color:#94735b}body.ui-v220 #readerV24 .unified-toc a{display:block;padding:10px 8px;color:#77543c;text-decoration:none;border-left:2px solid transparent;font-size:14px;margin:3px 0}body.ui-v220 #readerV24 .unified-toc a small{display:block;font-size:11px;color:#9a816c;margin-top:3px}body.ui-v220 #readerV24 .unified-toc a.is-current{border-color:#a44b28;background:#faf0e4;color:#a44b28}body.ui-v220 #readerV24 .mobile-contents{display:none}}
+@media(max-width:700px){body.ui-v220 #readerV24 .unified-section{padding:16px;border-radius:12px}body.ui-v220 #readerV24 .meaning-chips{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}body.ui-v220 #readerV24 .meaning-chip{min-height:64px;padding:9px 10px}body.ui-v220 #readerV24 .meaning-panel>summary{grid-template-columns:28px auto minmax(0,1fr) 16px;gap:6px;padding:11px}body.ui-v220 #readerV24 .meaning-panel>summary strong{font-size:17px}body.ui-v220 #readerV24 .meaning-content{padding:0 12px 12px}body.ui-v220 #readerV24 .meaning-pos{font-size:14px}body.ui-v220 #readerV24 .relation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body.ui-v220 #readerV24 .encyclopedia-grid{grid-template-columns:110px minmax(0,1fr);gap:12px}body.ui-v220 #readerV24 .wiki-summary{font-size:14px}body.ui-v220 #readerV24 .rd-word-row h1{font-size:36px}}
+@media(max-width:460px){body.ui-v220 #readerV24 .relation-grid{grid-template-columns:1fr}body.ui-v220 #readerV24 .encyclopedia-grid{grid-template-columns:1fr}body.ui-v220 #readerV24 .wiki-photo-card{max-width:160px}body.ui-v220 #readerV24 .unified-forms{grid-template-columns:repeat(2,minmax(0,1fr))}body.ui-v220 #readerV24 .unified-forms>div{border-bottom:1px solid #ead6c4}body.ui-v220 #readerV24 .meaning-phrases .bi-collocations{grid-template-columns:1fr}body.ui-v220 #readerV24 .rd-word-buttons{gap:7px}}
+@media(prefers-reduced-motion:reduce){body.ui-v220 *{scroll-behavior:auto!important}}
+
+/* Remove the old narrow reading-column cap; reserve a genuine desktop contents rail. */
+body.ui-v220 main.main,body.ui-v220 .header-main{max-width:1008px}
+@media(min-width:1300px){body.ui-v220 main.main,body.ui-v220 .header-main{max-width:1228px}}
+body.ui-v220 #readerV24 .meaning-panel{display:block!important;border:1px solid #e6c7ae!important;padding:0!important}
+body.ui-v220 #readerV24 .meaning-panel[hidden]{display:none!important}
+
+body.ui-v220 #readerV24 .meaning-chip small{font-size:11px;line-height:1.4;color:#96785f;font-weight:400;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .relation-top>span small{display:block;font-size:10px;margin-top:2px}

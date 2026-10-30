@@ -115,3 +115,20 @@ New Commons pictures and derivative scene mappings are listed in visual-extra-v2
 ## V2.12 候选双语资料
 
 中文概念标签部分采用 Chinese Open Wordnet（Francis Bond、Shan Wang），以PWN 3.0同义词集合编号连接。中文lemma并非逐句释义译文。完整许可见 `data/licenses/COW-LICENSE.txt`。补译候选使用本机 Argos/OPUS-MT，原模型为CC BY 4.0，见 `data/licenses/OPUS-MT-README.txt`。机器译文不能视为原词典作者核准，词典页面保留相应标记；本候选版本未通过发布门禁。
+
+
+## V2.20 encyclopedia snapshot: Reason / 理智
+
+The brief English and Chinese encyclopedia extracts in `wiki-snapshots-v220.js` are from Wikipedia contributors, retrieved on 2026-10-30. The pages are paired via the same Wikidata entity, Q178354. They concern the faculty of reason, not every lexical sense of the English word. The extracts are independent language summaries, not sentence-by-sentence translations.
+
+- English source: https://en.wikipedia.org/wiki/Reason
+- Chinese source: https://zh.wikipedia.org/wiki/理智
+- Entity: https://www.wikidata.org/wiki/Q178354
+- Text license: Creative Commons Attribution-ShareAlike 4.0 International, https://creativecommons.org/licenses/by-sa/4.0/ . The local text is a shortened excerpt; other page-interface text is independently authored.
+
+The local illustration `images/visual-v220/reason-article.jpg` is a display-sized copy of **Goya Caprichos3.jpg**, Francisco Goya, included in the English Reason article. Wikimedia Commons identifies the image as **Public domain**. No ownership over the image is claimed and no new artwork is represented as a source photograph.
+
+- Original file and license evidence: https://commons.wikimedia.org/wiki/File:Goya_Caprichos3.jpg
+- Creator credit: Francisco Goya / Wikimedia Commons
+
+The page preserves a file-source link and creator/license credit next to the displayed illustration. All other on-demand encyclopedia articles and images retain their own source and license information. A missing or unconfirmed image is not replaced by a fabricated source image.
