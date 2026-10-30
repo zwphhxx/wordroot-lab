@@ -1,0 +1,65 @@
+/* Focused dictionary reading: no duplicated meaning list or source badges in teaching cards. */
+@import url('./reader-v220.css');
+body.ui-v220 #readerV24 .understanding-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+body.ui-v220 #readerV24 .understanding-grid.with-picture{grid-template-columns:155px minmax(0,1fr)}
+body.ui-v220 #readerV24 .understanding-grid h3{font-size:25px;line-height:1.5;margin:2px 0 10px;color:#412e25}
+body.ui-v220 #readerV24 .understanding-grid p{margin:6px 0;font-size:16px;line-height:1.75;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .understanding-en{color:#87705d;font-size:15px!important}
+body.ui-v220 #readerV24 .understanding-example{margin-top:14px;padding:12px 15px;background:#fcf6ee;border-radius:8px}
+body.ui-v220 #readerV24 .understanding-example p{margin:2px 0;font-size:15px}
+body.ui-v220 #readerV24 .understanding-picture{margin:0;min-width:0}
+body.ui-v220 #readerV24 .understanding-picture img{width:100%;max-height:180px;object-fit:contain;border-radius:9px}
+body.ui-v220 #readerV24 .understanding-picture figcaption{font-size:10px;line-height:1.6;color:#96775f;margin:6px 0}
+body.ui-v220 #readerV24 .unified-forms b{font-size:18px;color:#65432e;cursor:text;text-decoration:none}
+body.ui-v220 #readerV24 .phrase-filters{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}
+body.ui-v220 #readerV24 .phrase-filters button{font:500 13px/1.5 -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:#735039;background:#fffaf4;border:1px solid #ead4c1;border-radius:7px;min-height:40px;padding:8px 12px;cursor:pointer}
+body.ui-v220 #readerV24 .phrase-filters button small{font-size:11px;display:block;color:#987a62}
+body.ui-v220 #readerV24 .phrase-filters .is-selected{background:#f6e8da;border-color:#ad613d;color:#924622}
+body.ui-v220 #readerV24 .phrase-learning-group{margin:0 0 16px}
+body.ui-v220 #readerV24 .phrase-learning-group>h3{font-size:16px;line-height:1.5;margin:0 0 8px}
+body.ui-v220 #readerV24 .phrase-learning-group h3 small{font-size:12px;color:#93765f;font-weight:400;margin-left:6px}
+body.ui-v220 #readerV24 .phrase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+body.ui-v220 #readerV24 .learning-phrase{border:1px solid #ead8c9;border-radius:9px;background:#fffdf9;padding:13px 14px;min-width:0;scroll-margin-top:90px}
+body.ui-v220 #readerV24 .learning-phrase-head{display:grid;grid-template-columns:minmax(0,1fr) 38px;gap:7px;align-items:start}
+body.ui-v220 #readerV24 .learning-phrase-head strong{font-size:18px;line-height:1.5;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .learning-phrase-head button{min-width:36px;min-height:36px;width:36px;height:36px;background:transparent;border:0;padding:7px;margin:0}
+body.ui-v220 #readerV24 .learning-phrase p{margin:5px 0;font-size:14px;line-height:1.65;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .phrase-usage{margin-top:9px;border-top:1px solid #ecdfd2;padding-top:8px;color:#795d46}
+body.ui-v220 #readerV24 .phrase-usage summary,body.ui-v220 #readerV24 .comparison-card summary{cursor:pointer;font-size:12px;line-height:1.6;padding:4px 0}
+body.ui-v220 #readerV24 .phrase-usage summary small,body.ui-v220 #readerV24 .comparison-card summary small{font-size:11px;margin-left:5px;color:#9b806a}
+body.ui-v220 #readerV24 .phrase-usage .usage-note{font-size:13px;color:#9a7457}
+body.ui-v220 #readerV24 .phrase-example-en{font-weight:600;color:#544132}
+body.ui-v220 #readerV24 .phrase-more{border:1px solid #e2c8b1;border-radius:7px;min-height:40px;background:#fffaf5;color:#9b4f2c;padding:8px 13px;cursor:pointer;font:500 14px/1.5 -apple-system,BlinkMacSystemFont,sans-serif}
+body.ui-v220 #readerV24 .phrase-more small{font-size:12px;margin-left:5px}
+body.ui-v220 #readerV24 .bi-collocations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+body.ui-v220 #readerV24 .lr-phrase-row{display:grid;grid-template-columns:minmax(0,1fr) 36px;gap:9px;align-items:start;padding:13px!important;margin:0!important;border:1px solid #ead8c9!important;border-radius:8px;background:#fffdf9;min-width:0}
+body.ui-v220 #readerV24 .phrase-name{font:650 18px/1.5 -apple-system,BlinkMacSystemFont,sans-serif!important;margin:0 0 6px!important;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .phrase-gloss,body.ui-v220 #readerV24 .phrase-definition{font-size:14px;line-height:1.65;margin:3px 0;overflow-wrap:anywhere}
+body.ui-v220 #readerV24 .phrase-definition{color:#94765f}
+body.ui-v220 #readerV24 .comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;align-items:start}
+body.ui-v220 #readerV24 .comparison-card{padding:16px;border:1px solid #e7d2bf;border-radius:10px;min-width:0;background:#fffdf9}
+body.ui-v220 #readerV24 .comparison-top{display:flex;align-items:baseline;flex-wrap:wrap;gap:7px 13px}
+body.ui-v220 #readerV24 .comparison-top button{border:0;background:transparent;padding:0;color:#70442d;font:700 24px/1.4 Georgia,serif;cursor:pointer}
+body.ui-v220 #readerV24 .comparison-top>span{font-size:14px;color:#8d6d56}
+body.ui-v220 #readerV24 .comparison-link{font-size:13px;color:#9a7e66;margin:9px 0}
+body.ui-v220 #readerV24 .comparison-difference{font-size:15px;color:#4b3628;line-height:1.7;margin:6px 0}
+body.ui-v220 #readerV24 .comparison-en{font-size:13px;line-height:1.6;color:#92755f;margin:6px 0}
+body.ui-v220 #readerV24 .comparison-card details{margin-top:9px;border-top:1px solid #ecded1;padding-top:6px}
+body.ui-v220 #readerV24 .comparison-examples p{font-size:13px;line-height:1.6;margin:5px 0}
+body.ui-v220 #readerV24 .comparison-examples p[lang=en]{font-weight:600;margin-top:12px}
+body.ui-v220 #readerV24 .relation-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+body.ui-v220 #readerV24 .relation-sense-group{margin:0 0 18px}
+body.ui-v220 #readerV24 .relation-sense-group>h3{font-size:16px;line-height:1.5;margin:0 0 8px}
+body.ui-v220 #readerV24 .relation-sense-group>h3 small{display:block;font-size:12px;font-weight:400;color:#98775c}
+body.ui-v220 #readerV24 .relation-explained{font-size:13px;line-height:1.6;color:#85644b;margin:10px 0 0}
+body.ui-v220 #readerV24 .relation-explained small{display:block;font-size:11px;color:#a68a72}
+body.ui-v220 #readerV24 .entry-sources{font-size:13px;color:#8d715b;margin:12px 0 25px;padding:8px 5px;scroll-margin-top:90px}
+body.ui-v220 #readerV24 .entry-sources>summary{cursor:pointer;min-height:36px;padding:6px 0}
+body.ui-v220 #readerV24 .entry-sources summary small{font-size:11px;margin-left:7px}
+body.ui-v220 #readerV24 .source-notes{font-size:12px;line-height:1.7;padding:8px 0}
+body.ui-v220 #readerV24 .entry-sources details{padding:9px 0;margin-top:10px;border-top:1px solid #eadbcd}
+body.ui-v220 #readerV24 .entry-sources details>summary{cursor:pointer;padding:5px 0;line-height:1.6}
+body.ui-v220 #readerV24 .source-relation-record{padding:12px 0;border-bottom:1px solid #eadbcd}
+body.ui-v220 #readerV24 .source-relation-record .bi-pair p{font-size:13px}
+@media(max-width:700px){body.ui-v220 #readerV24 .phrase-grid,body.ui-v220 #readerV24 .comparison-grid,body.ui-v220 #readerV24 .bi-collocations,body.ui-v220 #readerV24 .relation-grid{grid-template-columns:1fr}body.ui-v220 #readerV24 .understanding-grid.with-picture{grid-template-columns:100px minmax(0,1fr)}body.ui-v220 #readerV24 .understanding-grid h3{font-size:22px}}
+@media(max-width:460px){body.ui-v220 #readerV24 .understanding-grid.with-picture{grid-template-columns:1fr}body.ui-v220 #readerV24 .understanding-picture{max-width:140px}body.ui-v220 #readerV24 .phrase-filters{gap:6px}body.ui-v220 #readerV24 .phrase-filters button{font-size:12px;padding:7px 9px}}

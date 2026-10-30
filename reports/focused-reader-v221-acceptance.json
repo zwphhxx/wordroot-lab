@@ -1,0 +1,50 @@
+{
+  "version": "2.21.0",
+  "status": "LOCAL_PASS",
+  "date": "2026-10-30",
+  "scope": "Site-wide layout and interactions; specifically checked reason learning notes. No full-corpus linguistic or frequency-ranking claim.",
+  "tests": {
+    "browser": {
+      "passed": 38,
+      "total": 38
+    },
+    "upgrade": {
+      "passed": 12,
+      "total": 12
+    },
+    "authored": {
+      "words": 80,
+      "unmatched": 0,
+      "status": "PASS"
+    },
+    "corpus": {
+      "words": 49426,
+      "packages": 3662,
+      "failures": 0,
+      "status": "PASS"
+    },
+    "route": {
+      "passed": 11,
+      "total": 11
+    },
+    "learningUnit": {
+      "passed": 8,
+      "total": 8
+    },
+    "layoutUnit": {
+      "passed": 15,
+      "total": 15
+    },
+    "semanticUnit": {
+      "passed": 12,
+      "total": 12
+    }
+  },
+  "learningContent": {
+    "headword": "reason",
+    "phrases": 14,
+    "comparisons": 5,
+    "authorship": "Original learning notes, translations and examples; linked verification references."
+  },
+  "dictionarySourceModified": false
+}

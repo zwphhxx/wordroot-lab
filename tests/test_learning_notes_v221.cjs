@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),N=require('../learning-notes-v221.js'),O=require('../reader-overview-v221.js');
+let count=0;const test=(name,fn)=>{fn();count++;console.log('PASS',name)};
+test('Reason has fourteen individually identified bilingual teaching expressions',()=>{const p=N.get('reason').phrases;assert.equal(p.length,14);assert.equal(new Set(p.map(x=>x.id)).size,14);assert(p.every(x=>x.en&&x.zh&&x.exampleEn&&x.exampleZh&&x.note&&x.authorship==='original-learning-note'));});
+test('Reason phrases cover five purposeful groups',()=>assert.equal(new Set(N.get('reason').phrases.map(x=>x.group)).size,5));
+test('Sources are explicit dictionary references, not attributed to Wikipedia',()=>{assert(N.get('reason').sources.every(x=>/^https:\/\/(dictionary.cambridge.org|www.oxfordlearnersdictionaries.com|www.ldoceonline.com)\//.test(x)));});
+test('Five comparisons include actual distinctions and original contrast examples',()=>{const r=N.get('reason').comparisons;assert.equal(r.length,5);assert.deepEqual(r.map(x=>x.word),['cause','explanation','motive','rationale','excuse']);assert(r.every(x=>x.link&&x.difference&&x.en&&x.a&&x.az&&x.b&&x.bz&&x.source));});
+test('Unknown and prototype-key words never receive reason teaching notes',()=>{for(const w of ['bank','carrier','constructor','toString','__proto__'])assert.equal(N.get(w),null);});
+test('All nine short reason labels require exact source text and stable sense ID',()=>{for(const [id,[en,zh,noteZh]] of Object.entries(N.get('reason').labels)){const r={id,en,zh:'source text',pos:'n'};assert.equal(N.label('reason',r).zh,zh);assert.equal(N.label('reason',{...r,en:'changed'}),null);assert.equal(N.label('bank',r),null);assert.equal(O.describe(r,'reason').noteZh,noteZh);}});
+test('No label lookup changes original dictionaries',()=>{const r=Object.freeze({id:'wn30:reason%1:10:01::',en:'an explanation of the cause of some phenomenon',zh:'原始释义',pos:'n'});O.describe(r,'reason');assert.equal(r.zh,'原始释义');});
+test('Speech uses a complete English example for placeholder patterns',()=>{for(const r of N.get('reason').phrases){const spoken=N.speakPhrase(r);assert(spoken&&!/[\u3400-\u9fff]|\+/.test(spoken));}});
+console.log('SUMMARY',count,'/',count);

@@ -132,3 +132,8 @@ The local illustration `images/visual-v220/reason-article.jpg` is a display-size
 - Creator credit: Francisco Goya / Wikimedia Commons
 
 The page preserves a file-source link and creator/license credit next to the displayed illustration. All other on-demand encyclopedia articles and images retain their own source and license information. A missing or unconfirmed image is not replaced by a fabricated source image.
+
+
+## V2.21 original learning notes
+
+The additional reason learning notes, Chinese summaries, usage examples and word comparisons in learning-notes-v221.js are independently written. Reference URLs point to Cambridge, Oxford Learner’s Dictionaries and Longman for verification of lexical and grammatical usage; no complete dictionary entry is reproduced. These notes are not attributed to Wikipedia. Existing WordNet/ECDICT records, Wikipedia excerpts, image credits and their original licence terms remain unchanged and available through the source drawer and credits page.

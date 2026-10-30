@@ -1,0 +1,48 @@
+/* Acceptance for the six approved refinements. Uses an isolated Chrome profile. */
+const fs=require('node:fs');
+(async()=>{let c;try{
+c=await require('./cdp_helper.cjs')(Number(process.env.CDP_PORT||9470));const origin=(process.env.ROOTLAB_TEST_ORIGIN||'http://localhost:8894/').replace(/\/?$/,'/'),checks=[];
+const check=(name,ok,details)=>{checks.push({name,ok:!!ok,details});console.log((ok?'PASS ':'FAIL ')+name+' '+JSON.stringify(details??''));};
+const until=async e=>{for(let i=0;i<350;i++){try{if(await c.val(e))return;}catch(_){}await c.wait(110);}throw Error('Timeout '+e);};
+const open=async w=>{await c.call('Page.navigate',{url:origin+'?word='+w+'&v=2.21.0'});await until("window.RootLabReader?.plan?.loaded&&RootLabReader.context.word==="+JSON.stringify(w)+"&&RootLabReaderBridge.loaded("+JSON.stringify(w)+")");};
+const visible="[...document.querySelectorAll('.meaning-panel')].filter(n=>!n.hidden)";
+await c.call('Network.setCacheDisabled',{cacheDisabled:true});await c.call('Network.clearBrowserCache',{});await c.call('Network.setBypassServiceWorker',{bypass:true});
+await c.call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});await open('reason');
+check('Shell and active plan agree on 2.21',await c.val("document.querySelector('meta[name=application-version]').content==='2.21.0'&&RootLabReader.plan.uiVersion==='2.21.0'"));
+check('Default entry teaches cause/reason, not the specialist encyclopedia topic',await c.val("document.querySelector('#word-understanding h3').textContent==='原因；理由'&&!document.querySelector('#word-understanding img')&&!document.querySelector('.wiki-change-topic,.wiki-provenance')&&document.querySelector('#entry-sources')&&!document.querySelector('.wiki-enrichment')"));
+const wikiCalls=c.events.filter(x=>x.method==='Network.requestWillBeSent'&&/wikipedia\.org|wikimedia\.org/.test(x.params.request.url));check('No optional encyclopedia request before opening sources',wikiCalls.length===0,wikiCalls.map(x=>x.params.request.url));
+check('One primary meaning is initially open',await c.val(visible+".length===1&&"+visible+"[0].open&&"+visible+"[0].dataset.meaningId==='wn30:reason%1:10:01::'"));
+await c.val("document.querySelector('[data-meaning-all]').click()");
+check('More choices reveals nine selectors, never nine detail headings',await c.val("[...document.querySelectorAll('[data-meaning-select]')].filter(n=>!n.hidden).length===9&&"+visible+".length===1"));
+for(const n of [8,1,4]){await c.val("document.querySelectorAll('[data-meaning-select]')["+n+"].click()");check('Switching choice '+n+' retains only the selected detail',await c.val(visible+".length===1&&"+visible+"[0].dataset.meaningId===document.querySelectorAll('[data-meaning-select]')["+n+"].dataset.meaningSelect"));}
+await c.val("document.querySelector('[data-meaning-all]').click()");
+check('Fewer choices preserves the current panel',await c.val(visible+".length===1&&!document.querySelector('dialog[open]')"));
+check('Every reason sense has a concise checked label',await c.val("[...document.querySelectorAll('.meaning-panel>summary strong')].every(n=>n.textContent.length<18&&!n.textContent.includes('(a)'))"));
+check('Inflection values are text, never links or buttons',await c.val("document.querySelectorAll('.unified-forms dd').length===6&&!document.querySelector('.unified-forms button,.unified-forms a')"));
+const url=await c.val('location.href');await c.val("document.querySelector('.unified-forms dd b').click()");check('Clicking a word form stays on reason',await c.val('location.href')===url);
+check('Fourteen original learning phrases are grouped, eight initially visible',await c.val("document.querySelectorAll('[data-phrase-learning]').length===14&&[...document.querySelectorAll('[data-phrase-learning]')].filter(n=>!n.hidden).length===8&&document.querySelectorAll('[data-phrase-filter]').length===6"));
+await c.val("document.querySelector('[data-phrase-filter=\"说服与推断\"]').click()");
+check('Phrase categories filter to matching cards',await c.val("[...document.querySelectorAll('[data-phrase-learning]')].filter(n=>!n.hidden).length===2&&[...document.querySelectorAll('[data-phrase-learning]')].filter(n=>!n.hidden).every(n=>n.dataset.phraseGroup==='说服与推断')"));
+await c.val("document.querySelector('[data-phrase-filter=all]').click();document.querySelector('[data-phrase-more]').click()");
+check('Show more reveals all phrases without reintroducing source badges',await c.val("[...document.querySelectorAll('[data-phrase-learning]')].filter(n=>!n.hidden).length===14&&!document.querySelector('#module-usage-phrases .bi-method')"));
+await c.val("document.querySelector('[data-entry-search]').value='合理范围';document.querySelector('[data-entry-search]').dispatchEvent(new Event('input',{bubbles:true}))");
+check('Search includes newly authored usage and examples',await c.val("document.querySelector('#entrySearchResults').textContent.includes('within reason')"));
+await c.val("[...document.querySelectorAll('#entrySearchResults a')].find(x=>x.textContent.includes('within reason')).click()");
+check('Search opens the right phrase even behind a previous filter',await c.val("[...document.querySelectorAll('[data-phrase-learning]')].some(n=>!n.hidden&&n.textContent.includes('within reason'))"));
+check('Five comparisons explain concrete differences without generic warning blocks',await c.val("document.querySelectorAll('.comparison-card').length===5&&[...document.querySelectorAll('.comparison-difference')].every(n=>n.textContent.length>15)&&!document.querySelector('#module-explore-relations .relation-warning,#module-explore-relations .relation-scope,#module-explore-relations .bi-method')"));
+check('Every comparison has bilingual contrasting examples',await c.val("[...document.querySelectorAll('.comparison-card')].every(n=>n.querySelectorAll('.comparison-examples p').length===4)"));
+check('Ordinary lookup has no continue-reading recommendations',await c.val("!document.querySelector('.rd-next,.lr-finale,.lr-next-title,.lr-next-list')"));
+check('One common sources drawer retains original relation and phrase records',await c.val("document.querySelectorAll('.entry-sources').length===1&&document.querySelectorAll('.source-relation-record').length===RootLabReader.model.relations.length&&document.querySelectorAll('.dictionary-phrase-sources .lr-phrase-row').length===1"));
+await c.call('Network.setCacheDisabled',{cacheDisabled:false});
+for(const word of ['bank','carrier','light','apple','banana','dogwood','species','equity','photograph','siting','crowley']){
+ await c.val('RootLabReaderBridge.open('+JSON.stringify(word)+')');await until("RootLabReader.context.word==="+JSON.stringify(word)+"&&RootLabReaderBridge.loaded("+JSON.stringify(word)+")&&RootLabReader.plan?.loaded");
+ const d=await c.val("(()=>{const r=document.getElementById('readerV24'),m=RootLabReader.model,ids=[...r.querySelectorAll('[data-record-ids]')].flatMap(n=>JSON.parse(n.dataset.recordIds));return{word:m.word,one:[...r.querySelectorAll('.meaning-panel')].filter(n=>!n.hidden).length,coverage:m.inventory.every(x=>ids.includes(x.id)),duplicates:[...r.querySelectorAll('[id]')].length-new Set([...r.querySelectorAll('[id]')].map(x=>x.id)).size,examples:r.querySelectorAll('.rp-example-record').length,expected:m.examples.length,formLinks:r.querySelectorAll('.unified-forms a,.unified-forms button').length,badges:r.querySelectorAll('#module-usage-phrases .bi-method,#module-explore-relations .bi-method').length,next:!!r.querySelector('.rd-next'),unmatched:RootLabAuthored.audit().unmatched}})()");
+ check('Uniform display and preserved source coverage: '+word,d.one===1&&d.coverage&&!d.duplicates&&d.examples===d.expected&&!d.formLinks&&!d.badges&&!d.next&&!d.unmatched.length,d);await c.val('RootLabAuthored.clearAudit()');
+}
+await c.val("RootLabReaderBridge.open('reason')");await until("RootLabReader.context.word==='reason'&&RootLabReaderBridge.loaded('reason')");
+for(const width of [320,390,768,1365,1920]){await c.call('Emulation.setDeviceMetricsOverride',{width,height:900,deviceScaleFactor:1,mobile:width<600});const d=await c.val("({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,one:[...document.querySelectorAll('.meaning-panel')].filter(n=>!n.hidden).length})");check('Responsive reading at '+width,d.scroll<=d.client&&d.one===1,d);}
+await c.call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
+await c.val("document.querySelector('#module-usage-phrases').scrollIntoView({block:'start',behavior:'instant'})");if(process.env.FOCUSED_SCREENSHOT)await c.shot(process.env.FOCUSED_SCREENSHOT);
+const exceptions=c.events.filter(e=>e.method==='Runtime.exceptionThrown');check('No uncaught runtime errors',exceptions.length===0,exceptions);
+const out={status:checks.every(x=>x.ok)?'PASS':'FAIL',checks};if(process.env.FOCUSED_REPORT)fs.writeFileSync(process.env.FOCUSED_REPORT,JSON.stringify(out,null,2));console.log('SUMMARY',checks.filter(x=>x.ok).length,'/',checks.length);if(out.status!=='PASS')process.exitCode=1;
+}finally{c?.close();}})().catch(e=>{console.error(e);process.exitCode=2;});
