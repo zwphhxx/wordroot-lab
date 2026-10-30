@@ -1,5 +1,5 @@
 {
-  "version": "2.21.0",
+  "version": "2.21.1",
   "status": "LOCAL_PASS",
   "date": "2026-10-30",
   "scope": "Site-wide layout and interactions; specifically checked reason learning notes. No full-corpus linguistic or frequency-ranking claim.",
@@ -10,7 +10,8 @@
     },
     "upgrade": {
       "passed": 12,
-      "total": 12
+      "total": 12,
+      "path": "2.21.0 -> 2.21.1; prior 2.20 -> 2.21.0 also passed 12/12"
     },
     "authored": {
       "words": 80,
@@ -46,5 +47,6 @@
     "comparisons": 5,
     "authorship": "Original learning notes, translations and examples; linked verification references."
   },
-  "dictionarySourceModified": false
+  "dictionarySourceModified": false,
+  "compatibilityFix": "Retain distinct full Chinese phrase definitions alongside short glosses (17 original dictionary records identified)."
 }

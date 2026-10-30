@@ -1,6 +1,6 @@
 /* All source packages and every reading-card owner are checked; no lexical file changes. */
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),vm=require('node:vm');
-const R=path.resolve(__dirname,'..'),A=require('../reader-adapters-v2171.js'),P=require('../reader-plan-v221.js'),O=require('../reader-overview-v221.js'),U=require('../unified-presentation-v221.js'),C=require('../dictionary-corrections-v215.js');
+const R=path.resolve(__dirname,'..'),A=require('../reader-adapters-v2171.js'),P=require('../reader-plan-v2211.js'),O=require('../reader-overview-v221.js'),U=require('../unified-presentation-v221.js'),C=require('../dictionary-corrections-v215.js');
 const out=process.env.REPORT_DIR||path.join(R,'.work/v215');fs.mkdirSync(out,{recursive:true});
 const M=JSON.parse(fs.readFileSync(path.join(R,'data/bilingual-v212-manifest.json'))),env={window:{},console};vm.createContext(env);
 for(const f of ['word-history-v22.js','word-etymology-curated-v23.js','reading-cards-v210.js','basic-learning-v210.js','plain-objects-v210.js','visual-seeds-v29.js','visual-extra-v210.js','meaning-notes-v210.js','visual-caption-v212.js','visual-reviewed-v215.js'])vm.runInContext(fs.readFileSync(path.join(R,f),'utf8'),env);
@@ -46,5 +46,5 @@ for(const b of Object.values(M.bundles)){
   }catch(e){failures.push({word,issue:String(e)});}
  }
 }
-const result={status:failures.length?'FAIL':'PASS',uiVersion:'2.21.0',baseBuild:M.buildId,counts,failures,samples,changes,scope:'All source packages/IDs and card ownership preserved. Unproven native overlaps remain visible. Reviewed merges and new display wording are finite, not full-corpus semantic verification.'};
+const result={status:failures.length?'FAIL':'PASS',uiVersion:'2.21.1',baseBuild:M.buildId,counts,failures,samples,changes,scope:'All source packages/IDs and card ownership preserved. Unproven native overlaps remain visible. Reviewed merges and new display wording are finite, not full-corpus semantic verification.'};
 fs.writeFileSync(path.join(out,'cards-integrity.json'),JSON.stringify(result,null,2));console.log(JSON.stringify({...result,changes:changes.slice(0,8)},null,2));if(failures.length)process.exitCode=1;
